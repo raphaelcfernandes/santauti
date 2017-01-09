@@ -14,7 +14,7 @@ function Connection() {
 
     this.acquire = function(callback){
         this.pool.getConnection(function(err,connection){
-            callback(err,connectio);
+            callback(err,connection);
         });
     };
 }
