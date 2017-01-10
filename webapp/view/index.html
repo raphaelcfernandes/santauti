@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head ng-app="myApp" ng-controller="namesCtrl">
+    <meta charset="UTF-8">
+    <title>Teste</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="../controllers/indexController.js"></script>
+<body >
+Este é um teste de roteamento.<br><br>
+<div >
+
+    <ul>
+        <li ng-repeat="x in names">
+            {{ x.name + ', ' + x.country }}
+        </li>
+    </ul>
+
+</div>
+</body>
+</html>

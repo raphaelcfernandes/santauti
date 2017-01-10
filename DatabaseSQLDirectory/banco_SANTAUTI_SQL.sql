@@ -51,7 +51,7 @@ CREATE TABLE IF NOT EXISTS `santauti`.`Profissional` (
   `CPF` VARCHAR(11) NOT NULL,
   `Usuario` VARCHAR(45) NOT NULL,
   `Senha` VARCHAR(60) NOT NULL,
-  `TipoProfessional` INT NOT NULL,
+  `TipoProfissional` INT NOT NULL,
   PRIMARY KEY (`Registro`, `CPF`),
   UNIQUE INDEX `Usuario_UNIQUE` (`Usuario` ASC),
   INDEX `cpfPessoa_idx` (`CPF` ASC),
