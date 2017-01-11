@@ -7,8 +7,7 @@ var routes = require("./routes/routes");
 var app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
-app.use(express.static(__dirname + '/webapp/view'));
-
+app.use(express.static(__dirname));
 
 /*********************************************/
 var server = app.listen(3000, function(){

@@ -1,7 +1,9 @@
-angular.module('index', []).controller('indexCtrl', function($scope) {
-    $scope.names = [
-        {name:'Jani',country:'Norway'},
-        {name:'Hege',country:'Sweden'},
-        {name:'Kai',country:'Denmark'}
-    ];
-});
+angular.module('index', []).controller('indexCtrl',['$scope','$location', function($scope,$location) {
+    $scope.submit = function() {
+        //Enviar requisicao para o node
+        //Node verifica usuario e senha
+        //Returna true se usuario e senha correto
+        //Falso otherwise
+        //Redireciona pagina para -> cockpit.html
+    };
+}]);
