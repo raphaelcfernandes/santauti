@@ -1,0 +1,12 @@
+Node MUST be installed
+
+/****************************************************/
+To install package.json dependencies:
+
+npm install body-paser --save
+npm install express --save
+npm install express-load --save
+npm install mysql --save
+
+/****************************************************/
+To run the server: node server.js

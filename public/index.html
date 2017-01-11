@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" >
-<head>
+<head ng-app="MyApp">
+    <base href="/">
     <meta charset="UTF-8">
-    <title>Login Form</title>
+    <title>santauti</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <script src="assets/js/lib/angular.min.js"></script>
@@ -11,9 +12,12 @@
 <script src="assets/js/lib/angular-aria.min.js"></script>
 <script src="assets/js/lib/ngMask.min.js"></script>
 <script src="assets/js/lib/angular-messages.min.js"></script>
-<script src="webapp/controllers/indexController.js"></script>
+<script src="app.js"></script>
+<script scr="webapp/controllers/indexController.js"></script>
 <body >
-<div id="login" ng-app="index" ng-controller="indexCtrl">
+
+<!--<div ng-view></div>-->
+<div id="login" ng-controller="indexCtrl">
     <form name='form-login' ng-submit="submit()">
         <span class="fontawesome-user"></span>
         <input type="text" id="user" ng-model="uname" placeholder="Username">

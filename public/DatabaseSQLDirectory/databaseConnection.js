@@ -14,7 +14,11 @@ function Connection() {
 
     this.acquire = function(callback){
         this.pool.getConnection(function(err,connection){
-            callback(err,connection);
+            if(err){
+                console.log("Connection to database failed");
+            }
+            else
+                console.log("Connection to database established")
         });
     };
 }

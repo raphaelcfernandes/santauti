@@ -1,4 +1,4 @@
-angular.module('index', []).controller('indexCtrl',['$scope','$location', function($scope,$location) {
+angular.module('MyApp').controller('indexCtrl',['$scope','$location', function($scope,$location) {
     $scope.submit = function() {
         //Enviar requisicao para o node
         //Node verifica usuario e senha
