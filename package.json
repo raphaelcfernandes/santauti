@@ -2,7 +2,7 @@
   "name": "santauti",
   "version": "1.0.0",
   "description": "Controle e gerenciamento de fichas UTI",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,6 +12,10 @@
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "express-load": "^1.1.15",
-    "mysql": "^2.12.0"
+    "jsonwebtoken": "^7.2.1",
+    "mysql": "^2.12.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "ui-router-ng2": "^1.0.0-beta.3"
   }
 }

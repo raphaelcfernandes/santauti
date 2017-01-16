@@ -7,6 +7,10 @@ npm install body-paser --save
 npm install express --save
 npm install express-load --save
 npm install mysql --save
+npm install passport --save
+npm install passport-local --save
+npm install --save ui-router-ng2
+npm install jsonwebtoken --save
 
 /****************************************************/
 To run the server: node server.js
