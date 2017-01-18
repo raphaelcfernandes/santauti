@@ -14,12 +14,8 @@ load("controllers")
     .then("routes")
     .into(app);
 
-app.post('/app/login', function(req, res, next) {
-    connection.getRegistro(1,1);
-});
+
 /*********************************************/
 var server = app.listen(3000, function(){
     console.log("Server running on port: "+server.address().port);
 });
-connection.init();
-connection.acquire();

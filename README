@@ -11,6 +11,18 @@ npm install passport --save
 npm install passport-local --save
 npm install --save ui-router-ng2
 npm install jsonwebtoken --save
+npm install --save zone.js@^0.7.2
+npm install git+https://github.com/angular/angularfire2.git
+npm install --save sequelize sequelize-cli mysql
+npm install --save sequelize
+/****************************************************/
+
 
 /****************************************************/
 To run the server: node server.js
+/****************************************************/
+
+/****************************************************/
+You should read this:
+https://github.com/sequelize/express-example
+/****************************************************/
