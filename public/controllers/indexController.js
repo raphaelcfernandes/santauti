@@ -1,11 +1,7 @@
-angular.module('app.index',['ui.router']).controller('indexCtrl',['$scope','$location','$stateParams', function($scope,$location,$stateParams) {
+angular.module('app.index',['ui.router']).controller('indexCtrl',['$scope','$location','$stateParams','$http', function($scope,$location,$stateParams,$http) {
     $scope.submit = function() {
-        console.log($scope.uname);
-
-        //Enviar requisicao para o node
-        //Node verifica usuario e senha
-        //Returna true se usuario e senha correto
-        //Falso otherwise
-        //Redireciona pagina para -> cockpit.html
+        $http.post("/app/login").success(function(req,res,next) {
+            console.log(req);
+        });
     };
 }]);
