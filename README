@@ -26,3 +26,9 @@ To run the server: node server.js
 You should read this:
 https://github.com/sequelize/express-example
 /****************************************************/
+
+
+/****************************************************/
+To commit without message:
+git commit -a --allow-empty-message -m ''
+/****************************************************/
