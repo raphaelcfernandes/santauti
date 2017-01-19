@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "raphael",
+    "password": "123",
+    "database": "santauti",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "raphael",
+    "password": "123",
+    "database": "santauti",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "raphael",
+    "password": "123",
+    "database": "santauti",
+    "host": "localhost",
+    "dialect": "mysql"
+  }
+}

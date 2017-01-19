@@ -15,7 +15,7 @@ module.exports = function(sequelize, DataTypes) {
             allowNull: false
         },
         Data: {
-            type: DataTypes.DATE,
+            type: DataTypes.DATEONLY,
             allowNull: false
         },
         HoraCriada: {
@@ -23,22 +23,22 @@ module.exports = function(sequelize, DataTypes) {
             allowNull: false
         },
         DataModificada: {
-            type: DataTypes.DATETIME,
+            type: DataTypes.DATE,
             allowNull: false
         }
     }, {
         classMethods: {
             associate: function(models) {
-                Avaliacao.hasOne(Profissional,{
-                    as:'Registro',
+                Avaliacao.hasOne(models.Profissional,{
+                    as:'RegistroProfissional',
                     foreignKey: 'Registro'
                 });
-                Avaliacao.hasOne(Paciente,{
-                    as:'CPFPaciente',
+                Avaliacao.hasOne(models.Paciente,{
+                    as:'CpfPaciente',
                     foreignKey: 'CPF'
                 });
-                Avaliacao.hasOne(Fichas,{
-                    as:'NroAtendimento',
+                Avaliacao.hasOne(models.Fichas,{
+                    as:'NroAtendimentoFicha',
                     foreignKey: 'NroAtendimento'
                 });
             }

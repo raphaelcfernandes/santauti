@@ -15,12 +15,12 @@ module.exports = function(sequelize, DataTypes) {
     }, {
         classMethods: {
             associate: function(models) {
-                Responsavel.hasOne(Profissional,{
-                    as:'Registro',
+                Responsavel.hasOne(models.Profissional,{
+                    as:'RegistroProfissional',
                     foreignKey: 'Registro'
                 });
-                Responsavel.hasOne(Paciente,{
-                    as:'CpfPaciente',
+                Responsavel.hasOne(models.Paciente,{
+                    as:'CPFPaciente',
                     foreignKey: 'CPF'
                 });
             }

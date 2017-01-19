@@ -24,8 +24,8 @@ module.exports = function(sequelize, DataTypes) {
     }, {
         classMethods: {
             associate: function(models) {
-                Paciente.hasOne(Pessoa,{
-                    as:'CPF',
+                Paciente.hasOne(models.Pessoa,{
+                    as:'CpfPessoa',
                     foreignKey: 'CPF'
                 });
             }
