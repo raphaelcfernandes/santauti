@@ -4,9 +4,6 @@ var load = require('express-load');
 var express = require("express");
 var bodyParser = require("body-parser");
 var models = require("./models");
-//var routes = require('./routes/app');
-//var routes = require("/routes/app");
-var connection = require("./server-side/databaseConnection");
 /*--------------------------------------------*/
 
 var app = express();
@@ -26,7 +23,9 @@ app.get('/', function(req, res){
 });
 
 /*********************************************/
-var server = app.listen(3000, function(){
-    console.log("Server running on port: "+server.address().port);
-});
 
+models.sequelize.sync().then(function () {
+    var server = app.listen(app.get('port'), function() {
+        console.log('Express server listening on port ' + server.address().port);
+    });
+});
