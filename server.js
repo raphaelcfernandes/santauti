@@ -15,6 +15,7 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'html');
 app.use(require('./routes'));
 
+
 /*********************************************/
 
 models.sequelize.sync().then(function () {

@@ -12,12 +12,11 @@
 <script src="./public/assets/js/lib/angular-aria.min.js"></script>
 <script src="./public/assets/js/lib/ngMask.min.js"></script>
 <script src="./public/assets/js/lib/angular-messages.min.js"></script>
-<script src="./routes/app.js"></script>
 <script src="./controllers/indexController.js"></script>
 <body >
 
 <!--<div ng-view></div>-->
-<div ng-app="app.index" id="login" ng-controller="indexCtrl">
+<div action="/login" ng-app="app.index" id="login" ng-controller="indexCtrl">
     <form name='form-login' ng-submit="submit()">
         <span class="fontawesome-user"></span>
         <input type="text" id="user" ng-model="uname" placeholder="Usuario">

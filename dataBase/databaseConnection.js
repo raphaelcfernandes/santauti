@@ -7,6 +7,9 @@ var sequelize = new Sequelize('santauti', 'raphael', '123', {
     dialectOptions: {
         ssl: true
     },
+    define:{
+        timestamps:false
+    },
     pool: {
         max: 5,
         min: 0,
