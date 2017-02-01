@@ -19,11 +19,7 @@ router.post('/login', function(req, res) {
         }
     }).then(function(task) {
         if(task) {
-            console.log("\nServer encontrou um registro\n");
             return res.json(200);
-        }
-        else{
-            console.log("\nServer nao encontrou nada");
         }
     });
 });

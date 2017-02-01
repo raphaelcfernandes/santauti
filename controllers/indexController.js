@@ -1,13 +1,12 @@
 angular.module('app.index',['ui.router']).controller('indexCtrl',['$scope','$location','$stateParams','$http', function($scope,$location,$stateParams,$http) {
     $scope.submit = function() {
-        console.log($scope.uname);console.log($scope.passwd);
         var data = {
             user: $scope.uname,
             passw: $scope.passwd
         };
         $http.post("/login",data).success(function(req,res,next) {
             if(res==200){
-                $location.path("/cockpit.html");
+                $location.path('cockpit.html');
             }
         });
     };

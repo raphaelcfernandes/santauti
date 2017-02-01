@@ -22,3 +22,5 @@ https://github.com/waiyaki/postgres-express-node-tutorial
 To commit without message:
 git commit -a --allow-empty-message -m ''
 /****************************************************/
+
+--trace-sync-io

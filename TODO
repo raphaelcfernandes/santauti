@@ -1,0 +1,14 @@
+Autenticacao do usuario
+Direcionamento para pagina padrao
+Restricao de acesso à paginas
+
+
+
+
+
+
+
+
+/*Adicionar no banco de dados campo email*/
+/*Separar o controller da tabela profissional (está dentro de index a busca, index tem que chamar a busca do controller)*/
+(link relacionado aqui: https://medium.com/@pandeysoni/user-authentication-using-jwt-json-web-token-in-node-js-using-express-framework-543151a38ea1#.bwolsj2qc)
