@@ -5,10 +5,10 @@ var express = require('express');
 var router = express.Router();
 var path = require('path');
 var loginDAO = require('../DAO/loginDAO');
-var models = require('../models');
+var models = require('../models/index');
 
 router.get('/', function(req, res){
-    res.sendFile(path.join(__dirname, '../views', 'index.html'));
+    res.sendFile(path.join(__dirname, '../../client-side/views', 'index.html'));
 });
 
 router.post('/login', function(req, res) {

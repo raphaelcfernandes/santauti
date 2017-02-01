@@ -2,7 +2,7 @@
 var passport = require('passport');
 var express = require("express");
 var bodyParser = require("body-parser");
-var models = require("./models");
+var models = require("./server-side/models");
 var app = express();
 var http = require('http').Server(app);
 var jwt    = require('jsonwebtoken');
@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname ));
 app.set('views', __dirname + '/views');
 app.set('view engine', 'html');
-app.use(require('./routes'));
+app.use(require('./server-side/routes'));
 
 app.use(function(req, res, next) {
     res.setHeader('Access-Control-Allow-Origin', '*');
