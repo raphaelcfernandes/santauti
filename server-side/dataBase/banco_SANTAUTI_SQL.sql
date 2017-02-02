@@ -33,6 +33,7 @@ CREATE TABLE IF NOT EXISTS `santauti`.`Pessoa` (
   `Numero` INT NULL,
   `Bairro` VARCHAR(45) NULL,
   `Apartamento` VARCHAR(45) NULL,
+  `Email` VARCHAR(45) NULL,
   `Cep` VARCHAR(45) NULL,
   `Cidade` VARCHAR(45) NULL,
   PRIMARY KEY (`CPF`),

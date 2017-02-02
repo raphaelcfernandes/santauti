@@ -27,7 +27,8 @@ module.exports = function(sequelize, DataTypes) {
         Bairro: DataTypes.STRING,
         Apartamento: DataTypes.STRING,
         Cep: DataTypes.INTEGER,
-        Cidade: DataTypes.STRING
+        Cidade: DataTypes.STRING,
+        Email: DataTypes.STRING
     }, {
         classMethods: {
             associate: function(models) {

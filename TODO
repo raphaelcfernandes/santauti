@@ -1,6 +1,8 @@
 Autenticacao do usuario
 Direcionamento para pagina padrao
+Consertar url
 Restricao de acesso à paginas
+Criar pagina de login para administradores adicionar e remover funcionarios
 
 
 
@@ -9,6 +11,7 @@ Restricao de acesso à paginas
 
 
 
-/*Adicionar no banco de dados campo email*/
+/*Adicionar no banco de dados campo email*/ -> DONE
 /*Separar o controller da tabela profissional (está dentro de index a busca, index tem que chamar a busca do controller)*/
 (link relacionado aqui: https://medium.com/@pandeysoni/user-authentication-using-jwt-json-web-token-in-node-js-using-express-framework-543151a38ea1#.bwolsj2qc)
+/*Faćo a encrip/decrip no server side usando Crypto-JS, essa lib é mesmo safe? Inicio da string sempre igual*/
