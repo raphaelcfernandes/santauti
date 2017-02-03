@@ -1,4 +1,11 @@
-Autenticacao do usuario
+Implementar HTTPS TSL/SSL -> Done
+/*
+* É NECESSARIO ADQUIRIR UM CERTFICADO E SUBSTITUIR O DE TESTE
+*
+*/
+Enviar requisicao do cliente para servidor
+Arrumar pagina de login
+Autenticacao do usuario -> "Done". Autenticacao é feita no lado servidor, porém é necessario corrigir o lado cliente para enviar
 Direcionamento para pagina padrao
 Consertar url
 Restricao de acesso à paginas

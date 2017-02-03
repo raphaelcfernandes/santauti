@@ -4,8 +4,14 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var models = require("./server-side/models");
 var app = express();
-var http = require('http').Server(app);
-var jwt    = require('jsonwebtoken');
+//var http = require('http').Server(app);
+var fs = require('fs');
+var https = require('https');
+var options = {
+    key: fs.readFileSync('server-side/certs/server.key'),
+    cert: fs.readFileSync('server-side/certs/server.crt')
+    //ca: fs.readFileSync('ca-crt.pem')
+};
 /*************END OF DECLARATION************/
 
 app.set('port', process.env.PORT || 3000);
@@ -25,7 +31,7 @@ app.use(function(req, res, next) {
 /*********************************************/
 
 models.sequelize.sync().then(function () {
-    var server = http.listen(app.get('port'), function() {
+    var server = https.createServer(options, app).listen(app.get('port'), function () {
         console.log('Express server listening on port ' + server.address().port);
     });
 });

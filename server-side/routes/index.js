@@ -13,9 +13,11 @@ var router = express.Router();
 var path = require('path');
 var loginDAO = require('../DAO/loginDAO');
 var models = require('../models/index');
+var https = require('https');
 
 router.get('/', function(req, res){
     res.sendFile(path.join(__dirname, '../../client-side/views', 'index.html'));
+    //res.send('Hello World!');
 });
 router.get('/about', function(req, res){
     res.sendFile(path.join(__dirname, '../../client-side/views', 'home.html'));
