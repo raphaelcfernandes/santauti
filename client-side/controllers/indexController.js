@@ -4,13 +4,7 @@ angular.module('app.index',['ui.router']).controller('indexCtrl',['$scope','$loc
             user: $scope.uname,
             passw: $scope.passwd
         };
-        var options = {
-            hostname: 'localhost',
-            port: 3000,
-            path: '/login',
-            method: 'POST'
-        };
-        var req = $https.request(options,data).success(function(req,res,next) {
+        $http.post("/login",data).success(function(req,res,next) {
             console.log(req);
             console.log(res);
             if(res===200){//Login and username is right, redirect to home

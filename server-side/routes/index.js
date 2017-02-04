@@ -19,9 +19,9 @@ router.get('/', function(req, res){
     res.sendFile(path.join(__dirname, '../../client-side/views', 'index.html'));
     //res.send('Hello World!');
 });
-router.get('/about', function(req, res){
+/*router.get('/about', function(req, res){
     res.sendFile(path.join(__dirname, '../../client-side/views', 'home.html'));
-});
+});*/
 
 router.post('/login', function(req, res) {
     models.Profissional.findOne({
