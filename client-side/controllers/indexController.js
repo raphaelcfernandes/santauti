@@ -6,7 +6,7 @@ angular.module('app.index',['ui.router']).controller('indexCtrl',['$scope','$loc
         };
         $http.post("/login",data).success(function(req,res,next) {
             console.log(req);
-            console.log(res);
+            console.log(res.statusCode);
             if(res===200){//Login and username is right, redirect to home
                 //console.log(req);
                 $location.path("/home");

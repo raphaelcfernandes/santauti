@@ -15,15 +15,15 @@ var loginDAO = require('../DAO/loginDAO');
 var models = require('../models/index');
 var https = require('https');
 
-router.get('/', function(req, res){
+router.get('*', function(req, res){
     res.sendFile(path.join(__dirname, '../../client-side/views', 'index.html'));
-    //res.send('Hello World!');
 });
 /*router.get('/about', function(req, res){
     res.sendFile(path.join(__dirname, '../../client-side/views', 'home.html'));
 });*/
 
 router.post('/login', function(req, res) {
+    console.log(req.body.passw);
     models.Profissional.findOne({
         where:{
             Usuario: req.body.user
@@ -41,7 +41,7 @@ router.post('/login', function(req, res) {
             return res.json(result);
         }
         else
-            return res.json(400);
+            return res.statusCode=400;
     });
 });
 module.exports = router;
