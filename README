@@ -15,6 +15,7 @@ To run the server: node server.js
 You should read this:
 https://github.com/sequelize/express-example
 https://github.com/waiyaki/postgres-express-node-tutorial
+http://thejackalofjavascript.com/developing-a-mean-app-with-angular-2-0/
 /****************************************************/
 
 
@@ -22,6 +23,5 @@ https://github.com/waiyaki/postgres-express-node-tutorial
 To commit without message:
 git commit -a --allow-empty-message -m ''
 /****************************************************/
-
---trace-sync-io
-
+To download Angular 2
+https://github.com/angular/quickstart

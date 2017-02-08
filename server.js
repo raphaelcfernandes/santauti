@@ -1,9 +1,14 @@
+
 /*************VARIABLES DECLARATION**********/
 var passport = require('passport');
 var express = require("express");
 var bodyParser = require("body-parser");
+var load = require('express-load');
+var path = require('path');
 var models = require("./server-side/models");
 var app = express();
+var cors = require('cors');
+var cookieParser = require('cookie-parser');
 //var http = require('http').Server(app);
 var fs = require('fs');
 var https = require('https');
@@ -15,19 +20,35 @@ var options = {
 /*************END OF DECLARATION************/
 
 app.set('port', process.env.PORT || 3000);
-app.use(bodyParser.urlencoded({extended: true}));
+
+
+
+app.set('views', __dirname + '/client-side/views');
+app.set('view engine', 'pug');
+app.engine('html', require('ejs').renderFile);
 app.use(bodyParser.json());
-app.use(express.static(__dirname ));
-app.set('views', __dirname + '/views');
-app.set('view engine', 'html');
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, '/client-side/views')));
 app.use(require('./server-side/routes'));
 
-app.use(function(req, res, next) {
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, UPDATE, DELETE');
-    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type, Authorization');
-    next();
+
+load("./server-side/controllers").into(app);
+
+
+//app.use('/',routes);
+
+
+app.get('/', function(req, res) {
+    res.renderFile('index.html');
 });
+
+/*app.get('/', function (req, res) {
+    res.render('index', { title: 'teste', message: 'Hello there!' })
+})*/
+
+
+
 /*********************************************/
 
 models.sequelize.sync().then(function () {
