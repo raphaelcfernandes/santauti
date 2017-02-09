@@ -24,12 +24,12 @@ app.set('port', process.env.PORT || 3000);
 
 app.use(express.static(path.join(__dirname, 'client-side/public')));
 app.use(cors());
-app.set('views', __dirname + '/client-side/views');
+app.set('views', __dirname + '/client-side/public/views');
 app.engine('html', require('ejs').renderFile);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, '/client-side/views')));
+app.use(express.static(path.join(__dirname, '/client-side/public/views')));
 app.use(require('./server-side/routes'));
 
 

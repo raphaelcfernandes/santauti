@@ -1,90 +1,100 @@
-@charset "utf-8";
-@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
-[class*="fontawesome-"]:before {
-  font-family: 'FontAwesome', sans-serif;
+.login-page {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
 }
-
+.form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #8080ff;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+    background: #2539a0;
+}
+.form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+}
+.form .message a {
+    color: #363caf;
+    text-decoration: none;
+}
+.form .register-form {
+    display: none;
+}
+.container {
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 auto;
+}
+.container:before, .container:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.container .info {
+    margin: 50px auto;
+    text-align: center;
+}
+.container .info h1 {
+    margin: 0 0 15px;
+    padding: 0;
+    font-size: 36px;
+    font-weight: 300;
+    color: #1a1a1a;
+}
+.container .info span {
+    color: #4d4d4d;
+    font-size: 12px;
+}
+.container .info span a {
+    color: #000000;
+    text-decoration: none;
+}
+.container .info span .fa {
+    color: #EF3B3A;
+}
 body {
-  background: #2c3338;
-  color: #606468;
-  font: 87.5%/1.5em 'Open Sans', sans-serif;
-  margin: 0;
-}
-
-input {
-  border: none;
-  font-family: 'Open Sans', Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5em;
-  padding: 0;
-  -webkit-appearance: none;
-}
-
-p {
-  line-height: 1.5em;
-}
-
-after { clear: both; }
-
-#login {
-  margin: 50px auto;
-  width: 320px;
-}
-
-#login form {
-  margin: auto;
-  padding: 22px 22px 22px 22px;
-  width: 100%;
-  border-radius: 5px;
-  background: #282e33;
-  border-top: 3px solid #434a52;
-  border-bottom: 3px solid #434a52;
-}
-
-#login form span {
-  background-color: #363b41;
-  border-radius: 3px 0px 0px 3px;
-  border-right: 3px solid #434a52;
-  color: #606468;
-  display: block;
-  float: left;
-  line-height: 50px;
-  text-align: center;
-  width: 50px;
-  height: 50px;
-}
-
-#login form input[type="text"] {
-  background-color: #3b4148;
-  border-radius: 0px 3px 3px 0px;
-  color: #a9a9a9;
-  margin-bottom: 1em;
-  padding: 0 16px;
-  width: 235px;
-  height: 50px;
-}
-
-#login form input[type="password"] {
-  background-color: #3b4148;
-  border-radius: 0px 3px 3px 0px;
-  color: #a9a9a9;
-  margin-bottom: 1em;
-  padding: 0 16px;
-  width: 235px;
-  height: 50px;
-}
-
-#login form input[type="submit"] {
-  background: #b5cd60;
-  border: 0;
-  width: 100%;
-  height: 40px;
-  border-radius: 3px;
-  color: white;
-  cursor: pointer;
-  transition: background 0.3s ease-in-out;
-}
-#login form input[type="submit"]:hover {
-  background: #16aa56;
+    background: #ffffb3; /* fallback for old browsers */
+    background: -webkit-linear-gradient(right, #ffff99, #ffffb3);
+    background: -moz-linear-gradient(right, #ffff99, #ffffb3);
+    background: -o-linear-gradient(right, #ffff99, #ffffb3);
+    background: linear-gradient(to left, #ffff99, #ffffb3);
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
