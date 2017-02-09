@@ -35,19 +35,11 @@ app.use(require('./server-side/routes'));
 
 load("./server-side/controllers").into(app);
 
-
-//app.use('/',routes);
-
-
+/*
 app.get('/', function(req, res) {
     res.renderFile('index.html');
 });
-
-/*app.get('/', function (req, res) {
-    res.render('index', { title: 'teste', message: 'Hello there!' })
-})*/
-
-
+*/
 
 /*********************************************/
 

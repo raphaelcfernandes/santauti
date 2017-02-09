@@ -14,14 +14,9 @@ var router = express.Router();
 var path = require('path');
 var loginDAO = require('../DAO/loginDAO');
 var models = require('../models/index');
-var https = require('https');
 
-router.get('/', function(req, res){
- res.status(200);
- //res.set( { 'content-type': 'text/html; charset=utf-8' } );
- //res.sendFile(path.join(__dirname, '../../client-side/views', 'index.html'));
- res.render('index');
- });
+
+
 
 router.post('/login', function(req, res) {
     console.log(req.body.passw);

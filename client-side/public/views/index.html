@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html ng-app="SantaUTIApp">
-<head>
-    <base href="/">
-    <meta charset="UTF-8">
-    <title>santauti</title>
-    <link rel="stylesheet" href="assets/css/index.css">
-    <script src="assets/js/lib/angular.min.js"></script>
-    <script src="assets/js/lib/angular-ui-router.min.js"></script>
-    <script src="assets/js/lib/angular-animate.min.js"></script>
-    <script src="assets/js/lib/angular-aria.min.js"></script>
-    <script src="assets/js/lib/ngMask.min.js"></script>
-    <script src="assets/js/lib/angular-messages.min.js"></script>
-    <script src="angular-route.js"></script>
-    <script src="views/index.js"></script>
-</head>
-
-<div class="login-page">
-    <div class="form" >
-        <form class="login-form" ng-submit="login()">
-            <input type="text" placeholder="Usuario" ng-model="user"/>
-            <input type="password" placeholder="Senha" ng-model="password"/>
-            <button>login</button>
-            <!--<p class="message">Not registered? <a href="#">Create an account</a></p>-->
-        </form>
+    <head>
+        <base href="/">
+        <meta charset="UTF-8">
+        <title>santauti</title>
+        <link rel="stylesheet" href="assets/css/index.css">
+        <script src="assets/js/angular.min.js"></script>
+        <script src="assets/js/angular-route.js"></script>
+        <script src="angular-route.js"></script>
+        <script src="views/index.js"></script>
+    </head>
+    <body ng-controller="loginCtrl">
+    <div ng-view></div>
+    <div class="login-page">
+        <div class="form" >
+            <form class="login-form" ng-submit="login()">
+                <input type="text" placeholder="Usuario" ng-model="user"/>
+                <input type="password" placeholder="Senha" ng-model="password"/>
+                <button>login</button>
+                <div class="span">
+                    <span ng-show="showGreeting "><br>{{msg}}</span>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
+    </body>
 </html>
 
