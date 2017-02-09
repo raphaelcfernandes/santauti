@@ -22,9 +22,9 @@ var options = {
 app.set('port', process.env.PORT || 3000);
 
 
-
+app.use(express.static(path.join(__dirname, 'client-side/public')));
+app.use(cors());
 app.set('views', __dirname + '/client-side/views');
-app.set('view engine', 'pug');
 app.engine('html', require('ejs').renderFile);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
