@@ -1,29 +1,47 @@
 <!DOCTYPE html>
 <html ng-app="SantaUTIApp">
-    <head>
-        <base href="/">
-        <meta charset="UTF-8">
-        <title>santauti</title>
-        <link rel="stylesheet" href="assets/css/index.css">
-        <script src="assets/js/angular.min.js"></script>
-        <script src="assets/js/angular-route.js"></script>
-        <script src="angular-route.js"></script>
-        <script src="views/index.js"></script>
-    </head>
-    <body ng-controller="loginCtrl">
-    <div ng-view></div>
-    <div class="login-page">
-        <div class="form" >
-            <form class="login-form" ng-submit="login()">
-                <input type="text" placeholder="Usuario" ng-model="user"/>
-                <input type="password" placeholder="Senha" ng-model="password"/>
-                <button>login</button>
-                <div class="login-msg">
-                    <span ng-show="showGreeting "><br>{{msg}}</span>
-                </div>
-            </form>
-        </div>
-    </div>
-    </body>
-</html>
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>santauti</title>
+    <base href="/">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Dark.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/angular.min.js"></script>
+    <script src="assets/js/angular-route.js"></script>
+    <script src="assets/js/angular-ui-router.min.js"></script>
+    <script src="angular-route.js"></script>
+    <script src="views/index.js"></script>
+</head>
+
+<body ng-controller="loginCtrl">
+<ui-view></ui-view>
+<div class="login-dark">
+    <div class="form">
+        <form method="post" ng-submit="login()">
+            <h2 class="sr-only">Login Form</h2>
+            <div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>
+            <div class="form-group">
+                <input class="form-control" type="text" name="email" placeholder="Usuario" ng-model="user">
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="password" name="password" placeholder="Senha" ng-model="password">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary btn-block" type="submit">Log In</button>
+            </div>
+            <div class="login-msg">
+                <span ng-show="showGreeting "><br>{{msg}}</span>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

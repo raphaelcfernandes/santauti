@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>santauti</title>
+    <base href="#/home">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="//unpkg.com/angular@1.5/angular.js"></script>
+    <script src="//unpkg.com/angular-ui-router@1.0.0-beta.3/release/angular-ui-router.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="//unpkg.com/show-current-browser-url"></script>
+    <script src="//unpkg.com/d3@3"></script>
+    <script src="//unpkg.com/ui-router-visualizer@2"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Paciente</th>
+                <th>Ações</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>lallalalalala</td>
+                <td>
+                    <button type="button" class="btn btn-primary btn-sm">
+                        <span class="glyphicon glyphicon-eye-open"></span> Visualizar</button>
+                    <button type="button" class="btn btn-primary btn-sm">
+                        <span class="glyphicon glyphicon-pencil"></span> Criar Ficha</button>
+                    <button type="button" class="btn btn-primary btn-sm">
+                        <span class="glyphicon glyphicon-check"></span> Encerrar Paciente</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+<ui-view></ui-view>
+</html>

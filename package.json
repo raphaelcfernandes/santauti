@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@angular/core": "^2.4.4",
+    "angular-ui-router": "^0.4.2",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.15.2",
     "common": "^0.2.5",

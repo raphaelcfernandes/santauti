@@ -1,13 +1,12 @@
 /**
- * Created by raphael on 2/9/17.
+ * Created by raphael on 2/13/17.
  */
-
 var app = angular.module('SantaUTIApp', []);
-app.controller('loginCtrl', function($scope,  $window, $location, $timeout) {
+app.controller('homeCtrl', function($scope, $rootScope, $location, $window, $http, $timeout) {
 
 
     $scope.showGreeting = false;
-    var link = "https://" + $window.location.host + "/home";
+
     $scope.showInvalidUserPasswordMessage = function() {
         $scope.msg="Usuario e/ou Senha inválidos.";
         $scope.showGreeting = true;
@@ -17,9 +16,10 @@ app.controller('loginCtrl', function($scope,  $window, $location, $timeout) {
     };
 
     $scope.login = function(){
-        console.log($window.location.host);
-        if($scope.user === '1' && $scope.password === '2');
-            //$location.path('/home');
+        console.log("user: "+$scope.user);
+        console.log("senha: "+$scope.password);
+        if($scope.user === '1' && $scope.password === '2')
+            $window.location.href='/home';
         else
             $scope.showInvalidUserPasswordMessage();
     };

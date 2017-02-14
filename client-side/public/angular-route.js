@@ -1,15 +1,20 @@
-var app = angular.module('SantaUTIApp', ['ngRoute']);
+var app = angular.module('SantaUTIApp', ['ui.router']);
 
-app.config(function($routeProvider, $locationProvider){
+app.config(function($stateProvider, $locationProvider, $urlRouterProvider){
 
-    $routeProvider
-        .when('/', {
+    /*$stateProvider
+        .state('login',{
+            url:'/',
+            templateUrl: 'views/index.html',
             controller: 'loginCtrl',
-            templateUrl: 'views/index.html'
         })
-        .otherwise({
-            redirectTo: '/'
-        });
-
+        .state('home',{
+            url: '/home',
+            controller: 'homeCtrl',
+            templateUrl: 'views/home/home.html'
+        });*/
+    $routeProvider
+        .when('/home' , {templateUrl: 'views/home/home.html',  controller: homeCtrl})
+        .otherwise({redirectTo: '/login'});
     $locationProvider.html5Mode(true);
 });
