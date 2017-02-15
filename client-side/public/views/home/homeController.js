@@ -1,7 +1,6 @@
 /**
  * Created by raphael on 2/13/17.
  */
-var app = angular.module('SantaUTIApp', []);
 app.controller('homeCtrl', function($scope, $rootScope, $location, $window, $http, $timeout) {
 
 

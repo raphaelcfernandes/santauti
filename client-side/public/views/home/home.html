@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head ng-app="SantaUTIApp">
+    <style>
+        .table-responsive {
+            overflow-x: visible !important;
+            overflow-y: visible !important;
+        }
+    </style>
     <title>santauti</title>
-    <base href="#/home">
+    <base href="/home">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="//unpkg.com/angular@1.5/angular.js"></script>
-    <script src="//unpkg.com/angular-ui-router@1.0.0-beta.3/release/angular-ui-router.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="//unpkg.com/show-current-browser-url"></script>
-    <script src="//unpkg.com/d3@3"></script>
-    <script src="//unpkg.com/ui-router-visualizer@2"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body ng-controller="homeCtrl">
 
 <div class="container">
     <div class="table-responsive">
@@ -22,25 +23,40 @@
             <tr>
                 <th>Paciente</th>
                 <th>Ações</th>
+                <th> <input type="search" ng-model="q" placeholder="filter friends..." aria-label="filter friends" /></th>
             </tr>
             </thead>
             <tbody>
             <tr>
                 <td>lallalalalala</td>
                 <td>
-                    <button type="button" class="btn btn-primary btn-sm">
-                        <span class="glyphicon glyphicon-eye-open"></span> Visualizar</button>
-                    <button type="button" class="btn btn-primary btn-sm">
-                        <span class="glyphicon glyphicon-pencil"></span> Criar Ficha</button>
-                    <button type="button" class="btn btn-primary btn-sm">
-                        <span class="glyphicon glyphicon-check"></span> Encerrar Paciente</button>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-eye-open"></span> Visualizar</button>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown">
+                                <span class="glyphicon glyphicon-pencil"></span> Criar Ficha <span class="caret"></span></button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Diurno</a></li>
+                                <li><a href="#">Noturno</a></li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm"> <span class="glyphicon glyphicon-check"></span> Encerrar Paciente</button>
+                    </div>
                 </td>
             </tr>
             </tbody>
         </table>
     </div>
 </div>
-
+I have {{pacientes.length}} friends. They are:
+<input type="search" ng-model="q" placeholder="filter friends..." aria-label="filter friends" />
+<ul class="example-animate-container">
+    <li class="animate-repeat" ng-repeat="paciente in pacientes | filter:q as results">
+        [{{$index + 1}}] {{paciente.name}} who is {{friend.age}} years old.
+    </li>
+    <li class="animate-repeat" ng-if="results.length === 0">
+        <strong>No results found...</strong>
+    </li>
+</ul>
 </body>
-<ui-view></ui-view>
 </html>

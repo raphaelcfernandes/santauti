@@ -17,31 +17,24 @@
     <script src="assets/js/angular-route.js"></script>
     <script src="assets/js/angular-ui-router.min.js"></script>
     <script src="angular-route.js"></script>
-    <script src="views/index.js"></script>
+    <script src="login/loginController.js"></script>
 </head>
-
-<body ng-controller="loginCtrl">
-<ui-view></ui-view>
-<div class="login-dark">
-    <div class="form">
-        <form method="post" ng-submit="login()">
-            <h2 class="sr-only">Login Form</h2>
-            <div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>
-            <div class="form-group">
-                <input class="form-control" type="text" name="email" placeholder="Usuario" ng-model="user">
-            </div>
-            <div class="form-group">
-                <input class="form-control" type="password" name="password" placeholder="Senha" ng-model="password">
-            </div>
-            <div class="form-group">
-                <button class="btn btn-primary btn-block" type="submit">Log In</button>
-            </div>
-            <div class="login-msg">
-                <span ng-show="showGreeting "><br>{{msg}}</span>
-            </div>
-        </form>
+<style type="text/css">
+    /* Hide when Angular is not yet loaded and initialized */
+    [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+        display: none !important;
+    }
+</style>
+<body>
+<!-- Preloading -->
+<div ng-show="1 == 0" class="loadingDot1">
+    <div class="loadingDot2">
+        <div class="spinner">
+            <div class="dot1"></div>
+            <div class="dot2"></div>
+        </div>
     </div>
 </div>
-
+<div ng-view></div>
 </body>
 </html>
