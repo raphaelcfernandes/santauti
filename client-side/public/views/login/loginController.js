@@ -3,7 +3,7 @@
  */
 
 /*var app = angular.module('SantaUTIApp', []);*/
-app.controller('loginCtrl', function($scope,  $window, $location, $timeout) {
+app.controller('loginCtrl', function($scope,  $state, $window, $location, $timeout) {
 
 
     $scope.showGreeting = false;
@@ -18,8 +18,8 @@ app.controller('loginCtrl', function($scope,  $window, $location, $timeout) {
 
     $scope.login = function(){
         console.log($window.location.host);
-        if($scope.user === '1' && $scope.password === '2');
-        //$location.path('/home');
+        if($scope.user === '1' && $scope.password === '2')
+            $state.go('home');
         else
             $scope.showInvalidUserPasswordMessage();
     };

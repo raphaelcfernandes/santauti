@@ -1,20 +1,26 @@
-var app = angular.module('SantaUTIApp', [
-    'ngRoute'
-]);
+var app = angular.module('SantaUTIApp', ['ui.router']);
 
 /**
  * Configure the Routes
  */
-app.config(['$routeProvider', function ($routeProvider) {
-    $routeProvider
-    // Home
-        .when("/", {
-            templateUrl: "views/login/login.html",
-            controller: "loginCtrl"
+app.config(['$stateProvider', function ($stateProvider) {
+    $stateProvider
+        .state('login', {
+            url: '/',
+            views:{
+                '':{
+                    templateUrl: 'views/login/login.html',
+                    controller: 'loginCtrl'
+                }
+            }
         })
-        .when("/home",{
-            templateUrl: "views/home/home.html",
-            controller: "homeCtrl"
-        })
-        //.otherwise("/404", {templateUrl: "partials/404.html", controller: "PageCtrl"});
+        .state('home',{
+            url: '/home',
+            views:{
+                '':{
+                    templateUrl: 'views/home/home.html',
+                    controller: 'homeCtrl'
+                }
+            }
+        });
 }]);
