@@ -1,0 +1,29 @@
+.navbar {
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+/* title */
+.navbar .navbar-brand {
+    color: #fff906;
+}
+
+/* link */
+.navbar .navbar-nav > li > a {
+    color: #fff906;
+}
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > li > a:focus {
+    color: #000000;
+}
+.navbar .navbar-nav > .active > a,
+.navbar .navbar-nav > .active > a:hover,
+.navbar .navbar-nav > .active > a:focus {
+    color: #fff906;
+    background-color: #528bb7;
+}
+.navbar .navbar-nav > .open > a,
+.navbar .navbar-nav > .open > a:hover,
+.navbar .navbar-nav > .open > a:focus {
+    color: #00fff4;
+    background-color: #d58500;
+}

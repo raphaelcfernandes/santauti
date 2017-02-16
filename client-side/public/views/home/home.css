@@ -1,0 +1,14 @@
+.table-responsive {
+    overflow-x: visible !important;
+    overflow-y: visible !important;
+}
+table tr td {
+    padding: 20px;
+    background: transparent !important;
+}
+.warning {
+    background: #cdd400;
+}
+.danger{
+    background: #ef0209;
+}

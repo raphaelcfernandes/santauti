@@ -35,11 +35,11 @@ app.use(require('./server-side/routes'));
 
 load("./server-side/controllers").into(app);
 
-/*
-app.get('/', function(req, res) {
-    res.renderFile('index.html');
+
+app.get('*', function(req, res) {
+    res.render('index.html');
 });
-*/
+
 
 /*********************************************/
 

@@ -1,20 +1,4 @@
-<!--<!DOCTYPE html>
-<html>
-<head ng-app="SantaUTIApp">
-    <style>
-        .table-responsive {
-            overflow-x: visible !important;
-            overflow-y: visible !important;
-        }
-    </style>
-    <title>santauti</title>
-    <base href="/home">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body ng-controller="homeCtrl">-->
+<div ui-view='toolbar'></div>
 
 <div class="container">
     <div class="table-responsive">
@@ -23,15 +7,16 @@
             <tr>
                 <th>Paciente</th>
                 <th>Ações</th>
-                <th> <input type="search" ng-model="q" placeholder="filter friends..." aria-label="filter friends" /></th>
+                <th> <input type="search" ng-model="q" placeholder="Filtrar Pacientes" aria-label="filter friends" /></th>
             </tr>
             </thead>
             <tbody>
-            <tr>
-                <td>lallalalalala</td>
+            <tr ng-repeat="paciente in pacientes | orderBy:'name' | filter:q as results ">
+                <td>{{paciente.name}}</td>
                 <td>
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-eye-open"></span> Visualizar</button>
+                        <button type="button" class="btn btn-primary btn-sm" ng-click="visualizar(paciente.age)">
+                            <span class="glyphicon glyphicon-eye-open"></span> Visualizar</button>
                         <div class="btn-group">
                             <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown">
                                 <span class="glyphicon glyphicon-pencil"></span> Criar Ficha <span class="caret"></span></button>
@@ -48,17 +33,52 @@
         </table>
     </div>
 </div>
-I have {{pacientes.length}} friends. They are:
-<input type="search" ng-model="q" placeholder="filter friends..." aria-label="filter friends" />
-<ul class="example-animate-container">
-    <li class="animate-repeat" ng-repeat="paciente in pacientes | filter:q as results">
-        [{{$index + 1}}] {{paciente.name}} who is {{friend.age}} years old.
-    </li>
-    <li class="animate-repeat" ng-if="results.length === 0">
-        <strong>No results found...</strong>
-    </li>
-</ul>
+
 <!--
-</body>
-</html>
+
+<div class="container">
+    <h2>Contextual Classes</h2>
+    <p>Contextual classes can be used to color table rows or table cells. The classes that can be used are: .active, .success, .info, .warning, and .danger.</p>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Default</td>
+            <td>Defaultson</td>
+            <td>def@somemail.com</td>
+        </tr>
+        <tr class="success">
+            <td>Success</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+        </tr>
+        <tr class="danger">
+            <td>Danger</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+        </tr>
+        <tr class="info">
+            <td>Info</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+        </tr>
+        <tr class="warning">
+            <td>Warning</td>
+            <td>Refs</td>
+            <td>bo@example.com</td>
+        </tr>
+        <tr class="active">
+            <td>Active</td>
+            <td>Activeson</td>
+            <td>act@example.com</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
 -->

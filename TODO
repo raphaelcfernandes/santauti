@@ -4,7 +4,6 @@ Implementar HTTPS TSL/SSL -> Done
 *
 */
 Enviar requisicao do cliente para servidor
-Arrumar pagina de login
 Autenticacao do usuario -> "Done". Autenticacao é feita no lado servidor, porém é necessario corrigir o lado cliente para enviar
 Direcionamento para pagina padrao
 Consertar url

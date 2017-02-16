@@ -2,12 +2,9 @@
  * Created by raphael on 2/9/17.
  */
 
-/*var app = angular.module('SantaUTIApp', []);*/
 app.controller('loginCtrl', function($scope,  $state, $window, $location, $timeout) {
 
-
     $scope.showGreeting = false;
-    var link = "https://" + $window.location.host + "/home";
     $scope.showInvalidUserPasswordMessage = function() {
         $scope.msg="Usuario e/ou Senha inválidos.";
         $scope.showGreeting = true;
