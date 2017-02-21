@@ -17,7 +17,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                     templateUrl: 'views/home/home.html',
                     controller: 'homeCtrl'
                 },
-                'header':{
+                'navbar':{
                     templateUrl: 'views/toolbar/header.html',
                     controller: 'headerCtrl'
                 }
@@ -30,20 +30,12 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                     templateUrl: 'views/paciente/paciente.html',
                     controller: 'pacienteCtrl'
                 },
-                'header':{
+                'navbar':{
                     templateUrl: 'views/toolbar/header.html',
                     controller: 'headerCtrl'
-                }
-            }
-        })
-        .state('fichaDiaria',{
-            url: '/fichaDiurna',
-            views:{
-                '':{
-                    templateUrl: 'views/ficha/diurna/diurno.html'
                 },
-                'header':{
-                    templateUrl: 'views/ficha/navbarFicha.html'
+                'informacaoBox':{
+                    templateUrl: 'views/informacaoBox/informacaoBox.html'
                 }
             }
         })
@@ -51,10 +43,27 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             url: '/listaDeProblemas',
             views:{
                 '':{
-                    templateUrl: 'views/ficha/listaDeProblemas/listaDeProblemas.html'
+                    templateUrl: 'views/ficha/listaDeProblemas/listaDeProblemas.html',
+                    controller: 'listaDeProblemaCtrl'
                 },
-                'header':{
+                'navbar':{
                     templateUrl: 'views/ficha/navbarFicha.html'
+                },
+                'informacaoBox':{
+                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                }
+            }
+        })
+        .state('eventoSignificantes',{
+            url: '/eventoSignificantes',
+            views:{
+                '':{
+                    templateUrl: 'views/ficha/eventoSignificantes/eventoSignificantes.html',
+                    controller: 'eventoSignificanteCtrl'
+                },
+                'navbar':{
+                    templateUrl: 'views/ficha/navbarFicha.html',
+                    controller: 'navbarCtrl'
                 }
             }
         })
@@ -62,11 +71,84 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             url: '/neurologico',
             views:{
                 '':{
-                    templateUrl: 'views/ficha/neurologico/neurologico.html'
+                    templateUrl: 'views/ficha/neurologico/neurologico.html',
+                    controller: 'neurologicoCtrl'
                 },
-                'header':{
-                    templateUrl: 'views/ficha/navbarFicha.html'
+                'navbar':{
+                    templateUrl: 'views/ficha/navbarFicha.html',
+                    controller: 'navbarCtrl'
+                },
+                'informacaoBox':{
+                    templateUrl: 'views/informacaoBox/informacaoBox.html'
                 }
+            }
+        })
+        .state('hemodinamica',{
+            url: '/hemodinamica',
+            views:{
+                '':{
+                    templateUrl: 'views/ficha/hemodinamica/hemodinamica.html',
+                    controller: 'hemodinamicaCtrl'
+                },
+                'navbar':{
+                    templateUrl: 'views/ficha/navbarFicha.html',
+                    controller: 'navbarCtrl'
+                },
+                'informacaoBox':{
+                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                }
+
+            }
+        })
+        .state('respiratorio',{
+            url: '/respiratorio',
+            views:{
+                '':{
+                    templateUrl: 'views/ficha/respiratorio/respiratorio.html',
+                    controller: 'respiratorioCtrl'
+                },
+                'navbar':{
+                    templateUrl: 'views/ficha/navbarFicha.html',
+                    controller: 'navbarCtrl'
+                },
+                'informacaoBox':{
+                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                }
+
+            }
+        })
+        .state('gastrointestinal',{
+            url: '/gastrointestinal',
+            views:{
+                '':{
+                    templateUrl: 'views/ficha/gastrointestinal/gastrointestinal.html',
+                    controller: 'gastrointestinalCtrl'
+                },
+                'navbar':{
+                    templateUrl: 'views/ficha/navbarFicha.html',
+                    controller: 'navbarCtrl'
+                },
+                'informacaoBox':{
+                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                }
+
+            }
+        })
+        .state('renal',{
+            url: '/renal',
+            views:{
+                '':{
+                    templateUrl: 'views/ficha/renal/renal.html',
+                    controller: 'renalCtrl'
+                },
+                'navbar':{
+                    templateUrl: 'views/ficha/navbarFicha.html',
+                    controller: 'navbarCtrl'
+                },
+                'informacaoBox':{
+                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                }
+
             }
         })
 //    $locationProvider.html5Mode(true);

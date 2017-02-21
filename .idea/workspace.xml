@@ -2,19 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e02dac78-004a-406d-8fe2-c97f9c144c38" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Campos" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/diurna/diurno.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/diurna/fichaDiurnaController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemas.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/navbarFicha.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/neurologico/neurologico.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/noturna/fichaNoturnaController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/noturna/noturno.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/eventoSignificantes/eventoSignificantes.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/eventoSignificantes/eventoSignificantes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/gastrointestinal/gastrointestinal.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/gastrointestinal/gastrointestinal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/hemodinamica/hemodinamica.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/hemodinamica/hemodinamica.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemasController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/navbarFichaController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/neurologico/neurologicoController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/renal/renal.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/renal/renal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/respiratorio/respiratorio.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/respiratorio/respiratorio.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/views/informacaoBox/informacaoBox.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/views/ficha/diurna/diurno.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/views/ficha/diurna/fichaDiurnaController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/views/ficha/noturna/fichaNoturnaController.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/views/ficha/noturna/noturno.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TODO" afterPath="$PROJECT_DIR$/TODO" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/angular-route.js" afterPath="$PROJECT_DIR$/client-side/public/angular-route.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/assets/css/AdminLTE.css" afterPath="$PROJECT_DIR$/client-side/public/assets/css/AdminLTE.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemas.html" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemas.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/ficha/navbarFicha.html" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/navbarFicha.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/ficha/neurologico/neurologico.html" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/neurologico/neurologico.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/home/home.html" afterPath="$PROJECT_DIR$/client-side/public/views/home/home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/index.html" afterPath="$PROJECT_DIR$/client-side/public/views/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/paciente/paciente.html" afterPath="$PROJECT_DIR$/client-side/public/views/paciente/paciente.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,16 +55,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="paciente.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client-side/public/views/paciente/paciente.html">
+      <file leaf-file-name="angular-route.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client-side/public/angular-route.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1818">
-              <caret line="101" column="26" lean-forward="false" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
+            <state relative-caret-position="378">
+              <caret line="141" column="42" lean-forward="false" selection-start-line="141" selection-start-column="42" selection-end-line="141" selection-end-column="42" />
               <folding>
-                <element signature="n#style#0;n#canvas#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#canvas#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#canvas#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#canvas#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#section#1;n#!!top" expanded="true" />
+                <element signature="e#228#348#0" expanded="false" />
+                <element signature="e#372#735#0" expanded="false" />
+                <element signature="e#773#1293#0" expanded="false" />
+                <element signature="e#1329#1829#0" expanded="false" />
+                <element signature="e#1868#2299#0" expanded="false" />
+                <element signature="e#2330#2857#0" expanded="false" />
+                <element signature="e#2889#3421#0" expanded="false" />
+                <element signature="e#3453#3985#0" expanded="false" />
+                <element signature="e#4021#4569#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -59,19 +78,44 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client-side/public/views/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="9" column="73" lean-forward="false" selection-start-line="9" selection-start-column="73" selection-end-line="9" selection-end-column="73" />
+            <state relative-caret-position="810">
+              <caret line="45" column="39" lean-forward="false" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="neurologico.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/neurologico/neurologico.html">
+      <file leaf-file-name="Campos" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Campos">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+            <state relative-caret-position="144">
+              <caret line="38" column="28" lean-forward="true" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="renal.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/renal/renal.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+              <folding>
+                <element signature="n#div#1;n#form#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#form#0;n#div#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="renal.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/renal/renal.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#41#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -82,8 +126,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -130,22 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client-side/controllers/angular-routes.js" />
-        <option value="$PROJECT_DIR$/README" />
-        <option value="$PROJECT_DIR$/bin/www" />
-        <option value="$PROJECT_DIR$/server-side/models/Avaliacao.js" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/client-side/views/index.pug" />
-        <option value="$PROJECT_DIR$/client-side/public/assets/css/indexCss.css" />
-        <option value="$PROJECT_DIR$/client-side/public/app.js" />
-        <option value="$PROJECT_DIR$/client-side/views/index.js" />
-        <option value="$PROJECT_DIR$/client-side/views/index.html" />
-        <option value="$PROJECT_DIR$/client-side/public/assets/js/lib/angular.min.js" />
-        <option value="$PROJECT_DIR$/server-side/routes/index.js" />
-        <option value="$PROJECT_DIR$/client-side/public/views/about.html" />
-        <option value="$PROJECT_DIR$/client-side/public/views/homeCtrl.js" />
-        <option value="$PROJECT_DIR$/client-side/public/views/homeController.js" />
-        <option value="$PROJECT_DIR$/client-side/index.html" />
         <option value="$PROJECT_DIR$/client-side/public/views/home.html" />
         <option value="$PROJECT_DIR$/client-side/public/views/index.js" />
         <option value="$PROJECT_DIR$/server.js" />
@@ -161,7 +189,6 @@
         <option value="$PROJECT_DIR$/client-side/public/views/toolbar/toolbar.css" />
         <option value="$PROJECT_DIR$/client-side/public/views/toolbar/header.css" />
         <option value="$PROJECT_DIR$/client-side/public/views/toolbar/headerController.js" />
-        <option value="$PROJECT_DIR$/TODO" />
         <option value="$PROJECT_DIR$/client-side/public/views/toolbar/header.html" />
         <option value="$PROJECT_DIR$/client-side/public/views/login/loginController.js" />
         <option value="$PROJECT_DIR$/client-side/public/views/home/homeController.js" />
@@ -171,16 +198,33 @@
         <option value="$PROJECT_DIR$/client-side/public/views/ficha/noturno.html" />
         <option value="$PROJECT_DIR$/client-side/public/views/ficha/diurna/fichaDiurnaController.js" />
         <option value="$PROJECT_DIR$/client-side/public/views/ficha/noturna/fichaNoturnaController.js" />
-        <option value="$PROJECT_DIR$/client-side/public/views/home/home.html" />
         <option value="$PROJECT_DIR$/client-side/public/views/ficha/diurna/diurno.html" />
+        <option value="$PROJECT_DIR$/Campos" />
+        <option value="$PROJECT_DIR$/client-side/public/assets/css/AdminLTE.css" />
+        <option value="$PROJECT_DIR$/TODO" />
+        <option value="$PROJECT_DIR$/client-side/public/views/ficha/navbarFichaController.js" />
+        <option value="$PROJECT_DIR$/client-side/public/views/home/home.html" />
+        <option value="$PROJECT_DIR$/client-side/public/views/paciente/paciente.html" />
+        <option value="$PROJECT_DIR$/client-side/public/views/informacaoPaciente/informacaoBox.html" />
         <option value="$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemas.html" />
+        <option value="$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemasController.js" />
+        <option value="$PROJECT_DIR$/client-side/public/views/ficha/eventoSignificantes/eventoSignificantes.js" />
+        <option value="$PROJECT_DIR$/client-side/public/views/ficha/eventoSignificantes/eventoSignificantes.html" />
+        <option value="$PROJECT_DIR$/client-side/public/views/ficha/neurologico/neurologicoController.js" />
+        <option value="$PROJECT_DIR$/client-side/public/views/ficha/neurologico/neurologico.html" />
+        <option value="$PROJECT_DIR$/client-side/public/views/ficha/hemodinamica/hemodinamica.js" />
+        <option value="$PROJECT_DIR$/client-side/public/views/ficha/hemodinamica/hemodinamica.html" />
+        <option value="$PROJECT_DIR$/client-side/public/views/ficha/respiratorio/respiratorio.js" />
+        <option value="$PROJECT_DIR$/client-side/public/views/ficha/respiratorio/respiratorio.html" />
+        <option value="$PROJECT_DIR$/client-side/public/views/ficha/gastrointestinal/gastrointestinal.js" />
+        <option value="$PROJECT_DIR$/client-side/public/views/ficha/gastrointestinal/gastrointestinal.html" />
+        <option value="$PROJECT_DIR$/client-side/public/views/ficha/urinario/urinario.html" />
+        <option value="$PROJECT_DIR$/client-side/public/views/ficha/urinario/urinario.js" />
+        <option value="$PROJECT_DIR$/client-side/public/views/ficha/renal/renal.html" />
+        <option value="$PROJECT_DIR$/client-side/public/views/ficha/renal/renal.js" />
         <option value="$PROJECT_DIR$/client-side/public/angular-route.js" />
         <option value="$PROJECT_DIR$/client-side/public/views/ficha/navbarFicha.html" />
-        <option value="$PROJECT_DIR$/Campos" />
-        <option value="$PROJECT_DIR$/client-side/public/views/ficha/neurologico/neurologico.html" />
-        <option value="$PROJECT_DIR$/client-side/public/assets/css/AdminLTE.css" />
         <option value="$PROJECT_DIR$/client-side/public/views/index.html" />
-        <option value="$PROJECT_DIR$/client-side/public/views/paciente/paciente.html" />
       </list>
     </option>
   </component>
@@ -266,7 +310,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -288,11 +332,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="ficha" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -314,11 +358,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
+              <option name="myItemId" value="ficha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="renal" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -342,17 +390,17 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets/css" />
-      <recent name="$PROJECT_DIR$/assets/js/lib" />
-      <recent name="$PROJECT_DIR$/webapp/view" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client-side/public/views/ficha/noturna" />
       <recent name="$PROJECT_DIR$/client-side/public/views/ficha/diurna" />
       <recent name="$PROJECT_DIR$/client-side/public/views/toolbar" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/server-side" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/css" />
+      <recent name="$PROJECT_DIR$/assets/js/lib" />
+      <recent name="$PROJECT_DIR$/webapp/view" />
     </key>
   </component>
   <component name="RunManager">
@@ -744,16 +792,16 @@
       <workItem from="1487339289629" duration="14379000" />
       <workItem from="1487594113660" duration="1708000" />
       <workItem from="1487626374725" duration="6913000" />
-      <workItem from="1487687669135" duration="2497000" />
+      <workItem from="1487687669135" duration="22621000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="265959000" />
+    <option name="totallyTimeSpent" value="286083000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1602" height="873" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -764,9 +812,9 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32774192" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32670158" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3264516" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.285625" sideWeight="0.49109948" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.285625" sideWeight="0.49109948" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -789,7 +837,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -798,74 +846,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server-side/config/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server-side/config/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="80" lean-forward="false" selection-start-line="18" selection-start-column="80" selection-end-line="18" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server-side/config/generalConfig.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="2" lean-forward="true" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server-side/models/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/assets/js/angular-route.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/views/about.html" />
-    <entry file="file://$PROJECT_DIR$/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server-side/models/Pessoa.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="30" column="31" lean-forward="false" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/assets/img/star-sky.jpg" />
-    <entry file="file://$PROJECT_DIR$/client-side/public/assets/img/city_bg.jpg" />
-    <entry file="file://$PROJECT_DIR$/client-side/public/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/assets/css/styles.css" />
-    <entry file="file://$PROJECT_DIR$/client-side/assets/css/Login-Form-Dark.css" />
     <entry file="file://$PROJECT_DIR$/client-side/assets/css/Footer-Basic.css" />
     <entry file="file://$PROJECT_DIR$/client-side/public/views/index2.html" />
     <entry file="file://$PROJECT_DIR$/server-side/routes/index.js">
@@ -909,24 +889,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TODO">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client-side/public/views/login/loginController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/views/home/homeController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -965,24 +931,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/views/home/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client-side/public/views/toolbar/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="6" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/noturna/fichaNoturnaController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -993,68 +945,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/views/paciente/pacienteController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="110" column="7" lean-forward="false" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-            <element signature="e#332#1486#0" expanded="false" />
-            <element signature="e#1572#2722#0" expanded="false" />
-            <element signature="e#2814#3065#0" expanded="false" />
-            <element signature="e#3155#3407#0" expanded="false" />
-            <element signature="e#3496#3747#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/diurna/diurno.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fazer">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/navbarFicha.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="6" lean-forward="false" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemas.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="6" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Campos">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="51" column="13" lean-forward="true" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/angular-route.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="67" column="62" lean-forward="false" selection-start-line="67" selection-start-column="62" selection-end-line="67" selection-end-column="62" />
-          <folding>
-            <element signature="e#228#348#0" expanded="false" />
-            <element signature="e#372#735#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1074,31 +969,282 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/views/index.html">
+    <entry file="file://$PROJECT_DIR$/TODO">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="9" column="73" lean-forward="false" selection-start-line="9" selection-start-column="73" selection-end-line="9" selection-end-column="73" />
+        <state relative-caret-position="198">
+          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/noturna/fichaNoturnaController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/diurna/diurno.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/informacaoBox/informacaoBox.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/paciente/pacienteController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="110" column="7" lean-forward="false" selection-start-line="110" selection-start-column="7" selection-end-line="110" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+            <element signature="e#332#1486#0" expanded="false" />
+            <element signature="e#1572#2722#0" expanded="false" />
+            <element signature="e#2814#3065#0" expanded="false" />
+            <element signature="e#3155#3407#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/eventoSignificantes/eventoSignificantes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemasController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/eventoSignificantes/eventoSignificantes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="11" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="32" column="12" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="69" selection-end-column="6" />
+          <folding>
+            <element signature="e#2325#2332#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/home/homeController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="21" column="6" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/home/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="23" column="63" lean-forward="false" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/neurologico/neurologico.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        <state relative-caret-position="162">
+          <caret line="97" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#form#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/neurologico/neurologicoController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="4" column="52" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="52" />
+          <folding>
+            <element signature="e#758#1060#0" expanded="false" />
+            <element signature="e#1100#1402#0" expanded="false" />
+            <element signature="e#1448#1495#0" expanded="false" />
+            <element signature="e#1523#1759#0" expanded="false" />
+            <element signature="e#1788#2105#0" expanded="false" />
+            <element signature="e#2134#2505#0" expanded="false" />
+            <marker date="1487709244264" expanded="false" signature="417:718" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/hemodinamica/hemodinamica.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#form#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/hemodinamica/hemodinamica.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client-side/public/views/paciente/paciente.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1818">
-          <caret line="101" column="26" lean-forward="false" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#canvas#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#canvas#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#section#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#canvas#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#section#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#canvas#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#section#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/navbarFichaController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="4" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/respiratorio/respiratorio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="9" />
+          <folding>
+            <element signature="n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#5;n#form#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/respiratorio/respiratorio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/gastrointestinal/gastrointestinal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="5" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/renal/renal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/gastrointestinal/gastrointestinal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="6" />
+          <folding>
+            <element signature="n#div#1;n#form#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/navbarFicha.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="39" lean-forward="false" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/angular-route.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="141" column="42" lean-forward="false" selection-start-line="141" selection-start-column="42" selection-end-line="141" selection-end-column="42" />
+          <folding>
+            <element signature="e#228#348#0" expanded="false" />
+            <element signature="e#372#735#0" expanded="false" />
+            <element signature="e#773#1293#0" expanded="false" />
+            <element signature="e#1329#1829#0" expanded="false" />
+            <element signature="e#1868#2299#0" expanded="false" />
+            <element signature="e#2330#2857#0" expanded="false" />
+            <element signature="e#2889#3421#0" expanded="false" />
+            <element signature="e#3453#3985#0" expanded="false" />
+            <element signature="e#4021#4569#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="45" column="39" lean-forward="false" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Campos">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="38" column="28" lean-forward="true" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/renal/renal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+          <folding>
+            <element signature="n#div#1;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#form#0;n#div#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

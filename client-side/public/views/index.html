@@ -33,11 +33,19 @@
     <script src="assets/js/angular-route.js"></script>
     <script src="assets/js/angular-ui-router.min.js"></script>
     <script src="angular-route.js"></script>
+    <script src="assets/js/Chart.min.js"></script>
     <script src="login/loginController.js"></script>
     <script src="home/homeController.js"></script>
     <script src="toolbar/headerController.js"></script>
     <script src="paciente/pacienteController.js"></script>
-    <script src="assets/js/Chart.min.js"></script>
+    <script src="ficha/listaDeProblemas/listaDeProblemasController.js"></script>
+    <script src="ficha/neurologico/neurologicoController.js"></script>
+    <script src="ficha/hemodinamica/hemodinamica.js"></script>
+    <script src="ficha/respiratorio/respiratorio.js"></script>
+    <script src="ficha/gastrointestinal/gastrointestinal.js"></script>
+    <script src="ficha/renal/renal.js"></script>
+    <script src="ficha/navbarFichaController.js"></script>
+
 </head>
 <style type="text/css">
     /* Hide when Angular is not yet loaded and initialized */
@@ -45,7 +53,8 @@
         display: none !important;
     }
 </style>
-<div ui-view="header"></div>
+<div ui-view="navbar"></div>
+<div ui-view="informacaoBox"></div>
 <body>
 <!-- Preloading -->
 <div ng-show="1 == 0" class="loadingDot1">
