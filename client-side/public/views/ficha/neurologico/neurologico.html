@@ -1,0 +1,23 @@
+<div class="container-fluid">
+    Neurologico
+</div>
+<section class="content">
+    <div class="row">
+        <div class="col-md-6">
+            Problemas relatados:
+            <div class="row">
+                <ul>
+                    <li ng-repeat="todo in problemas">
+
+                        <div class="col-sm-3">
+                            <span class="done-{{todo.done}}">{{todo.text}}</span>
+                        </div>
+                        <div class="col-sm-4">
+                            <span>{{todo.date!=null && todo.done? todo.date*1000 : '' | date:'dd-MM-yyyy HH:mm'}}</span><br>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

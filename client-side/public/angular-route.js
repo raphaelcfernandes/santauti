@@ -36,5 +36,38 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                 }
             }
         })
+        .state('fichaDiaria',{
+            url: '/fichaDiurna',
+            views:{
+                '':{
+                    templateUrl: 'views/ficha/diurna/diurno.html'
+                },
+                'header':{
+                    templateUrl: 'views/ficha/navbarFicha.html'
+                }
+            }
+        })
+        .state('listaDeProblemas',{
+            url: '/listaDeProblemas',
+            views:{
+                '':{
+                    templateUrl: 'views/ficha/listaDeProblemas/listaDeProblemas.html'
+                },
+                'header':{
+                    templateUrl: 'views/ficha/navbarFicha.html'
+                }
+            }
+        })
+        .state('neurologico',{
+            url: '/neurologico',
+            views:{
+                '':{
+                    templateUrl: 'views/ficha/neurologico/neurologico.html'
+                },
+                'header':{
+                    templateUrl: 'views/ficha/navbarFicha.html'
+                }
+            }
+        })
 //    $locationProvider.html5Mode(true);
 }]);
