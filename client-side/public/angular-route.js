@@ -151,5 +151,73 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
 
             }
         })
+        .state('hematologico',{
+            url: '/hematologico',
+            views:{
+                '':{
+                    templateUrl: 'views/ficha/hematologico/hematologico.html',
+                    controller: 'hematologicoCtrl'
+                },
+                'navbar':{
+                    templateUrl: 'views/ficha/navbarFicha.html',
+                    controller: 'navbarCtrl'
+                },
+                'informacaoBox':{
+                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                }
+
+            }
+        })
+        .state('endocrino',{
+            url: '/endocrino',
+            views:{
+                '':{
+                    templateUrl: 'views/ficha/endocrino/endocrino.html',
+                    controller: 'endocrinoCtrl'
+                },
+                'navbar':{
+                    templateUrl: 'views/ficha/navbarFicha.html',
+                    controller: 'navbarCtrl'
+                },
+                'informacaoBox':{
+                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                }
+
+            }
+        })
+        .state('infeccioso',{
+            url: '/infeccioso',
+            views:{
+                '':{
+                    templateUrl: 'views/ficha/infeccioso/infeccioso.html',
+                    controller: 'infecciosoCtrl'
+                },
+                'navbar':{
+                    templateUrl: 'views/ficha/navbarFicha.html',
+                    controller: 'navbarCtrl'
+                },
+                'informacaoBox':{
+                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                }
+
+            }
+        })
+        .state('dispositivos',{
+            url: '/dispositivos',
+            views:{
+                '':{
+                    templateUrl: 'views/ficha/dispositivos/dispositivos.html',
+                    controller: 'dispositivosCtrl'
+                },
+                'navbar':{
+                    templateUrl: 'views/ficha/navbarFicha.html',
+                    controller: 'navbarCtrl'
+                },
+                'informacaoBox':{
+                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                }
+
+            }
+        })
 //    $locationProvider.html5Mode(true);
 }]);
