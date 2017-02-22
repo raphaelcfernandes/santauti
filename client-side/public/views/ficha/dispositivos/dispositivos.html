@@ -1,44 +1,144 @@
 <div class="content">
     <form>
-        <div>
-            <div>
-                <input type="radio" name="choice-animals" id="choice-animals-dogs" required>
-                <label for="choice-animals-dogs">Sim</label>
-
-                <div class="reveal-if-active">
-                    <div class="row">
-                        <div class="col-sm-2">
-                            <h4><label>Data de Inserção</label></h4>
-                        </div>
-                        <div class="col-sm-2">
-                            <h4><label>Data de Remoção</label></h4>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class='col-sm-2'>
-                            <div class="form-group">
-                                <div class='input-group date' id='dataInsercao'>
-                                    <input type='text' class="form-control" />
-                                    <span class="input-group-addon">
-                                    <span class="glyphicon glyphicon-calendar"></span></span>
-                                </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4><label>Cateter Venoso Central</label></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <input type="radio" name="cateterVenosoCentral" id="simCateterVenosoCentral" required>
+                    <label for="simCateterVenosoCentral">Sim</label>
+                    <div class="reveal-if-active">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h4><label>Data de Inserção</label></h4>
+                            </div>
+                            <div class="col-sm-6">
+                                <h4><label>Data de Remoção</label></h4>
                             </div>
                         </div>
-                        <div class='col-sm-2'>
-                            <div class="form-group">
-                                <div class='input-group date' id='dataRemocao'>
-                                    <input type='text' class="form-control" />
-                                    <span class="input-group-addon">
+                        <div class="row">
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='dataInsercaoCateterVenosoCentral'>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
                                     <span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='dataRemocaoCateterVenosoCentral'>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-sm-6">
+                    <input type="radio" name="cateterVenosoCentral" id="naoCateterVenosoCentral">
+                    <label for="naoCateterVenosoCentral">Não</label>
+                </div>
             </div>
-            <div>
-                <input type="radio" name="choice-animals" id="choice-animals-cats">
-                <label for="choice-animals-cats">Não</label>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4><label>Cateter de Hemodialise</label></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <input type="radio" name="cateterHemodialise" id="simCateterHemodialise" required>
+                    <label for="simCateterHemodialise">Sim</label>
+                    <div class="reveal-if-active">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h4><label>Data de Inserção</label></h4>
+                            </div>
+                            <div class="col-sm-6">
+                                <h4><label>Data de Remoção</label></h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='dataInsercaoCateterHemodialise'>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='dataRemocaoCateterHemodialise'>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <input type="radio" name="cateterHemodialise" id="naoCateterHemodialise">
+                    <label for="naoCateterHemodialise">Não</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4><label>Cateter de PAI</label></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <input type="radio" name="cateterPAI" id="simCateterPAI" required>
+                    <label for="simCateterPAI">Sim</label>
+                    <div class="reveal-if-active">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h4><label>Data de Inserção</label></h4>
+                            </div>
+                            <div class="col-sm-6">
+                                <h4><label>Data de Remoção</label></h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='dataInsercaoCateterPAI'>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='dataRemocaoCateterPAI'>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <input type="radio" name="cateterPAI" id="naoCateterPAI">
+                    <label for="naoCateterPAI">Não</label>
+                </div>
             </div>
         </div>
     </form>
@@ -47,9 +147,6 @@
 
 
 Dispositivos:
-- cateter venoso central: sim ou nao + data insercao e retirada
-- cateter de hemodialise
-- cateter de PAI:
 - Dreno de torax
 - Dreno abdominal
 - Sonda vesical

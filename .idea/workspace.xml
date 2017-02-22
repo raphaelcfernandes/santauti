@@ -2,375 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e02dac78-004a-406d-8fe2-c97f9c144c38" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/bootstrap/css/bootstrap-datepicker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/bootstrap/css/bootstrap-datepicker.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/bootstrap/css/bootstrap-datepicker.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/bootstrap/css/bootstrap-datepicker.standalone.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/bootstrap/css/bootstrap-datepicker.standalone.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/bootstrap/css/bootstrap-datepicker.standalone.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/bootstrap/css/bootstrap-datepicker3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/bootstrap/css/bootstrap-datepicker3.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/bootstrap/css/bootstrap-datepicker3.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/bootstrap/css/bootstrap-datepicker3.standalone.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/bootstrap/css/bootstrap-datepicker3.standalone.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/bootstrap/css/bootstrap-datepicker3.standalone.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/core.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/jquery.min.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/jquery.slim.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/jquery.slim.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/jquery.slim.min.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/ender.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/af.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ar-dz.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ar-ly.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ar-ma.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ar-sa.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ar-tn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/az.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/be.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/bg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/bn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/bo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/br.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/bs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/cs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/cv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/cy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/da.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/de-at.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/de.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/dv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/el.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/en-au.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/en-ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/en-gb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/en-ie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/en-nz.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/eo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/es-do.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/et.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/eu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/fa.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/fi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/fo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/fr-ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/fr-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/fr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/fy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/gd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/gl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/he.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/hi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/hr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/hu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/hy-am.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/id.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/is.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/it.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ja.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/jv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ka.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/kk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/km.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ko.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ky.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/lb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/lo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/lt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/lv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/me.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/mi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/mk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ml.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/mr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ms-my.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ms.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/my.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/nb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ne.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/nl-be.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/nl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/nn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/pa-in.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/pl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/pt-br.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/pt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ro.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ru.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/se.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/si.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/sk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/sl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/sq.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/sr-cyrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/sr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ss.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/sv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/sw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ta.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/te.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/tet.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/th.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/tl-ph.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/tlh.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/tr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/tzl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/tzm-latn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/tzm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/uk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/uz.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/vi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/x-pseudo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/yo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/zh-cn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/zh-hk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/zh-tw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/min/locales.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/min/locales.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/min/moment-with-locales.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/min/moment-with-locales.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/min/moment.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/moment.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/moment.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/package.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/create/check-overflow.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/create/date-from-array.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/create/from-anything.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/create/from-array.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/create/from-object.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/create/from-string-and-array.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/create/from-string-and-format.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/create/from-string.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/create/local.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/create/parsing-flags.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/create/utc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/create/valid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/duration/abs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/duration/add-subtract.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/duration/as.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/duration/bubble.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/duration/constructor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/duration/create.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/duration/duration.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/duration/get.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/duration/humanize.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/duration/iso-string.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/duration/prototype.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/format/format.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/locale/base-config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/locale/calendar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/locale/constructor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/locale/en.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/locale/formats.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/locale/invalid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/locale/lists.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/locale/locale.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/locale/locales.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/locale/ordinal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/locale/pre-post-format.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/locale/prototype.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/locale/relative.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/locale/set.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/add-subtract.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/calendar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/clone.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/compare.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/constructor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/creation-data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/diff.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/format.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/from.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/get-set.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/locale.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/min-max.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/moment.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/now.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/prototype.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/start-end-of.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/to-type.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/to.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/valid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/parse/regex.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/parse/token.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/aliases.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/constants.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/day-of-month.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/day-of-week.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/day-of-year.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/hour.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/millisecond.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/minute.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/month.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/offset.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/priorities.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/quarter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/second.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/timestamp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/timezone.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/units.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/week-calendar-utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/week-year.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/week.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/year.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/abs-ceil.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/abs-floor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/abs-round.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/compare-arrays.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/defaults.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/deprecate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/extend.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/has-own-prop.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/hooks.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/index-of.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/is-array.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/is-date.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/is-function.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/is-number.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/is-object-empty.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/is-object.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/is-undefined.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/keys.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/map.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/some.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/to-int.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/zero-fill.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/af.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ar-dz.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ar-ly.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ar-ma.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ar-sa.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ar-tn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/az.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/be.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/bg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/bn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/bo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/br.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/bs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/cs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/cv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/cy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/da.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/de-at.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/de.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/dv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/el.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/en-au.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/en-ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/en-gb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/en-ie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/en-nz.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/eo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/es-do.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/et.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/eu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/fa.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/fi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/fo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/fr-ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/fr-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/fr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/fy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/gd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/gl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/he.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/hi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/hr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/hu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/hy-am.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/id.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/is.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/it.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ja.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/jv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ka.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/kk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/km.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ko.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ky.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/lb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/lo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/lt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/lv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/me.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/mi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/mk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ml.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/mr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ms-my.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ms.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/my.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/nb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ne.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/nl-be.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/nl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/nn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/pa-in.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/pl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/pt-br.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/pt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ro.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ru.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/se.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/si.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/sk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/sl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/sq.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/sr-cyrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/sr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ss.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/sv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/sw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ta.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/te.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/tet.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/th.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/tl-ph.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/tlh.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/tr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/tzl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/tzm-latn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/tzm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/uk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/uz.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/vi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/x-pseudo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/yo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/zh-cn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/zh-hk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/zh-tw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/moment.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/dispositivos/dispositivos.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/dispositivos/dispositivos.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/dispositivos/dispositivos.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/endocrino/endocrino.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/endocrino/endocrino.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/hematologico/hematologico.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/hematologico/hematologico.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/infeccioso/infeccioso.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/infeccioso/infeccioso.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/jquery-1.8.2.min.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Campos" afterPath="$PROJECT_DIR$/Campos" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/angular-route.js" afterPath="$PROJECT_DIR$/client-side/public/angular-route.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/assets/js/jquery.min.js" afterPath="$PROJECT_DIR$/client-side/public/assets/js/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/ficha/navbarFicha.html" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/navbarFicha.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/ficha/neurologico/neurologico.html" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/neurologico/neurologico.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/ficha/renal/renal.html" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/renal/renal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/home/home.css" afterPath="$PROJECT_DIR$/client-side/public/views/home/home.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/index.html" afterPath="$PROJECT_DIR$/client-side/public/views/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/ficha/dispositivos/dispositivos.html" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/dispositivos/dispositivos.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/ficha/dispositivos/dispositivos.js" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/dispositivos/dispositivos.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -431,11 +65,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="README" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="dispositivos.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/dispositivos/dispositivos.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+            <state relative-caret-position="414">
+              <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
               </folding>
@@ -443,22 +87,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dispositivos.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dispositivos.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/dispositivos/dispositivos.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="28" column="77" lean-forward="false" selection-start-line="28" selection-start-column="77" selection-end-line="28" selection-end-column="77" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="endocrino.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/endocrino/endocrino.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="558">
+              <caret line="127" column="91" lean-forward="false" selection-start-line="127" selection-start-column="70" selection-end-line="127" selection-end-column="91" />
+              <folding>
+                <element signature="n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#form#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#1;n#form#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#2;n#form#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#2;n#form#0;n#div#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -572,8 +214,8 @@
         <option value="$PROJECT_DIR$/client-side/public/angular-route.js" />
         <option value="$PROJECT_DIR$/client-side/public/views/home/home.css" />
         <option value="$PROJECT_DIR$/client-side/public/views/index.html" />
-        <option value="$PROJECT_DIR$/client-side/public/views/ficha/dispositivos/dispositivos.js" />
         <option value="$PROJECT_DIR$/client-side/public/views/ficha/dispositivos/dispositivos.html" />
+        <option value="$PROJECT_DIR$/client-side/public/views/ficha/dispositivos/dispositivos.js" />
       </list>
     </option>
   </component>
@@ -1220,12 +862,12 @@
       <workItem from="1487594113660" duration="1708000" />
       <workItem from="1487626374725" duration="6913000" />
       <workItem from="1487687669135" duration="23876000" />
-      <workItem from="1487767266385" duration="18512000" />
+      <workItem from="1487767266385" duration="20116000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="305850000" />
+    <option name="totallyTimeSpent" value="307454000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1602" height="873" extended-state="6" />
@@ -1531,14 +1173,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TODO">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -1554,14 +1188,6 @@
           <folding>
             <element signature="n#!!doc" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/dispositivos/dispositivos.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1689,16 +1315,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/dispositivos/dispositivos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client-side/public/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1707,10 +1323,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Campos">
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/dispositivos/dispositivos.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="65" selection-end-column="25" />
+        <state relative-caret-position="396">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1723,10 +1339,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/dispositivos/dispositivos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/dispositivos/dispositivos.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="77" lean-forward="false" selection-start-line="28" selection-start-column="77" selection-end-line="28" selection-end-column="77" />
+        <state relative-caret-position="558">
+          <caret line="127" column="91" lean-forward="false" selection-start-line="127" selection-start-column="70" selection-end-line="127" selection-end-column="91" />
+          <folding>
+            <element signature="n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#2;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#2;n#form#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Campos">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="65" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="41" />
           <folding />
         </state>
       </provider>
