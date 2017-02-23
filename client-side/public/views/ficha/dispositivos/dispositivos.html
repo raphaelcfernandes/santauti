@@ -141,20 +141,510 @@
                 </div>
             </div>
         </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4><label>Dreno de Torax</label></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <input type="radio" name="drenoTorax" id="simDrenoTorax" required>
+                    <label for="simDrenoTorax">Sim</label>
+                    <div class="reveal-if-active">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h4><label>Data de Inserção</label></h4>
+                            </div>
+                            <div class="col-sm-6">
+                                <h4><label>Data de Remoção</label></h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='dataInsercaoDrenoTorax'>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='dataRemocaoDrenoTorax'>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <input type="radio" name="drenoTorax" id="naoDrenoTorax">
+                    <label for="naoDrenoTorax">Não</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4><label>Dreno Abdominal</label></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <input type="radio" name="drenoAbdominal" id="simDrenoAbdominal" required>
+                    <label for="simDrenoAbdominal">Sim</label>
+                    <div class="reveal-if-active">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h4><label>Data de Inserção</label></h4>
+                            </div>
+                            <div class="col-sm-6">
+                                <h4><label>Data de Remoção</label></h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='dataInsercaoDrenoAbdominal'>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='dataRemocaoDrenoAbdominal'>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <input type="radio" name="drenoAbdominal" id="naoDrenoAbdominal">
+                    <label for="naoDrenoAbdominal">Não</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4><label>Sonda Vesical</label></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <input type="radio" name="sondaVesical" id="simSondaVesical" required>
+                    <label for="simSondaVesical">Sim</label>
+                    <div class="reveal-if-active">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h4><label>Data de Inserção</label></h4>
+                            </div>
+                            <div class="col-sm-6">
+                                <h4><label>Data de Remoção</label></h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='dataInsercaoSondaVesical'>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='dataRemocaoSondaVesical'>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <input type="radio" name="sondaVesical" id="naoSondaVesical">
+                    <label for="naoSondaVesical">Não</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4><label>Tubo Orotraquial</label></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <input type="radio" name="tuboOrotraquial" id="simTuboOrotraquial" required>
+                    <label for="simTuboOrotraquial">Sim</label>
+                    <div class="reveal-if-active">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h4><label>Data de Inserção</label></h4>
+                            </div>
+                            <div class="col-sm-6">
+                                <h4><label>Data de Remoção</label></h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='dataInsercaoTuboOrotraquial'>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='dataRemocaoTuboOrotraquial'>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <input type="radio" name="tuboOrotraquial" id="naoTuboOrotraquial">
+                    <label for="naoTuboOrotraquial">Não</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4><label>Traqueostomia</label></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <input type="radio" name="traqueostomia" id="simTraqueostomia" required>
+                    <label for="simTraqueostomia">Sim</label>
+                    <div class="reveal-if-active">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h4><label>Data de Inserção</label></h4>
+                            </div>
+                            <div class="col-sm-6">
+                                <h4><label>Data de Remoção</label></h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='dataInsercaoTraqueostomia'>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='dataRemocaoTraqueostomia'>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <input type="radio" name="traqueostomia" id="naoTraqueostomia">
+                    <label for="naoTraqueostomia">Não</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4><label>Venóclise</label></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <input type="radio" name="venoclise" id="simVenoclise" required>
+                    <label for="simVenoclise">Sim</label>
+                    <div class="reveal-if-active">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h4><label>Data de Inserção</label></h4>
+                            </div>
+                            <div class="col-sm-6">
+                                <h4><label>Data de Remoção</label></h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='dataInsercaoVenoclise'>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='dataRemocaoVenoclise'>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <input type="radio" name="venoclise" id="naoVenoclise">
+                    <label for="naoVenoclise">Não</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4><label>Sonda Enteral</label></h4>
+                </div>
+                <div class="col-sm-6">
+                    <h4><label>Sonda Oroenteral</label></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <input type="radio" name="sondaEnteral" id="simSondaEnteral" required>
+                    <label for="simSondaEnteral">Sim</label>
+                    <div class="reveal-if-active">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h4><label>Data de Inserção</label></h4>
+                            </div>
+                            <div class="col-sm-6">
+                                <h4><label>Data de Remoção</label></h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='dataInsercaoSondaEnteral'>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='dataRemocaoSondaEnteral'>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <input type="radio" name="sondaEnteral" id="naoSondaEnteral">
+                    <label for="naoSondaEnteral">Não</label>
+                </div>
+                <div class="col-sm-4">
+                    <input type="radio" name="sondaOroenteral" id="simSondaOroenteral" required>
+                    <label for="simSondaOroenteral">Sim</label>
+                    <div class="reveal-if-active">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h4><label>Data de Inserção</label></h4>
+                            </div>
+                            <div class="col-sm-6">
+                                <h4><label>Data de Remoção</label></h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='dataInsercaoSondaOroenteral'>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='dataRemocaoSondaOroenteral'>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <input type="radio" name="sondaOroenteral" id="naoSondaOroenteral">
+                    <label for="naoSondaOroenteral">Não</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4><label>Sonda Nasoenteral</label></h4>
+                </div>
+                <div class="col-sm-6">
+                    <h4><label>Sonda Orogastrica</label></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <input type="radio" name="sondaNasoenteral" id="simSondaNasoenteral" required>
+                    <label for="simSondaNasoenteral">Sim</label>
+                    <div class="reveal-if-active">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h4><label>Data de Inserção</label></h4>
+                            </div>
+                            <div class="col-sm-6">
+                                <h4><label>Data de Remoção</label></h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='dataInsercaoSondaNasoenteral'>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='dataRemocaoSondaNasoenteral'>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <input type="radio" name="sondaNasoenteral" id="naoSondaNasoenteral">
+                    <label for="naoSondaNasoenteral">Não</label>
+                </div>
+                <div class="col-sm-4">
+                    <input type="radio" name="sondaOrogastrica" id="simSondaOrogastrica" required>
+                    <label for="simSondaOrogastrica">Sim</label>
+                    <div class="reveal-if-active">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h4><label>Data de Inserção</label></h4>
+                            </div>
+                            <div class="col-sm-6">
+                                <h4><label>Data de Remoção</label></h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='dataInsercaoSondaOrogastrica'>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='dataRemocaoSondaOrogastrica'>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <input type="radio" name="sondaOrogastrica" id="naoSondaOrogastrica">
+                    <label for="naoSondaOrogastrica">Não</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4><label>Sonda Nasogastrical</label></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <input type="radio" name="sondaNasogastrical" id="simSondaNasogastrical" required>
+                    <label for="simSondaNasoenteral">Sim</label>
+                    <div class="reveal-if-active">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h4><label>Data de Inserção</label></h4>
+                            </div>
+                            <div class="col-sm-6">
+                                <h4><label>Data de Remoção</label></h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='dataInsercaoSondaNasogastrical'>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='dataRemocaoSondaNasogastrical'>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <input type="radio" name="sondaNasogastrical" id="naoSondaNasogastrical">
+                    <label for="naoSondaNasogastrical">Não</label>
+                </div>
+            </div>
+        </div>
     </form>
-
 </div>
-
-
-Dispositivos:
-- Dreno de torax
-- Dreno abdominal
-- Sonda vesical
-- Tubo orotraquial
-- Traqueostomia
-- gastrostomia
-- venopolise
-- sonda enteral
-- Sonda oroenteral e nasoenteral
-- sonda orogastrica
-- sonda nasogastrical

@@ -1,5 +1,6 @@
-Eventos significantes nas ultimas 24horas: texto
-Neurologico:
+Eventos significantes nas ultimas 24horas: Done
+    - texto
+Neurologico: Done
     - nivel consciencia: texto
     - pupila texto
     - glasgow: numerico
@@ -9,7 +10,7 @@ Neurologico:
     - sjo2: numerico
     - sedaćao/ramsay: numerico
     - sedativo: numerico
-hemodinamico:
+hemodinamico: Done
     - ritmo: texto
     - freq: numerico
     - bulhas: texto
@@ -18,18 +19,18 @@ hemodinamico:
     - pvc: numerico
     - swan-ganz: texto
     - oxigenacao tissular: texto
-Respiratorio:
+Respiratorio: Done
     - Exame respiratorio: texto
     - parametro ventilatorio: texto
     - gasometria arterial: numerico
     - raio-x de torax: trexto
     - pressao do cuff: numerico
     - canula latraquial: texto
-Gastrointestinal;
+Gastrointestinal: Done
     - exame do abdome: texto
     - debito de sondas: texto
     - evacuacoes: texto
-Renal:
+Renal: Done
     - diurese: numerico
     - peso: numerico, diurese + peso = grafico
     - balanco hidrico: numerico
@@ -37,19 +38,19 @@ Renal:
         - Tipo: texto
         - volume: numerico
     - escorias renais: texto
-Hematologico:
+Hematologico: Done
     - coagulograma: texto
     - indice hematimetrico: texto
-Endocrino:
+Endocrino: Done
     - glicemia: texto
     - uso de insulina: texto
     - outras observacoes: texto
-Infeccioso:
+Infeccioso: Done
     - curva termica: texto
     - antibiotico:
         - qual: texto
         - tempo: numerico
-Dispositivos:
+Dispositivos: Done
     - cateter venoso central: sim ou nao + data insercao e retirada
     - cateter de hemodialise
     - cateter de PAI:
@@ -59,20 +60,20 @@ Dispositivos:
     - Tubo orotraquial
     - Traqueostomia
     - gastrostomia
-    - venopolise
+    - venoclise
     - sonda enteral
     - Sonda oroenteral e nasoenteral
     - sonda orogastrica
     - sonda nasogastrical
-Metabolico:
+Metabolico: Done
     - acido-base: texto
     - eletrolito: texto
     - funcao hepatica: texto
-Nutricao:
+Nutricao: Done
     - recebendo dieta? sim ou nao
     - Dieta: texto
     - outros comentarios: texto
-Psicossocial:
+Psicossocial: Done
     - familiares inteirados: sim ou nao + comentario
     - depressao/delirio: sim ou nao + comentario
     - acompanhamento psicologico: sim ou nao + comentario

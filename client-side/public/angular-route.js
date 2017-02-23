@@ -219,5 +219,90 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
 
             }
         })
+        .state('metabolico',{
+            url: '/metabolico',
+            views:{
+                '':{
+                    templateUrl: 'views/ficha/metabolico/metabolico.html',
+                    controller: 'metabolicoCtrl'
+                },
+                'navbar':{
+                    templateUrl: 'views/ficha/navbarFicha.html',
+                    controller: 'navbarCtrl'
+                },
+                'informacaoBox':{
+                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                }
+
+            }
+        })
+        .state('nutricao',{
+            url: '/nutricao',
+            views:{
+                '':{
+                    templateUrl: 'views/ficha/nutricao/nutricao.html',
+                    controller: 'nutricaoCtrl'
+                },
+                'navbar':{
+                    templateUrl: 'views/ficha/navbarFicha.html',
+                    controller: 'navbarCtrl'
+                },
+                'informacaoBox':{
+                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                }
+
+            }
+        })
+        .state('psicosocial',{
+            url: '/psicosocial',
+            views:{
+                '':{
+                    templateUrl: 'views/ficha/psicosocial/psicosocial.html',
+                    controller: 'psicosocialCtrl'
+                },
+                'navbar':{
+                    templateUrl: 'views/ficha/navbarFicha.html',
+                    controller: 'navbarCtrl'
+                },
+                'informacaoBox':{
+                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                }
+
+            }
+        })
+        .state('analise',{
+            url: '/analise',
+            views:{
+                '':{
+                    templateUrl: 'views/ficha/analise/analise.html',
+                    controller: 'analiseCtrl'
+                },
+                'navbar':{
+                    templateUrl: 'views/ficha/navbarFicha.html',
+                    controller: 'navbarCtrl'
+                },
+                'informacaoBox':{
+                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                }
+
+            }
+        })
+        .state('pendencias',{
+            url: '/pendencias',
+            views:{
+                '':{
+                    templateUrl: 'views/ficha/pendencias/pendencias.html',
+                    controller: 'pendenciasCtrl'
+                },
+                'navbar':{
+                    templateUrl: 'views/ficha/navbarFicha.html',
+                    controller: 'navbarCtrl'
+                },
+                'informacaoBox':{
+                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                }
+
+            }
+        })
 //    $locationProvider.html5Mode(true);
 }]);
