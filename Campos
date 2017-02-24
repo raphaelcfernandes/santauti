@@ -102,7 +102,7 @@ Exames: Done
         - eletroencefalograma
         - eletrocardiograma
     - culturas: texto
-Exames laboratorial:
+Exames laboratorial: Done
     - Data exame realizado
     - Hemoglobina
     - Hematócrito

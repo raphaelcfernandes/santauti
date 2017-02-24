@@ -3,74 +3,420 @@
         <div class="form-group">
             <div class="row">
                 <div class="col-sm-12">
-                    <h4><label>Raio-x de Torax</label></h4>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <label>Data</label>
-                        </div>
-                        <div class="col-sm-6">
-                            <label>Descricao</label>
-                        </div>
-                    </div>
+                    <h4><label>Exame realizado em:</label></h4>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-2">
-                    <div class='input-group date' id='dataRaioXTorax'>
+                    <div class='input-group date' id='dataExame'>
                         <input type='text' class="form-control" />
                         <span class="input-group-addon">
                         <span class="glyphicon glyphicon-calendar"></span></span>
                     </div>
                 </div>
-                <div class="col-sm-7 col-sm-offset-3">
-                    <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4><label>Hemoglobina</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>Hematócrito</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>Leucócitos</label></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
                 </div>
             </div>
         </div>
-
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4><label>Promielocitos (%)</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>Mielocitos (%)</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>Metamielocitos (%)</label></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4><label>Bastonetes (%)</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>Segmentados (%)</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>Eosinófilos (%)</label></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4><label>Basófilos (%)</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>Linfócitos (%)</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>Monócitos (%)</label></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4><label>Plaquetas x10<sup>3</sup></label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>Sódio</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>Potássio</label></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4><label>Uréia</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>Creatinina</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>Magnésio</label></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4><label>Cálcio</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>Fósforo</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>Cloro</label></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4><label>PCR</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>Albumina</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>TAP/RNI</label></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4><label>TTPA</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>Troponina</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>CPK TOTAL</label></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4><label>CKMB</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>Dímero D</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>Glicose</label></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4><label>Fibrogênio</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>PH</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>PCO2</label></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4><label>PO2</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>HCO3</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>Saturaćao</label></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4><label>PO2</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>HCO3</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>Saturaćao</label></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4><label>Saturaćao V. Central</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>PaO2</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>FiO2</label></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4><label>Lactato</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>Bbt</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>Bbd</label></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4><label>TGO</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>TGP</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>GGT</label></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4><label>FA</label></h4>
+                </div>
+                <div class="col-sm-4">
+                    <h4><label>Procalcitonina</label></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control">
+                </div>
+            </div>
+        </div>
     </form>
 </div>
-- Data exame realizado
-- Hemoglobina
-- Hematócrito
-- Leucócitos
-- Promielocitos %
-- Mielocitos %
-- Metamielocitos %
-- Bastonetes %
-- Segmentados %
-- Eosinófilos %
-- Basófilos %
-- Linfócitos %
-- Monócitos %
-- Plaquetas x10^3
-- Sódio
-- Potássio
-- Uréia
-- Creatinina
-- Magnésio
-- Cálcio
-- Fósforo
-- Cloro
-- PCR
-- Albumina
-- TAP/RNI
-- TTPA
-- Troponina
-- CPK TOTAL
-- CKMB
-- Dímero D
-- Glicose
-- Fibrogênio
-- PH
-- PCO2
-- PO2
-- HCO3
-- Saturaćao
-- Saturaćao V. Central
-- PaO2/FiO2
-- Lactato
-- Bbt/Bbd
-- TGO/TGP
-- GGT/FA
-- Procalcitonina
