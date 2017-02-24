@@ -304,5 +304,73 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
 
             }
         })
+        .state('exames',{
+            url: '/exames',
+            views:{
+                '':{
+                    templateUrl: 'views/ficha/exames/exames.html',
+                    controller: 'examesCtrl'
+                },
+                'navbar':{
+                    templateUrl: 'views/ficha/navbarFicha.html',
+                    controller: 'navbarCtrl'
+                },
+                'informacaoBox':{
+                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                }
+
+            }
+        })
+        .state('interconsulta',{
+            url: '/interconsulta',
+            views:{
+                '':{
+                    templateUrl: 'views/ficha/interconsulta/interconsulta.html',
+                    controller: 'interconsultaCtrl'
+                },
+                'navbar':{
+                    templateUrl: 'views/ficha/navbarFicha.html',
+                    controller: 'navbarCtrl'
+                },
+                'informacaoBox':{
+                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                }
+
+            }
+        })
+        .state('planos',{
+            url: '/planos',
+            views:{
+                '':{
+                    templateUrl: 'views/ficha/planos/planos.html',
+                    controller: 'planosCtrl'
+                },
+                'navbar':{
+                    templateUrl: 'views/ficha/navbarFicha.html',
+                    controller: 'navbarCtrl'
+                },
+                'informacaoBox':{
+                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                }
+
+            }
+        })
+        .state('examesLab',{
+            url: '/examesLab',
+            views:{
+                '':{
+                    templateUrl: 'views/ficha/examesLaboratoriais/examesLaboratoriais.html',
+                    controller: 'examesLabCtrl'
+                },
+                'navbar':{
+                    templateUrl: 'views/ficha/navbarFicha.html',
+                    controller: 'navbarCtrl'
+                },
+                'informacaoBox':{
+                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                }
+
+            }
+        })
 //    $locationProvider.html5Mode(true);
 }]);

@@ -83,11 +83,13 @@ Lista de problemas:
     - Antecedentes pessoais: texto opcional
     - Diagnostico de entrada
     - comentarios
-Analise: texto
-Planos: texto
+Analise: Done
+    - Texto
+Planos: Done
+    - Text
 Pendencias: mesmo esquema de lista de problemas
     - descricao , data cadastrado, data resolvido
-Exames:
+Exames: Done
     - raio-x de torax: data e descrićao
     - ecocardiograma: data e descricao
     - tomografia (REGIAO ANATOMICA)
@@ -101,4 +103,48 @@ Exames:
         - eletrocardiograma
     - culturas: texto
 Exames laboratorial:
-interconsulta/parecer especialista:
+    - Data exame realizado
+    - Hemoglobina
+    - Hematócrito
+    - Leucócitos
+    - Promielocitos %
+    - Mielocitos %
+    - Metamielocitos %
+    - Bastonetes %
+    - Segmentados %
+    - Eosinófilos %
+    - Basófilos %
+    - Linfócitos %
+    - Monócitos %
+    - Plaquetas x10^3
+    - Sódio
+    - Potássio
+    - Uréia
+    - Creatinina
+    - Magnésio
+    - Cálcio
+    - Fósforo
+    - Cloro
+    - PCR
+    - Albumina
+    - TAP/RNI
+    - TTPA
+    - Troponina
+    - CPK TOTAL
+    - CKMB
+    - Dímero D
+    - Glicose
+    - Fibrogênio
+    - PH
+    - PCO2
+    - PO2
+    - HCO3
+    - Saturaćao
+    - Saturaćao V. Central
+    - PaO2/FiO2
+    - Lactato
+    - Bbt/Bbd
+    - TGO/TGP
+    - GGT/FA
+    - Procalcitonina
+interconsulta/parecer especialista: Done
