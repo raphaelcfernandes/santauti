@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e02dac78-004a-406d-8fe2-c97f9c144c38" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Campos" afterPath="$PROJECT_DIR$/Campos" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TODO" afterPath="$PROJECT_DIR$/TODO" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/ficha/examesLaboratoriais/examesLaboratoriais.html" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/examesLaboratoriais/examesLaboratoriais.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/ficha/examesLaboratoriais/examesLaboratoriais.js" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/examesLaboratoriais/examesLaboratoriais.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/ficha/hemodinamica/hemodinamica.html" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/hemodinamica/hemodinamica.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/ficha/infeccioso/infeccioso.html" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/infeccioso/infeccioso.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/ficha/neurologico/neurologico.html" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/neurologico/neurologico.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/ficha/renal/renal.html" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/renal/renal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/ficha/respiratorio/respiratorio.html" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/respiratorio/respiratorio.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemas.html" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemas.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemasController.js" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemasController.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,65 +63,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Campos" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Campos">
+      <file leaf-file-name="listaDeProblemas.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemas.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1717">
-              <caret line="104" column="25" lean-forward="false" selection-start-line="104" selection-start-column="25" selection-end-line="104" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TODO" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TODO">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="53" lean-forward="false" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="examesLaboratoriais.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/examesLaboratoriais/examesLaboratoriais.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="422" column="0" lean-forward="true" selection-start-line="422" selection-start-column="0" selection-end-line="422" selection-end-column="0" />
+            <state relative-caret-position="162">
+              <caret line="42" column="8" lean-forward="false" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
               <folding>
                 <element signature="n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#form#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#form#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#form#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#form#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#5;n#form#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#6;n#form#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#7;n#form#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#8;n#form#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#9;n#form#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#10;n#form#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#11;n#form#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#12;n#form#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#13;n#form#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#14;n#form#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#15;n#form#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#16;n#form#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#17;n#form#0;n#div#0;n#!!top" expanded="false" />
+                <marker date="1487965360831" expanded="false" signature="474:852" ph="..." />
+                <marker date="1487965360831" expanded="false" signature="885:1252" ph="..." />
+                <marker date="1487965360831" expanded="true" signature="1824:2276" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="examesLaboratoriais.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/examesLaboratoriais/examesLaboratoriais.js">
+      <file leaf-file-name="listaDeProblemasController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemasController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="6" column="7" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#41#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="198">
+              <caret line="11" column="55" lean-forward="false" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -195,8 +150,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client-side/public/views/ficha/gastrointestinal/gastrointestinal.js" />
-        <option value="$PROJECT_DIR$/client-side/public/views/ficha/gastrointestinal/gastrointestinal.html" />
         <option value="$PROJECT_DIR$/client-side/public/views/ficha/urinario/urinario.html" />
         <option value="$PROJECT_DIR$/client-side/public/views/ficha/urinario/urinario.js" />
         <option value="$PROJECT_DIR$/client-side/public/views/ficha/renal/renal.js" />
@@ -246,6 +199,8 @@
         <option value="$PROJECT_DIR$/client-side/public/views/ficha/examesLaboratoriais/examesLaboratoriais.html" />
         <option value="$PROJECT_DIR$/Campos" />
         <option value="$PROJECT_DIR$/TODO" />
+        <option value="$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemasController.js" />
+        <option value="$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemas.html" />
       </list>
     </option>
   </component>
@@ -358,6 +313,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ficha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="santauti" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="santauti" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client-side" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ficha" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="listaDeProblemas" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -786,12 +771,12 @@
       <workItem from="1487687669135" duration="23876000" />
       <workItem from="1487767266385" duration="20219000" />
       <workItem from="1487854747335" duration="11395000" />
-      <workItem from="1487941221071" duration="10066000" />
+      <workItem from="1487941221071" duration="13076000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="329018000" />
+    <option name="totallyTimeSpent" value="332028000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1600" height="873" extended-state="6" />
@@ -840,7 +825,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client-side/public/assets/js/moment.js" />
     <entry file="file://$PROJECT_DIR$/client-side/public/assets/js/jquery.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1058,14 +1042,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/views/home/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="53" lean-forward="false" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/planos/planos.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -1272,14 +1248,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemas.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/metabolico/metabolico.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -1392,19 +1360,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Campos">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1717">
-          <caret line="104" column="25" lean-forward="false" selection-start-line="104" selection-start-column="25" selection-end-line="104" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TODO">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="22" column="53" lean-forward="false" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Campos">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="593">
+          <caret line="90" column="6" lean-forward="false" selection-start-line="90" selection-start-column="6" selection-end-line="90" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/home/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="53" lean-forward="false" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemasController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="55" lean-forward="false" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="42" column="8" lean-forward="false" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+          <folding>
+            <element signature="n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <marker date="1487965360831" expanded="false" signature="474:852" ph="..." />
+            <marker date="1487965360831" expanded="false" signature="885:1252" ph="..." />
+            <marker date="1487965360831" expanded="true" signature="1824:2276" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
