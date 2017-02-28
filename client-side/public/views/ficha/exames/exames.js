@@ -4,31 +4,85 @@
 app.controller('examesCtrl', function($scope) {
     /***********DATEPICKER FUNCTIONS***********************/
     $('#dataRaioXTorax').datetimepicker({
-        locale: 'pt-br'
+        language:  'pt-BR',
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0,
+        showMeridian: 1
     });
     $('#dataEcocardiograma').datetimepicker({
-        locale: 'pt-br'
+        language:  'pt-BR',
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0,
+        showMeridian: 1
     });
     $('#dataTomografiaTorax').datetimepicker({
-        locale: 'pt-br'
+        language:  'pt-BR',
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0,
+        showMeridian: 1
     });
     $('#dataTomografiaAbdome').datetimepicker({
-        locale: 'pt-br'
+        language:  'pt-BR',
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0,
+        showMeridian: 1
     });
     $('#dataTomografiaCranio').datetimepicker({
-        locale: 'pt-br'
+        language:  'pt-BR',
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0,
+        showMeridian: 1
     });
     $('#dataEndoscopia').datetimepicker({
-        locale: 'pt-br'
+        language:  'pt-BR',
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0,
+        showMeridian: 1
     });
     $('#dataUrina').datetimepicker({
-        locale: 'pt-br'
+        language:  'pt-BR',
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0,
+        showMeridian: 1
     });
     $('#dataEletrocefalograma').datetimepicker({
-        locale: 'pt-br'
+        language:  'pt-BR',
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0,
+        showMeridian: 1
     });
     $('#dataEletrocardiograma').datetimepicker({
-        locale: 'pt-br'
+        language:  'pt-BR',
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0,
+        showMeridian: 1
     });
     /***********DATEPICKER FUNCTIONS***********************/
 });

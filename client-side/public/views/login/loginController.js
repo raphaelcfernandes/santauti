@@ -14,7 +14,6 @@ app.controller('loginCtrl', function($scope,  $state, $window, $location, $timeo
     };
 
     $scope.login = function(){
-        console.log($window.location.host);
         if($scope.user === '1' && $scope.password === '2')
             $state.go('home');
         else
