@@ -10,7 +10,6 @@ app.controller('dispositivosCtrl', function($scope) {
             todayHighlight: 1,
             startView: 2,
             forceParse: 0,
-            showMeridian: 1
         })
     }
 });
