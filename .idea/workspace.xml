@@ -2,9 +2,838 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e02dac78-004a-406d-8fe2-c97f9c144c38" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/android-chrome-144x144.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/android-chrome-192x192.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/android-chrome-36x36.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/android-chrome-48x48.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/android-chrome-72x72.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/android-chrome-96x96.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/apple-touch-icon-114x114.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/apple-touch-icon-120x120.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/apple-touch-icon-144x144.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/apple-touch-icon-152x152.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/apple-touch-icon-180x180.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/apple-touch-icon-57x57.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/apple-touch-icon-60x60.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/apple-touch-icon-72x72.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/apple-touch-icon-76x76.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/apple-touch-icon-precomposed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/apple-touch-icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/favicon-16x16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/favicon-32x32.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/favicon-96x96.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/mstile-144x144.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/mstile-150x150.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/mstile-310x150.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/mstile-310x310.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/mstile-70x70.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/src/nuget/NuGet.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/app_directives.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/css/angular-carousel.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/css/angular-material.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/assets/css/animate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/Gemfile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/Gemfile.lock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/ISSUE_TEMPLATE.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/grunt/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/grunt/bs-commonjs-generator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/grunt/bs-glyphicons-data-generator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/grunt/bs-lessdoc-parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/grunt/bs-raw-files-generator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/grunt/change-version.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/grunt/configBridge.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/grunt/npm-shrinkwrap.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/grunt/sauce_browsers.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/js/.jscsrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/js/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/js/affix.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/js/alert.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/js/button.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/js/carousel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/js/collapse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/js/dropdown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/js/modal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/js/popover.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/js/scrollspy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/js/tab.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/js/tooltip.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/js/transition.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/.csscomb.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/.csslintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/alerts.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/badges.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/bootstrap.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/breadcrumbs.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/button-groups.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/buttons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/carousel.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/close.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/code.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/component-animations.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/dropdowns.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/forms.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/glyphicons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/grid.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/input-groups.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/jumbotron.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/labels.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/list-group.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/media.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/mixins/alerts.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/mixins/background-variant.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/mixins/border-radius.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/mixins/buttons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/mixins/center-block.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/mixins/clearfix.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/mixins/forms.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/mixins/gradients.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/mixins/grid-framework.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/mixins/grid.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/mixins/hide-text.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/mixins/image.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/mixins/labels.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/mixins/list-group.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/mixins/nav-divider.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/mixins/nav-vertical-align.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/mixins/opacity.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/mixins/pagination.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/mixins/panels.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/mixins/progress-bar.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/mixins/reset-filter.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/mixins/reset-text.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/mixins/resize.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/mixins/responsive-visibility.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/mixins/size.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/mixins/tab-focus.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/mixins/table-row.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/mixins/text-emphasis.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/mixins/text-overflow.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/mixins/vendor-prefixes.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/modals.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/navbar.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/navs.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/normalize.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/pager.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/pagination.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/panels.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/popovers.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/print.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/progress-bars.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/responsive-embed.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/responsive-utilities.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/scaffolding.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/tables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/theme.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/thumbnails.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/tooltip.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/type.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/utilities.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/variables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/less/wells.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/nuget/MyGet.ps1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/nuget/bootstrap.less.nuspec" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/nuget/bootstrap.nuspec" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/package.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/CONTRIBUTING.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker-standalone.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/component.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/ChangeLog.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/ContributorsGuide.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/Events.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/Extras.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/FAQ.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/Functions.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/Installing.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/Options.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/Version 4 Changelog.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/Version 4 Contributors guide.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/index.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/base.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/browserconfig.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/content.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/css/base.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/css/prettify-1.0.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/js/base.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/js/prettify-1.0.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/manifest.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/nav.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/docs/theme/toc.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/mkdocs.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/src/less/_bootstrap-datetimepicker.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/src/less/bootstrap-datetimepicker-build.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/src/nuget/Bootstrap.v3.Datetimepicker.CSS.nuspec" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/src/nuget/Bootstrap.v3.Datetimepicker.nuspec" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/src/nuget/install.ps1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/src/sass/_bootstrap-datetimepicker.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/src/sass/bootstrap-datetimepicker-build.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/eonasdan-bootstrap-datetimepicker/tasks/bump_version.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/AUTHORS.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/dist/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/dist/jquery.min.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/dist/jquery.slim.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/dist/jquery.slim.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/dist/jquery.slim.min.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/external/sizzle/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/external/sizzle/dist/sizzle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/external/sizzle/dist/sizzle.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/external/sizzle/dist/sizzle.min.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/.eslintrc.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/ajax.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/ajax/jsonp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/ajax/load.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/ajax/parseXML.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/ajax/script.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/ajax/var/location.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/ajax/var/nonce.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/ajax/var/rquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/ajax/xhr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/attributes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/attributes/attr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/attributes/classes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/attributes/prop.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/attributes/support.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/attributes/val.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/callbacks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/core.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/core/DOMEval.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/core/access.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/core/init.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/core/parseHTML.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/core/ready-no-deferred.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/core/ready.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/core/readyException.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/core/stripAndCollapse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/core/support.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/core/var/rsingleTag.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/css.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/css/addGetHookIf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/css/adjustCSS.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/css/curCSS.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/css/hiddenVisibleSelectors.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/css/showHide.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/css/support.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/css/var/cssExpand.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/css/var/getStyles.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/css/var/isHiddenWithinTree.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/css/var/rmargin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/css/var/rnumnonpx.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/css/var/swap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/data/Data.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/data/var/acceptData.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/data/var/dataPriv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/data/var/dataUser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/deferred.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/deferred/exceptionHook.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/deprecated.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/dimensions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/effects.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/effects/Tween.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/effects/animatedSelector.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/event.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/event/ajax.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/event/alias.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/event/focusin.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/event/support.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/event/trigger.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/exports/amd.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/exports/global.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/manipulation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/manipulation/_evalUrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/manipulation/buildFragment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/manipulation/getAll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/manipulation/setGlobalEval.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/manipulation/support.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/manipulation/var/rcheckableType.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/manipulation/var/rscriptType.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/manipulation/var/rtagName.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/manipulation/wrapMap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/offset.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/queue.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/queue/delay.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/selector-native.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/selector-sizzle.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/selector.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/serialize.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/traversing.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/traversing/findFilter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/traversing/var/dir.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/traversing/var/rneedsContext.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/traversing/var/siblings.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/var/ObjectFunctionString.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/var/arr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/var/class2type.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/var/concat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/var/document.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/var/documentElement.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/var/fnToString.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/var/getProto.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/var/hasOwn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/var/indexOf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/var/pnum.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/var/push.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/var/rcssNum.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/var/rnothtmlwhite.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/var/slice.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/var/support.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/var/toString.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/src/wrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/.bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/af.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/ar-dz.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/ar-ly.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/ar-ma.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/ar-sa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/ar-tn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/az.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/be.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/bn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/bo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/br.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/bs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/cv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/cy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/de-at.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/dv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/en-au.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/en-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/en-gb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/en-ie.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/en-nz.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/eo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/es-do.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/eu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/fo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/fr-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/fr-ch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/fy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/gd.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/hi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/hy-am.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/is.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/jv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/ka.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/kk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/km.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/ky.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/lb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/lo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/me.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/mi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/mk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/ml.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/mr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/ms-my.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/ms.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/my.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/nb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/ne.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/nl-be.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/nn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/pa-in.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/pt-br.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/se.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/si.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/sl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/sq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/sr-cyrl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/sr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/ss.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/sw.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/ta.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/te.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/tet.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/tl-ph.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/tlh.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/tzl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/tzm-latn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/tzm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/uz.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/x-pseudo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/yo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/zh-cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/zh-hk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/locale/zh-tw.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/min/locales.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/min/tests.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/templates/default.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/templates/locale-header.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/templates/test-header.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/css/bootstrap-datetimepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/css/bootstrap-datetimepicker.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/bootstrap-datetimepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/bootstrap-datetimepicker.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.ar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.az.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.bg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.bn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.cs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.da.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.de.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.ee.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.el.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.es.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.fi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.fr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.he.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.hr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.hu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.hy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.id.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.is.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.it.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.ja.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.ka.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.ko.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.lt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.lv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.ms.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.nb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.nl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.no.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.pl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.pt-BR.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.pt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.ro.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.rs-latin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.rs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.ru.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.sk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.sl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.sv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.sw.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.th.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.tr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.ua.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.uk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.zh-CN.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/locales/bootstrap-datetimepicker.zh-TW.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/ender.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/af.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ar-dz.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ar-ly.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ar-ma.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ar-sa.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ar-tn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/az.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/bg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/bn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/bo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/br.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/bs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/cs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/cv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/cy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/da.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/de-at.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/de.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/dv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/el.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/en-au.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/en-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/en-gb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/en-ie.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/en-nz.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/eo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/es-do.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/es.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/et.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/eu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/fa.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/fi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/fo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/fr-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/fr-ch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/fr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/fy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/gd.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/gl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/he.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/hi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/hr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/hu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/hy-am.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/id.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/is.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/it.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ja.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/jv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ka.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/kk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/km.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ko.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ky.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/lb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/lo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/lt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/lv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/me.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/mi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/mk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/mr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ms-my.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ms.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/my.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/nb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ne.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/nl-be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/nl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/nn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/pa-in.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/pl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/pt-br.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/pt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ro.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ru.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/se.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/si.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/sk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/sl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/sq.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/sr-cyrl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/sr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/sv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/sw.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/ta.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/te.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/tet.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/th.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/tl-ph.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/tlh.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/tr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/tzl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/tzm-latn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/tzm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/uk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/uz.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/vi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/x-pseudo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/yo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/zh-cn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/zh-hk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/locale/zh-tw.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/min/locales.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/package.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/package.json" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/dist/css/bootstrap-theme.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/css/bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/dist/css/bootstrap-theme.css.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/css/bootstrap-theme.min.css.map" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/dist/css/bootstrap-theme.min.css.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/css/bootstrap.css" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/dist/css/bootstrap.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/dist/css/bootstrap.css.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/css/bootstrap.min.css.map" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/dist/css/bootstrap.min.css.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/bootstrap.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/dist/js/bootstrap.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/dist/js/bootstrap.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/bootstrap/js/npm.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/bootstrap/dist/js/npm.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/jquery.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/dist/jquery.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/jquery.min.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/jquery/dist/jquery.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/CHANGELOG.md" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/CHANGELOG.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/LICENSE" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/LICENSE" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/README.md" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/min/locales.min.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/min/locales.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/min/moment-with-locales.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/min/moment-with-locales.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/min/moment-with-locales.min.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/min/moment-with-locales.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/min/moment.min.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/min/moment.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/moment.d.ts" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/moment.d.ts" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/moment.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/moment.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/create/check-overflow.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/create/check-overflow.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/create/date-from-array.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/create/date-from-array.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/create/from-anything.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/create/from-anything.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/create/from-array.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/create/from-array.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/create/from-object.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/create/from-object.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/create/from-string-and-array.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/create/from-string-and-array.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/create/from-string-and-format.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/create/from-string-and-format.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/create/from-string.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/create/from-string.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/create/local.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/create/local.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/create/parsing-flags.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/create/parsing-flags.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/create/utc.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/create/utc.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/create/valid.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/create/valid.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/duration/abs.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/duration/abs.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/duration/add-subtract.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/duration/add-subtract.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/duration/as.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/duration/as.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/duration/bubble.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/duration/bubble.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/duration/constructor.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/duration/constructor.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/duration/create.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/duration/create.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/duration/duration.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/duration/duration.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/duration/get.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/duration/get.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/duration/humanize.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/duration/humanize.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/duration/iso-string.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/duration/iso-string.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/duration/prototype.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/duration/prototype.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/format/format.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/format/format.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/locale/base-config.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/locale/base-config.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/locale/calendar.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/locale/calendar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/locale/constructor.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/locale/constructor.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/locale/en.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/locale/en.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/locale/formats.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/locale/formats.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/locale/invalid.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/locale/invalid.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/locale/lists.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/locale/lists.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/locale/locale.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/locale/locale.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/locale/locales.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/locale/locales.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/locale/ordinal.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/locale/ordinal.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/locale/pre-post-format.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/locale/pre-post-format.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/locale/prototype.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/locale/prototype.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/locale/relative.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/locale/relative.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/locale/set.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/locale/set.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/add-subtract.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/moment/add-subtract.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/calendar.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/moment/calendar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/clone.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/moment/clone.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/compare.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/moment/compare.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/constructor.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/moment/constructor.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/creation-data.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/moment/creation-data.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/diff.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/moment/diff.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/format.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/moment/format.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/from.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/moment/from.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/get-set.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/moment/get-set.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/locale.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/moment/locale.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/min-max.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/moment/min-max.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/moment.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/moment/moment.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/now.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/moment/now.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/prototype.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/moment/prototype.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/start-end-of.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/moment/start-end-of.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/to-type.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/moment/to-type.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/to.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/moment/to.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/moment/valid.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/moment/valid.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/parse/regex.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/parse/regex.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/parse/token.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/parse/token.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/aliases.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/units/aliases.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/constants.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/units/constants.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/day-of-month.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/units/day-of-month.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/day-of-week.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/units/day-of-week.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/day-of-year.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/units/day-of-year.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/hour.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/units/hour.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/millisecond.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/units/millisecond.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/minute.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/units/minute.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/month.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/units/month.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/offset.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/units/offset.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/priorities.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/units/priorities.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/quarter.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/units/quarter.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/second.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/units/second.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/timestamp.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/units/timestamp.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/timezone.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/units/timezone.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/units.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/units/units.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/week-calendar-utils.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/units/week-calendar-utils.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/week-year.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/units/week-year.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/week.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/units/week.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/units/year.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/units/year.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/abs-ceil.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/utils/abs-ceil.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/abs-floor.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/utils/abs-floor.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/abs-round.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/utils/abs-round.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/compare-arrays.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/utils/compare-arrays.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/defaults.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/utils/defaults.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/deprecate.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/utils/deprecate.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/extend.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/utils/extend.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/has-own-prop.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/utils/has-own-prop.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/hooks.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/utils/hooks.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/index-of.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/utils/index-of.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/is-array.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/utils/is-array.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/is-date.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/utils/is-date.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/is-function.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/utils/is-function.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/is-number.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/utils/is-number.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/is-object-empty.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/utils/is-object-empty.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/is-object.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/utils/is-object.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/is-undefined.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/utils/is-undefined.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/keys.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/utils/keys.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/map.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/utils/map.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/some.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/utils/some.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/to-int.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/utils/to-int.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/lib/utils/zero-fill.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/lib/utils/zero-fill.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/af.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/af.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ar-dz.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/ar-dz.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ar-ly.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/ar-ly.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ar-ma.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/ar-ma.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ar-sa.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/ar-sa.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ar-tn.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/ar-tn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ar.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/ar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/az.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/az.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/be.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/be.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/bg.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/bg.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/bn.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/bn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/bo.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/bo.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/br.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/br.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/bs.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/bs.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ca.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/ca.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/cs.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/cs.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/cv.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/cv.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/cy.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/cy.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/da.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/da.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/de-at.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/de-at.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/de.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/de.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/dv.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/dv.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/el.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/el.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/en-au.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/en-au.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/en-ca.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/en-ca.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/en-gb.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/en-gb.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/en-ie.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/en-ie.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/en-nz.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/en-nz.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/eo.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/eo.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/es-do.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/es-do.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/es.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/es.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/et.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/et.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/eu.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/eu.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/fa.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/fa.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/fi.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/fi.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/fo.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/fo.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/fr-ca.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/fr-ca.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/fr-ch.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/fr-ch.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/fr.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/fr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/fy.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/fy.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/gd.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/gd.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/gl.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/gl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/he.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/he.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/hi.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/hi.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/hr.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/hr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/hu.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/hu.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/hy-am.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/hy-am.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/id.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/id.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/is.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/is.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/it.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/it.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ja.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/ja.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/jv.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/jv.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ka.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/ka.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/kk.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/kk.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/km.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/km.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ko.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/ko.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ky.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/ky.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/lb.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/lb.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/lo.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/lo.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/lt.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/lt.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/lv.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/lv.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/me.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/me.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/mi.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/mi.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/mk.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/mk.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ml.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/ml.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/mr.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/mr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ms-my.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/ms-my.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ms.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/ms.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/my.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/my.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/nb.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/nb.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ne.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/ne.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/nl-be.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/nl-be.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/nl.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/nl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/nn.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/nn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/pa-in.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/pa-in.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/pl.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/pl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/pt-br.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/pt-br.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/pt.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/pt.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ro.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/ro.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ru.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/ru.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/se.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/se.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/si.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/si.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/sk.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/sk.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/sl.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/sl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/sq.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/sq.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/sr-cyrl.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/sr-cyrl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/sr.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/sr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ss.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/ss.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/sv.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/sv.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/sw.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/sw.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/ta.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/ta.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/te.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/te.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/tet.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/tet.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/th.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/th.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/tl-ph.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/tl-ph.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/tlh.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/tlh.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/tr.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/tr.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/tzl.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/tzl.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/tzm-latn.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/tzm-latn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/tzm.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/tzm.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/uk.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/uk.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/uz.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/uz.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/vi.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/vi.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/x-pseudo.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/x-pseudo.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/yo.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/yo.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/zh-cn.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/zh-cn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/zh-hk.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/zh-hk.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/locale/zh-tw.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/locale/zh-tw.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client-side/public/assets/js/moment/src/moment.js" afterPath="$PROJECT_DIR$/client-side/public/bower_components/moment/src/moment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/assets/js/angular-animate.min.js" afterPath="$PROJECT_DIR$/client-side/public/assets/js/angular-animate.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/assets/js/angular-aria.min.js" afterPath="$PROJECT_DIR$/client-side/public/assets/js/angular-aria.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/assets/js/angular-material.min.js" afterPath="$PROJECT_DIR$/client-side/public/assets/js/angular-material.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/ficha/dispositivos/dispositivos.js" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/dispositivos/dispositivos.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/ficha/exames/exames.html" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/exames/exames.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/ficha/exames/exames.js" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/exames/exames.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/ficha/examesLaboratoriais/examesLaboratoriais.html" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/examesLaboratoriais/examesLaboratoriais.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/ficha/examesLaboratoriais/examesLaboratoriais.js" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/examesLaboratoriais/examesLaboratoriais.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemas.html" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemas.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemasController.js" afterPath="$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemasController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/index.html" afterPath="$PROJECT_DIR$/client-side/public/views/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,21 +860,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TODO" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TODO">
+      <file leaf-file-name="listaDeProblemasController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemasController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dispositivos.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/dispositivos/dispositivos.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+            <state relative-caret-position="234">
+              <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
               </folding>
@@ -53,16 +872,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="exames.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/exames/exames.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client-side/public/views/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="24" column="54" lean-forward="true" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+            <state relative-caret-position="1080">
+              <caret line="66" column="131" lean-forward="false" selection-start-line="66" selection-start-column="131" selection-end-line="66" selection-end-column="131" />
               <folding>
-                <element signature="n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#1;n#div#8;n#form#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#9;n#form#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listaDeProblemas.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemas.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+              <folding>
+                <element signature="n#div#1;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -81,7 +910,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>fs</find>
       <find>env</find>
       <find>config</find>
       <find>console</find>
@@ -111,6 +939,7 @@
       <find>sonda enteral</find>
       <find>'data</find>
       <find>'</find>
+      <find>route</find>
     </findStrings>
     <replaceStrings>
       <replace>Paciente</replace>
@@ -135,7 +964,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client-side/public/views/ficha/hematologico/hematologico.html" />
         <option value="$PROJECT_DIR$/client-side/public/views/ficha/endocrino/endocrino.js" />
         <option value="$PROJECT_DIR$/client-side/public/views/ficha/endocrino/endocrino.html" />
         <option value="$PROJECT_DIR$/client-side/public/views/ficha/infeccioso.html" />
@@ -162,22 +990,15 @@
         <option value="$PROJECT_DIR$/client-side/public/views/ficha/planos/planos.js" />
         <option value="$PROJECT_DIR$/client-side/public/views/ficha/navbarFicha.html" />
         <option value="$PROJECT_DIR$/client-side/public/views/home/home.html" />
-        <option value="$PROJECT_DIR$/client-side/public/views/ficha/examesLaboratoriais/examesLaboratoriais.js" />
         <option value="$PROJECT_DIR$/client-side/public/views/ficha/hemodinamica/hemodinamica.html" />
         <option value="$PROJECT_DIR$/client-side/public/views/ficha/infeccioso/infeccioso.html" />
         <option value="$PROJECT_DIR$/client-side/public/views/ficha/neurologico/neurologico.html" />
         <option value="$PROJECT_DIR$/client-side/public/views/ficha/renal/renal.html" />
         <option value="$PROJECT_DIR$/client-side/public/views/ficha/respiratorio/respiratorio.html" />
-        <option value="$PROJECT_DIR$/client-side/public/views/ficha/examesLaboratoriais/examesLaboratoriais.html" />
         <option value="$PROJECT_DIR$/Campos" />
-        <option value="$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemasController.js" />
-        <option value="$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemas.html" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/client-side/public/assets/bootstrap/css/app.css" />
-        <option value="$PROJECT_DIR$/client-side/public/angular-route.js" />
         <option value="$PROJECT_DIR$/client-side/public/views/login/loginController.js" />
-        <option value="$PROJECT_DIR$/client-side/public/views/index.html" />
         <option value="$PROJECT_DIR$/client-side/public/views/ficha/commonVariables.js" />
         <option value="$PROJECT_DIR$/client-side/public/views/ficha/analise/analise.html" />
         <option value="$PROJECT_DIR$/client-side/public/views/ficha/analise/analise.js" />
@@ -186,6 +1007,14 @@
         <option value="$PROJECT_DIR$/client-side/public/views/ficha/exames/exames.js" />
         <option value="$PROJECT_DIR$/client-side/public/views/ficha/exames/exames.html" />
         <option value="$PROJECT_DIR$/client-side/public/views/ficha/dispositivos/dispositivos.js" />
+        <option value="$PROJECT_DIR$/client-side/public/views/ficha/examesLaboratoriais/examesLaboratoriais.js" />
+        <option value="$PROJECT_DIR$/client-side/public/views/ficha/examesLaboratoriais/examesLaboratoriais.html" />
+        <option value="$PROJECT_DIR$/client-side/public/app_directives.js" />
+        <option value="$PROJECT_DIR$/client-side/public/angular-route.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemasController.js" />
+        <option value="$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemas.html" />
+        <option value="$PROJECT_DIR$/client-side/public/views/index.html" />
       </list>
     </option>
   </component>
@@ -223,7 +1052,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -294,78 +1123,14 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ficha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="santauti" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="santauti" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client-side" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ficha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exames" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="santauti" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="santauti" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client-side" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ficha" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dispositivos" />
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -381,18 +1146,18 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/client-side/public/assets/css" />
-      <recent name="$PROJECT_DIR$/client-side/public/views/ficha" />
-      <recent name="$PROJECT_DIR$/client-side/public/views/ficha/noturna" />
-      <recent name="$PROJECT_DIR$/client-side/public/views/ficha/diurna" />
-      <recent name="$PROJECT_DIR$/client-side/public/views/toolbar" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client-side/public/assets/bootstrap/css" />
       <recent name="$PROJECT_DIR$/assets/css" />
       <recent name="$PROJECT_DIR$/assets/js/lib" />
       <recent name="$PROJECT_DIR$/webapp/view" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client-side/public" />
+      <recent name="$PROJECT_DIR$/client-side" />
+      <recent name="$PROJECT_DIR$/client-side/public/assets/css" />
+      <recent name="$PROJECT_DIR$/client-side/public/views/ficha" />
+      <recent name="$PROJECT_DIR$/client-side/public/views/ficha/noturna" />
     </key>
   </component>
   <component name="RunManager">
@@ -788,19 +1553,19 @@
       <workItem from="1487767266385" duration="20219000" />
       <workItem from="1487854747335" duration="11395000" />
       <workItem from="1487941221071" duration="13076000" />
+      <workItem from="1488371619304" duration="20274000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="344154000" />
+    <option name="totallyTimeSpent" value="365061000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1600" height="873" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -809,46 +1574,21 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3255814" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27875" sideWeight="0.49109948" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27875" sideWeight="0.49109948" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32816538" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2453125" sideWeight="0.5089005" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32774192" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3255814" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27875" sideWeight="0.49109948" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2453125" sideWeight="0.5089005" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -858,7 +1598,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -867,50 +1607,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/psicosocial/psicosocial.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="159" column="0" lean-forward="true" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/pendencias/pendencias.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/interconsulta/interconsulta.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/interconsulta/interconsulta.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="87" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/planos/planos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client-side/public/views/paciente/paciente.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -937,16 +1633,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/examesLaboratoriais/examesLaboratoriais.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="6" column="7" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1034,13 +1720,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/examesLaboratoriais/examesLaboratoriais.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="422" column="0" lean-forward="true" selection-start-line="422" selection-start-column="0" selection-end-line="422" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client-side/public/views/home/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -1048,39 +1727,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemasController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="55" lean-forward="false" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemas.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="42" column="8" lean-forward="false" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client-side/public/assets/js/jquery.min.map">
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client-side/public/assets/js/jquery.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="1" column="309" lean-forward="false" selection-start-line="1" selection-start-column="309" selection-end-line="1" selection-end-column="442" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1088,15 +1750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="44" lean-forward="false" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="36" column="30" lean-forward="false" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1112,7 +1765,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="6057" column="29" lean-forward="false" selection-start-line="6057" selection-start-column="25" selection-end-line="6057" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1120,9 +1772,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="1126" column="75" lean-forward="false" selection-start-line="1126" selection-start-column="75" selection-end-line="1126" selection-end-column="75" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1131,38 +1781,6 @@
         <state relative-caret-position="238">
           <caret line="10346" column="25" lean-forward="false" selection-start-line="10346" selection-start-column="20" selection-end-line="10346" selection-end-column="25" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/angular-route.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="376" column="0" lean-forward="true" selection-start-line="376" selection-start-column="0" selection-end-line="376" selection-end-column="0" />
-          <folding>
-            <element signature="e#183#12329#0" expanded="false" />
-            <element signature="e#228#348#0" expanded="false" />
-            <element signature="e#372#735#0" expanded="false" />
-            <element signature="e#773#1293#0" expanded="false" />
-            <element signature="e#1329#1829#0" expanded="false" />
-            <element signature="e#1868#2299#0" expanded="false" />
-            <element signature="e#2330#2857#0" expanded="false" />
-            <element signature="e#2889#3421#0" expanded="false" />
-            <element signature="e#3453#3985#0" expanded="false" />
-            <element signature="e#4021#4569#0" expanded="false" />
-            <element signature="e#4594#5098#0" expanded="false" />
-            <element signature="e#5130#5662#0" expanded="false" />
-            <element signature="e#5691#6211#0" expanded="false" />
-            <element signature="e#6241#6765#0" expanded="false" />
-            <element signature="e#6797#7329#0" expanded="false" />
-            <element signature="e#7359#7883#0" expanded="false" />
-            <element signature="e#7911#8427#0" expanded="false" />
-            <element signature="e#8458#8986#0" expanded="false" />
-            <element signature="e#9013#9525#0" expanded="false" />
-            <element signature="e#9555#10079#0" expanded="false" />
-            <element signature="e#10646#11182#0" expanded="false" />
-            <element signature="e#11208#11716#0" expanded="false" />
-            <element signature="e#11745#12285#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1178,9 +1796,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1192,25 +1808,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/assets/bootstrap/css/datepicker3.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="23" selection-end-column="78" />
-          <folding>
-            <element signature="n#style#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/assets/bootstrap/css/datepicker3.css" />
     <entry file="file://$PROJECT_DIR$/client-side/public/views/paciente/pacienteController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-162">
@@ -1219,30 +1817,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Campos">
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/commonVariables.js" />
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/analise/analise.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="90" column="6" lean-forward="false" selection-start-line="90" selection-start-column="6" selection-end-line="90" selection-end-column="49" />
+        <state relative-caret-position="36">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/analise/analise.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/commonVariables.js">
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/exames/exames.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        <state relative-caret-position="18">
+          <caret line="1" column="9" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+          <folding>
+            <element signature="n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#5;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#6;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#7;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#8;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#8;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#9;n#form#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/dispositivos/dispositivos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="11" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/examesLaboratoriais/examesLaboratoriais.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="22" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="15" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/exames/exames.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/examesLaboratoriais/examesLaboratoriais.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="11" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/dispositivos/dispositivos.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="378" column="0" lean-forward="false" selection-start-line="378" selection-start-column="0" selection-end-line="378" selection-end-column="0" />
+        <state relative-caret-position="360">
+          <caret line="24" column="36" lean-forward="false" selection-start-line="24" selection-start-column="36" selection-end-line="28" selection-end-column="42" />
           <folding>
-            <element signature="n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#1;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#form#0;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#1;n#form#0;n#div#0;n#!!top" expanded="false" />
@@ -1286,25 +1953,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/analise/analise.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/analise/analise.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README">
+    <entry file="file://$PROJECT_DIR$/bower_components/angular-eonasdan-datetimepicker/examples/double.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1312,43 +1961,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/exames/exames.js">
+    <entry file="file://$PROJECT_DIR$/client-side/public/angular-route.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        <state relative-caret-position="558">
+          <caret line="375" column="4" lean-forward="true" selection-start-line="375" selection-start-column="4" selection-end-line="375" selection-end-column="4" />
           <folding>
-            <element signature="e#0#41#0" expanded="false" />
+            <element signature="e#228#348#0" expanded="false" />
+            <element signature="e#372#735#0" expanded="false" />
+            <element signature="e#773#1293#0" expanded="false" />
+            <element signature="e#1329#1829#0" expanded="false" />
+            <element signature="e#1868#2299#0" expanded="false" />
+            <element signature="e#2330#2857#0" expanded="false" />
+            <element signature="e#2889#3421#0" expanded="false" />
+            <element signature="e#3453#3985#0" expanded="false" />
+            <element signature="e#4021#4569#0" expanded="false" />
+            <element signature="e#4594#5098#0" expanded="false" />
+            <element signature="e#5130#5662#0" expanded="false" />
+            <element signature="e#5691#6211#0" expanded="false" />
+            <element signature="e#6241#6765#0" expanded="false" />
+            <element signature="e#6797#7329#0" expanded="false" />
+            <element signature="e#7359#7883#0" expanded="false" />
+            <element signature="e#7911#8427#0" expanded="false" />
+            <element signature="e#8458#8986#0" expanded="false" />
+            <element signature="e#9013#9525#0" expanded="false" />
+            <element signature="e#9555#10079#0" expanded="false" />
+            <element signature="e#10105#10613#0" expanded="false" />
+            <element signature="e#10646#11182#0" expanded="false" />
+            <element signature="e#11208#11716#0" expanded="false" />
+            <element signature="e#11745#12285#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/app_directives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1062">
+          <caret line="105" column="5" lean-forward="false" selection-start-line="105" selection-start-column="5" selection-end-line="105" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+            <element signature="e#84#1472#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/bower_components/angular/angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="26317" column="82" lean-forward="false" selection-start-line="26317" selection-start-column="77" selection-end-line="26317" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/bower_components/jquery/dist/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Campos">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="94" column="35" lean-forward="false" selection-start-line="94" selection-start-column="35" selection-end-line="94" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemas.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+          <folding>
+            <element signature="n#div#1;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TODO">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="144">
+          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/exames/exames.html">
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/listaDeProblemas/listaDeProblemasController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="24" column="54" lean-forward="true" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+        <state relative-caret-position="234">
+          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#8;n#form#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#9;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client-side/public/views/ficha/dispositivos/dispositivos.js">
+    <entry file="file://$PROJECT_DIR$/client-side/public/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="5" column="37" lean-forward="false" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
+        <state relative-caret-position="1080">
+          <caret line="66" column="131" lean-forward="false" selection-start-line="66" selection-start-column="131" selection-end-line="66" selection-end-column="131" />
           <folding>
-            <element signature="e#0#41#0" expanded="false" />
+            <element signature="n#style#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

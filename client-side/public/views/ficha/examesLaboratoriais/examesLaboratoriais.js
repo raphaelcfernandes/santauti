@@ -3,6 +3,11 @@
  */
 app.controller('examesLabCtrl', function($scope) {
     $('#dataExame').datetimepicker({
-        locale: 'pt-br'
+        language:  'pt-BR',
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        forceParse: 0
     });
 });

@@ -1,0 +1,21 @@
+{
+  "name": "santauti",
+  "description": "Controle e gerenciamento de fichas UTI",
+  "main": "server.js",
+  "authors": [
+    "Raphael Fernandes"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/raphaelcfernandes/santauti",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "eonasdan-bootstrap-datetimepicker": "^4.17.47"
+  }
+}

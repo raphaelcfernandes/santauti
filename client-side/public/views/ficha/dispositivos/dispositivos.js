@@ -9,7 +9,7 @@ app.controller('dispositivosCtrl', function($scope) {
             autoclose: 1,
             todayHighlight: 1,
             startView: 2,
-            forceParse: 0,
+            forceParse: 0
         })
     }
 });
