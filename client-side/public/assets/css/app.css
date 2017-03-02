@@ -8,3 +8,6 @@ html, body {
     padding: 0px;
     background-color: #eaeaea;
 }
+textarea {
+    resize: none;
+}

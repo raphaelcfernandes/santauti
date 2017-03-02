@@ -1,49 +1,3 @@
-<div class="container">
-    <div class="row">
-        <div class='col-sm-6'>
-            <div class="form-group">
-                <div class='input-group date' id='datetimepicker2'>
-                    <input type='text' class="form-control" />
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <script type="text/javascript">
-            $(function () {
-                $('#datetimepicker2').datetimepicker({
-                    locale: 'pt-br'
-                });
-            });
-        </script>
-    </div>
-</div>
-<!--<div class="content">-->
-    <!--<div class="row">-->
-        <!--<div class='col-sm-6'>-->
-            <!--<label class="label label-info">DateTimePicker (Angular Directive)</label>-->
-
-            <!--<br/>-->
-            <!--<input type="text"-->
-            <!--class="form-control"-->
-            <!--ng-model="vm.dateTime"-->
-            <!--data-date-time-picker-->
-            <!--data-language="{{pt-BR}}"-->
-            <!--data-pick12HourFormat="false"-->
-            <!--data-use-current="{{false}}"-->
-            <!--data-location="{{pt-BR}}"-->
-            <!--data-autoclose="{{true}}"-->
-            <!--data-todayBtn="{{true}}"-->
-            <!--data-orientation="{{top}}"-->
-            <!--data-date-format="dd MM yyyy - HH:ii p"-->
-            <!--/>-->
-
-            <!--<br/>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
-
 <div class="content">
     <form>
         <div class="form-group">
@@ -85,34 +39,52 @@
     </form>
 </div>
 <div class="content">
+    <div class="row" ng-show="items.length>0">
+        <div class="col-sm-5">
+            <h4><label>Descrićao do Problema</label></h4>
+        </div>
+        <div class="col-sm-2">
+            <h4><label>Data Diagnosticado</label></h4>
+        </div>
+        <div class="col-sm-2" ng-show="colunaResolvido">
+            <h4><label>Data Resolvido</label></h4>
+        </div>
+    </div>
     <div ng-repeat="item in items">
         <div class="row">
-            <div class="col-sm-4">
-                <input type="text" placeholder="{{item.questionPlaceholder}}" ng-model="item.question">
+            <div class="col-sm-5">
+                <input type="text" placeholder="{{item.questionPlaceholder}}" ng-model="item.question" class="form-control"
+                ng-disabled="item.resolvido">
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-2">
                 <div class="form-group">
-                    <div class='input-group date' id="{{'dataCadastrado' + item.id}}" data-date-format="dd MM yyyy - HH:ii p">
-                        <input type='text' class="form-control" />
+                    <div class='input-group date' datetimepicker id="{{'dataCadastrado' + item.id}}" >
+                        <input type='text' class="form-control" placeholder="Selecione uma data"/>
                         <span class="input-group-addon">
                         <span class="glyphicon glyphicon-calendar"></span></span>
                     </div>
                 </div>
             </div>
+            <div class="col-sm-2" ng-show="item.resolvido">
+                <div class="form-group">
+                    <div class='input-group date' datetimepicker id="{{'dataResolvido' + item.id}}" >
+                        <input type='text' class="form-control" placeholder="Selecione uma data" />
+                        <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1" ng-hide="item.resolvido">
+                <button ng-click="resolvido(item.id)">Resolvido</button>
+            </div>
+            <div class="col-sm-2" ng-show="item.resolvido">
+                <button ng-click="cancelarResolvido(item.id)">Refazer aćão</button>
+            </div>
+            <div class="col-sm-1">
+                <button ng-click="remove(item.id)">Excluir</button>
+            </div>
         </div>
         <br class="clearfix">
     </div>
-    <button ng-click="add()">New Item</button>
+    <button ng-click="add()">Adicionar Problema</button>
 </div>
-
-<!--<div class="content">-->
-<!--<div ng-repeat="item in items">-->
-<!--<input type="text" placeholder="{{item.questionPlaceholder}}" ng-model="item.question">-->
-<!--<input ng-class="{'blockInput': !item.inlineChecked}" type="text" placeholder="enter text..." ng-model="item.text">-->
-<!--<input type="checkbox" name="check" value="inline" ng-model="item.inlineChecked"> Inline-->
-<!--</div>-->
-<!--<button ng-click="add()">New Item</button>-->
-<!--</div>-->
-
-Lista de problemas:
-descricao , data cadastrado, data resolvido

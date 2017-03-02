@@ -1,4 +1,4 @@
-var app = angular.module('SantaUTIApp', ['ui.router']);
+var app = angular.module('SantaUTIApp', ['datetimepicker','ui.router']);
 
 /**
  * Configure the Routes
@@ -7,18 +7,18 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
     $stateProvider
         .state('login', {
             url: '/',
-            templateUrl: 'views/login/login.html',
+            templateUrl: '../login/login.html',
             controller: 'loginCtrl'
         })
         .state('home',{
             url: '/home',
             views:{
                 '':{
-                    templateUrl: 'views/home/home.html',
+                    templateUrl: '../home/home.html',
                     controller: 'homeCtrl'
                 },
                 'navbar':{
-                    templateUrl: 'views/toolbar/header.html',
+                    templateUrl: '../toolbar/header.html',
                     controller: 'headerCtrl'
                 }
             }
@@ -27,15 +27,15 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             url: '/visualizarPaciente/:id',
             views:{
                 '':{
-                    templateUrl: 'views/paciente/paciente.html',
+                    templateUrl: '../paciente/paciente.html',
                     controller: 'pacienteCtrl'
                 },
                 'navbar':{
-                    templateUrl: 'views/toolbar/header.html',
+                    templateUrl: '../toolbar/header.html',
                     controller: 'headerCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
             }
         })
@@ -43,14 +43,14 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             url: '/listaDeProblemas',
             views:{
                 '':{
-                    templateUrl: 'views/ficha/listaDeProblemas/listaDeProblemas.html',
+                    templateUrl: '../ficha/listaDeProblemas/listaDeProblemas.html',
                     controller: 'listaDeProblemaCtrl'
                 },
                 'navbar':{
-                    templateUrl: 'views/ficha/navbarFicha.html'
+                    templateUrl: '../ficha/navbarFicha.html'
                 },
                 'informacaoBox':{
-                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
             }
         })
@@ -58,11 +58,11 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             url: '/eventoSignificantes',
             views:{
                 '':{
-                    templateUrl: 'views/ficha/eventoSignificantes/eventoSignificantes.html',
+                    templateUrl: '../ficha/eventoSignificantes/eventoSignificantes.html',
                     controller: 'eventoSignificanteCtrl'
                 },
                 'navbar':{
-                    templateUrl: 'views/ficha/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 }
             }
@@ -71,15 +71,15 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             url: '/neurologico',
             views:{
                 '':{
-                    templateUrl: 'views/ficha/neurologico/neurologico.html',
+                    templateUrl: '../ficha/neurologico/neurologico.html',
                     controller: 'neurologicoCtrl'
                 },
                 'navbar':{
-                    templateUrl: 'views/ficha/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
             }
         })
@@ -87,15 +87,15 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             url: '/hemodinamica',
             views:{
                 '':{
-                    templateUrl: 'views/ficha/hemodinamica/hemodinamica.html',
+                    templateUrl: '../ficha/hemodinamica/hemodinamica.html',
                     controller: 'hemodinamicaCtrl'
                 },
                 'navbar':{
-                    templateUrl: 'views/ficha/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
@@ -104,15 +104,15 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             url: '/respiratorio',
             views:{
                 '':{
-                    templateUrl: 'views/ficha/respiratorio/respiratorio.html',
+                    templateUrl: '../ficha/respiratorio/respiratorio.html',
                     controller: 'respiratorioCtrl'
                 },
                 'navbar':{
-                    templateUrl: 'views/ficha/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
@@ -121,15 +121,15 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             url: '/gastrointestinal',
             views:{
                 '':{
-                    templateUrl: 'views/ficha/gastrointestinal/gastrointestinal.html',
+                    templateUrl: '../ficha/gastrointestinal/gastrointestinal.html',
                     controller: 'gastrointestinalCtrl'
                 },
                 'navbar':{
-                    templateUrl: 'views/ficha/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
@@ -138,15 +138,15 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             url: '/renal',
             views:{
                 '':{
-                    templateUrl: 'views/ficha/renal/renal.html',
+                    templateUrl: '../ficha/renal/renal.html',
                     controller: 'renalCtrl'
                 },
                 'navbar':{
-                    templateUrl: 'views/ficha/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
@@ -155,15 +155,15 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             url: '/hematologico',
             views:{
                 '':{
-                    templateUrl: 'views/ficha/hematologico/hematologico.html',
+                    templateUrl: '../ficha/hematologico/hematologico.html',
                     controller: 'hematologicoCtrl'
                 },
                 'navbar':{
-                    templateUrl: 'views/ficha/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
@@ -172,15 +172,15 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             url: '/endocrino',
             views:{
                 '':{
-                    templateUrl: 'views/ficha/endocrino/endocrino.html',
+                    templateUrl: '../ficha/endocrino/endocrino.html',
                     controller: 'endocrinoCtrl'
                 },
                 'navbar':{
-                    templateUrl: 'views/ficha/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
@@ -189,15 +189,15 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             url: '/infeccioso',
             views:{
                 '':{
-                    templateUrl: 'views/ficha/infeccioso/infeccioso.html',
+                    templateUrl: '../ficha/infeccioso/infeccioso.html',
                     controller: 'infecciosoCtrl'
                 },
                 'navbar':{
-                    templateUrl: 'views/ficha/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
@@ -206,15 +206,15 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             url: '/dispositivos',
             views:{
                 '':{
-                    templateUrl: 'views/ficha/dispositivos/dispositivos.html',
+                    templateUrl: '../ficha/dispositivos/dispositivos.html',
                     controller: 'dispositivosCtrl'
                 },
                 'navbar':{
-                    templateUrl: 'views/ficha/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
@@ -223,15 +223,15 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             url: '/metabolico',
             views:{
                 '':{
-                    templateUrl: 'views/ficha/metabolico/metabolico.html',
+                    templateUrl: '../ficha/metabolico/metabolico.html',
                     controller: 'metabolicoCtrl'
                 },
                 'navbar':{
-                    templateUrl: 'views/ficha/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
@@ -240,15 +240,15 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             url: '/nutricao',
             views:{
                 '':{
-                    templateUrl: 'views/ficha/nutricao/nutricao.html',
+                    templateUrl: '../ficha/nutricao/nutricao.html',
                     controller: 'nutricaoCtrl'
                 },
                 'navbar':{
-                    templateUrl: 'views/ficha/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
@@ -257,15 +257,15 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             url: '/psicosocial',
             views:{
                 '':{
-                    templateUrl: 'views/ficha/psicosocial/psicosocial.html',
+                    templateUrl: '../ficha/psicosocial/psicosocial.html',
                     controller: 'psicosocialCtrl'
                 },
                 'navbar':{
-                    templateUrl: 'views/ficha/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
@@ -274,15 +274,15 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             url: '/analise',
             views:{
                 '':{
-                    templateUrl: 'views/ficha/analise/analise.html',
+                    templateUrl: '../ficha/analise/analise.html',
                     controller: 'analiseCtrl'
                 },
                 'navbar':{
-                    templateUrl: 'views/ficha/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
@@ -291,15 +291,15 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             url: '/pendencias',
             views:{
                 '':{
-                    templateUrl: 'views/ficha/pendencias/pendencias.html',
+                    templateUrl: '../ficha/pendencias/pendencias.html',
                     controller: 'pendenciasCtrl'
                 },
                 'navbar':{
-                    templateUrl: 'views/ficha/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
@@ -308,15 +308,15 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             url: '/exames',
             views:{
                 '':{
-                    templateUrl: 'views/ficha/exames/exames.html',
+                    templateUrl: '../ficha/exames/exames.html',
                     controller: 'examesCtrl'
                 },
                 'navbar':{
-                    templateUrl: 'views/ficha/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
@@ -325,15 +325,15 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             url: '/interconsulta',
             views:{
                 '':{
-                    templateUrl: 'views/ficha/interconsulta/interconsulta.html',
+                    templateUrl: '../ficha/interconsulta/interconsulta.html',
                     controller: 'interconsultaCtrl'
                 },
                 'navbar':{
-                    templateUrl: 'views/ficha/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
@@ -342,15 +342,15 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             url: '/planos',
             views:{
                 '':{
-                    templateUrl: 'views/ficha/planos/planos.html',
+                    templateUrl: '../ficha/planos/planos.html',
                     controller: 'planosCtrl'
                 },
                 'navbar':{
-                    templateUrl: 'views/ficha/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
@@ -359,18 +359,53 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             url: '/examesLab',
             views:{
                 '':{
-                    templateUrl: 'views/ficha/examesLaboratoriais/examesLaboratoriais.html',
+                    templateUrl: '../ficha/examesLaboratoriais/examesLaboratoriais.html',
                     controller: 'examesLabCtrl'
                 },
                 'navbar':{
-                    templateUrl: 'views/ficha/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: 'views/informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
         })
 //    $locationProvider.html5Mode(true);
 }]);
+app.config(['datetimepickerProvider',function (datetimepickerProvider) {
+        datetimepickerProvider.setOptions({
+            locale:  'pt-br',
+            keepOpen: false,
+            showTodayButton: true,
+            showClear:true,
+            format: 'DD MMMM YYYY - HH:mm',
+            tooltips: {
+                today: 'Selecionar hoje',
+                clear: 'Excluir data',
+                close: 'Close the picker',
+                selectMonth: 'Selecionar mês',
+                prevMonth: 'Mês anterior',
+                nextMonth: 'Próximo mês',
+                selectYear: 'Selecione o ano',
+                prevYear: 'Ano anterior',
+                nextYear: 'Próximo ano',
+                hours: 'Selecionar horário',
+                time: 'Selecionar hora'
+            },
+            icons: {
+                time: 'glyphicon glyphicon-time',
+                date: 'glyphicon glyphicon-calendar',
+                up: 'glyphicon glyphicon-chevron-up',
+                down: 'glyphicon glyphicon-chevron-down',
+                previous: 'glyphicon glyphicon-chevron-left',
+                next: 'glyphicon glyphicon-chevron-right',
+                today: 'glyphicon glyphicon-screenshot',
+                clear: 'glyphicon glyphicon-trash',
+                close: 'glyphicon glyphicon-remove'
+            }
+
+        });
+    }
+]);

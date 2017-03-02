@@ -1,10 +1,66 @@
 <div class="content">
+    <div class="row" ng-show="items.length>0">
+        <div class="col-sm-5">
+            <h4><label>Descrićao</label></h4>
+        </div>
+        <div class="col-sm-2">
+            <h4><label>Data Diagnosticado</label></h4>
+        </div>
+        <div class="col-sm-2" ng-show="colunaResolvido">
+            <h4><label>Data Resolvido</label></h4>
+        </div>
+    </div>
+    <div ng-repeat="item in items">
+        <div class="row">
+            <div class="col-sm-5">
+                <input type="text" placeholder="{{item.questionPlaceholder}}" ng-model="item.question" class="form-control"
+                       ng-disabled="item.resolvido">
+            </div>
+            <div class="col-sm-2">
+                <div class="form-group">
+                    <div class='input-group date' datetimepicker id="{{'dataCadastrado' + item.id}}" >
+                        <input type='text' class="form-control" placeholder="Selecione uma data"/>
+                        <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2" ng-show="item.resolvido">
+                <div class="form-group">
+                    <div class='input-group date' datetimepicker id="{{'dataResolvido' + item.id}}" >
+                        <input type='text' class="form-control" placeholder="Selecione uma data" />
+                        <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1" ng-hide="item.resolvido">
+                <button ng-click="resolvido(item.id)">Resolvido</button>
+            </div>
+            <div class="col-sm-2" ng-show="item.resolvido">
+                <button ng-click="cancelarResolvido(item.id)">Refazer aćão</button>
+            </div>
+            <div class="col-sm-1">
+                <button ng-click="remove(item.id)">Excluir</button>
+            </div>
+        </div>
+        <br class="clearfix">
+    </div>
+    <button ng-click="add()">Adicionar Pendencia</button>
+</div>
+<div class="content">
     <form>
         <div class="form-group">
-            <h2><label for="exampleTextarea">Análise</label></h2>
-            <textarea class="form-control" id="exampleTextarea" rows="20"></textarea>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3><label>Comentarios</label></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <textarea rows="5" class="form-control"></textarea>
+                </div>
+            </div>
         </div>
     </form>
 </div>
-Pendencias: mesmo esquema de lista de problemas
-- descricao , data cadastrado, data resolvido

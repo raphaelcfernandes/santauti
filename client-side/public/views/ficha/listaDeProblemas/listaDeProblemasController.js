@@ -4,35 +4,50 @@
 
 app.controller('listaDeProblemaCtrl', function($scope,$state) {
     $scope.items = [];
+    $scope.colunaResolvido=false;
     var id=0;
-    var vm = this;
-    vm.date = new Date();
-    vm.options = '{format:"DD.MM.YYYY HH:mm"}';
     $scope.add = function () {
         $scope.items.push({
             id: id,
             inlineChecked: false,
             question: "",
             questionPlaceholder: "Descricao do problema",
-            dataCadastrado: new Date()
+            dataCadastrado: new Date(),
+            dataResolvido: new Date(),
+            resolvido: false
         });
-        console.log('#dataCadastrado'+id);
+        $('#dataCadastrado'+id).datetimepicker;
         id++;
     };
-    $scope.examples = [
-        {date: '1/1/2012', isOpen: false},
-        {date: '2/1/2012', isOpen: false},
-        {date: '3/1/2012', isOpen: false},
-    ];
-
-    $scope.examples.forEach(function(example){
-        example.date = new Date(example.date);
-    });
-
-    $scope.open = function($event, example) {
-        $event.preventDefault();
-        $event.stopPropagation();
-
-        example.isOpen = true;
+    $scope.remove = function(id){
+        var i=0;
+        while($scope.items[i].id!=id)
+            i++;
+        $scope.items.splice($scope.items.indexOf(i));
+        this.id--;
+        checkResolvido();
     };
+    $scope.resolvido = function(id){
+        var i=0;
+        while($scope.items[i].id!=id)
+            i++;
+        $('#dataResolvido'+id).datetimepicker;
+        $scope.items[i].resolvido=true;
+        $scope.colunaResolvido=true;
+        checkResolvido();
+    };
+    $scope.cancelarResolvido = function(id){
+        var i=0;
+        while($scope.items[i].id!=id)
+            i++;
+        $scope.items[i].resolvido=false;
+        checkResolvido();
+    };
+    function checkResolvido(){
+        var i=0,flag=false;
+        for(i;i<$scope.items.length;i++)
+            if($scope.items[i].resolvido==true)
+                flag=true;
+        flag == true ? $scope.colunaResolvido=true : $scope.colunaResolvido=false;
+    }
 });

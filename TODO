@@ -6,10 +6,12 @@ Implementar HTTPS TSL/SSL -> Done
 Enviar requisicao do cliente para servidor
 Autenticacao do usuario -> "Done". Autenticacao é feita no lado servidor, porém é necessario corrigir o lado cliente para enviar
 Restricao de acesso à paginas
+Tentar separar htmls que tem padroes repetidos em arquivos separados (Problemas e pendencias por exemplo)
+Ficha noturna = diaria porem com campos de auto preenchimento da ficha diaria do mesmo dia
+Navbar deve estar em 2 linhas
+
+O que fazer agora:
 Criar pagina de login para administradores adicionar e remover funcionarios
-Criar diretiva para datetimepicker
-
-
 
 
 
