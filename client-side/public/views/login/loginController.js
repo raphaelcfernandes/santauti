@@ -2,7 +2,7 @@
  * Created by raphael on 2/9/17.
  */
 
-app.controller('loginCtrl', function($scope,  $state, $window, $location, $timeout) {
+app.controller('loginCtrl', function($scope,  $state, $window, $location, $timeout,$http) {
 
     $scope.showGreeting = false;
     $scope.showInvalidUserPasswordMessage = function() {
@@ -14,10 +14,21 @@ app.controller('loginCtrl', function($scope,  $state, $window, $location, $timeo
     };
 
     $scope.login = function(){
-        if($scope.user === '1' && $scope.password === '2')
-            $state.go('home');
-        else
-            $scope.showInvalidUserPasswordMessage();
+        var data={
+            user: $scope.user,
+            passw: $scope.password
+        }
+        $http.post('/login',data)
+            .success(function(data,status,headers){
+            if(data=='400')
+                $scope.showInvalidUserPasswordMessage();
+            else
+                $state.go('home');
+        });
+        // if($scope.user === '1' && $scope.password === '2')
+        //     $state.go('home');
+        // else
+        //     $scope.showInvalidUserPasswordMessage();
     };
 
 });

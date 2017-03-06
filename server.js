@@ -5,7 +5,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var load = require('express-load');
 var path = require('path');
-var models = require("./server-side/models");
+var models = require("./server-side/models/index");
 var app = express();
 var cors = require('cors');
 var cookieParser = require('cookie-parser');
@@ -30,10 +30,11 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '/client-side/public/views')));
-app.use(require('./server-side/routes'));
 
-
-load("./server-side/controllers").into(app);
+load("./server-side/models/index")
+    .then("./server-side/controllers")
+    .then("./server-side/routes")
+    .into(app);
 
 
 app.get('*', function(req, res) {
@@ -48,4 +49,5 @@ models.sequelize.sync().then(function () {
         console.log('Express server listening on port ' + server.address().port);
     });
 });
+
 module.exports = app;

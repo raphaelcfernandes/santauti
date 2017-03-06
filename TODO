@@ -1,7 +1,8 @@
 Implementar HTTPS TSL/SSL -> Done
 /*
 * É NECESSARIO ADQUIRIR UM CERTFICADO E SUBSTITUIR O DE TESTE
-*
+* FREE TRUSTED CERTIFICATE: https://www.linode.com/docs/security/ssl/install-lets-encrypt-to-create-ssl-certificates
+* https://certbot.eff.org/docs/using.html#standalone
 */
 Enviar requisicao do cliente para servidor
 Autenticacao do usuario -> "Done". Autenticacao é feita no lado servidor, porém é necessario corrigir o lado cliente para enviar
@@ -10,8 +11,8 @@ Tentar separar htmls que tem padroes repetidos em arquivos separados (Problemas 
 Ficha noturna = diaria porem com campos de auto preenchimento da ficha diaria do mesmo dia
 Navbar deve estar em 2 linhas
 
-O que fazer agora:
-Criar pagina de login para administradores adicionar e remover funcionarios
+
+
 
 
 
