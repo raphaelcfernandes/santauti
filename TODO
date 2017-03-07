@@ -4,12 +4,14 @@ Implementar HTTPS TSL/SSL -> Done
 * FREE TRUSTED CERTIFICATE: https://www.linode.com/docs/security/ssl/install-lets-encrypt-to-create-ssl-certificates
 * https://certbot.eff.org/docs/using.html#standalone
 */
-Enviar requisicao do cliente para servidor
+
+
 Autenticacao do usuario -> "Done". Autenticacao é feita no lado servidor, porém é necessario corrigir o lado cliente para enviar
 Restricao de acesso à paginas
 Tentar separar htmls que tem padroes repetidos em arquivos separados (Problemas e pendencias por exemplo)
 Ficha noturna = diaria porem com campos de auto preenchimento da ficha diaria do mesmo dia
 Navbar deve estar em 2 linhas
+Banco de dados: ID para pessoa, adicionar campos da ficha diurna
 
 
 
@@ -18,7 +20,4 @@ Navbar deve estar em 2 linhas
 
 
 
-
-/*Separar o controller da tabela profissional (está dentro de index a busca, index tem que chamar a busca do controller)*/
-(link relacionado aqui: https://medium.com/@pandeysoni/user-authentication-using-jwt-json-web-token-in-node-js-using-express-framework-543151a38ea1#.bwolsj2qc)
 /*Faćo a encrip/decrip no server side usando Crypto-JS, essa lib é mesmo safe? Inicio da string sempre igual*/

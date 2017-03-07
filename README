@@ -8,14 +8,14 @@ npm install
 
 
 /****************************************************/
-To run the server: node server.js
+To run the server: nodemon
+Nodemon will automatically restart the server when ANY change in the code is made.
 /****************************************************/
 
 /****************************************************/
 You should read this:
 https://github.com/sequelize/express-example
 https://github.com/waiyaki/postgres-express-node-tutorial
-http://thejackalofjavascript.com/developing-a-mean-app-with-angular-2-0/
 /****************************************************/
 
 
@@ -23,5 +23,3 @@ http://thejackalofjavascript.com/developing-a-mean-app-with-angular-2-0/
 To commit without message:
 git commit -a --allow-empty-message -m ''
 /****************************************************/
-To download Angular 2
-https://github.com/angular/quickstart
