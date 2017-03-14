@@ -4,25 +4,24 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
     var Telefone = sequelize.define('Telefone', {
-        CPF: {type: DataTypes.STRING,
+        ID: { //PK AND FK to Pessoa
+            type: DataTypes.INTEGER,
             allowNull: false,
             unique: true,
-            primaryKey: true
+            primaryKey: true,
+            reference:{
+                model: 'Pessoa',
+                key: 'ID'
+            }
         },
-        Telefone: {type: DataTypes.STRING,
+        Telefone: {
+            type: DataTypes.STRING,
             allowNull: false,
             primaryKey: true
         },
-        TipoTelefone: DataTypes.INTEGER
+        TipoTelefone: DataTypes.STRING
     }, {
-        classMethods: {
-            associate: function(models) {
-                Telefone.belongsTo(models.Pessoa,{
-                    as: 'CpfPessoa',
-                    foreignKey: 'CPF'
-                });
-            }
-        },
+        classMethods: {},
         tableName: 'Telefone'
     });
     return Telefone;

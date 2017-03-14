@@ -12,22 +12,23 @@ module.exports = function(app){
 
     var loginController = {
         login: function(req,res,next){
-            console.log(req.body);
             models.Profissional.findOne({
                 where:{
                     Usuario: req.body.user
                 }
             }).then(function(result) {
-                if(req.body.passw === Common.decrypt(result.Senha)){
-                    var tokenData = {
-                        username: result.Usuario,
-                        id: result.Registro
-                    };
-                    var result = {
-                        tipoProfissional: result.TipoProfissional,
-                        token: Jwt.sign(tokenData, privateKey)
-                    };
-                    return res.json(result);
+                if(result){
+                    if(req.body.passw === Common.decrypt(result.Senha)){
+                        var tokenData = {
+                            username: result.Usuario,
+                            id: result.Registro
+                        };
+                        var result = {
+                            tipoProfissional: result.TipoProfissional,
+                            token: Jwt.sign(tokenData, privateKey)
+                        };
+                        return res.json(result);
+                    }
                 }
                 else
                     return res.json(400);

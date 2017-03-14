@@ -1,12 +1,19 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
     var Pessoa = sequelize.define('Pessoa', {
-        CPF: {type: DataTypes.STRING,
+        ID: { //PK
+            type: DataTypes.INTEGER,
             allowNull: false,
-            unique: true,
+            autoIncrement: true,
             primaryKey: true
         },
-        Nome: {type: DataTypes.STRING,
+        CPF: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            unique: true
+        },
+        Nome: {
+            type: DataTypes.STRING,
             allowNull: false
         },
         Sobrenome: {
@@ -25,8 +32,8 @@ module.exports = function(sequelize, DataTypes) {
         Rua: DataTypes.STRING,
         Numero: DataTypes.INTEGER,
         Bairro: DataTypes.STRING,
-        Apartamento: DataTypes.STRING,
-        Cep: DataTypes.INTEGER,
+        Apartamento: DataTypes.INTEGER,
+        Cep: DataTypes.STRING,
         Cidade: DataTypes.STRING,
         Email: DataTypes.STRING
     }, {

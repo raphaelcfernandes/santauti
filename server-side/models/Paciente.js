@@ -4,12 +4,18 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
     var Paciente = sequelize.define('Paciente', {
-        CPF: {type: DataTypes.STRING,
+        ID: { //FK to Pessoa
+            type: DataTypes.INTEGER,
             allowNull: false,
             unique: true,
-            primaryKey: true
+            primaryKey: true,
+            reference:{
+                model: 'Pessoa',
+                key: 'ID'
+            }
         },
-        Leito: {type: DataTypes.INTEGER,
+        Leito: {
+            type: DataTypes.INTEGER,
             allowNull: false
         },
         Box: {
@@ -21,14 +27,18 @@ module.exports = function(sequelize, DataTypes) {
             allowNull: false
         },
         Convenio: DataTypes.STRING,
+        Internado: DataTypes.BOOLEAN,
+        Responsavel: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            reference:{
+                //FK to Profissional
+                model: 'Profissional',
+                key: 'Registro'
+            }
+        }
     }, {
         classMethods: {
-            associate: function(models) {
-                Paciente.hasOne(models.Pessoa,{
-                    as:'CpfPessoa',
-                    foreignKey: 'CPF'
-                });
-            }
         },
         tableName: 'Paciente'
     });
