@@ -1,4 +1,45 @@
-var app = angular.module('SantaUTIApp', ['datetimepicker','ui.router']);
+var app = angular.module('SantaUTIApp', ['datetimepicker','ui.router','ngStorage']);
+
+app.run(function ($rootScope,$location,$window,$state, $stateParams, $http) {
+
+    $rootScope.$state = $state;
+    $rootScope.$stateParams = $stateParams;
+
+    $rootScope.reqApiURL = '';
+
+    $rootScope.req = function(service, params, type, success, error) {
+        $http({
+            url: $rootScope.reqApiURL + service,
+            method: type,
+            data: params
+        })
+            .success(function(data) {
+                success(data);
+            })
+            .error(function(err) {
+                error(err);
+            });
+    };
+
+    $rootScope.reqWithToken = function(service, params, type, success, error) {
+        $http({
+            url: $rootScope.reqApiURL + service,
+            method: type,
+            data: params,
+            headers: {
+                'access_token': sessionStorage.getItem("token")
+            }
+        })
+            .success(function(data) {
+                //Loading.close({});
+                success(data);
+            })
+            .error(function(err) {
+                //Loading.close({});
+                error(err);
+            });
+    };
+});
 
 /**
  * Configure the Routes

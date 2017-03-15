@@ -2,22 +2,33 @@
  * Created by raphael on 2/13/17.
  */
 
-app.controller('homeCtrl', function($scope,$state) {
+app.controller('homeCtrl', function($scope,$state,$rootScope,$timeout) {
+    /**
+     * NIVELPROFISSIONAL = 1 -> ADMIN
+     * NIVELPROFISSIONAL = 2 -> MEDICO
+     */
+    $scope.nivelProfissional = parseInt(sessionStorage.tipoProfissional);
+    $scope.nomeUtilizador='';
+    $scope.pessoas = [];
+    //Separar profissional de paciente.
+
+    $timeout(function(){
+        $scope.nivelProfissional == 1 ? $scope.nomeUtilizador='Profissionais' : $scope.nomeUtilizador='Pacientes';
+    },5);
+
     $scope.visualizar = function(age){
         $state.go("visualizarPaciente",{
             id: age
         });
+    };
+
+    if($scope.nivelProfissional==1) {
+        $rootScope.req('/homeGETProfissionais', sessionStorage.getItem("token"), 'GET', function (success) {
+            for (var i = 0; i < success.length; i++) {
+                $scope.pessoas.push({name: success[i].Nome + ' ' + success[i].Sobrenome});
+            }
+        }, function (err) {
+            console.log("que pau cabuloso mano");
+        });
     }
-    $scope.pacientes = [
-        {name:'Jose Pereira da Costa', age:25, gender:'boy'},
-        {name:'Raphael Cardoso Fernandes', age:30, gender:'girl'},
-        {name:'Angelo Caetano Fernandes', age:28, gender:'girl'},
-        {name:'Joelma Aparecida Borges', age:15, gender:'girl'},
-        {name:'Lucas Borges Fernandes', age:28, gender:'girl'},
-        {name:'Laura Borges Fernandes', age:95, gender:'boy'},
-        {name:'Neide Garcia Cardoso', age:50, gender:'boy'},
-        {name:'Fulano da Silva Sauro', age:27, gender:'girl'},
-        {name:'Beltrano Amado de Jesus', age:40, gender:'boy'},
-        {name:'Gabriel Antonio Alves Costa', age:60, gender:'girl'}
-    ];
 });

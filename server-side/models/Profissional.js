@@ -32,8 +32,14 @@ module.exports = function(sequelize, DataTypes) {
         TipoProfissional: DataTypes.INTEGER
     }, {
         classMethods: {
+            associate: function(models) {
+                Profissional.belongsTo(models.Pessoa,{
+                    foreignKey: 'ID'
+                });
+            }
         },
-        tableName: 'Profissional',timestamps:false
+        tableName: 'Profissional',
+        timestamps: false
     });
     return Profissional;
 };

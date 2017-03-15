@@ -355,3 +355,8 @@ INSERT INTO Profissional VALUES (1,1,'admin','U2FsdGVkX1/ReFEwS2yxxqw6imqy3IRzdL
 INSERT INTO Pessoa VALUES (2,'123456798','Joao','Pessoa','Joao123','1994-09-11','Joao Naves de Avila',632,'Sta Monica',NULL,'38410614','Uberlandia','joao@gmail.com');
 INSERT INTO Paciente VALUES (2,04,01,'Jornalista','Particular',TRUE,1);
 #Paciente: 2, responsavel: 1(registro)
+
+INSERT INTO Pessoa VALUES (3,'465879','Angelo','Caetano Fernandes','Angelo123','1968-11-30','Pedro Crosara Cherulli','271','Cazeca',NULL,'34567','Uberlandia','angelo@gmail.com');
+INSERT INTO Profissional VALUES (259687,3,'udiacf','U2FsdGVkX1/ReFEwS2yxxqw6imqy3IRzdLzjbOkoak4=',2);
+INSERT INTO Pessoa (CPF,Nome,Sobrenome,Identidade,DataNascimento,Rua,Numero,Bairro,Apartamento,Cep,Cidade,Email) VALUES ('62840673649','Neide','Garcia Cardoso','567678','1970-01-31','Itutinga',181,'Gravatas',NULL,'38410614','Uberlandia','neide@gmail.com');
+INSERT INTO Profissional VALUES (249687,4,'neide','U2FsdGVkX1/ReFEwS2yxxqw6imqy3IRzdLzjbOkoak4=',2);

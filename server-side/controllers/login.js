@@ -13,12 +13,12 @@ module.exports = function(app){
     var loginController = {
         login: function(req,res,next){
             models.Profissional.findOne({
-                where:{
+                where: {
                     Usuario: req.body.user
                 }
-            }).then(function(result) {
-                if(result){
-                    if(req.body.passw === Common.decrypt(result.Senha)){
+            }).then(function (result) {
+                if(result) {
+                    if (req.body.passw === Common.decrypt(result.Senha)) {
                         var tokenData = {
                             username: result.Usuario,
                             id: result.Registro
@@ -27,12 +27,17 @@ module.exports = function(app){
                             tipoProfissional: result.TipoProfissional,
                             token: Jwt.sign(tokenData, privateKey)
                         };
-                        return res.json(result);
+                        res.json(result);
+                    }
+                    else {
+                        res.sendStatus(400);
                     }
                 }
-                else
-                    return res.json(400);
+                else {
+                    res.sendStatus(400);
+                }
             });
+
         }
     }
     return loginController;

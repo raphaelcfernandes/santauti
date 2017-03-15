@@ -2,33 +2,33 @@
  * Created by raphael on 2/9/17.
  */
 
-app.controller('loginCtrl', function($scope,  $state, $window, $location, $timeout,$http) {
+app.controller('loginCtrl', function($scope,  $state, $window, $location, $timeout,$sessionStorage,$rootScope) {
 
     $scope.showGreeting = false;
-    $scope.showInvalidUserPasswordMessage = function() {
-        $scope.msg="Usuario e/ou Senha inválidos.";
+    $scope.showInvalidUserPasswordMessage = function(flag) {
+        flag ==true ? $scope.msg = "Usuario e/ou Senha inválidos." : $scope.msg = "Campos não podem ser vazios.";
         $scope.showGreeting = true;
-        $timeout(function(){
+        $timeout(function () {
             $scope.showGreeting = false;
-        }, 10000);
+        }, 5000);
     };
 
-    $scope.login = function(){
-        var data={
-            user: $scope.user,
-            passw: $scope.password
-        }
-        $http.post('/login',data)
-            .success(function(data,status,headers){
-            if(data=='400')
-                $scope.showInvalidUserPasswordMessage();
-            else
+    $scope.login = function() {
+        if ($scope.user != undefined && $scope.password != undefined){
+            var data = {
+                user: $scope.user,
+                passw: $scope.password
+            };
+            $rootScope.req('/login', data, 'POST', function (success) {
+                sessionStorage.setItem("token", success.token);
+                sessionStorage.setItem("tipoProfissional", success.tipoProfissional);
                 $state.go('home');
-        });
-        // if($scope.user === '1' && $scope.password === '2')
-        //     $state.go('home');
-        // else
-        //     $scope.showInvalidUserPasswordMessage();
+            }, function (err) {
+                $scope.showInvalidUserPasswordMessage(true);
+            });
+        }
+        else
+            $scope.showInvalidUserPasswordMessage(false);
     };
 
 });
