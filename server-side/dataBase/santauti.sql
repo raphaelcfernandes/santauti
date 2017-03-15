@@ -349,7 +349,7 @@ SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
 INSERT INTO Pessoa VALUES (1,'02483575145','ADMIN','ADMIN','ADMIN123','1994-09-11',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO Profissional VALUES (1,1,'Xbxt9Ynq5OR8JChOQ8b87Azao+CDIn1yVxQBnQxLZ3Q=','1mXJ3yfA29BsDpO4CQwWcjqkdivWqCXmBoyH//4cjhY=',1);
+INSERT INTO Profissional VALUES (1,1,'admin','U2FsdGVkX1/ReFEwS2yxxqw6imqy3IRzdLzjbOkoak4=',1);
 # Usuario: admin, senha: 1
 
 INSERT INTO Pessoa VALUES (2,'123456798','Joao','Pessoa','Joao123','1994-09-11','Joao Naves de Avila',632,'Sta Monica',NULL,'38410614','Uberlandia','joao@gmail.com');
