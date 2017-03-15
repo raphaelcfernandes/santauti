@@ -59,9 +59,12 @@ nodemon
 
 TO CREATE A NEW BRANCH:
 git checkout -b branch_name
+
 TO PUSH YOUR BRANCH INTO THE SERVER
 git checkout origin branch_name
 
+TO PULL DATA FROM <branch>
+git pull origin branch_name
 
 
 TESTANDO BRANCH RAPHAEL
