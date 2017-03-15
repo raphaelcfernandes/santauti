@@ -23,3 +23,31 @@ https://github.com/waiyaki/postgres-express-node-tutorial
 To commit without message:
 git commit -a --allow-empty-message -m ''
 /****************************************************/
+
+/****************************************************/
+To create a new sql user:
+mysql -u root -p
+CREATE USER 'novousuario'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON * . * TO 'novousuario'@'localhost';
+/****************************************************/
+
+/****************************************************/
+To execute sql script
+mysql -u USER -p < script.sql (open terminal in the same path)
+/****************************************************/
+
+/****************************************************/
+Install order
+apt-get install mysql-server
+apt-get install mysql-client
+apt-get install nodejs
+apt-get install npm
+
+create mysqluser
+create mysqldb
+npm install
+npm install -g nodemon
+sudo ln -s /usr/bin/nodejs /usr/bin/node
+npm install passport
+nodemon
+/****************************************************/
