@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e02dac78-004a-406d-8fe2-c97f9c144c38" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server-side/controllers/home.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server-side/routes/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TODO" afterPath="$PROJECT_DIR$/TODO" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/angular/angular-route.js" afterPath="$PROJECT_DIR$/client-side/public/views/angular/angular-route.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/angular/app_directives.js" afterPath="$PROJECT_DIR$/client-side/public/views/angular/app_directives.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/home/home.html" afterPath="$PROJECT_DIR$/client-side/public/views/home/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/home/homeController.js" afterPath="$PROJECT_DIR$/client-side/public/views/home/homeController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/index.html" afterPath="$PROJECT_DIR$/client-side/public/views/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client-side/public/views/login/loginController.js" afterPath="$PROJECT_DIR$/client-side/public/views/login/loginController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server-side/controllers/login.js" afterPath="$PROJECT_DIR$/server-side/controllers/login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server-side/dataBase/santauti.sql" afterPath="$PROJECT_DIR$/server-side/dataBase/santauti.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server-side/models/Pessoa.js" afterPath="$PROJECT_DIR$/server-side/models/Pessoa.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server-side/models/Profissional.js" afterPath="$PROJECT_DIR$/server-side/models/Profissional.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,7 +42,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client-side/public/views/home/home.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="486">
@@ -64,6 +50,16 @@
               <folding>
                 <element signature="n#div#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="619">
+              <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -180,7 +176,6 @@
         <option value="$PROJECT_DIR$/TODO" />
         <option value="$PROJECT_DIR$/server-side/controllers/login.js" />
         <option value="$PROJECT_DIR$/client-side/public/views/login/loginController.js" />
-        <option value="$PROJECT_DIR$/README" />
         <option value="$PROJECT_DIR$/server-side/routes/home.js" />
         <option value="$PROJECT_DIR$/server-side/dataBase/santauti.sql" />
         <option value="$PROJECT_DIR$/server-side/models/Telefone.js" />
@@ -189,6 +184,7 @@
         <option value="$PROJECT_DIR$/server-side/controllers/home.js" />
         <option value="$PROJECT_DIR$/client-side/public/views/home/homeController.js" />
         <option value="$PROJECT_DIR$/client-side/public/views/home/home.html" />
+        <option value="$PROJECT_DIR$/README" />
       </list>
     </option>
   </component>
@@ -861,12 +857,12 @@
       <workItem from="1488983682754" duration="4855000" />
       <workItem from="1489452193833" duration="2905000" />
       <workItem from="1489499247584" duration="25802000" />
-      <workItem from="1489582579895" duration="22017000" />
+      <workItem from="1489582579895" duration="22111000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="482813000" />
+    <option name="totallyTimeSpent" value="482907000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1600" height="873" extended-state="6" />
@@ -1238,14 +1234,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" column="10" lean-forward="false" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client-side/public/views/angular/angular-route.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
@@ -1436,6 +1424,14 @@
           <folding>
             <element signature="n#div#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
