@@ -1,0 +1,116 @@
+<div ui-view='toolbar' ></div>
+
+<div class="content">
+
+    <form>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3><label>Nome (*)</label></h3>
+                </div>
+                <div class="col-sm-4">
+                    <h3><label>Sobrenome (*)</label></h3>
+                </div>
+                <div class="col-sm-4">
+                    <h3><label>Data de Nascimento (*)</label></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <input type="text" ng-model="dados.nome" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="text" ng-model="dados.sobrenome" class="form-control">
+                </div>
+
+                <div class="col-sm-2 col-sm-offset-2">
+                    <div class='input-group date' datetimepicker>
+                        <input type="text" data-ng-model="dados.dataNascimento" class="form-control" datetimepicker>
+                        <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3><label>CPF (*)</label></h3>
+                </div>
+                <div class="col-sm-4">
+                    <h3><label>Identidade (*)</label></h3>
+                </div>
+                <div class="col-sm-4">
+                    <h3><label>Email</label></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <input type="text" ng-model="dados.cpf" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="text" ng-model="dados.identidade" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="text" ng-model="dados.email" class="form-control">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3><label>Logradouro</label></h3>
+                </div>
+                <div class="col-sm-4">
+                    <h3><label>Numero</label></h3>
+                </div>
+                <div class="col-sm-4">
+                    <h3><label>Apartamento</label></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <input type="text" ng-model="dados.rua" class="form-control">
+                </div>
+                <div class="col-sm-1 col-sm-offset-2">
+                    <input type="text" ng-model="dados.numero" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-3">
+                    <input type="text" ng-model="dados.apartamento" class="form-control">
+                </div>
+            </div>
+
+            <br>
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3><label>Bairro</label></h3>
+                </div>
+                <div class="col-sm-4">
+                    <h3><label>CEP</label></h3>
+                </div>
+                <div class="col-sm-4">
+                    <h3><label>Cidade</label></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <input type="text" ng-model="dados.bairro" class="form-control">
+                </div>
+                <div class="col-sm-1 col-sm-offset-2">
+                    <input type="text" ng-model="dados.cep" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-3">
+                    <input type="text" ng-model="dados.cidade" class="form-control">
+                </div>
+            </div>
+
+            <br><br>
+            <div class="row">
+                <div class="col-sm-2">
+                    <button type="button" class="btn btn-primary btn-sm" ng-click="criarUsuario()">
+                        <span class="glyphicon glyphicon-plus-sign"></span> Criar Usuário</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

@@ -22,7 +22,8 @@ module.exports = function(sequelize, DataTypes) {
         TipoTelefone: DataTypes.STRING
     }, {
         classMethods: {},
-        tableName: 'Telefone'
+        tableName: 'Telefone',
+        timestamps:false
     });
     return Telefone;
 };

@@ -1,0 +1,7 @@
+/**
+ * Created by raphael on 3/16/17.
+ */
+module.exports = function(app){
+    pessoa = app.serverSide.controllers.pessoa;
+    app.post('/inserirPessoa', pessoa.novoCadastroPessoa);
+}
