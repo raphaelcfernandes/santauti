@@ -14,7 +14,6 @@ module.exports = function(app){
         novoCadastroPessoa: function(req,res,next){
             Pessoa
                 .create({
-                    ID: 6,
                     CPF: req.body.infoPessoa.cpf,
                     Nome: req.body.infoPessoa.nome,
                     Sobrenome: req.body.infoPessoa.sobrenome,
