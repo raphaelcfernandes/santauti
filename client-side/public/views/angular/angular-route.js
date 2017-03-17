@@ -59,8 +59,8 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                     controller: 'homeCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../toolbar/header.html',
-                    controller: 'headerCtrl'
+                    templateUrl: '../toolbar/toolbar.html',
+                    controller: 'toolbarCtrl'
                 }
             }
         })
@@ -72,7 +72,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                     controller: 'pacienteCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../toolbar/header.html',
+                    templateUrl: '../toolbar/toolbar.html',
                     controller: 'headerCtrl'
                 },
                 'informacaoBox':{
@@ -413,6 +413,32 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
 
             }
         })
+        .state('pessoa',{
+            url: '/pessoa/:acao/:id?',
+            views:{
+                '':{
+                    templateUrl: '../pessoa/pessoa.html',
+                    controller: 'pessoaCtrl'
+                },
+                'navbar':{
+                    templateUrl: '../toolbar/toolbar.html',
+                    controller: 'toolbarCtrl'
+                }
+            }
+        })
+        .state('usuario',{
+            url:'/profissional/:acao/:id',
+            views:{
+                '':{
+                    templateUrl: '../profissional/profissional.html',
+                    controller: 'usuarioCtrl'
+                },
+                'navbar':{
+                    templateUrl: '../toolbar/toolbar.html',
+                    controller: 'toolbarCtrl'
+                }
+            }
+        })
 //    $locationProvider.html5Mode(true);
 }]);
 app.config(['datetimepickerProvider',function (datetimepickerProvider) {
@@ -421,7 +447,7 @@ app.config(['datetimepickerProvider',function (datetimepickerProvider) {
             keepOpen: false,
             showTodayButton: true,
             showClear:true,
-            format: 'DD MMMM YYYY - HH:mm',
+            // format: 'DD MMMM YYYY - HH:mm',
             tooltips: {
                 today: 'Selecionar hoje',
                 clear: 'Excluir data',

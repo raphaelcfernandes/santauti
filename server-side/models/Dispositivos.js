@@ -33,9 +33,8 @@ module.exports = function(sequelize, DataTypes) {
             allowNull: true
         }
     }, {
-        classMethods: {
-        },
-        tableName: 'Dispositivos'
+        tableName: 'Dispositivos',
+        timestamps:false
     });
     return Dispositivos;
 };

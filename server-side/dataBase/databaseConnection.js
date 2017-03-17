@@ -8,7 +8,8 @@ var sequelize = new Sequelize('santauti', 'raphael', '123', {
         ssl: true
     },
     define:{
-        timestamps:false
+        timestamps:false,
+        createdAt:false
     },
     pool: {
         max: 5,
