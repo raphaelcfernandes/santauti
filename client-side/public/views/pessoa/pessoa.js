@@ -8,10 +8,10 @@ app.controller('pessoaCtrl', function($scope,  $state,$rootScope,$http,$sce) {
     /*******************DECLARACAO DE VARIAVEIS E SCOPES*************/
 
 
-	/**
-	 * LIMPA OS CAMPOS CASO ALGO SEJA DIGITADO DE FORMA INCORRETA
-	 * Return NADA
-	*/
+    /**
+     * LIMPA OS CAMPOS CASO ALGO SEJA DIGITADO DE FORMA INCORRETA
+     * Return NADA
+     */
     $scope.limparCep = function () {
         $scope.dados.rua = "";
         $scope.dados.cidade = "";
@@ -19,11 +19,11 @@ app.controller('pessoaCtrl', function($scope,  $state,$rootScope,$http,$sce) {
         $scope.flagcep = -1;
     }
 
-	/**
-	 * ESCREVE OS DADOS NOS CAMPOS DO FORMULÁRIO, MUDANDO SUA FORMA DEPENDENDO
-	 * DO SERVIDOR QUE RECEBE AS INFORMAÇÕES
-	 * Return NADA
-	*/
+    /**
+     * ESCREVE OS DADOS NOS CAMPOS DO FORMULÁRIO, MUDANDO SUA FORMA DEPENDENDO
+     * DO SERVIDOR QUE RECEBE AS INFORMAÇÕES
+     * Return NADA
+     */
     $scope.escreve_forms = function (data) {;
         if($scope.flagcep == 1){ //Sv 1 Online
             $scope.dados.bairro = data.bairro;
@@ -37,10 +37,10 @@ app.controller('pessoaCtrl', function($scope,  $state,$rootScope,$http,$sce) {
         }
     }
 
-	/**
-	 * FAZ A REQUISIÇÃO DO JSONP CONTENDO AS INFORMAÇÕES DO CEP DIGITADO
-	 * Return NADA
-	*/
+    /**
+     * FAZ A REQUISIÇÃO DO JSONP CONTENDO AS INFORMAÇÕES DO CEP DIGITADO
+     * Return NADA
+     */
     $scope.pesquisaCep = function () {
         //variável cep somente com digitos.
         var troca = $scope.dados.cep;
@@ -76,9 +76,9 @@ app.controller('pessoaCtrl', function($scope,  $state,$rootScope,$http,$sce) {
     }
 
 	/**
-	 * FAZ A REQUISIÇÃO DO JSONP CONTENDO AS INFORMAÇÕES DO CEP DIGITADO NO SERVIDOR 2
-	 * Return NADA
-	*/
+     * FAZ A REQUISIÇÃO DO JSONP CONTENDO AS INFORMAÇÕES DO CEP DIGITADO NO SERVIDOR 2
+     * Return NADA
+     */
     $scope.pesquisaSeg = function (cep) {
         var urll =  '//api.postmon.com.br/v1/cep/'+cep;
         $sce.trustAsResourceUrl(urll);
