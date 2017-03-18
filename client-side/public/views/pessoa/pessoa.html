@@ -97,7 +97,7 @@
                     <input type="text" ng-model="dados.bairro" class="form-control">
                 </div>
                 <div class="col-sm-1 col-sm-offset-2">
-                    <input type="text" ng-model="dados.cep" class="form-control">
+                    <input type="text" ng-model="dados.cep" class="form-control" ng-blur="pesquisaCep()">
                 </div>
                 <div class="col-sm-2 col-sm-offset-3">
                     <input type="text" ng-model="dados.cidade" class="form-control">
