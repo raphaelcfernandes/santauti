@@ -29,11 +29,12 @@
 // }
 
 
-const Common = require('../config/common');
+
 const Config = require('../config/generalConfig');
 const Jwt = require('jsonwebtoken');
 const privateKey = Config.key.privateKey;
 var models = require('../models/index');
+
 module.exports = function(app){
     Profissional = app.serverSide.models.index.Profissional;
 

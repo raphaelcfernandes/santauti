@@ -12,8 +12,11 @@ Nao imprimir XHR no console do browser
 
 
 RETIRAR HORA DO DATETIMEPICKER DO DATANASCIMENTO EM CADASTRO USUARIO NOVO
-TRATAR ERRO DO SEQUELIZE, DEVOLVER PRO CLIENTE CASO ALGUM CAMPO JA EXISTA (POR EXEMPLO).
-COMO DEVOLVER PRO CLIENTE MSG/CODIGO DE ERRO E CLIENTE TRATAR ESSE CODIGO?
+TRATAR DATETIMEPICKER EM -> controllers/pessoa.js
+
+
+
+
 
 
 Tentar separar htmls que tem padroes repetidos em arquivos separados (Problemas e pendencias por exemplo)

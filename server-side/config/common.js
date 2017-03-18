@@ -22,5 +22,5 @@ function decrypt(password) {
 
 // method to encrypt data(password)
 function encrypt(password) {
-    return CryptoJS.AES.encrypt(password, privateKey);
+    return (CryptoJS.AES.encrypt(password, privateKey)).toString();
 }

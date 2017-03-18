@@ -413,12 +413,25 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
 
             }
         })
-        .state('usuario',{
-            url: '/usuario/:acao/:id?',
+        .state('pessoa',{
+            url: '/pessoa/:acao/:id?',
             views:{
                 '':{
                     templateUrl: '../pessoa/pessoa.html',
                     controller: 'pessoaCtrl'
+                },
+                'navbar':{
+                    templateUrl: '../toolbar/toolbar.html',
+                    controller: 'toolbarCtrl'
+                }
+            }
+        })
+        .state('usuario',{
+            url:'/profissional/:acao/:id',
+            views:{
+                '':{
+                    templateUrl: '../profissional/profissional.html',
+                    controller: 'usuarioCtrl'
                 },
                 'navbar':{
                     templateUrl: '../toolbar/toolbar.html',

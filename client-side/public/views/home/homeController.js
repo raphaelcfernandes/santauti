@@ -7,6 +7,8 @@ app.controller('homeCtrl', function($scope,$state,$rootScope,$timeout) {
      * NIVELPROFISSIONAL = 1 -> ADMIN
      * NIVELPROFISSIONAL = 2 -> MEDICO
      */
+
+    /*****************************VARIABLES && $SCOPE DECLARATION*********************/
     $scope.nomeUtilizador='';
     $scope.pessoas = [];
     $scope.nivelProfissional = parseInt(sessionStorage.tipoProfissional);
@@ -15,7 +17,12 @@ app.controller('homeCtrl', function($scope,$state,$rootScope,$timeout) {
 
 
     $scope.nivelProfissional == 1 ? $scope.nomeUtilizador='Profissionais' : $scope.nomeUtilizador='Pacientes';
+    /*****************************VARIABLES && $SCOPE DECLARATION*********************/
 
+
+    $scope.gerarQrCode = function(){
+        alert("COLOQUE SUA FUNCAO AQUI: client-side/public/views/home/homeController.js");
+    };
 
     $scope.visualizar = function(age){
         $state.go("visualizarPaciente",{
@@ -35,7 +42,7 @@ app.controller('homeCtrl', function($scope,$state,$rootScope,$timeout) {
 
     $scope.adicionarNovo = function(){
         if($scope.nivelProfissional==1){//Redireciona para pagina de cadastro de PROFISSIONAL
-            $state.go("usuario",{
+            $state.go("pessoa",{
                 acao: "novo"
             });
         }
