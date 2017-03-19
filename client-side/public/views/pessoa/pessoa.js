@@ -101,11 +101,10 @@ app.controller('pessoaCtrl', function($scope,  $state,$rootScope,$http,$sce) {
      */
     $scope.proximaPagina = function () {
         var data ={
-            infoPessoa: $scope.dados,
-            token: sessionStorage.getItem("token")
+            infoPessoa: $scope.dados
         };
 
-        $rootScope.req('/inserirPessoa',data,'POST',function(success){
+        $rootScope.reqWithToken('/inserirPessoa',data,'POST',function(success){
             sessionStorage.setItem("ID",success.ID);
             $state.go('usuario',{
                 acao: "novo",

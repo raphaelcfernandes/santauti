@@ -22,7 +22,7 @@ module.exports = function(app){
          */
         novoCadastroPessoa: function(req,res,next){
             try {
-                Jwt.verify(req.body.token, privateKey);
+                Jwt.verify(req.headers.access_token, privateKey);
                 Pessoa
                     .create({
                         CPF: req.body.infoPessoa.cpf,

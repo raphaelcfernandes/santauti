@@ -40,11 +40,10 @@ app.run(function ($rootScope,$location,$window,$state, $stateParams, $http) {
             });
     };
 });
-
 /**
  * Configure the Routes
  */
-app.config(['$stateProvider','$locationProvider', function ($stateProvider,$locationProvider) {
+app.config(['$stateProvider','$locationProvider', function ($stateProvider,$locationProvider,$rootScope) {
     $stateProvider
         .state('login', {
             url: '/',
@@ -53,6 +52,9 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         })
         .state('home',{
             url: '/home',
+            resolve: {
+                authenticate: usuarioLogado
+            },
             views:{
                 '':{
                     templateUrl: '../home/home.html',
@@ -438,41 +440,50 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                     controller: 'toolbarCtrl'
                 }
             }
-        })
+        });
+
+        function usuarioLogado($http){
+            var req={
+                method: 'POST',
+                url: '/verifyToken',
+                data: {token: sessionStorage.getItem("token") }
+            };
+            return $http(req);
+        }
 //    $locationProvider.html5Mode(true);
 }]);
 app.config(['datetimepickerProvider',function (datetimepickerProvider) {
-        datetimepickerProvider.setOptions({
-            locale:  'pt-br',
-            keepOpen: false,
-            showTodayButton: true,
-            showClear:true,
-            // format: 'DD MMMM YYYY - HH:mm',
-            tooltips: {
-                today: 'Selecionar hoje',
-                clear: 'Excluir data',
-                close: 'Close the picker',
-                selectMonth: 'Selecionar mês',
-                prevMonth: 'Mês anterior',
-                nextMonth: 'Próximo mês',
-                selectYear: 'Selecione o ano',
-                prevYear: 'Ano anterior',
-                nextYear: 'Próximo ano',
-                hours: 'Selecionar horário',
-                time: 'Selecionar hora'
-            },
-            icons: {
-                time: 'glyphicon glyphicon-time',
-                date: 'glyphicon glyphicon-calendar',
-                up: 'glyphicon glyphicon-chevron-up',
-                down: 'glyphicon glyphicon-chevron-down',
-                previous: 'glyphicon glyphicon-chevron-left',
-                next: 'glyphicon glyphicon-chevron-right',
-                today: 'glyphicon glyphicon-screenshot',
-                clear: 'glyphicon glyphicon-trash',
-                close: 'glyphicon glyphicon-remove'
-            }
+    datetimepickerProvider.setOptions({
+        locale:  'pt-br',
+        keepOpen: false,
+        showTodayButton: true,
+        showClear:true,
+        // format: 'DD MMMM YYYY - HH:mm',
+        tooltips: {
+            today: 'Selecionar hoje',
+            clear: 'Excluir data',
+            close: 'Close the picker',
+            selectMonth: 'Selecionar mês',
+            prevMonth: 'Mês anterior',
+            nextMonth: 'Próximo mês',
+            selectYear: 'Selecione o ano',
+            prevYear: 'Ano anterior',
+            nextYear: 'Próximo ano',
+            hours: 'Selecionar horário',
+            time: 'Selecionar hora'
+        },
+        icons: {
+            time: 'glyphicon glyphicon-time',
+            date: 'glyphicon glyphicon-calendar',
+            up: 'glyphicon glyphicon-chevron-up',
+            down: 'glyphicon glyphicon-chevron-down',
+            previous: 'glyphicon glyphicon-chevron-left',
+            next: 'glyphicon glyphicon-chevron-right',
+            today: 'glyphicon glyphicon-screenshot',
+            clear: 'glyphicon glyphicon-trash',
+            close: 'glyphicon glyphicon-remove'
+        }
 
-        });
-    }
+    });
+}
 ]);

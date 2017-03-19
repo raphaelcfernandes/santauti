@@ -5,15 +5,13 @@ Implementar HTTPS TSL/SSL -> Done
 * https://certbot.eff.org/docs/using.html#standalone
 */
 
-- Como restringir que o usuario acesse URLS internas sem estar logado?
-- Garantir que é usuario efetuando a operaćao (enviar token para server, server verifica se token está correto?)
 
 Nao imprimir XHR no console do browser
 
 
 RETIRAR HORA DO DATETIMEPICKER DO DATANASCIMENTO EM CADASTRO USUARIO NOVO
 TRATAR DATETIMEPICKER EM -> controllers/pessoa.js
-
+MASCARA PARA VALIDAR -> CPF,IDENTIDADE
 
 
 
@@ -22,10 +20,6 @@ TRATAR DATETIMEPICKER EM -> controllers/pessoa.js
 Tentar separar htmls que tem padroes repetidos em arquivos separados (Problemas e pendencias por exemplo)
 Ficha noturna = diaria porem com campos de auto preenchimento da ficha diaria do mesmo dia
 Navbar deve estar em 2 linhas
-Banco de dados: ID para pessoa, adicionar campos da ficha diurna
-
-
-
 
 
 
