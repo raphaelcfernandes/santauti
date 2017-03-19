@@ -864,11 +864,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="482909000" />
-=======
     <option name="totallyTimeSpent" value="483291000" />
->>>>>>> raphael
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1600" height="873" extended-state="6" />
@@ -1263,11 +1259,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
         <state relative-caret-position="-11">
-=======
-        <state relative-caret-position="-29">
->>>>>>> raphael
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="41" />
           <folding />
         </state>
