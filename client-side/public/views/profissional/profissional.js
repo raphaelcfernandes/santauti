@@ -17,10 +17,9 @@ app.controller('usuarioCtrl', function($scope,  $state,$rootScope) {
     $scope.criarProfissional = function(){
         var data = {
             infoUsuario: $scope.cadastro,
-            token: sessionStorage.getItem("token"),
             idPessoa: sessionStorage.getItem("ID")
         };
-        $rootScope.req('/inserirProfissional',data,'POST',function(success){
+        $rootScope.reqWithToken('/inserirProfissional',data,'POST',function(success){
             sessionStorage.removeItem("ID");
             alert("Cadastro inserido com sucesso");
             $state.go('home');

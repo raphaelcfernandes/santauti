@@ -22,7 +22,7 @@ module.exports = function(app){
          */
         novoCadastroProfissional: function(req,res,next){
             try {
-                Jwt.verify(req.body.token, privateKey);
+                Jwt.verify(req.headers.access_token, privateKey);
                 Profissional
                     .create({
                         Registro: req.body.infoUsuario.registro,
