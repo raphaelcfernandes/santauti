@@ -17,14 +17,14 @@ app.controller('pessoaCtrl', function($scope,  $state,$rootScope,$http,$sce) {
         $scope.dados.cidade = "";
         $scope.dados.bairro = "";
         $scope.flagcep = -1;
-    }
+    };
 
     /**
      * ESCREVE OS DADOS NOS CAMPOS DO FORMULÁRIO, MUDANDO SUA FORMA DEPENDENDO
      * DO SERVIDOR QUE RECEBE AS INFORMAÇÕES
      * Return NADA
      */
-    $scope.escreve_forms = function (data) {;
+    $scope.escreve_forms = function (data) {
         if($scope.flagcep == 1){ //Sv 1 Online
             $scope.dados.bairro = data.bairro;
             $scope.dados.rua = data.logradouro;
@@ -35,7 +35,7 @@ app.controller('pessoaCtrl', function($scope,  $state,$rootScope,$http,$sce) {
             $scope.dados.rua = data.logradouro;
             $scope.dados.cidade = data.cidade;
         }
-    }
+    };
 
     /**
      * FAZ A REQUISIÇÃO DO JSONP CONTENDO AS INFORMAÇÕES DO CEP DIGITADO
@@ -73,7 +73,7 @@ app.controller('pessoaCtrl', function($scope,  $state,$rootScope,$http,$sce) {
             //cep sem valor
             $scope.limparCep();
         }
-    }
+    };
 
 	/**
      * FAZ A REQUISIÇÃO DO JSONP CONTENDO AS INFORMAÇÕES DO CEP DIGITADO NO SERVIDOR 2
@@ -91,7 +91,7 @@ app.controller('pessoaCtrl', function($scope,  $state,$rootScope,$http,$sce) {
              }).error(function(data){
                  alert("Escreva os dados manualmente");
              });
-    }
+    };
     
     /**
      * ENVIA PARA O SERVIDOR: TOKEN + FORM DATA
