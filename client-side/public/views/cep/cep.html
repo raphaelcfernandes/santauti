@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teste preenchimento cep</title>
+</head>
+<body>
+<script type = "text/javascript">
+    function limpar_formscep(){
+        document.getElementById('rua').value=("");
+        document.getElementById('bairro').value=("");
+        document.getElementById('cidade').value=("");
+        document.getElementById('estado').value=("");
+    }
+
+    function cep_callback(conteudo){
+        if(!("erro" in conteudo)) {
+            //Coloca os valores nos campos
+            document.getElementById('rua').value = (conteudo.logradouro);
+            document.getElementById('bairro').value = (conteudo.bairro);
+            document.getElementById('cidade').value = (conteudo.localidade);
+            document.getElementById('estado').value = (conteudo.uf);
+
+        }
+        else{
+            //CEP não foi encontrado
+            limpar_formscep();
+            alert("CEP não encontrado.");
+        }
+    }
+
+    function pesquisacep(valor){
+
+        //variável cep somente com digitos.
+        var cep = valor.replace(/\D/g, '');
+
+        //Se cep foi informado
+        if (cep != "") {
+
+            //Validação do cep
+            var validacep = /^[0-9]{8}$/;
+
+            //Se passa na validação
+            if(validacep.test(cep)){
+
+                //Preenchimento dos campos com ... -> apenas enquanto a consulta é realizada
+                document.getElementById('rua').value="...";
+                document.getElementById('bairro').value="...";
+                document.getElementById('cidade').value="...";
+                document.getElementById('estado').value="...";
+
+                //Elemento JS
+                var script = document.createElement('script');
+
+                //Sincronizando callback
+                script.src = '//viacep.com.br/ws/'+ cep + '/json/?callback=cep_callback';
+
+                //Insere o script no documento e carrega-o
+                document.body.appendChild(script);
+            }
+            else{
+                //cep inválido
+                limpar_formscep();
+                alert("Formato de CEP inválido");
+            }
+        }
+        else{
+            //cep sem valor
+            limpar_formscep();
+        }
+    }
+</script>
+
+<h3> Digite seu cep </h3>
+<form id ="cep-form" method="get" action="#">
+    <label> CEP: <input name = "cep" type="text" id="cep" value="" size="10" maxlength="9"
+                        onblur="pesquisacep(this.value)"/> </label><br/>
+    <label> Rua: <input name="rua" type="text" id="rua" size="60"/> </label><br/>
+    <label> Bairro: <input name="bairro" type="text" id="bairro" size="40"/> </label><br/>
+    <label> Cidade: <input name="cidade" type="text" id="cidade" size="40"/> </label><br/>
+    <label> UF: <input name="estado" type="text" id="estado" size="2"/> </label><br/>
+    <label> Número: <input name="numero" type="number" id="6"/> </label><br/>
+    <label> Complemento: <input name="comple" type="text" id="comple"/> </label><br/>
+</form>
+</body>
+</html>
