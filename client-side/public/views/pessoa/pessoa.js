@@ -1,12 +1,98 @@
 /**
  * Created by raphael on 3/16/17.
  */
-app.controller('pessoaCtrl', function($scope,  $state,$rootScope) {
+app.controller('pessoaCtrl', function($scope,  $state,$rootScope,$http,$sce) {
     /*******************DECLARACAO DE VARIAVEIS E SCOPES*************/
     $scope.dados={};
+	$scope.flagcep = -1; //Flag para descobrir qual servidor está conectado
     /*******************DECLARACAO DE VARIAVEIS E SCOPES*************/
 
 
+    /**
+     * LIMPA OS CAMPOS CASO ALGO SEJA DIGITADO DE FORMA INCORRETA
+     * Return NADA
+     */
+    $scope.limparCep = function () {
+        $scope.dados.rua = "";
+        $scope.dados.cidade = "";
+        $scope.dados.bairro = "";
+        $scope.flagcep = -1;
+    };
+
+    /**
+     * ESCREVE OS DADOS NOS CAMPOS DO FORMULÁRIO, MUDANDO SUA FORMA DEPENDENDO
+     * DO SERVIDOR QUE RECEBE AS INFORMAÇÕES
+     * Return NADA
+     */
+    $scope.escreve_forms = function (data) {
+        if($scope.flagcep == 1){ //Sv 1 Online
+            $scope.dados.bairro = data.bairro;
+            $scope.dados.rua = data.logradouro;
+            $scope.dados.cidade = data.localidade;
+        }
+        if($scope.flagcep == 2){ //Sv 2 Online
+            $scope.dados.bairro = data.bairro;
+            $scope.dados.rua = data.logradouro;
+            $scope.dados.cidade = data.cidade;
+        }
+    };
+
+    /**
+     * FAZ A REQUISIÇÃO DO JSONP CONTENDO AS INFORMAÇÕES DO CEP DIGITADO
+     * Return NADA
+     */
+    $scope.pesquisaCep = function () {
+        //variável cep somente com digitos.
+        var troca = $scope.dados.cep;
+        var cep = troca.replace(/\D/g, '');
+        //Se cep foi informado
+        if (cep != "") {
+            //Validação do cep
+            var validacep = /^[0-9]{8}$/;
+            //Se passa na validação
+            if(validacep.test(cep)){
+                //A url é colocada como confiável e é feito o get na página do servidor 1
+                var url = "//viacep.com.br/ws/"+ cep + "/json/?callback=JSON_CALLBACK";
+                $sce.trustAsResourceUrl(url);
+                $http.jsonp(url)
+                    .success(function(data){
+                        $scope.flagcep = 1;
+                        $scope.escreve_forms(data);
+                        $scope.flagcep = -1;
+                    }).error(function(data) {
+                        $scope.pesquisaSeg(cep);
+                });
+            }
+            else{
+                //cep inválido
+                $scope.limparCep();
+                alert("Formato de CEP inválido");
+            }
+        }
+        else{
+            //cep sem valor
+            $scope.limparCep();
+        }
+    };
+
+	/**
+     * FAZ A REQUISIÇÃO DO JSONP CONTENDO AS INFORMAÇÕES DO CEP DIGITADO NO SERVIDOR 2
+     * Return NADA
+     */
+    $scope.pesquisaSeg = function (cep) {
+        var urll =  '//api.postmon.com.br/v1/cep/'+cep;
+        $sce.trustAsResourceUrl(urll);
+        //O get é feito manualmente pois não é uma callback a url
+        $http({method: 'GET', url: urll})
+             .success(function(data){
+                 $scope.flagcep = 2;
+                 $scope.escreve_forms(data);
+                 $scope.flacep = -1;
+             }).error(function(data){
+                 alert("Escreva os dados manualmente");
+             });
+    };
+    
     /**
      * ENVIA PARA O SERVIDOR: TOKEN + FORM DATA
      * SERVIDOR VERIFICA TOKEN, CASO ESTEJA CORRETO, TENTA INSERIR NO BANCO
