@@ -38,9 +38,8 @@ module.exports = function(sequelize, DataTypes) {
             }
         }
     }, {
-        classMethods: {
-        },
-        tableName: 'Paciente'
+        tableName: 'Paciente',
+        timestamps:false
     });
     return Paciente;
 };

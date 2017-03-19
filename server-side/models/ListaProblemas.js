@@ -44,9 +44,8 @@ module.exports = function(sequelize, DataTypes) {
             allowNull: true
         }
     }, {
-        classMethods: {
-        },
-        tableName: 'ListaProblemas'
+        tableName: 'ListaProblemas',
+        timestamps:false
     });
     return ListaProblemas;
 };

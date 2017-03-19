@@ -11,6 +11,11 @@ Implementar HTTPS TSL/SSL -> Done
 Nao imprimir XHR no console do browser
 
 
+RETIRAR HORA DO DATETIMEPICKER DO DATANASCIMENTO EM CADASTRO USUARIO NOVO
+TRATAR DATETIMEPICKER EM -> controllers/pessoa.js
+
+
+
 
 
 

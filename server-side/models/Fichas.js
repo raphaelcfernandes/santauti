@@ -36,11 +36,8 @@ module.exports = function(sequelize, DataTypes) {
             allowNull: false
         }
     }, {
-        classMethods: {
-            associate: function(models) {
-            }
-        },
-        tableName: 'Fichas'
+        tableName: 'Fichas',
+        timestamps:false
     });
     return Fichas;
 };

@@ -7,14 +7,22 @@ app.controller('homeCtrl', function($scope,$state,$rootScope,$timeout) {
      * NIVELPROFISSIONAL = 1 -> ADMIN
      * NIVELPROFISSIONAL = 2 -> MEDICO
      */
-    $scope.nivelProfissional = parseInt(sessionStorage.tipoProfissional);
+
+    /*****************************VARIABLES && $SCOPE DECLARATION*********************/
     $scope.nomeUtilizador='';
     $scope.pessoas = [];
+    $scope.nivelProfissional = parseInt(sessionStorage.tipoProfissional);
+
     //Separar profissional de paciente.
 
-    $timeout(function(){
-        $scope.nivelProfissional == 1 ? $scope.nomeUtilizador='Profissionais' : $scope.nomeUtilizador='Pacientes';
-    },5);
+
+    $scope.nivelProfissional == 1 ? $scope.nomeUtilizador='Profissionais' : $scope.nomeUtilizador='Pacientes';
+    /*****************************VARIABLES && $SCOPE DECLARATION*********************/
+
+
+    $scope.gerarQrCode = function(){
+        alert("COLOQUE SUA FUNCAO AQUI: client-side/public/views/home/homeController.js");
+    };
 
     $scope.visualizar = function(age){
         $state.go("visualizarPaciente",{
@@ -30,5 +38,13 @@ app.controller('homeCtrl', function($scope,$state,$rootScope,$timeout) {
         }, function (err) {
             console.log("que pau cabuloso mano");
         });
+    }
+
+    $scope.adicionarNovo = function(){
+        if($scope.nivelProfissional==1){//Redireciona para pagina de cadastro de PROFISSIONAL
+            $state.go("pessoa",{
+                acao: "novo"
+            });
+        }
     }
 });
