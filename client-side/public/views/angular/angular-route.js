@@ -68,6 +68,9 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         })
         .state('visualizarPaciente',{
             url: '/visualizarPaciente/:id',
+            resolve: {
+                authenticate: usuarioLogado
+            },
             views:{
                 '':{
                     templateUrl: '../paciente/paciente.html',
@@ -84,6 +87,9 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         })
         .state('listaDeProblemas',{
             url: '/listaDeProblemas',
+            resolve: {
+                authenticate: usuarioLogado
+            },
             views:{
                 '':{
                     templateUrl: '../ficha/listaDeProblemas/listaDeProblemas.html',
@@ -99,6 +105,9 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         })
         .state('eventoSignificantes',{
             url: '/eventoSignificantes',
+            resolve: {
+                authenticate: usuarioLogado
+            },
             views:{
                 '':{
                     templateUrl: '../ficha/eventoSignificantes/eventoSignificantes.html',
@@ -112,6 +121,9 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         })
         .state('neurologico',{
             url: '/neurologico',
+            resolve: {
+                authenticate: usuarioLogado
+            },
             views:{
                 '':{
                     templateUrl: '../ficha/neurologico/neurologico.html',
@@ -128,6 +140,9 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         })
         .state('hemodinamica',{
             url: '/hemodinamica',
+            resolve: {
+                authenticate: usuarioLogado
+            },
             views:{
                 '':{
                     templateUrl: '../ficha/hemodinamica/hemodinamica.html',
@@ -145,6 +160,9 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         })
         .state('respiratorio',{
             url: '/respiratorio',
+            resolve: {
+                authenticate: usuarioLogado
+            },
             views:{
                 '':{
                     templateUrl: '../ficha/respiratorio/respiratorio.html',
@@ -162,6 +180,9 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         })
         .state('gastrointestinal',{
             url: '/gastrointestinal',
+            resolve: {
+                authenticate: usuarioLogado
+            },
             views:{
                 '':{
                     templateUrl: '../ficha/gastrointestinal/gastrointestinal.html',
@@ -179,6 +200,9 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         })
         .state('renal',{
             url: '/renal',
+            resolve: {
+                authenticate: usuarioLogado
+            },
             views:{
                 '':{
                     templateUrl: '../ficha/renal/renal.html',
@@ -196,6 +220,9 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         })
         .state('hematologico',{
             url: '/hematologico',
+            resolve: {
+                authenticate: usuarioLogado
+            },
             views:{
                 '':{
                     templateUrl: '../ficha/hematologico/hematologico.html',
@@ -213,6 +240,9 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         })
         .state('endocrino',{
             url: '/endocrino',
+            resolve: {
+                authenticate: usuarioLogado
+            },
             views:{
                 '':{
                     templateUrl: '../ficha/endocrino/endocrino.html',
@@ -230,6 +260,9 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         })
         .state('infeccioso',{
             url: '/infeccioso',
+            resolve: {
+                authenticate: usuarioLogado
+            },
             views:{
                 '':{
                     templateUrl: '../ficha/infeccioso/infeccioso.html',
@@ -247,6 +280,9 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         })
         .state('dispositivos',{
             url: '/dispositivos',
+            resolve: {
+                authenticate: usuarioLogado
+            },
             views:{
                 '':{
                     templateUrl: '../ficha/dispositivos/dispositivos.html',
@@ -264,6 +300,9 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         })
         .state('metabolico',{
             url: '/metabolico',
+            resolve: {
+                authenticate: usuarioLogado
+            },
             views:{
                 '':{
                     templateUrl: '../ficha/metabolico/metabolico.html',
@@ -281,6 +320,9 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         })
         .state('nutricao',{
             url: '/nutricao',
+            resolve: {
+                authenticate: usuarioLogado
+            },
             views:{
                 '':{
                     templateUrl: '../ficha/nutricao/nutricao.html',
@@ -298,6 +340,9 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         })
         .state('psicosocial',{
             url: '/psicosocial',
+            resolve: {
+                authenticate: usuarioLogado
+            },
             views:{
                 '':{
                     templateUrl: '../ficha/psicosocial/psicosocial.html',
@@ -315,6 +360,9 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         })
         .state('analise',{
             url: '/analise',
+            resolve: {
+                authenticate: usuarioLogado
+            },
             views:{
                 '':{
                     templateUrl: '../ficha/analise/analise.html',
@@ -332,6 +380,9 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         })
         .state('pendencias',{
             url: '/pendencias',
+            resolve: {
+                authenticate: usuarioLogado
+            },
             views:{
                 '':{
                     templateUrl: '../ficha/pendencias/pendencias.html',
@@ -349,6 +400,9 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         })
         .state('exames',{
             url: '/exames',
+            resolve: {
+                authenticate: usuarioLogado
+            },
             views:{
                 '':{
                     templateUrl: '../ficha/exames/exames.html',
@@ -366,6 +420,9 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         })
         .state('interconsulta',{
             url: '/interconsulta',
+            resolve: {
+                authenticate: usuarioLogado
+            },
             views:{
                 '':{
                     templateUrl: '../ficha/interconsulta/interconsulta.html',
@@ -383,6 +440,9 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         })
         .state('planos',{
             url: '/planos',
+            resolve: {
+                authenticate: usuarioLogado
+            },
             views:{
                 '':{
                     templateUrl: '../ficha/planos/planos.html',
@@ -400,6 +460,9 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         })
         .state('examesLab',{
             url: '/examesLab',
+            resolve: {
+                authenticate: usuarioLogado
+            },
             views:{
                 '':{
                     templateUrl: '../ficha/examesLaboratoriais/examesLaboratoriais.html',
@@ -417,6 +480,9 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         })
         .state('pessoa',{
             url: '/pessoa/:acao/:id?',
+            resolve: {
+                authenticate: usuarioLogado
+            },
             views:{
                 '':{
                     templateUrl: '../pessoa/pessoa.html',
@@ -430,6 +496,9 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         })
         .state('usuario',{
             url:'/profissional/:acao/:id',
+            resolve: {
+                authenticate: usuarioLogado
+            },
             views:{
                 '':{
                     templateUrl: '../profissional/profissional.html',
