@@ -29,7 +29,7 @@ module.exports = function(app){
                         Nome: req.body.infoPessoa.nome,
                         Sobrenome: req.body.infoPessoa.sobrenome,
                         Identidade: req.body.infoPessoa.identidade,
-                        DataNascimento: '1994-11-09',
+                        DataNascimento: req.body.infoPessoa.dataNascimento,
                         Rua: req.body.infoPessoa.rua,
                         Numero: req.body.infoPessoa.numero,
                         Bairro: req.body.infoPessoa.bairro,
