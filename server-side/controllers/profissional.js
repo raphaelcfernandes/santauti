@@ -39,6 +39,23 @@ module.exports = function(app){
             } catch(err) {
                 res.sendStatus(401);
             }
+        },
+        desativarProfissional: function(req,res,next){
+            try {
+                Jwt.verify(req.headers.access_token, privateKey);
+                Profissional.findOne({
+                    where: { ID: req.body.id}
+                }).then(function (result) {
+                    if (result) {
+                        result.updateAttributes({
+                            Ativo: false
+                        });
+                        res.sendStatus(201);
+                    }
+                })
+            } catch(err) {
+                res.sendStatus(401);
+            }
         }
     };
     function objToString (obj) {

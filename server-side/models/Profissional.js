@@ -29,7 +29,8 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false
         },
-        TipoProfissional: DataTypes.INTEGER
+        TipoProfissional: DataTypes.INTEGER,
+        Ativo: DataTypes.BOOLEAN
     }, {
         classMethods: {
             associate: function(models) {

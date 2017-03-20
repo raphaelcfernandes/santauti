@@ -4,4 +4,5 @@
 module.exports = function(app){
     profissional = app.serverSide.controllers.profissional;
     app.post('/inserirProfissional', profissional.novoCadastroProfissional);
+    app.put('/desativarProfissional',profissional.desativarProfissional);
 }

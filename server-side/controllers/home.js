@@ -11,11 +11,16 @@ module.exports = function(app){
 
     var homeController = {
         getProfissionais: function(req,res,next){
-            models.sequelize.query("SELECT * FROM Profissional AS PF INNER JOIN Pessoa AS PE ON PF.ID=PE.ID;", { type: models.sequelize.QueryTypes.SELECT})
-                .then(function (results) {
-                    res.json(results);
-                });
+            try{
+                Jwt.verify(req.headers.access_token, privateKey);
+                models.sequelize.query("SELECT * FROM Profissional AS PF INNER JOIN Pessoa AS PE ON PF.ID=PE.ID;", { type: models.sequelize.QueryTypes.SELECT})
+                    .then(function (results) {
+                        res.json(results);
+                    });
+            }catch(err){
+                res.sendStatus(401);
+            }
         }
-    }
+    };
     return homeController;
 }

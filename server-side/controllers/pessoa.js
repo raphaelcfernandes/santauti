@@ -36,7 +36,8 @@ module.exports = function(app){
                         Apartamento: req.body.infoPessoa.apartamento,
                         Cep: req.body.infoPessoa.cep,
                         Cidade: req.body.infoPessoa.cidade,
-                        Email: req.body.infoPessoa.email
+                        Email: req.body.infoPessoa.email,
+                        Ativo: true
                     }).then(function(){
                     Pessoa.findOne({
                         where:{
@@ -52,28 +53,8 @@ module.exports = function(app){
             } catch(err) {
                 res.sendStatus(401);
             }
-        },
-
-        deletePessoa: function(req,res,next){
-            console.log(req.body);
-            try {
-                Jwt.verify(req.headers.access_token, privateKey);
-                models.Pessoa.findOne({
-                    where: {
-                        ID: 1
-                    }
-                }).then(function (result) {
-                    if(result) {
-                        res.json(result);
-                    }
-                    else {
-                        res.sendStatus(400);
-                    }
-                });
-            } catch(err) {
-                res.sendStatus(401);
-            }
         }
+
     };
 
     function objToString (obj) {

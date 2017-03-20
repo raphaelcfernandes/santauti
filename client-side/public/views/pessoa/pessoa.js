@@ -100,7 +100,7 @@ app.controller('pessoaCtrl', function($scope,  $state,$rootScope,$http,$sce) {
      * Return ERRO: RECEBERÁ UM HTTP CODE + MENSAGEM REFERENTE AO ERRO.
      */
     $scope.proximaPagina = function () {
-        var data ={
+        var data = {
             infoPessoa: $scope.dados
         };
         $rootScope.reqWithToken('/inserirPessoa',data,'POST',function(success){
@@ -133,13 +133,4 @@ app.controller('pessoaCtrl', function($scope,  $state,$rootScope,$http,$sce) {
         });
     };
 
-    if(sessionStorage.getItem("acao")==="editar"){
-        var data={id: sessionStorage.getItem("ID")};
-        console.log(data);
-        $rootScope.reqWithToken('/getPessoa',data,'GET',function (success) {
-            console.log(success);
-        },function (err) {
-            console.log(err);
-        })
-    }
 });
