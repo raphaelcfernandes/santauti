@@ -28,13 +28,13 @@ app.controller('homeCtrl', function($scope,$state,$rootScope,$timeout) {
     $scope.gerarQrCode = function (id) {
         var data={
             id:id
-        }
+        };
         $rootScope.reqWithToken('/gerarQRCodeProfissional',data,'POST',function (success) {
             console.log(success);
         },function (err) {
 
         })
-    }
+    };
     
     if($scope.nivelProfissional==1) {
         $rootScope.reqWithToken('/homeGETProfissionais', sessionStorage.getItem("token"), 'GET', function (success) {
@@ -63,8 +63,5 @@ app.controller('homeCtrl', function($scope,$state,$rootScope,$timeout) {
         },function (err) {
             console.log(err);
         })
-    };
-    $scope.filtro = function (item) {
-        return item.Ativo;
     };
 });
