@@ -52,6 +52,27 @@ module.exports = function(app){
             } catch(err) {
                 res.sendStatus(401);
             }
+        },
+
+        deletePessoa: function(req,res,next){
+            console.log(req.body);
+            try {
+                Jwt.verify(req.headers.access_token, privateKey);
+                models.Pessoa.findOne({
+                    where: {
+                        ID: 1
+                    }
+                }).then(function (result) {
+                    if(result) {
+                        res.json(result);
+                    }
+                    else {
+                        res.sendStatus(400);
+                    }
+                });
+            } catch(err) {
+                res.sendStatus(401);
+            }
         }
     };
 

@@ -15,7 +15,7 @@
             </thead>
             <tbody>
             <tr ng-repeat="pessoa in pessoas | orderBy:'name' | filter:q as results ">
-                <td>{{pessoa.name}}</td>
+                <td>{{pessoa.name}} {{pessoa.sobrenome}}</td>
                 <td>
                     <div class="btn-group" ng-show="nivelProfissional>1">
                         <button type="button" class="btn btn-primary btn-sm" ng-click="visualizar(pessoa.age)">
@@ -35,7 +35,7 @@
                             <span class="glyphicon glyphicon-qrcode"></span> Gerar QR-Code</button>
                         <button type="button" class="btn btn-primary btn-sm" ng-click="visualizar(pessoa.age)">
                             <span class="glyphicon glyphicon-eye-open"></span> Alterar</button>
-                        <button type="button" class="btn btn-primary btn-sm"> <span class="glyphicon glyphicon-trash"></span> Excluir Usuário</button>
+                        <button type="button" class="btn btn-primary btn-sm" ng-click="removerProfissional(pessoa.id)"> <span class="glyphicon glyphicon-trash"></span> Excluir Usuário</button>
                     </div>
                 </td>
             </tr>

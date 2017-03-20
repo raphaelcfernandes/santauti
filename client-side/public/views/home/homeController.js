@@ -33,7 +33,7 @@ app.controller('homeCtrl', function($scope,$state,$rootScope,$timeout) {
     if($scope.nivelProfissional==1) {
         $rootScope.reqWithToken('/homeGETProfissionais', sessionStorage.getItem("token"), 'GET', function (success) {
             for (var i = 0; i < success.length; i++) {
-                $scope.pessoas.push({name: success[i].Nome + ' ' + success[i].Sobrenome});
+                $scope.pessoas.push({name: success[i].Nome,sobrenome: success[i].Sobrenome,id:success[i].ID});
             }
         }, function (err) {
             console.log(err);
@@ -41,10 +41,20 @@ app.controller('homeCtrl', function($scope,$state,$rootScope,$timeout) {
     }
 
     $scope.adicionarNovo = function(){
+        sessionStorage.setItem("acao","novo");
         if($scope.nivelProfissional==1){//Redireciona para pagina de cadastro de PROFISSIONAL
             $state.go("pessoa",{
                 acao: "novo"
             });
         }
+    }
+
+    $scope.removerProfissional = function (id) {
+        sessionStorage.setItem("ID",id);
+        sessionStorage.setItem("acao","editar");
+        $state.go("pessoa",{
+            acao: "editar",
+            id: id
+        })
     }
 });

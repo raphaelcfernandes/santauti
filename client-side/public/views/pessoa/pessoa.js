@@ -103,7 +103,6 @@ app.controller('pessoaCtrl', function($scope,  $state,$rootScope,$http,$sce) {
         var data ={
             infoPessoa: $scope.dados
         };
-
         $rootScope.reqWithToken('/inserirPessoa',data,'POST',function(success){
             sessionStorage.setItem("ID",success.ID);
             $state.go('usuario',{
@@ -133,4 +132,14 @@ app.controller('pessoaCtrl', function($scope,  $state,$rootScope,$http,$sce) {
             }
         });
     };
+
+    if(sessionStorage.getItem("acao")==="editar"){
+        var data={id: sessionStorage.getItem("ID")};
+        console.log(data);
+        $rootScope.reqWithToken('/getPessoa',data,'GET',function (success) {
+            console.log(success);
+        },function (err) {
+            console.log(err);
+        })
+    }
 });

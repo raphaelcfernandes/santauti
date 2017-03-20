@@ -4,4 +4,5 @@
 module.exports = function(app){
     pessoa = app.serverSide.controllers.pessoa;
     app.post('/inserirPessoa', pessoa.novoCadastroPessoa);
+    app.delete('/deletePessoa',pessoa.deletePessoa);
 }
