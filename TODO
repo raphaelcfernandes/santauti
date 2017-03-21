@@ -26,3 +26,6 @@ Navbar deve estar em 2 linhas
 
 
 /*Faćo a encrip/decrip no server side usando Crypto-JS, essa lib é mesmo safe? Inicio da string sempre igual*/
+
+**** Implementar JANELA de impressão QR-CODE
+***Implantar sistema de LOGIN com QR-CODE
