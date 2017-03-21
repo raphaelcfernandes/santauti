@@ -1,5 +1,11 @@
+var app = angular.module('SantaUTIApp', ['ngMaterial','datetimepicker','ui.router','ngStorage']);
+app.config(function ($mdThemingProvider) {
+    $mdThemingProvider.theme('red')
+        .primaryPalette('red');
 
-var app = angular.module('SantaUTIApp', ['datetimepicker','ui.router','ngStorage','ngMaterial']);
+    $mdThemingProvider.theme('blue')
+        .primaryPalette('blue');
+});
 
 
 app.run(function ($rootScope,$location,$window,$state, $stateParams, $http) {
@@ -513,16 +519,17 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             }
         });
 
-        function usuarioLogado($http){
-            var req={
-                method: 'POST',
-                url: '/verifyToken',
-                data: {token: sessionStorage.getItem("token") }
-            };
-            return $http(req);
-        }
+    function usuarioLogado($http){
+        var req={
+            method: 'POST',
+            url: '/verifyToken',
+            data: {token: sessionStorage.getItem("token") }
+        };
+        return $http(req);
+    }
 //    $locationProvider.html5Mode(true);
 }]);
+
 app.config(['datetimepickerProvider',function (datetimepickerProvider) {
     datetimepickerProvider.setOptions({
         locale:  'pt-br',
@@ -557,4 +564,5 @@ app.config(['datetimepickerProvider',function (datetimepickerProvider) {
 
     });
 }
+
 ]);
