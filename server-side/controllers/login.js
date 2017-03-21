@@ -12,7 +12,7 @@ module.exports = function(app){
 
     var loginController = {
         login: function(req,res,next){
-            models.Profissional.findOne({
+            Profissional.findOne({
                 where: {
                     Usuario: req.body.user
                 }

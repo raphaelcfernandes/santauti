@@ -25,22 +25,22 @@ module.exports = function(app){
                 Jwt.verify(req.headers.access_token, privateKey);
                 Pessoa
                     .create({
-                        CPF: req.body.infoPessoa.cpf,
-                        Nome: req.body.infoPessoa.nome,
-                        Sobrenome: req.body.infoPessoa.sobrenome,
-                        Identidade: req.body.infoPessoa.identidade,
-                        DataNascimento: req.body.infoPessoa.dataNascimento,
-                        Rua: req.body.infoPessoa.rua,
-                        Numero: req.body.infoPessoa.numero,
-                        Bairro: req.body.infoPessoa.bairro,
-                        Apartamento: req.body.infoPessoa.apartamento,
-                        Cep: req.body.infoPessoa.cep,
-                        Cidade: req.body.infoPessoa.cidade,
-                        Email: req.body.infoPessoa.email
+                        CPF: req.body.infoPessoa.CPF,
+                        Nome: req.body.infoPessoa.Nome,
+                        Sobrenome: req.body.infoPessoa.Sobrenome,
+                        Identidade: req.body.infoPessoa.Identidade,
+                        DataNascimento: req.body.infoPessoa.DataNascimento,
+                        Rua: req.body.infoPessoa.Rua,
+                        Numero: req.body.infoPessoa.Numero,
+                        Bairro: req.body.infoPessoa.Bairro,
+                        Apartamento: req.body.infoPessoa.Apartamento,
+                        Cep: req.body.infoPessoa.Cep,
+                        Cidade: req.body.infoPessoa.Cidade,
+                        Email: req.body.infoPessoa.Email
                     }).then(function(){
                     Pessoa.findOne({
                         where:{
-                            CPF: req.body.infoPessoa.cpf
+                            CPF: req.body.infoPessoa.CPF
                         }
                     }).then(function(result){
                         res.json({ID:result.ID});
@@ -52,7 +52,22 @@ module.exports = function(app){
             } catch(err) {
                 res.sendStatus(401);
             }
+        },
+        buscaCadastroPessoa: function(req,res,next){
+            try {
+                Jwt.verify(req.headers.access_token, privateKey);
+                Pessoa.findOne({
+                    where:{
+                        ID: req.query.idPessoa
+                    }
+                }).then(function (result) {
+                    res.json(result);
+                });
+            } catch(err) {
+                res.sendStatus(401);
+            }
         }
+
     };
 
     function objToString (obj) {
