@@ -29,7 +29,8 @@ module.exports = function(app){
                         ID: req.body.idPessoa,
                         Usuario: req.body.infoUsuario.usuario,
                         Senha: Common.encrypt(req.body.infoUsuario.senha),
-                        TipoProfissional: req.body.infoUsuario.tipoProfissional
+                        TipoProfissional: req.body.infoUsuario.tipoProfissional,
+                        Ativo: true
                     }).then(function(){
                         res.sendStatus(201);
                     }

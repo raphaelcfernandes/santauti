@@ -20,11 +20,6 @@ app.controller('homeCtrl', function($scope,$state,$rootScope,$timeout) {
     /*****************************VARIABLES && $SCOPE DECLARATION*********************/
 
 
-    $scope.visualizar = function(age){
-        $state.go("visualizarPaciente",{
-            id: age
-        });
-    };
     $scope.gerarQrCode = function (id) {
         var data={
             id:id
@@ -35,13 +30,11 @@ app.controller('homeCtrl', function($scope,$state,$rootScope,$timeout) {
 
         })
     };
-    
+
     if($scope.nivelProfissional==1) {
         $rootScope.reqWithToken('/homeGETProfissionais', sessionStorage.getItem("token"), 'GET', function (success) {
-            for (var i = 0; i < success.length; i++) {
-                $scope.pessoas.push({name: success[i].Nome,sobrenome: success[i].Sobrenome,id:success[i].ID,Ativo:success[i].Ativo});
-            }
-            console.log($scope.pessoas);
+            for (var i = 0; i < success.length; i++)
+                $scope.pessoas.push({name: success[i].Nome,sobrenome: success[i].Sobrenome,id:success[i].ID, Ativo:success[i].Ativo});
         }, function (err) {
             console.log(err);
         });
@@ -62,6 +55,15 @@ app.controller('homeCtrl', function($scope,$state,$rootScope,$timeout) {
             console.log(success);
         },function (err) {
             console.log(err);
-        })
+        });
+    };
+
+    $scope.editar = function (id) {
+        sessionStorage.setItem("ID",id);
+        sessionStorage.setItem("acao","editar");
+        $state.go("pessoa",{
+            acao: "editar",
+            id: id
+        });
     };
 });

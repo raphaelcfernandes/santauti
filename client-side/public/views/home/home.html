@@ -1,6 +1,7 @@
 <div ui-view='toolbar' ></div>
 
 <div class="container">
+
     <div class="table-responsive">
         <table class="table">
             <thead>
@@ -33,9 +34,9 @@
                     <div class="btn-group" ng-show="nivelProfissional==1">
                         <button type="button" class="btn btn-primary btn-sm" ng-click="gerarQrCode(pessoa.id)">
                             <span class="glyphicon glyphicon-qrcode"></span> Gerar QR-Code</button>
-                        <button type="button" class="btn btn-primary btn-sm" ng-click="visualizar(pessoa.age)">
-                            <span class="glyphicon glyphicon-eye-open"></span> Alterar</button>
-                        <button type="button" class="btn btn-primary btn-sm" ng-click="desativarProfissional(pessoa.id)"> <span class="glyphicon glyphicon-trash"></span> Excluir Usuário</button>
+                        <button type="button" class="btn btn-primary btn-sm" ng-click="editar(pessoa.id)">
+                            <span class="glyphicon glyphicon-pencil"></span> Alterar Dados</button>
+                        <button type="button" class="btn btn-primary btn-sm" ng-click="desativarProfissional(pessoa.id)"> <span class="glyphicon glyphicon-trash"></span> Desativar Usuário</button>
                     </div>
                 </td>
             </tr>
@@ -43,7 +44,6 @@
         </table>
     </div>
 </div>
-
 <!--
 
 <div class="container">

@@ -4,18 +4,17 @@
 app.controller('pessoaCtrl', function($scope,  $state,$rootScope,$http,$sce) {
     /*******************DECLARACAO DE VARIAVEIS E SCOPES*************/
     $scope.dados={};
-	$scope.flagcep = -1; //Flag para descobrir qual servidor está conectado
+    $scope.flagcep = -1; //Flag para descobrir qual servidor está conectado
     /*******************DECLARACAO DE VARIAVEIS E SCOPES*************/
-
 
     /**
      * LIMPA OS CAMPOS CASO ALGO SEJA DIGITADO DE FORMA INCORRETA
      * Return NADA
      */
     $scope.limparCep = function () {
-        $scope.dados.rua = "";
-        $scope.dados.cidade = "";
-        $scope.dados.bairro = "";
+        $scope.dados.Rua = "";
+        $scope.dados.Cidade = "";
+        $scope.dados.Bairro = "";
         $scope.flagcep = -1;
     };
 
@@ -26,14 +25,14 @@ app.controller('pessoaCtrl', function($scope,  $state,$rootScope,$http,$sce) {
      */
     $scope.escreve_forms = function (data) {
         if($scope.flagcep == 1){ //Sv 1 Online
-            $scope.dados.bairro = data.bairro;
-            $scope.dados.rua = data.logradouro;
-            $scope.dados.cidade = data.localidade;
+            $scope.dados.Bairro = data.bairro;
+            $scope.dados.Rua = data.logradouro;
+            $scope.dados.Cidade = data.localidade;
         }
         if($scope.flagcep == 2){ //Sv 2 Online
-            $scope.dados.bairro = data.bairro;
-            $scope.dados.rua = data.logradouro;
-            $scope.dados.cidade = data.cidade;
+            $scope.dados.Bairro = data.bairro;
+            $scope.dados.Rua = data.logradouro;
+            $scope.dados.Cidade = data.cidade;
         }
     };
 
@@ -43,7 +42,7 @@ app.controller('pessoaCtrl', function($scope,  $state,$rootScope,$http,$sce) {
      */
     $scope.pesquisaCep = function () {
         //variável cep somente com digitos.
-        var troca = $scope.dados.cep;
+        var troca = $scope.dados.Cep;
         var cep = troca.replace(/\D/g, '');
         //Se cep foi informado
         if (cep != "") {
@@ -60,7 +59,7 @@ app.controller('pessoaCtrl', function($scope,  $state,$rootScope,$http,$sce) {
                         $scope.escreve_forms(data);
                         $scope.flagcep = -1;
                     }).error(function(data) {
-                        $scope.pesquisaSeg(cep);
+                    $scope.pesquisaSeg(cep);
                 });
             }
             else{
@@ -75,7 +74,7 @@ app.controller('pessoaCtrl', function($scope,  $state,$rootScope,$http,$sce) {
         }
     };
 
-	/**
+    /**
      * FAZ A REQUISIÇÃO DO JSONP CONTENDO AS INFORMAÇÕES DO CEP DIGITADO NO SERVIDOR 2
      * Return NADA
      */
@@ -84,15 +83,15 @@ app.controller('pessoaCtrl', function($scope,  $state,$rootScope,$http,$sce) {
         $sce.trustAsResourceUrl(urll);
         //O get é feito manualmente pois não é uma callback a url
         $http({method: 'GET', url: urll})
-             .success(function(data){
-                 $scope.flagcep = 2;
-                 $scope.escreve_forms(data);
-                 $scope.flacep = -1;
-             }).error(function(data){
-                 alert("Escreva os dados manualmente");
-             });
+            .success(function(data){
+                $scope.flagcep = 2;
+                $scope.escreve_forms(data);
+                $scope.flacep = -1;
+            }).error(function(data){
+            alert("Escreva os dados manualmente");
+        });
     };
-    
+
     /**
      * ENVIA PARA O SERVIDOR: TOKEN + FORM DATA
      * SERVIDOR VERIFICA TOKEN, CASO ESTEJA CORRETO, TENTA INSERIR NO BANCO
@@ -132,5 +131,14 @@ app.controller('pessoaCtrl', function($scope,  $state,$rootScope,$http,$sce) {
             }
         });
     };
+    if(sessionStorage.getItem("acao")=="editar"){
+        var id= parseInt(sessionStorage.getItem("ID"));
+        $rootScope.reqWithToken('/getPessoa?idPessoa='+id,'','GET',function (success) {
+            $scope.dados=success;
+            console.log($scope.dados);
+        },function (err) {
+
+        })
+    }
 
 });
