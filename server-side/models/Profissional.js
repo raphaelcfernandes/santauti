@@ -29,8 +29,15 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false
         },
+
+        QRKey : {
+            type: DataTypes.STRING,
+            unique: true
+        },
+
         TipoProfissional: DataTypes.INTEGER,
         Ativo: DataTypes.BOOLEAN
+
     }, {
         classMethods: {
             associate: function(models) {

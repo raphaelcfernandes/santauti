@@ -41,6 +41,42 @@ module.exports = function(app){
                 res.sendStatus(401);
             }
         },
+
+        /*
+         Função que gera o qrcode
+         */
+        gerarQr : function(req,res,next) {
+            try {
+                Jwt.verify(req.headers.access_token, privateKey);
+                Profissional.findOne({
+                    where: {
+                        ID: req.body.id
+                    }
+                }).then(function (result) {
+                    if (result) {
+                        console.log(result.Usuario);
+                        var salt = Common.randomB(8);
+                        var password = salt + "" + result.Usuario.toString() + "" + result.Senha.toString();
+                        var encrp = (Common.encrypt(password));
+                        result.updateAttributes({
+                            QRKey: encrp
+                        });
+                        res.json({
+                            ID: req.body.id,
+                            QRKey: encrp
+                        });
+                        //Tentar enviar o status ainda, CORRIGIR ISSo
+                        console.log("modificado com sucesso");
+                    }//Realiza as consultas e adiciona o código do qr-code, além de gerá-lo
+
+                }).catch(models.Sequelize.UniqueConstraintError, function (err) {
+                    res.status(400).end(objToString(err.fields));
+                });//Captura o erro na consulta SQL
+            } catch (err) {
+                res.sendSatus(401); // Captura erro de token
+            }
+        },
+
         desativarProfissional: function(req,res,next){
             try {
                 Jwt.verify(req.headers.access_token, privateKey);
@@ -56,6 +92,7 @@ module.exports = function(app){
                 })
             } catch(err) {
                 res.sendStatus(401);
+
             }
         }
     };

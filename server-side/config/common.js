@@ -19,6 +19,10 @@ function decrypt(password) {
     return CryptoJS.AES.decrypt(password, privateKey).toString(CryptoJS.enc.Utf8);
 }
 
+exports.randomB = function(numb){
+    return CryptoJS.lib.WordArray.random(numb)
+}
+
 
 // method to encrypt data(password)
 function encrypt(password) {

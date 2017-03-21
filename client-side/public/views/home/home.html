@@ -35,7 +35,10 @@
                         <button type="button" class="btn btn-primary btn-sm"> <span class="glyphicon glyphicon-check"></span> Encerrar Paciente</button>
                     </div>
                     <div class="btn-group" ng-show="nivelProfissional==1">
-                        <button type="button" class="btn btn-primary btn-sm" ng-click="gerarQrCode(pessoa.id)">
+
+
+                        <button type="button" class="btn btn-primary btn-sm" ng-click="gerarQrCode($event,pessoa.id,pessoa.qrkey)">
+
                             <span class="glyphicon glyphicon-qrcode"></span> Gerar QR-Code</button>
                         <button type="button" class="btn btn-primary btn-sm" ng-click="editar(pessoa.id)">
                             <span class="glyphicon glyphicon-pencil"></span> Alterar Dados</button>
