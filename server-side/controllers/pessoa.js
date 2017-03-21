@@ -59,7 +59,12 @@ module.exports = function(app){
                 Pessoa.findOne({
                     where:{
                         ID: req.query.idPessoa
-                    }
+                    },
+                    attributes: [
+                        'CPF','Nome','Sobrenome','Identidade','Rua','Numero','Bairro','Apartamento','Cep','Cidade','Email',
+                        'DataNascimento',
+                        [models.sequelize.fn('date_format', models.sequelize.col('DataNascimento'), '%d-%m-%Y'), 'DataNascimento']
+                    ]
                 }).then(function (result) {
                     res.json(result);
                 });

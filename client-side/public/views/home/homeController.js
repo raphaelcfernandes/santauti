@@ -2,7 +2,7 @@
  * Created by raphael on 2/13/17.
  */
 
-app.controller('homeCtrl', function($scope,$state,$rootScope,$timeout,$mdDialog) {
+app.controller('homeCtrl', function($scope,$state,$rootScope,$timeout,$mdDialog,$interval) {
     /**
      * NIVELPROFISSIONAL = 1 -> ADMIN
      * NIVELPROFISSIONAL = 2 -> MEDICO
@@ -15,48 +15,12 @@ app.controller('homeCtrl', function($scope,$state,$rootScope,$timeout,$mdDialog)
 
     //Separar profissional de paciente.
 
-    //OS BOTÕES DE CONFIRMAÇÃO
-    $scope.status = '  ';
-    $scope.customFullscreen = false;
-
-    /* $scope.showAlert = function(ev) {
-     // Appending dialog to document.body to cover sidenav in docs app
-     // Modal dialogs should fully cover application
-     // to prevent interaction outside of dialog
-     $mdDialog.show(
-     $mdDialog.alert()
-     //.parent(angular.element(document.querySelector('#popupContainer')))
-     .clickOutsideToClose(true)
-     .title('This is an alert title')
-     .textContent('You can specify some description text in here.')
-     .ariaLabel('Alert Dialog Demo')
-     .ok('Got it!')
-     .targetEvent(ev)
-     );
-     };*/
-
-    /*$scope.showConfirm = function(ev) {
-     // Appending dialog to document.body to cover sidenav in docs app
-     var confirm = $mdDialog.confirm()
-     .title('Would you like to delete your debt?')
-     .textContent('All of the banks have agreed to forgive you your debts.')
-     .ariaLabel('Lucky day')
-     .targetEvent(ev)
-     .ok('Please do it!')
-     .cancel('Sounds like a scam');
-
-     $mdDialog.show(confirm).then(function() {
-     $scope.status = 'You decided to get rid of your debt.';
-     }, function() {
-     $scope.status = 'You decided to keep your debt.';
-     });
-     };*/
-    //FIM BOTÕES CONFIRMAÇÃO
-
     $scope.nivelProfissional == 1 ? $scope.nomeUtilizador = 'Profissionais' : $scope.nomeUtilizador = 'Pacientes';
     /*****************************VARIABLES && $SCOPE DECLARATION*********************/
-    /*
 
+    /**
+     * Requisita ao server todos os profissionais ativos e nao ativos
+     * Tem como retorno lista de profissionais
      */
     $scope.getProfissional = function () {
         $rootScope.reqWithToken('/homeGETProfissionais', sessionStorage.getItem("token"), 'GET', function (success) {
@@ -73,12 +37,12 @@ app.controller('homeCtrl', function($scope,$state,$rootScope,$timeout,$mdDialog)
         }, function (err) {
             console.log(err);
         });
-    }
+    };
 
     $scope.gerarQrCode = function (ev, id, qrval) {
         var data = {
             id: id
-        }
+        };
         //Reativar if e else no caso da janela de confirmação passar a funcionar
         if (qrval == null) {
             $rootScope.reqWithToken('/gerarQr', data, 'POST', function (success) {
@@ -113,9 +77,11 @@ app.controller('homeCtrl', function($scope,$state,$rootScope,$timeout,$mdDialog)
 
     if ($scope.nivelProfissional == 1) {
         $scope.getProfissional();
-
     }
 
+    /**
+     * Direciona para pagina de Pessoa para usuario inserir dados
+     */
     $scope.adicionarNovo = function () {
         sessionStorage.setItem("acao", "novo");
         if ($scope.nivelProfissional == 1) {//Redireciona para pagina de cadastro de PROFISSIONAL
@@ -123,10 +89,15 @@ app.controller('homeCtrl', function($scope,$state,$rootScope,$timeout,$mdDialog)
                 acao: "novo"
             });
         }
+    };
 
-    }
 
-
+    /**
+     * Recebe o ID do profissional como parametro.
+     * Envia para o servidor esse ID. Irá setar como false o campo Ativo do Profissional
+     * @param id
+     * @return sucesso ou falha
+     */
     $scope.desativarProfissional = function (id) {
         var data = {id: id};
         $rootScope.reqWithToken('/desativarProfissional', data, 'PUT', function (success) {
@@ -136,6 +107,11 @@ app.controller('homeCtrl', function($scope,$state,$rootScope,$timeout,$mdDialog)
         });
     };
 
+
+    /**
+     * Recebe ID do usuario como parametro e direciona para pagina de Pessoa, para editar dados
+     * @param id
+     */
     $scope.editar = function (id) {
         sessionStorage.setItem("ID", id);
         sessionStorage.setItem("acao", "editar");
@@ -144,12 +120,15 @@ app.controller('homeCtrl', function($scope,$state,$rootScope,$timeout,$mdDialog)
             id: id
         });
     };
-    $scope.status = '  ';
-    $scope.customFullscreen = false;
 
-    $scope.showConfirm = function(ev) {
+    /**
+     * Abre modal para confirmacao de desativar profissional
+     * @param id
+     * @param ev
+     */
+    $scope.showConfirm = function(id,ev) {
         // Appending dialog to document.body to cover sidenav in docs app
-        var confirm = $mdDialog.confirm()
+        var confirm = $mdDialog.confirm(id)
             .title('Desativaćao de Usuário.')
             .textContent('Este usuário será desativado e não fará mais parte do sistema, sendo necessário sua reativacao posteriormente. Deseja continuar mesmo assim?')
             .ariaLabel('Lucky day')
@@ -158,9 +137,7 @@ app.controller('homeCtrl', function($scope,$state,$rootScope,$timeout,$mdDialog)
             .cancel('Não.');
 
         $mdDialog.show(confirm).then(function() {
-
-        }, function() {
-            $scope.status = 'You decided to keep your debt.';
+            $scope.desativarProfissional(id);
         });
     };
 });

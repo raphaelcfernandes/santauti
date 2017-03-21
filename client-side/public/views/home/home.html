@@ -1,9 +1,5 @@
 <div ui-view='toolbar' ></div>
-<div class="dialog-demo-content" layout="row" layout-wrap layout-margin layout-align="center">
-    <button class="md-primary md-raised" ng-click="showConfirm($event)" >
-        Confirm Dialog
-    </button>
-</div>
+
 <div class="container">
     <div class="table-responsive">
         <table class="table">
@@ -38,11 +34,10 @@
 
 
                         <button type="button" class="btn btn-primary btn-sm" ng-click="gerarQrCode($event,pessoa.id,pessoa.qrkey)">
-
                             <span class="glyphicon glyphicon-qrcode"></span> Gerar QR-Code</button>
                         <button type="button" class="btn btn-primary btn-sm" ng-click="editar(pessoa.id)">
                             <span class="glyphicon glyphicon-pencil"></span> Alterar Dados</button>
-                        <button type="button" class="btn btn-primary btn-sm" ng-click="desativarProfissional(pessoa.id)"> <span class="glyphicon glyphicon-trash"></span> Desativar Usuário</button>
+                        <button type="button" class="btn btn-primary btn-sm" ng-click="showConfirm(pessoa.id,$event)"> <span class="glyphicon glyphicon-trash"></span> Desativar Usuário</button>
                     </div>
                 </td>
             </tr>

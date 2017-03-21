@@ -134,8 +134,11 @@ app.controller('pessoaCtrl', function($scope,  $state,$rootScope,$http,$sce) {
     if(sessionStorage.getItem("acao")=="editar"){
         var id= parseInt(sessionStorage.getItem("ID"));
         $rootScope.reqWithToken('/getPessoa?idPessoa='+id,'','GET',function (success) {
-            $scope.dados=success;
-            console.log($scope.dados);
+            //$scope.dados=success;
+            $scope.$apply(function() {
+                $scope.dados.DataNascimento=success.DataNascimento;
+            });
+            console.log(success);
         },function (err) {
 
         })
