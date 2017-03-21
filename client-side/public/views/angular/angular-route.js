@@ -1,4 +1,4 @@
-var app = angular.module('SantaUTIApp', ['datetimepicker','ui.router','ngStorage']);
+var app = angular.module('SantaUTIApp', ['datetimepicker','ui.router','ngStorage','ngMaterial']);
 
 app.run(function ($rootScope,$location,$window,$state, $stateParams, $http) {
 
