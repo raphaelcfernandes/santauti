@@ -50,6 +50,7 @@ CREATE TABLE IF NOT EXISTS `santauti`.`Profissional` (
   `Senha` VARCHAR(60) NOT NULL,
   `TipoProfissional` INT NOT NULL,
   `Ativo` BOOLEAN NOT NULL,
+  `QRKey` VARCHAR(256) UNIQUE,
   UNIQUE INDEX `Usuario_UNIQUE` (`Usuario` ASC),
   UNIQUE INDEX `Registro_UNIQUE` (`Registro` ASC),
   UNIQUE INDEX `ID_UNIQUE` (`ID` ASC),
@@ -350,7 +351,7 @@ SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
 
 INSERT INTO Pessoa VALUES (1,'02483575145','ADMIN','ADMIN','ADMIN123','1994-09-11',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO Profissional VALUES (1,1,'admin','U2FsdGVkX1/ReFEwS2yxxqw6imqy3IRzdLzjbOkoak4=',1,TRUE);
+INSERT INTO Profissional VALUES (1,1,'admin','U2FsdGVkX1/ReFEwS2yxxqw6imqy3IRzdLzjbOkoak4=',1,TRUE,NULL);
 # Usuario: admin, senha: 1
 
 INSERT INTO Pessoa VALUES (2,'123456798','Joao','Pessoa','Joao123','1994-09-11','Joao Naves de Avila',632,'Sta Monica',NULL,'38410614','Uberlandia','joao@gmail.com');
@@ -358,6 +359,6 @@ INSERT INTO Paciente VALUES (2,04,01,'Jornalista','Particular',TRUE,1);
 #Paciente: 2, responsavel: 1(registro)
 
 INSERT INTO Pessoa VALUES (3,'465879','Angelo','Caetano Fernandes','Angelo123','1968-11-30','Pedro Crosara Cherulli','271','Cazeca',NULL,'34567','Uberlandia','angelo@gmail.com');
-INSERT INTO Profissional VALUES (259687,3,'udiacf','U2FsdGVkX1/ReFEwS2yxxqw6imqy3IRzdLzjbOkoak4=',2,FALSE);
+INSERT INTO Profissional VALUES (259687,3,'udiacf','U2FsdGVkX1/ReFEwS2yxxqw6imqy3IRzdLzjbOkoak4=',2,FALSE,NULL);
 INSERT INTO Pessoa (CPF,Nome,Sobrenome,Identidade,DataNascimento,Rua,Numero,Bairro,Apartamento,Cep,Cidade,Email) VALUES ('62840673649','Neide','Garcia Cardoso','567678','1970-01-31','Itutinga',181,'Gravatas',NULL,'38410614','Uberlandia','neide@gmail.com');
-INSERT INTO Profissional VALUES (249687,4,'neide','U2FsdGVkX1/ReFEwS2yxxqw6imqy3IRzdLzjbOkoak4=',2,FALSE);
+INSERT INTO Profissional VALUES (249687,4,'neide','U2FsdGVkX1/ReFEwS2yxxqw6imqy3IRzdLzjbOkoak4=',2,FALSE,NULL);

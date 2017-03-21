@@ -6,7 +6,7 @@ const Config = require('../config/generalConfig');
 const Jwt = require('jsonwebtoken');
 const privateKey = Config.key.privateKey;
 var models = require('../models/index');
-
+var qr = require('qrcode-npm');
 
 module.exports = function(app){
     Profissional = app.serverSide.models.index.Profissional;
@@ -56,14 +56,21 @@ module.exports = function(app){
                     if (result) {
                         console.log(result.Usuario);
                         var salt = Common.randomB(8);
-                        var password = salt + "" + result.Usuario.toString() + "" + result.Senha.toString();
-                        var encrp = (Common.encrypt(password));
+                        var password = salt + "" + result.Usuario.toString();
+                        var encrp = password;
                         result.updateAttributes({
                             QRKey: encrp
                         });
+                        var coder = qr.qrcode(4,'L');
+                        coder.addData(encrp);
+                        coder.make();
+
+                        var img = coder.createImgTag(4);
+                        console.log(img);
                         res.json({
                             ID: req.body.id,
-                            QRKey: encrp
+                            QRKey: encrp,
+                            IMG: img
                         });
                         //Tentar enviar o status ainda, CORRIGIR ISSo
                         console.log("modificado com sucesso");

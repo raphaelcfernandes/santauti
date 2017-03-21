@@ -2,7 +2,7 @@
  * Created by raphael on 2/13/17.
  */
 
-app.controller('homeCtrl', function($scope,$state,$rootScope,$timeout,$mdDialog) {
+app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$sce) {
     /**
      * NIVELPROFISSIONAL = 1 -> ADMIN
      * NIVELPROFISSIONAL = 2 -> MEDICO
@@ -16,8 +16,9 @@ app.controller('homeCtrl', function($scope,$state,$rootScope,$timeout,$mdDialog)
     //Separar profissional de paciente.
 
     //OS BOTÕES DE CONFIRMAÇÃO
-    $scope.status = '  ';
+    $scope.html = '  ';
     $scope.customFullscreen = false;
+    $scope.trustedHtml = "";
 
     /* $scope.showAlert = function(ev) {
      // Appending dialog to document.body to cover sidenav in docs app
@@ -73,25 +74,39 @@ app.controller('homeCtrl', function($scope,$state,$rootScope,$timeout,$mdDialog)
         }, function (err) {
             console.log(err);
         });
-    }
-
+    },
+    /*
+    Função para reuso do gerador de QRCODE (usar nas duas possibilidades, QR EXISTE E QR NÃO EXISTE
+    Também é responsável por gerar a imagem do QR-CODE
+     */
+    $scope.qrSave = function (data) {
+        $rootScope.reqWithToken('/gerarQr', data, 'POST', function (success) {
+            //console.log(success);
+            //Atualiza o array #pessoa
+            for (var i = 0; i < $scope.pessoas.length; i++) {
+                if ($scope.pessoas[i].id == success.ID) {
+                    $scope.pessoas[i].qrkey = success.QRKey;
+                }
+            }
+            $scope.html = success.IMG;
+            $scope.trustedHtml = $sce.trustAsHtml($scope.html);
+        }, function (err) {
+            console.log("Erro de roteamento");
+        });
+    },
+    /*
+     sudo apt-get install libcairo2-dev libjpeg-dev libpango1.0-dev libgif-dev build-essential g++
+     npm install canvas
+     npm install npm-qrcode ou qrcode-npm (n lembro qual kkkk)
+     Isso para letura
+     */
     $scope.gerarQrCode = function (ev, id, qrval) {
         var data = {
             id: id
         }
         //Reativar if e else no caso da janela de confirmação passar a funcionar
         if (qrval == null) {
-            $rootScope.reqWithToken('/gerarQr', data, 'POST', function (success) {
-                //console.log(success);
-                //Atualiza o array #pessoa
-                for (var i = 0; i < $scope.pessoas.length; i++) {
-                    if ($scope.pessoas[i].id == success.ID) {
-                        $scope.pessoas[i].qrkey = success.QRKey;
-                    }
-                }
-            }, function (err) {
-                console.log("Erro de roteamento");
-            });
+            $scope.qrSave(data);
         }
         else {
             // Criando a janela de confirmação
@@ -102,9 +117,11 @@ app.controller('homeCtrl', function($scope,$state,$rootScope,$timeout,$mdDialog)
                 .targetEvent(ev)
                 .ok('Gerar novo')
                 .cancel('Cancelar');
+
             $mdDialog.show(confirm).then(function () {
-                $scope.status = 'You decided to get rid of your debt.';
-            }, function () {
+                $scope.qrSave(data);
+            },
+                function () { //Clicou o botão recusar
                 $scope.status = 'You decided to keep your debt.';
             });
         }
