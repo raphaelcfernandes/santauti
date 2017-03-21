@@ -2,7 +2,7 @@
  * Created by raphael on 2/13/17.
  */
 
-app.controller('homeCtrl', function($scope,$state,$rootScope,$timeout) {
+app.controller('homeCtrl', function($scope,$state,$rootScope,$timeout,$mdDialog) {
     /**
      * NIVELPROFISSIONAL = 1 -> ADMIN
      * NIVELPROFISSIONAL = 2 -> MEDICO
@@ -64,6 +64,25 @@ app.controller('homeCtrl', function($scope,$state,$rootScope,$timeout) {
         $state.go("pessoa",{
             acao: "editar",
             id: id
+        });
+    };
+    $scope.status = '  ';
+    $scope.customFullscreen = false;
+
+    $scope.showConfirm = function(ev) {
+        // Appending dialog to document.body to cover sidenav in docs app
+        var confirm = $mdDialog.confirm()
+            .title('Desativaćao de Usuário.')
+            .textContent('Este usuário será desativado e não fará mais parte do sistema, sendo necessário sua reativacao posteriormente. Deseja continuar mesmo assim?')
+            .ariaLabel('Lucky day')
+            .targetEvent(ev)
+            .ok('Desativar.')
+            .cancel('Não.');
+
+        $mdDialog.show(confirm).then(function() {
+
+        }, function() {
+            $scope.status = 'You decided to keep your debt.';
         });
     };
 });

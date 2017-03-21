@@ -1,4 +1,4 @@
-var app = angular.module('SantaUTIApp', ['datetimepicker','ui.router','ngStorage','ui.bootstrap']);
+var app = angular.module('SantaUTIApp', ['ngMaterial','datetimepicker','ui.router','ngStorage']);
 
 app.run(function ($rootScope,$location,$window,$state, $stateParams, $http) {
 
@@ -521,6 +521,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         }
 //    $locationProvider.html5Mode(true);
 }]);
+
 app.config(['datetimepickerProvider',function (datetimepickerProvider) {
     datetimepickerProvider.setOptions({
         locale:  'pt-br',
