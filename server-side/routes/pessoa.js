@@ -5,4 +5,5 @@ module.exports = function(app){
     pessoa = app.serverSide.controllers.pessoa;
     app.post('/inserirPessoa', pessoa.novoCadastroPessoa);
     app.get('/getPessoa',pessoa.buscaCadastroPessoa);
+    app.put('/updatePessoa',pessoa.updateCadastroPessoa);
 }

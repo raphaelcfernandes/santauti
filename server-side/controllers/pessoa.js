@@ -44,7 +44,6 @@ module.exports = function(app){
                         }
                     }).then(function(result){
                         res.json({ID:result.ID});
-                        res.sendStatus(201);
                     });
                 }).catch(models.Sequelize.UniqueConstraintError,function (err) {
                     res.status(400).end(objToString(err.fields));
@@ -59,17 +58,41 @@ module.exports = function(app){
                 Pessoa.findOne({
                     where:{
                         ID: req.query.idPessoa
-                    },
-                    attributes: [
-                        'CPF','Nome','Sobrenome','Identidade','Rua','Numero','Bairro','Apartamento','Cep','Cidade','Email',
-                        'DataNascimento',
-                        [models.sequelize.fn('date_format', models.sequelize.col('DataNascimento'), '%d-%m-%Y'), 'DataNascimento']
-                    ]
+                    }
                 }).then(function (result) {
                     res.json(result);
                 });
             } catch(err) {
                 res.sendStatus(401);
+            }
+        },
+        updateCadastroPessoa: function(req,res,next){
+            console.log(req.body);
+            try {
+                Jwt.verify(req.headers.access_token, privateKey);
+                Pessoa.findOne({
+                    where: { ID: req.body.id}
+                }).then(function (result) {
+                    if (result) {
+                        result.updateAttributes({
+                            Nome: req.body.Nome,
+                            Sobrenome: req.body.Sobrenome,
+                            CPF: req.body.CPF,
+                            Identidade: req.body.Identidade,
+                            Email: req.body.Email,
+                            Rua: req.body.Rua,
+                            Numero: req.body.Numero,
+                            Apartamento: req.body.Apartamento,
+                            Bairro: req.body.Bairro,
+                            Cep: req.body.Cep,
+                            Cidade: req.body.Cidade
+                        });
+                        res.sendStatus(201);
+                    }
+                })
+            } catch(err) {
+                res.sendStatus(401);
+
             }
         }
 

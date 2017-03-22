@@ -1,10 +1,12 @@
 /**
  * Created by raphael on 3/16/17.
  */
-app.controller('pessoaCtrl', function($scope,  $state,$rootScope,$http,$sce) {
+app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$sce) {
     /*******************DECLARACAO DE VARIAVEIS E SCOPES*************/
     $scope.dados={};
     $scope.flagcep = -1; //Flag para descobrir qual servidor está conectado
+    $scope.isDirty=null;
+    $scope.myForm={};
     /*******************DECLARACAO DE VARIAVEIS E SCOPES*************/
 
     /**
@@ -99,49 +101,84 @@ app.controller('pessoaCtrl', function($scope,  $state,$rootScope,$http,$sce) {
      * Return ERRO: RECEBERÁ UM HTTP CODE + MENSAGEM REFERENTE AO ERRO.
      */
     $scope.proximaPagina = function () {
-        var data = {
-            infoPessoa: $scope.dados
-        };
-        $rootScope.reqWithToken('/inserirPessoa',data,'POST',function(success){
-            sessionStorage.setItem("ID",success.ID);
-            $state.go('usuario',{
-                acao: "novo",
-                id:success.ID
-            })
-        },function(err){
-            if(err === 'Unauthorized'){
-                alert("Voce nao tem permissao para efetuar essa aćao");
-            }
-            else if(err === 'CPF'){
-                /*
-                 ESSA MENSAGEM DE ERRO DEVE APARECER COMO BALAO EMBAIXO DO INPUT DE CPF
-                 O INPUT DEVE FICAR COM AS BORDAS VERMELHAS
-                 */
-                alert("CPF já existe no sistema");//
-            }
-            else if(err === 'Identidade'){
-                /*
-                 ESSA MENSAGEM DE ERRO DEVE APARECER COMO BALAO EMBAIXO DO INPUT DE IDENTIDADE
-                 O INPUT DEVE FICAR COM AS BORDAS VERMELHAS
-                 */
-                alert("Identidade já existe no sistema");//
-            }
-            else{
-                alert("ERRO ESTRANHO, CONTATE A EQUIPE DE DESENVOLVIMENTO");
-            }
-        });
+        if(sessionStorage.getItem("acao")=="editar") {
+            //$scope.dados.DataNascimento = moment().format("YYYY-MM-DD");
+            // if($scope.myForm.$dirty){
+            //     $scope.dados.DataNascimento = moment().format("YYYY-MM-DD");
+            //     var data= {
+            //         data: $scope.dados
+            //     };
+            //     console.log($scope.dados);
+            //     $rootScope.reqWithToken('/updatePessoa', data, 'PUT', function (success) {
+            //         //console.log(success);
+            //     }, function (err) {
+            //         console.log(err);
+            //     });
+            // }
+        }
+        else {
+            $scope.dados.DataNascimento = moment().format("YYYY-MM-DD");
+            var data = {
+                infoPessoa: $scope.dados
+            };
+            $rootScope.reqWithToken('/inserirPessoa', data, 'POST', function (success) {
+                sessionStorage.setItem("ID", success.ID);
+                $state.go('usuario', {
+                    acao: "novo",
+                    id: success.ID
+                })
+            }, function (err) {
+                if (err === 'Unauthorized') {
+                    alert("Voce nao tem permissao para efetuar essa aćao");
+                }
+                else if (err === 'CPF') {
+                    /*
+                     ESSA MENSAGEM DE ERRO DEVE APARECER COMO BALAO EMBAIXO DO INPUT DE CPF
+                     O INPUT DEVE FICAR COM AS BORDAS VERMELHAS
+                     */
+                    alert("CPF já existe no sistema");//
+                }
+                else if (err === 'Identidade') {
+                    /*
+                     ESSA MENSAGEM DE ERRO DEVE APARECER COMO BALAO EMBAIXO DO INPUT DE IDENTIDADE
+                     O INPUT DEVE FICAR COM AS BORDAS VERMELHAS
+                     */
+                    alert("Identidade já existe no sistema");//
+                }
+                else {
+                    alert("ERRO ESTRANHO, CONTATE A EQUIPE DE DESENVOLVIMENTO");
+                }
+            });
+        }
     };
-    if(sessionStorage.getItem("acao")=="editar"){
+
+    $scope.cadastroEditar = function () {
         var id= parseInt(sessionStorage.getItem("ID"));
         $rootScope.reqWithToken('/getPessoa?idPessoa='+id,'','GET',function (success) {
-            //$scope.dados=success;
-            $scope.$apply(function() {
-                $scope.dados.DataNascimento=success.DataNascimento;
-            });
-            console.log(success);
+            success.DataNascimento = moment().format("DD-MM-YYYY");
+            $scope.dados = success;
+            console.log(typeof $scope.dados.DataNascimento);
+            // $scope.dados.Nome=success.Nome;
+            // $scope.dados.Sobrenome=success.Sobrenome;
+            // $scope.dados.CPF = success.CPF;
+            // $scope.dados.Identidade = success.Identidade;
+            // $scope.dados.Email = success.Email;
+            // $scope.dados.Rua = success.Rua;
+            // $scope.dados.Numero = success.Numero;
+            // $scope.dados.Apartamento = success.Apartamento;
+            // $scope.dados.Bairro = success.Bairro;
+            // $scope.dados.Cep = success.Cep;
+            // $scope.dados.Cidade = success.Cidade;
+            //$scope.dados.DataNascimento = success.DataNascimento.toString();
+            //document.getElementById('DataNascimento').value = success.DataNascimento;
         },function (err) {
-
         })
+    };
+
+    if(sessionStorage.getItem("acao")=="editar") {
+        $scope.cadastroEditar();
     }
+
+
 
 });
