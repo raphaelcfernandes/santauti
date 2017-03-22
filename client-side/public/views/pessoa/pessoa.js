@@ -103,29 +103,7 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
      */
     $scope.proximaPagina = function () {
         if(sessionStorage.getItem("acao")=="editar") {
-            if(!$scope.myForm.Nome.$dirty)
-                $scope.dados.Nome=null;
-            if(!$scope.myForm.Sobrenome.$dirty)
-                $scope.dados.Sobrenome=null;
-            if(!$scope.myForm.CPF.$dirty)
-                $scope.dados.CPF=null;
-            if(!$scope.myForm.Identidade.$dirty)
-                $scope.dados.Identidade=null;
-            if(!$scope.myForm.Email.$dirty)
-                $scope.dados.Email=null;
-            if(!$scope.myForm.Rua.$dirty)
-                $scope.dados.Rua=null;
-            if(!$scope.myForm.Numero.$dirty)
-                $scope.dados.Numero=null;
-            if(!$scope.myForm.Apartamento.$dirty)
-                $scope.dados.Apartamento=null;
-            if(!$scope.myForm.Bairro.$dirty)
-                $scope.dados.Bairro=null;
-            if(!$scope.myForm.Cep.$dirty)
-                $scope.dados.Cep=null;
-            if(!$scope.myForm.Cidade.$dirty)
-                $scope.dados.Cidade=null;
-            var data= {
+            var data = {
                 data: $scope.dados,
                 id: sessionStorage.getItem("ID")
             };
