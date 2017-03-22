@@ -107,11 +107,29 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
                 data: $scope.dados,
                 id: sessionStorage.getItem("ID")
             };
-            console.log($scope.dados);
             $rootScope.reqWithToken('/updatePessoa', data, 'PUT', function (success) {
                 console.log(success);
             }, function (err) {
-                console.log(err);
+                if (err === 'Unauthorized') {
+                    alert("Voce nao tem permissao para efetuar essa aćao");
+                }
+                else if (err === 'CPF') {
+                    /*
+                     ESSA MENSAGEM DE ERRO DEVE APARECER COMO BALAO EMBAIXO DO INPUT DE CPF
+                     O INPUT DEVE FICAR COM AS BORDAS VERMELHAS
+                     /
+                     alert("CPF já existe no sistema");//
+                     }
+                     else if (err === 'Identidade') {
+                     /
+                     ESSA MENSAGEM DE ERRO DEVE APARECER COMO BALAO EMBAIXO DO INPUT DE IDENTIDADE
+                     O INPUT DEVE FICAR COM AS BORDAS VERMELHAS
+                     */
+                    alert("Identidade já existe no sistema");//
+                }
+                else {
+                    alert("ERRO ESTRANHO, CONTATE A EQUIPE DE DESENVOLVIMENTO");
+                }
             });
         }
         else {

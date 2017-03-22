@@ -6,6 +6,7 @@ const Config = require('../config/generalConfig');
 const Jwt = require('jsonwebtoken');
 const privateKey = Config.key.privateKey;
 var models = require('../models/index');
+const moment = require('moment');
 
 
 module.exports = function(app){
@@ -71,32 +72,33 @@ module.exports = function(app){
                 res.sendStatus(401);
             }
         },
-        updateCadastroPessoa: function(req,res,next){
-            console.log(req.body);
+        updateCadastroPessoa: function(req,res,next) {
             try {
                 Jwt.verify(req.headers.access_token, privateKey);
                 Pessoa.findOne({
-                    where: { ID: req.body.id}
+                    where: {ID: req.body.id}
                 }).then(function (result) {
                     if (result) {
+                        req.body.data.DataNascimento = moment().format("YYYY-MM-DD");
                         result.updateAttributes({
-                            CPF: req.body.CPF,
-                            Nome: req.body.Nome,
-                            Sobrenome: req.body.Sobrenome,
-                            Identidade: req.body.Identidade,
-                            Email: req.body.Email,
-                            Rua: req.body.Rua,
-                            Numero: req.body.Numero,
-                            Apartamento: req.body.Apartamento,
-                            Bairro: req.body.Bairro,
-                            Cep: req.body.Cep,
-                            Cidade: req.body.Cidade,
-                            DataNascimento: req.body.DataNascimento
+                            CPF: req.body.data.CPF,
+                            Nome: req.body.data.Nome,
+                            Sobrenome: req.body.data.Sobrenome,
+                            Identidade: req.body.data.Identidade,
+                            Email: req.body.data.Email,
+                            Rua: req.body.data.Rua,
+                            Numero: req.body.data.Numero,
+                            Apartamento: req.body.data.Apartamento,
+                            Bairro: req.body.data.Bairro,
+                            Cep: req.body.data.Cep,
+                            Cidade: req.body.data.Cidade,
+                            DataNascimento: req.body.data.DataNascimento
+                        }).catch(models.Sequelize.UniqueConstraintError, function (err) {
+                            res.status(400).end(objToString(err.fields));
                         });
-                        res.sendStatus(201);
                     }
                 })
-            } catch(err) {
+            } catch (err) {
                 res.sendStatus(401);
 
             }
