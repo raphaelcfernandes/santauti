@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "moment": "^2.18.1",
-    "angular-moment-picker": "moment-picker#^0.9.10"
+    "angular-moment-picker": "moment-picker#^0.9.10",
+    "angular-qr-scanner": "^0.1.0"
   }
 }
