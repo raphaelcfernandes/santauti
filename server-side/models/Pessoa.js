@@ -36,7 +36,10 @@ module.exports = function(sequelize, DataTypes) {
             Apartamento: DataTypes.INTEGER,
             Cep: DataTypes.STRING,
             Cidade: DataTypes.STRING,
-            Email: DataTypes.STRING
+            Email: {
+                type: DataTypes.STRING,
+                unique: true
+            }
         }, {
             timestamps:false,
             tableName: 'Pessoa'

@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `santauti`.`Pessoa` (
   `Apartamento` INT NULL,
   `Cep` VARCHAR(10) NULL,
   `Cidade` VARCHAR(45) NULL,
-  `Email` VARCHAR(45) NULL,
+  `Email` VARCHAR(45) UNIQUE NULL,
   UNIQUE INDEX `CPF_UNIQUE` (`CPF` ASC),
   UNIQUE INDEX `Identidade_UNIQUE` (`Identidade` ASC),
   PRIMARY KEY (`ID`))

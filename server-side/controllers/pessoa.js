@@ -72,17 +72,17 @@ module.exports = function(app){
             }
         },
         updateCadastroPessoa: function(req,res,next){
+            console.log(req.body);
             try {
                 Jwt.verify(req.headers.access_token, privateKey);
                 Pessoa.findOne({
                     where: { ID: req.body.id}
                 }).then(function (result) {
-                    console.log(result);
                     if (result) {
                         result.updateAttributes({
+                            CPF: req.body.CPF,
                             Nome: req.body.Nome,
                             Sobrenome: req.body.Sobrenome,
-                            CPF: req.body.CPF,
                             Identidade: req.body.Identidade,
                             Email: req.body.Email,
                             Rua: req.body.Rua,
