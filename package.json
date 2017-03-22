@@ -26,6 +26,7 @@
     "express-load": "^1.1.15",
     "jquery": "^2.2.4",
     "jsonwebtoken": "^7.2.1",
+    "moment": "^2.18.1",
     "moment-timezone": "^0.5.11",
     "mysql": "^2.12.0",
     "node-forge": "^0.6.48",
