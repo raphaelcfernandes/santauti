@@ -7,7 +7,6 @@ const Jwt = require('jsonwebtoken');
 const privateKey = Config.key.privateKey;
 const moment = require('moment');
 var models = require('../models/index');
-const moment = require('moment');
 
 
 module.exports = function(app){
