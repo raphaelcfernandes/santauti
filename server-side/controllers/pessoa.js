@@ -73,11 +73,17 @@ module.exports = function(app){
             }
         },
         updateCadastroPessoa: function(req,res,next){
+            console.log(req.body.data.DataNascimento);
+            var x = req.body.data.DataNascimento;
+            console.log(x);
+            x = moment().format("YYYY-MM-DD");
+            console.log(x);
             try {
                 Jwt.verify(req.headers.access_token, privateKey);
                 Pessoa.findOne({
                     where: { ID: req.body.id}
                 }).then(function (result) {
+                    console.log("aqui");
                     if (result) {
                         req.body.data.DataNascimento=moment().format("YYYY-MM-DD");
                         result.updateAttributes({
@@ -94,18 +100,17 @@ module.exports = function(app){
                             Cidade: req.body.data.Cidade,
                             DataNascimento: req.body.data.DataNascimento
                         }).catch(models.Sequelize.UniqueConstraintError,function (err) {
+                            console.log(err.fields);
                             res.status(400).end(objToString(err.fields));
                         });
                     }
                 })
-            } catch(err) {
+            } catch(err){
                 res.sendStatus(401);
-
             }
+
         }
-
     };
-
     function objToString (obj) {
         var str = '';
         for (var p in obj)
