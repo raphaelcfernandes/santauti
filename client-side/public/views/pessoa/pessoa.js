@@ -107,11 +107,15 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
                 data: $scope.dados,
                 id: sessionStorage.getItem("ID")
             };
-            console.log($scope.dados);
+            console.log(data);
             $rootScope.reqWithToken('/updatePessoa', data, 'PUT', function (success) {
                 console.log(success);
+                // $state.go('usuario', {
+                //     acao: "editar",
+                //     id: sessionStorage.getItem("ID")
+                // })
             }, function (err) {
-                console.log(err);
+                $scope.getDataErro(err);
             });
         }
         else {
@@ -125,30 +129,32 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
                     id: success.ID
                 })
             }, function (err) {
-                if (err === 'Unauthorized') {
-                    alert("Voce nao tem permissao para efetuar essa aćao");
-                }
-                else if (err === 'CPF') {
-                    /*
-                     ESSA MENSAGEM DE ERRO DEVE APARECER COMO BALAO EMBAIXO DO INPUT DE CPF
-                     O INPUT DEVE FICAR COM AS BORDAS VERMELHAS
-                     */
-                    alert("CPF já existe no sistema");//
-                }
-                else if (err === 'Identidade') {
-                    /*
-                     ESSA MENSAGEM DE ERRO DEVE APARECER COMO BALAO EMBAIXO DO INPUT DE IDENTIDADE
-                     O INPUT DEVE FICAR COM AS BORDAS VERMELHAS
-                     */
-                    alert("Identidade já existe no sistema");//
-                }
-                else {
-                    alert("ERRO ESTRANHO, CONTATE A EQUIPE DE DESENVOLVIMENTO");
-                }
+                $scope.getDataErro(err);
             });
         }
     };
-
+    $scope.getDataErro = function(err){
+        if (err === 'Unauthorized') {
+            alert("Voce nao tem permissao para efetuar essa aćao");
+        }
+        else if (err === 'CPF') {
+            /*
+             ESSA MENSAGEM DE ERRO DEVE APARECER COMO BALAO EMBAIXO DO INPUT DE CPF
+             O INPUT DEVE FICAR COM AS BORDAS VERMELHAS
+             */
+            alert("CPF já existe no sistema");//
+        }
+        else if (err === 'Identidade') {
+            /*
+             ESSA MENSAGEM DE ERRO DEVE APARECER COMO BALAO EMBAIXO DO INPUT DE IDENTIDADE
+             O INPUT DEVE FICAR COM AS BORDAS VERMELHAS
+             */
+            alert("Identidade já existe no sistema");//
+        }
+        else {
+            alert("ERRO ESTRANHO, CONTATE A EQUIPE DE DESENVOLVIMENTO");
+        }
+    };
     /**
      * Coloca no objeto dados o resultado da requisicao do banco.
      * Requisita ao banco os dados de Pessoa do usuario com ID passado pela sessao
@@ -158,6 +164,7 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
         $rootScope.reqWithToken('/getPessoa?idPessoa='+id,'','GET',function (success) {
             $scope.dados = success;
         },function (err) {
+            console.log(err);
         })
     };
 
