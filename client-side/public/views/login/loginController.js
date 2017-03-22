@@ -46,8 +46,7 @@ app.controller('loginCtrl', function($scope,  $state, $window, $location, $timeo
                 $scope.showInvalidUserPasswordMessage(true, 1);
             });
         }
-        ;
-    }
+    };
 
     $scope.onError = function(error) {
         $scope.showInvalidUserPasswordMessage(false,1,error);
