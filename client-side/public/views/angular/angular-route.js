@@ -1,12 +1,4 @@
-var app = angular.module('SantaUTIApp', ['ngMaterial','datetimepicker','ui.router','ngStorage','qrScanner']);
-app.config(function ($mdThemingProvider) {
-    $mdThemingProvider.theme('red')
-        .primaryPalette('red');
-
-    $mdThemingProvider.theme('blue')
-        .primaryPalette('blue');
-});
-
+var app = angular.module('SantaUTIApp', ['ngMaterial','ui.router','ngStorage','qrScanner','moment-picker']);
 
 app.run(function ($rootScope,$location,$window,$state, $stateParams, $http) {
 
@@ -530,39 +522,27 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
 //    $locationProvider.html5Mode(true);
 }]);
 
-app.config(['datetimepickerProvider',function (datetimepickerProvider) {
-    datetimepickerProvider.setOptions({
-        locale:  'pt-br',
-        keepOpen: false,
-        showTodayButton: true,
-        showClear:true,
-        // format: 'DD MMMM YYYY - HH:mm',
-        tooltips: {
-            today: 'Selecionar hoje',
-            clear: 'Excluir data',
-            close: 'Close the picker',
-            selectMonth: 'Selecionar mês',
-            prevMonth: 'Mês anterior',
-            nextMonth: 'Próximo mês',
-            selectYear: 'Selecione o ano',
-            prevYear: 'Ano anterior',
-            nextYear: 'Próximo ano',
-            hours: 'Selecionar horário',
-            time: 'Selecionar hora'
-        },
-        icons: {
-            time: 'glyphicon glyphicon-time',
-            date: 'glyphicon glyphicon-calendar',
-            up: 'glyphicon glyphicon-chevron-up',
-            down: 'glyphicon glyphicon-chevron-down',
-            previous: 'glyphicon glyphicon-chevron-left',
-            next: 'glyphicon glyphicon-chevron-right',
-            today: 'glyphicon glyphicon-screenshot',
-            clear: 'glyphicon glyphicon-trash',
-            close: 'glyphicon glyphicon-remove'
-        }
-
-    });
-}
-
-]);
+// app.config(['momentPickerProvider', function (momentPickerProvider) {
+//     momentPickerProvider.options({
+//         /* Picker properties */
+//         locale:        'pt-br',
+//         format:        'lll',
+//         minView:       'year',
+//         maxView:       'minute',
+//         startView:     'year',
+//         autoclose:     true,
+//         today:         false,
+//         keyboard:      false,
+//
+//         /* Extra: Views properties */
+//         leftArrow:     '&larr;',
+//         rightArrow:    '&rarr;',
+//         yearsFormat:   'YYYY',
+//         monthsFormat:  'MMM',
+//         daysFormat:    'D',
+//         hoursFormat:   'HH:[00]',
+//         minutesFormat: moment.localeData().longDateFormat('LT').replace(/[aA]/, ''),
+//         secondsFormat: moment.localeData().longDateFormat('LT').replace(/[aA]/, ''),
+//         minutesStep:   5,
+//         secondsStep:   1
+//     })}    ]);

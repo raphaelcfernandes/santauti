@@ -7,6 +7,7 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
     $scope.flagcep = -1; //Flag para descobrir qual servidor está conectado
     $scope.isDirty=null;
     $scope.myForm={};
+    $scope.myInput=null;
     /*******************DECLARACAO DE VARIAVEIS E SCOPES*************/
 
     /**
@@ -102,22 +103,22 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
      */
     $scope.proximaPagina = function () {
         if(sessionStorage.getItem("acao")=="editar") {
-            //$scope.dados.DataNascimento = moment().format("YYYY-MM-DD");
-            // if($scope.myForm.$dirty){
-            //     $scope.dados.DataNascimento = moment().format("YYYY-MM-DD");
-            //     var data= {
-            //         data: $scope.dados
-            //     };
-            //     console.log($scope.dados);
-            //     $rootScope.reqWithToken('/updatePessoa', data, 'PUT', function (success) {
-            //         //console.log(success);
-            //     }, function (err) {
-            //         console.log(err);
-            //     });
-            // }
+            if(!$scope.myForm.Nome.$dirty)
+                $scope.dados.Nome=null;
+            if(!$scope.myForm.Sobrenome.$dirty)
+                $scope.dados.Sobrenome=null;
+            var data= {
+                data: $scope.dados,
+                id: sessionStorage.getItem("ID")
+            };
+            console.log($scope.dados);
+            // $rootScope.reqWithToken('/updatePessoa', data, 'PUT', function (success) {
+            //     console.log(success);
+            // }, function (err) {
+            //     console.log(err);
+            // });
         }
         else {
-            $scope.dados.DataNascimento = moment().format("YYYY-MM-DD");
             var data = {
                 infoPessoa: $scope.dados
             };
@@ -152,25 +153,14 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
         }
     };
 
+    /**
+     * Coloca no objeto dados o resultado da requisicao do banco.
+     * Requisita ao banco os dados de Pessoa do usuario com ID passado pela sessao
+     */
     $scope.cadastroEditar = function () {
         var id= parseInt(sessionStorage.getItem("ID"));
         $rootScope.reqWithToken('/getPessoa?idPessoa='+id,'','GET',function (success) {
-            success.DataNascimento = moment().format("DD-MM-YYYY");
             $scope.dados = success;
-            console.log(typeof $scope.dados.DataNascimento);
-            // $scope.dados.Nome=success.Nome;
-            // $scope.dados.Sobrenome=success.Sobrenome;
-            // $scope.dados.CPF = success.CPF;
-            // $scope.dados.Identidade = success.Identidade;
-            // $scope.dados.Email = success.Email;
-            // $scope.dados.Rua = success.Rua;
-            // $scope.dados.Numero = success.Numero;
-            // $scope.dados.Apartamento = success.Apartamento;
-            // $scope.dados.Bairro = success.Bairro;
-            // $scope.dados.Cep = success.Cep;
-            // $scope.dados.Cidade = success.Cidade;
-            //$scope.dados.DataNascimento = success.DataNascimento.toString();
-            //document.getElementById('DataNascimento').value = success.DataNascimento;
         },function (err) {
         })
     };
@@ -178,7 +168,4 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
     if(sessionStorage.getItem("acao")=="editar") {
         $scope.cadastroEditar();
     }
-
-
-
 });

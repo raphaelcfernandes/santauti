@@ -58,7 +58,12 @@ module.exports = function(app){
                 Pessoa.findOne({
                     where:{
                         ID: req.query.idPessoa
-                    }
+                    },
+                    attributes: [
+                        'CPF','Nome','Sobrenome','Identidade','Rua','Numero','Bairro','Apartamento','Cep','Cidade','Email',
+                        'DataNascimento',
+                        [models.sequelize.fn('date_format', models.sequelize.col('DataNascimento'), '%d-%m-%Y'), 'DataNascimento']
+                    ]
                 }).then(function (result) {
                     res.json(result);
                 });
@@ -67,12 +72,12 @@ module.exports = function(app){
             }
         },
         updateCadastroPessoa: function(req,res,next){
-            console.log(req.body);
             try {
                 Jwt.verify(req.headers.access_token, privateKey);
                 Pessoa.findOne({
                     where: { ID: req.body.id}
                 }).then(function (result) {
+                    console.log(result);
                     if (result) {
                         result.updateAttributes({
                             Nome: req.body.Nome,
@@ -85,7 +90,8 @@ module.exports = function(app){
                             Apartamento: req.body.Apartamento,
                             Bairro: req.body.Bairro,
                             Cep: req.body.Cep,
-                            Cidade: req.body.Cidade
+                            Cidade: req.body.Cidade,
+                            DataNascimento: req.body.DataNascimento
                         });
                         res.sendStatus(201);
                     }

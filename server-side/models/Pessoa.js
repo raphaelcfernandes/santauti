@@ -27,7 +27,7 @@ module.exports = function(sequelize, DataTypes) {
                 unique: true
             },
             DataNascimento: {
-                type: DataTypes.DATEONLY,
+                type: DataTypes.DATE,
                 allowNull:false
             },
             Rua: DataTypes.STRING,

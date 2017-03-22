@@ -16,7 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "eonasdan-bootstrap-datetimepicker": "^4.17.47",
-    "angular-bootstrap-datetimepicker-directive": "^0.1.3"
+    "moment": "^2.18.1",
+    "angular-moment-picker": "moment-picker#^0.9.10"
   }
 }

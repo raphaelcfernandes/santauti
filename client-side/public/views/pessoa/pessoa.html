@@ -23,11 +23,26 @@
                 </div>
 
                 <div class="col-sm-2 col-sm-offset-2">
-                    <div class='input-group date' datetimepicker data-date-format="DD-MM-YYYY">
-                        <input type="text" id="DataNascimento" data-ng-model="dados.DataNascimento" class="form-control" datetimepicker data-date-format="DD-MM-YYYY">
+                    <div class="input-group" moment-picker="dados.DataNascimento"
+                         locale="pt-br"
+                         format="L"
+                         min-view="decade"
+                         autoclose="true"
+                         today="true">
+                        <input name="DataNascimento" class="form-control"
+                               placeholder="Selecione uma data"
+                               ng-model="dados.DataNascimento"
+                               ng-model-options="{ updateOn: 'blur' }">
                         <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span></span>
+                            <i class="glyphicon glyphicon-calendar"></i>
+                        </span>
+
                     </div>
+                    <!--<div class='input-group date' datetimepicker data-date-format="DD-MM-YYYY">-->
+                    <!--<input type="text" id="DataNascimento" data-ng-model="dados.DataNascimento" class="form-control" datetimepicker data-date-format="DD-MM-YYYY">-->
+                    <!--<span class="input-group-addon">-->
+                    <!--<span class="glyphicon glyphicon-calendar"></span></span>-->
+                    <!--</div>-->
                 </div>
             </div>
 
@@ -113,3 +128,4 @@
         </div>
     </form>
 </div>
+
