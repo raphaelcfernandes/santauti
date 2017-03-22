@@ -103,17 +103,17 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
      */
     $scope.proximaPagina = function () {
         if(sessionStorage.getItem("acao")=="editar") {
+            if($scope.dados.Apartamento=='')
+                $scope.dados.Apartamento = null;
             var data = {
                 data: $scope.dados,
                 id: sessionStorage.getItem("ID")
             };
-            console.log(data);
             $rootScope.reqWithToken('/updatePessoa', data, 'PUT', function (success) {
-                console.log(success);
-                // $state.go('usuario', {
-                //     acao: "editar",
-                //     id: sessionStorage.getItem("ID")
-                // })
+                $state.go('usuario', {
+                    acao: "editar",
+                    id: sessionStorage.getItem("ID")
+                })
             }, function (err) {
                 $scope.getDataErro(err);
             });
@@ -133,6 +133,7 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
             });
         }
     };
+
     $scope.getDataErro = function(err){
         if (err === 'Unauthorized') {
             alert("Voce nao tem permissao para efetuar essa aćao");

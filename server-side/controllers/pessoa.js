@@ -13,6 +13,7 @@ module.exports = function(app){
     Pessoa = app.serverSide.models.index.Pessoa;
 
     var pessoaController = {
+
         /**
          * RECEBE TOKEN E DATA DENTRO DE REQ.BODY.INFOPESSOA
          * VERIFICA SE TOKEN É ORIGINAL, CASO SEJA, TENTA INSERIR NO BANCO
@@ -73,19 +74,13 @@ module.exports = function(app){
             }
         },
         updateCadastroPessoa: function(req,res,next){
-            console.log(req.body.data.DataNascimento);
-            var x = req.body.data.DataNascimento;
-            console.log(x);
-            x = moment().format("YYYY-MM-DD");
-            console.log(x);
             try {
                 Jwt.verify(req.headers.access_token, privateKey);
                 Pessoa.findOne({
                     where: { ID: req.body.id}
                 }).then(function (result) {
-                    console.log("aqui");
                     if (result) {
-                        req.body.data.DataNascimento=moment().format("YYYY-MM-DD");
+                        req.body.data.DataNascimento = moment(req.body.data.DataNascimento,'DD/MM/YYYY').format("YYYY-MM-DD");
                         result.updateAttributes({
                             CPF: req.body.data.CPF,
                             Nome: req.body.data.Nome,
@@ -103,6 +98,7 @@ module.exports = function(app){
                             console.log(err.fields);
                             res.status(400).end(objToString(err.fields));
                         });
+                        res.sendStatus(201);
                     }
                 })
             } catch(err){
