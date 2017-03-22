@@ -11,14 +11,20 @@ module.exports = function(app){
     Profissional = app.serverSide.models.index.Profissional;
 
     var loginController = {
+
+
         login: function(req,res,next){
-            Profissional.findOne({
-                where: {
-                    Usuario: req.body.user
-                }
-            }).then(function (result) {
-                if(result) {
-                    if (req.body.passw === Common.decrypt(result.Senha)) {
+
+            if(req.body.USER == "no") {
+                //qrcode LOGIN
+                Profissional.findOne({
+                    where: {
+                        QRKey: req.body.data
+                    }
+
+                }).then(function(result){
+                    if(result){
+
                         var tokenData = {
                             username: result.Usuario,
                             id: result.Registro
@@ -29,14 +35,40 @@ module.exports = function(app){
                         };
                         res.json(result);
                     }
+                    else{
+                        res.sendStatus(400);
+                    }
+                });
+            }
+            else{
+                Profissional.findOne({
+                    where: {
+                        Usuario: req.body.user
+                    }
+                }).then(function (result) {
+                    if (result) {
+                        if (req.body.passw === Common.decrypt(result.Senha)) {
+                            var tokenData = {
+                                username: result.Usuario,
+                                id: result.Registro
+                            };
+                            var result = {
+                                tipoProfissional: result.TipoProfissional,
+                                token: Jwt.sign(tokenData, privateKey)
+                            };
+                            res.json(result);
+                        }
+                        else {
+                            res.sendStatus(400);
+                        }
+                    }
                     else {
                         res.sendStatus(400);
                     }
-                }
-                else {
-                    res.sendStatus(400);
-                }
-            });
+
+                });
+            }
+
 
         }
     }

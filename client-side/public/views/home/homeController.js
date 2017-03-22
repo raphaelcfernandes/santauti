@@ -82,25 +82,25 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
         });
 
     },
-    /*
-    Função para reuso do gerador de QRCODE (usar nas duas possibilidades, QR EXISTE E QR NÃO EXISTE
-    Também é responsável por gerar a imagem do QR-CODE
-     */
-    $scope.qrSave = function (data) {
-        $rootScope.reqWithToken('/gerarQr', data, 'POST', function (success) {
-            //console.log(success);
-            //Atualiza o array #pessoa
-            for (var i = 0; i < $scope.pessoas.length; i++) {
-                if ($scope.pessoas[i].id == success.ID) {
-                    $scope.pessoas[i].qrkey = success.QRKey;
+        /*
+         Função para reuso do gerador de QRCODE (usar nas duas possibilidades, QR EXISTE E QR NÃO EXISTE
+         Também é responsável por gerar a imagem do QR-CODE
+         */
+        $scope.qrSave = function (data) {
+            $rootScope.reqWithToken('/gerarQr', data, 'POST', function (success) {
+                //console.log(success);
+                //Atualiza o array #pessoa
+                for (var i = 0; i < $scope.pessoas.length; i++) {
+                    if ($scope.pessoas[i].id == success.ID) {
+                        $scope.pessoas[i].qrkey = success.QRKey;
+                    }
                 }
-            }
-            $scope.html = success.IMG;
-            $scope.trustedHtml = $sce.trustAsHtml($scope.html);
-        }, function (err) {
-            console.log("Erro de roteamento");
-        });
-    };
+                $scope.html = success.IMG;
+                $scope.trustedHtml = $sce.trustAsHtml($scope.html);
+            }, function (err) {
+                console.log("Erro de roteamento");
+            });
+        };
     /*
      sudo apt-get install libcairo2-dev libjpeg-dev libpango1.0-dev libgif-dev build-essential g++
      npm install canvas
@@ -130,11 +130,11 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
                 .cancel('Cancelar');
 
             $mdDialog.show(confirm).then(function () {
-                $scope.qrSave(data);
-            },
+                    $scope.qrSave(data);
+                },
                 function () { //Clicou o botão recusar
-                $scope.status = 'You decided to keep your debt.';
-            });
+                    $scope.status = 'You decided to keep your debt.';
+                });
         }
     };
 
