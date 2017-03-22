@@ -133,7 +133,7 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
             });
         }
     };
-    
+
     $scope.getDataErro = function(err){
         if (err === 'Unauthorized') {
             alert("Voce nao tem permissao para efetuar essa aćao");
