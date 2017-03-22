@@ -56,6 +56,29 @@ app.controller('loginCtrl', function($scope,  $state, $window, $location, $timeo
         $scope.showInvalidUserPasswordMessage(false,1,error);
     };
 
+    $scope.onSuccess = function(data) {
+        if(data) {
+            var datas = {
+                USER: "no",
+                data: data
+            };
+            $rootScope.req('/login', datas, 'POST', function (success) {
+                sessionStorage.setItem("token", success.token);
+                sessionStorage.setItem("tipoProfissional", success.tipoProfissional);
+                $state.go('home');
+            }, function (err) {
+                $scope.showInvalidUserPasswordMessage(true);
+            });
+        }
+        else console.log("Ops");
+    };
+    $scope.onError = function(error) {
+        console.log(error);
+    };
+    $scope.onVideoError = function(error) {
+        console.log(error);
+    };
+
     $scope.login = function() {
         if ($scope.user != undefined && $scope.password != undefined){
             var data = {
