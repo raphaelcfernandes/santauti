@@ -5,6 +5,7 @@
 const Config = require('../config/generalConfig');
 const Jwt = require('jsonwebtoken');
 const privateKey = Config.key.privateKey;
+const moment = require('moment');
 var models = require('../models/index');
 const moment = require('moment');
 
@@ -72,6 +73,7 @@ module.exports = function(app){
                 res.sendStatus(401);
             }
         },
+
         updateCadastroPessoa: function(req,res,next) {
             try {
                 Jwt.verify(req.headers.access_token, privateKey);

@@ -130,6 +130,7 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
                 else {
                     alert("ERRO ESTRANHO, CONTATE A EQUIPE DE DESENVOLVIMENTO");
                 }
+                $scope.funcaoDeErro(err);
             });
         }
         else {
@@ -143,26 +144,7 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
                     id: success.ID
                 })
             }, function (err) {
-                if (err === 'Unauthorized') {
-                    alert("Voce nao tem permissao para efetuar essa aćao");
-                }
-                else if (err === 'CPF') {
-                    /*
-                     ESSA MENSAGEM DE ERRO DEVE APARECER COMO BALAO EMBAIXO DO INPUT DE CPF
-                     O INPUT DEVE FICAR COM AS BORDAS VERMELHAS
-                     */
-                    alert("CPF já existe no sistema");//
-                }
-                else if (err === 'Identidade') {
-                    /*
-                     ESSA MENSAGEM DE ERRO DEVE APARECER COMO BALAO EMBAIXO DO INPUT DE IDENTIDADE
-                     O INPUT DEVE FICAR COM AS BORDAS VERMELHAS
-                     */
-                    alert("Identidade já existe no sistema");//
-                }
-                else {
-                    alert("ERRO ESTRANHO, CONTATE A EQUIPE DE DESENVOLVIMENTO");
-                }
+                $scope.funcaoDeErro(err);
             });
         }
     };
@@ -179,7 +161,31 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
         })
     };
 
+    $scope.funcaoDeErro = function(err){
+        if (err === 'Unauthorized') {
+            alert("Voce nao tem permissao para efetuar essa aćao");
+        }
+        else if (err === 'CPF') {
+            /*
+             ESSA MENSAGEM DE ERRO DEVE APARECER COMO BALAO EMBAIXO DO INPUT DE CPF
+             O INPUT DEVE FICAR COM AS BORDAS VERMELHAS
+             */
+            alert("CPF já existe no sistema");//
+        }
+        else if (err === 'Identidade') {
+            /*
+             ESSA MENSAGEM DE ERRO DEVE APARECER COMO BALAO EMBAIXO DO INPUT DE IDENTIDADE
+             O INPUT DEVE FICAR COM AS BORDAS VERMELHAS
+             */
+            alert("Identidade já existe no sistema");//
+        }
+        else {
+            alert("ERRO ESTRANHO, CONTATE A EQUIPE DE DESENVOLVIMENTO");
+        }
+    };
+
     if(sessionStorage.getItem("acao")=="editar") {
         $scope.cadastroEditar();
     }
+
 });

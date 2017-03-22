@@ -11,10 +11,7 @@ module.exports = function(app){
     Profissional = app.serverSide.models.index.Profissional;
 
     var loginController = {
-
-
         login: function(req,res,next){
-
             if(req.body.USER == "no") {
                 //qrcode LOGIN
                 Profissional.findOne({
