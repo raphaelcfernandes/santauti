@@ -156,17 +156,19 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
         var id= parseInt(sessionStorage.getItem("ID"));
         $rootScope.reqWithToken('/getPessoa?idPessoa='+id,'','GET',function (success) {
             success.DataNascimento = moment().format("DD-MM-YYYY");
-            $scope.dados.Nome=success.Nome;
-            $scope.dados.Sobrenome=success.Sobrenome;
-            $scope.dados.CPF = success.CPF;
-            $scope.dados.Identidade = success.Identidade;
-            $scope.dados.Email = success.Email;
-            $scope.dados.Rua = success.Rua;
-            $scope.dados.Numero = success.Numero;
-            $scope.dados.Apartamento = success.Apartamento;
-            $scope.dados.Bairro = success.Bairro;
-            $scope.dados.Cep = success.Cep;
-            $scope.dados.Cidade = success.Cidade;
+            $scope.dados = success;
+            console.log(typeof $scope.dados.DataNascimento);
+            // $scope.dados.Nome=success.Nome;
+            // $scope.dados.Sobrenome=success.Sobrenome;
+            // $scope.dados.CPF = success.CPF;
+            // $scope.dados.Identidade = success.Identidade;
+            // $scope.dados.Email = success.Email;
+            // $scope.dados.Rua = success.Rua;
+            // $scope.dados.Numero = success.Numero;
+            // $scope.dados.Apartamento = success.Apartamento;
+            // $scope.dados.Bairro = success.Bairro;
+            // $scope.dados.Cep = success.Cep;
+            // $scope.dados.Cidade = success.Cidade;
             //$scope.dados.DataNascimento = success.DataNascimento.toString();
             //document.getElementById('DataNascimento').value = success.DataNascimento;
         },function (err) {

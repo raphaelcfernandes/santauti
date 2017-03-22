@@ -3,119 +3,113 @@
 <div class="content">
     <form name="myForm" id="myForm" novalidate>
         <div class="form-group">
-            <!--<div class="row">-->
-                <!--<div class="col-sm-4">-->
-                    <!--<h3><label>Nome (*)</label></h3>-->
-                <!--</div>-->
-                <!--<div class="col-sm-4">-->
-                    <!--<h3><label>Sobrenome (*)</label></h3>-->
-                <!--</div>-->
-                <!--<div class="col-sm-4">-->
-                    <!--<h3><label>Data de Nascimento (*)</label></h3>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="row">-->
-                <!--<div class="col-sm-2">-->
-                    <!--<input type="text" name="Nome" ng-model="dados.Nome" class="form-control">-->
-                <!--</div>-->
-                <!--<div class="col-sm-2 col-sm-offset-2">-->
-                    <!--<input type="text" name="Sobrenome" ng-model="dados.Sobrenome" class="form-control">-->
-                <!--</div>-->
-
-                <!--<div class="col-sm-2 col-sm-offset-2">-->
-                    <!--<div class='input-group date' datetimepicker data-date-format="DD-MM-YYYY">-->
-                        <!--<input type="text" id="DataNascimento" data-ng-model="dados.DataNascimento" class="form-control" datetimepicker data-date-format="DD-MM-YYYY">-->
-                        <!--<span class="input-group-addon">-->
-                        <!--<span class="glyphicon glyphicon-calendar"></span></span>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-
-
-            <!--<div class="row">-->
-                <!--<div class="col-sm-4">-->
-                    <!--<h3><label>CPF (*)</label></h3>-->
-                <!--</div>-->
-                <!--<div class="col-sm-4">-->
-                    <!--<h3><label>Identidade (*)</label></h3>-->
-                <!--</div>-->
-                <!--<div class="col-sm-4">-->
-                    <!--<h3><label>Email</label></h3>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="row">-->
-                <!--<div class="col-sm-2">-->
-                    <!--<input type="text" name="CPF" ng-model="dados.CPF" required class="form-control">-->
-                <!--</div>-->
-                <!--<div class="col-sm-2 col-sm-offset-2">-->
-                    <!--<input type="text" name="Identidade" ng-model="dados.Identidade" class="form-control">-->
-                <!--</div>-->
-                <!--<div class="col-sm-2 col-sm-offset-2">-->
-                    <!--<input type="text" name="Email" ng-model="dados.Email" class="form-control">-->
-                <!--</div>-->
-            <!--</div>-->
-            <div layout-gt-xs="row">
-                <div flex-gt-xs>
-                    <h4>Standard date-picker</h4>
-                    <md-datepicker ng-model="dados.DataNascimento" md-placeholder="Enter date"></md-datepicker>
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3><label>Nome (*)</label></h3>
+                </div>
+                <div class="col-sm-4">
+                    <h3><label>Sobrenome (*)</label></h3>
+                </div>
+                <div class="col-sm-4">
+                    <h3><label>Data de Nascimento (*)</label></h3>
                 </div>
             </div>
-            {{dados.DataNascimento}}
-            <!--<div class="row">-->
-                <!--<div class="col-sm-4">-->
-                    <!--<h3><label>Logradouro</label></h3>-->
-                <!--</div>-->
-                <!--<div class="col-sm-4">-->
-                    <!--<h3><label>Numero</label></h3>-->
-                <!--</div>-->
-                <!--<div class="col-sm-4">-->
-                    <!--<h3><label>Apartamento</label></h3>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="row">-->
-                <!--<div class="col-sm-2">-->
-                    <!--<input type="text" name="Logradouro" ng-model="dados.Rua" class="form-control">-->
-                <!--</div>-->
-                <!--<div class="col-sm-1 col-sm-offset-2">-->
-                    <!--<input type="text" name="Numero" ng-model="dados.Numero" class="form-control">-->
-                <!--</div>-->
-                <!--<div class="col-sm-2 col-sm-offset-3">-->
-                    <!--<input type="text" name="Apartamento" ng-model="dados.Apartamento" class="form-control">-->
-                <!--</div>-->
-            <!--</div>-->
+            <div class="row">
+                <div class="col-sm-2">
+                    <input type="text" name="Nome" ng-model="dados.Nome" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="text" name="Sobrenome" ng-model="dados.Sobrenome" class="form-control">
+                </div>
 
-            <!--<br>-->
-            <!--<div class="row">-->
-                <!--<div class="col-sm-4">-->
-                    <!--<h3><label>Bairro</label></h3>-->
-                <!--</div>-->
-                <!--<div class="col-sm-4">-->
-                    <!--<h3><label>CEP</label></h3>-->
-                <!--</div>-->
-                <!--<div class="col-sm-4">-->
-                    <!--<h3><label>Cidade</label></h3>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="row">-->
-                <!--<div class="col-sm-2">-->
-                    <!--<input type="text" name="Bairro" ng-model="dados.Bairro" class="form-control">-->
-                <!--</div>-->
-                <!--<div class="col-sm-1 col-sm-offset-2">-->
-                    <!--<input type="text" name="Cep" ng-model="dados.Cep" class="form-control" ng-blur="pesquisaCep()">-->
-                <!--</div>-->
-                <!--<div class="col-sm-2 col-sm-offset-3">-->
-                    <!--<input type="text" name="Cidade" ng-model="dados.Cidade" class="form-control">-->
-                <!--</div>-->
-            <!--</div>-->
+                <div class="col-sm-2 col-sm-offset-2">
+                    <div class='input-group date' datetimepicker data-date-format="DD-MM-YYYY">
+                        <input type="text" id="DataNascimento" data-ng-model="dados.DataNascimento" class="form-control" datetimepicker data-date-format="DD-MM-YYYY">
+                        <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span></span>
+                    </div>
+                </div>
+            </div>
 
-            <!--<br><br>-->
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3><label>CPF (*)</label></h3>
+                </div>
+                <div class="col-sm-4">
+                    <h3><label>Identidade (*)</label></h3>
+                </div>
+                <div class="col-sm-4">
+                    <h3><label>Email</label></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <input type="text" name="CPF" ng-model="dados.CPF" required class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="text" name="Identidade" ng-model="dados.Identidade" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="text" name="Email" ng-model="dados.Email" class="form-control">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3><label>Logradouro</label></h3>
+                </div>
+                <div class="col-sm-4">
+                    <h3><label>Numero</label></h3>
+                </div>
+                <div class="col-sm-4">
+                    <h3><label>Apartamento</label></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <input type="text" name="Logradouro" ng-model="dados.Rua" class="form-control">
+                </div>
+                <div class="col-sm-1 col-sm-offset-2">
+                    <input type="text" name="Numero" ng-model="dados.Numero" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-3">
+                    <input type="text" name="Apartamento" ng-model="dados.Apartamento" class="form-control">
+                </div>
+            </div>
+
+            <br>
+            <div class="row">
+                <div class="col-sm-4">
+                    <h3><label>Bairro</label></h3>
+                </div>
+                <div class="col-sm-4">
+                    <h3><label>CEP</label></h3>
+                </div>
+                <div class="col-sm-4">
+                    <h3><label>Cidade</label></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <input type="text" name="Bairro" ng-model="dados.Bairro" class="form-control">
+                </div>
+                <div class="col-sm-1 col-sm-offset-2">
+                    <input type="text" name="Cep" ng-model="dados.Cep" class="form-control" ng-blur="pesquisaCep()">
+                </div>
+                <div class="col-sm-2 col-sm-offset-3">
+                    <input type="text" name="Cidade" ng-model="dados.Cidade" class="form-control">
+                </div>
+            </div>
+
+            <br><br>
             <div class="row">
                 <div class="col-sm-2">
                     <button type="button" class="btn btn-primary btn-sm" ng-click="proximaPagina()">
                         <span class="glyphicon glyphicon-plus-sign"></span> Próximo</button>
                 </div>
             </div>
-        <!--</div>-->
         </div>
     </form>
 </div>
