@@ -1,4 +1,5 @@
-
+<html ng-app="App">
+<body ng-controller="loginCtrl">
 <div class="login-dark">
     <div class="form">
         <form method="post" ng-submit="login()">
@@ -19,4 +20,8 @@
         </form>
     </div>
 </div>
+<qr-scanner width="400" height="300" ng-success="onSuccess(data)" ng-error="onError(error)" />
+
+</body>
+</html>
 
