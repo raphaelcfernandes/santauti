@@ -1,4 +1,4 @@
-var app = angular.module('SantaUTIApp', ['ngMaterial','datetimepicker','ui.router','ngStorage']);
+var app = angular.module('SantaUTIApp', ['ngMaterial','datetimepicker','ui.router','ngStorage','qrScanner']);
 app.config(function ($mdThemingProvider) {
     $mdThemingProvider.theme('red')
         .primaryPalette('red');

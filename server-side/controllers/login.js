@@ -11,13 +11,37 @@ module.exports = function(app){
     Profissional = app.serverSide.models.index.Profissional;
 
     var loginController = {
-        login: function(req,res,next){
+        login: function(req,res,next) {
+            if (req.body.user == "no") {
+                Profissional.findOne({
+                    where: {
+                        QRKey: req.body.data
+                    }
+                }).then(function (result) {
+                    if(result){
+                        console.log(result.Usuario);
+                        var tokenData = {
+                            username: result.Usuario,
+                            id: result.Registro
+                        };
+                       var result = {
+                           tipoProfissional: result.TipoProfissional,
+                           token: Jwt.sign(tokenData,privateKey)
+                       };
+                       res.json(result);
+                    }else{
+                        res.sendStatus(400);
+                    }
+                });
+
+            }
+            else{
             Profissional.findOne({
                 where: {
                     Usuario: req.body.user
                 }
             }).then(function (result) {
-                if(result) {
+                if (result) {
                     if (req.body.passw === Common.decrypt(result.Senha)) {
                         var tokenData = {
                             username: result.Usuario,
@@ -37,7 +61,7 @@ module.exports = function(app){
                     res.sendStatus(400);
                 }
             });
-
+        }
         }
     }
     return loginController;
