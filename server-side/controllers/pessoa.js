@@ -23,6 +23,7 @@ module.exports = function(app){
          * @param next
          */
         novoCadastroPessoa: function(req,res,next){
+            req.body.infoPessoa.DataNascimento = moment(req.body.infoPessoa.DataNascimento,'DD/MM/YYYY').format("YYYY-MM-DD");
             try {
                 Jwt.verify(req.headers.access_token, privateKey);
                 Pessoa
