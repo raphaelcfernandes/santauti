@@ -25,23 +25,22 @@ module.exports = function(app){
                 Jwt.verify(req.headers.access_token, privateKey);
                 Profissional
                     .create({
-                        Registro: req.body.infoUsuario.registro,
+                        Registro: req.body.infoUsuario.Registro,
                         ID: req.body.idPessoa,
-                        Usuario: req.body.infoUsuario.usuario,
-                        Senha: Common.encrypt(req.body.infoUsuario.senha),
-                        TipoProfissional: req.body.infoUsuario.tipoProfissional,
+                        Usuario: req.body.infoUsuario.Usuario,
+                        Senha: Common.encrypt(req.body.infoUsuario.Senha),
+                        TipoProfissional: req.body.infoUsuario.TipoProfissional,
                         Ativo: true
                     }).then(function(){
                         res.sendStatus(201);
                     }
                 ).catch(models.Sequelize.UniqueConstraintError,function (err) {
                     res.status(400).end(objToString(err.fields));
-                })
+                });
             } catch(err) {
                 res.sendStatus(401);
             }
         },
-
         /*
          Função que gera o qrcode
          */
@@ -83,7 +82,6 @@ module.exports = function(app){
                 res.sendSatus(401); // Captura erro de token
             }
         },
-
         desativarProfissional: function(req,res,next){
             try {
                 Jwt.verify(req.headers.access_token, privateKey);
@@ -101,8 +99,51 @@ module.exports = function(app){
                 res.sendStatus(401);
 
             }
+        },
+        getDadosProfissional: function (req,res) {
+            try {
+                Jwt.verify(req.headers.access_token, privateKey);
+                Profissional.findOne({
+                    where: { ID: req.query.idPessoa
+                    },
+                    attributes:[
+                        'Registro',
+                        'Usuario',
+                        'Senha',
+                        'TipoProfissional'
+                    ]
+                }).then(function (result) {
+                    res.json(result);
+                });
+            } catch(err){
+                res.sendStatus(401);
+            }
+        },
+        atualizarCadastro:function (req,res) {
+            try {
+                Jwt.verify(req.headers.access_token, privateKey);
+                Profissional.findOne({
+                    where: { ID: req.body.id}
+                }).then(function (result) {
+                    if (result) {
+                        result.updateAttributes({
+                            Registro: req.body.infoUsuario.Registro,
+                            Usuario: req.body.infoUsuario.Usuario,
+                            Senha: Common.encrypt(req.body.infoUsuario.Senha),
+                            TipoProfissional: req.body.infoUsuario.TipoProfissional
+                        }).catch(models.Sequelize.UniqueConstraintError,function (err) {
+                            res.status(400).end(objToString(err.fields));
+                        });
+                        res.sendStatus(201);
+                    }
+                })
+            } catch(err) {
+                res.sendStatus(401);
+
+            }
         }
     };
+
     function objToString (obj) {
         var str = '';
         for (var p in obj)

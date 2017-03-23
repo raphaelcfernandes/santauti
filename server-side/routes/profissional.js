@@ -6,4 +6,6 @@ module.exports = function(app){
     app.post('/inserirProfissional', profissional.novoCadastroProfissional);
     app.post('/gerarQr',profissional.gerarQr);
     app.put('/desativarProfissional',profissional.desativarProfissional);
+    app.get('/getDadosProfissional',profissional.getDadosProfissional);
+    app.put('/atualizarProfissional',profissional.atualizarCadastro);
 }

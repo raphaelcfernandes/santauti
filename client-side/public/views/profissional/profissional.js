@@ -4,15 +4,36 @@
 
 app.controller('usuarioCtrl', function($scope,  $state,$rootScope) {
     /***************************VAR && SCOPE DECLARATIONS********************/
-    $scope.tipoProfissional= {
-        model: tipoProfissional,
-        options: [
-            {value: 1, name: '1 - Administrador'},
-            {value: 2, name: '2 - Medico'}]
-    };
+    $scope.TipoProfissional=['Administrador','Médico'];
     $scope.cadastro={};
+    $scope.selectedItem;
     /***************************VAR && SCOPE DECLARATIONS********************/
 
+
+    $scope.submit = function () {
+        if(sessionStorage.getItem("acao")=="editar") {
+            if($scope.selectedItem=='Administrador')
+                $scope.cadastro.TipoProfissional=1;
+            else
+                $scope.cadastro.TipoProfissional=2;
+            var data = {
+                infoUsuario: $scope.cadastro,
+                id: sessionStorage.getItem("ID")
+            };
+            $rootScope.reqWithToken('/atualizarProfissional',data,'PUT',function(success){
+
+                // sessionStorage.removeItem("ID");
+                // sessionStorage.remove("acao");
+                alert("Cadastro alterado com sucesso");
+                // $state.go('home');
+            },function(err){
+                $scope.getDataErro(err);
+            });
+        }
+        else{
+            $scope.criarProfissional();
+        }
+    };
 
     $scope.criarProfissional = function(){
         var data = {
@@ -24,23 +45,28 @@ app.controller('usuarioCtrl', function($scope,  $state,$rootScope) {
             alert("Cadastro inserido com sucesso");
             $state.go('home');
         },function(err){
-            if(err === 'Unauthorized'){
-                alert("Voce nao tem permissao para efetuar essa aćao");
-            }
-            else if(err === 'Registro') {
-                /*
-                 ESSA MENSAGEM DE ERRO DEVE APARECER COMO BALAO EMBAIXO DO INPUT DE CPF
-                 O INPUT DEVE FICAR COM AS BORDAS VERMELHAS
-                 */
-                alert("Registro já existe no sistema");//
-            }
-            else{
-                alert("ERRO ESTRANHO, CONTATE A EQUIPE DE DESENVOLVIMENTO");
-            }
+            $scope.getDataErro(err);
         });
     };
 
-    $scope.escolherProfissional = function(){
-        $scope.cadastro.tipoProfissional=parseInt($scope.profissional);
+    $scope.getDataErro = function(err){
+        if (err === 'Unauthorized') {
+            alert("Voce nao tem permissao para efetuar essa aćao");
+        }
+        console.log(err);
     };
+
+    if(sessionStorage.getItem("acao")=="editar"){
+        var id= parseInt(sessionStorage.getItem("ID"));
+        $rootScope.reqWithToken('/getDadosProfissional?idPessoa='+id,'','GET',function (success) {
+            $scope.cadastro=success;
+            if(success.TipoProfissional==1)
+                $scope.selectedItem='Administrador';
+            else
+                $scope.selectedItem='Médico';
+            console.log($scope.cadastro);
+        },function (err) {
+            console.log(err);
+        });
+    }
 });
