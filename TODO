@@ -9,10 +9,6 @@ Implementar HTTPS TSL/SSL -> Done
 Nao imprimir XHR no console do browser
 
 MASCARA PARA VALIDAR -> CPF,IDENTIDADE
-1 - NAO MOSTRAR PROFISSIONAIS INATIVOS NA HOME
-2 - CRIAR BOTAO PARA MOSTRAR/ESCONDER USUARIOS INATIVOS
-JUNTAR 1 E 2 E FAZER ISSO NO NG-REPEAT
-
 
 
 Tentar separar htmls que tem padroes repetidos em arquivos separados (Problemas e pendencias por exemplo)

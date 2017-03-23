@@ -32,7 +32,7 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
             $scope.status="Mostrar todos";
         }
     };
-    
+
     /**
      * Requisita ao server todos os profissionais ativos e nao ativos
      * Tem como retorno lista de profissionais
