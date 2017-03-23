@@ -41,7 +41,7 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
         });
 
     };
-    
+
     /*
      Função para reuso do gerador de QRCODE (usar nas duas possibilidades, QR EXISTE E QR NÃO EXISTE
      Também é responsável por gerar a imagem do QR-CODE
