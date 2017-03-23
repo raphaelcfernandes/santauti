@@ -113,6 +113,7 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
                         digito2 = 0;
                     }
                     if(digito1 == cpf_t[9] && digito2 == cpf_t[10]) {
+                        $scope.dados.CPF = cpf_t;
                         return true;
                     }
                     else {
@@ -198,6 +199,7 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
             alert("ERRO ESTRANHO, CONTATE A EQUIPE DE DESENVOLVIMENTO");
         }
     };
+
     /**
      * Coloca no objeto dados o resultado da requisicao do banco.
      * Requisita ao banco os dados de Pessoa do usuario com ID passado pela sessao
@@ -210,7 +212,6 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
             console.log(err);
         })
     };
-
 
     if(sessionStorage.getItem("acao")=="editar") {
         $scope.cadastroEditar();

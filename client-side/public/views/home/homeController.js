@@ -14,9 +14,16 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
     $scope.status="Mostrar todos";
     $scope.nomeUtilizador = '';
     $scope.pessoas = [];
+    $scope.trustedHtml=null;
+    $scope.html='';
     $scope.nivelProfissional = parseInt(sessionStorage.tipoProfissional);
     $scope.nivelProfissional == 1 ? $scope.nomeUtilizador = 'Profissionais' : $scope.nomeUtilizador = 'Pacientes';
     /*****************************VARIABLES && $SCOPE DECLARATION*********************/
+    $scope.imprimir = function (){
+        var myWindow = window.open("");
+        myWindow.document.write($scope.html);
+        myWindow.print();
+    };
 
     /**
      * flagStatus==false? Mostra apenas ativos
@@ -48,7 +55,6 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
                     qrkey: success[i].QRKey
                 });
             }
-            console.log($scope.pessoas);
         }, function (err) {
             console.log(err);
         });
@@ -73,6 +79,7 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
         }, function (err) {
             console.log("Erro de roteamento");
         });
+
     };
 
     $scope.gerarQrCode = function (ev, id, qrval) {
