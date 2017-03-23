@@ -100,6 +100,24 @@ module.exports = function(app){
 
             }
         },
+        reativarProfissional: function(req,res,next){
+            try {
+                Jwt.verify(req.headers.access_token, privateKey);
+                Profissional.findOne({
+                    where: { ID: req.body.id}
+                }).then(function (result) {
+                    if (result) {
+                        result.updateAttributes({
+                            Ativo: true
+                        });
+                        res.sendStatus(201);
+                    }
+                })
+            } catch(err) {
+                res.sendStatus(401);
+
+            }
+        },
         getDadosProfissional: function (req,res) {
             try {
                 Jwt.verify(req.headers.access_token, privateKey);

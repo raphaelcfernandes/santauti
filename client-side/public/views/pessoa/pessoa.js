@@ -95,6 +95,42 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
         });
     };
 
+    $scope.validaCPF = function () {
+        if($scope.dados.CPF != null) {
+            var cpf_t = $scope.dados.CPF.replace(/\.|-/g,"");
+            var digito1,digito2;
+            if(cpf_t.length == 11 && cpf_t != null && !isNaN(cpf_t)) {
+                if(/^(.)\1+$/.test(cpf_t)){
+                    return false;
+                }
+                else {
+                    digito1 = 11-((cpf_t[0]*10 +cpf_t[1]*9 +cpf_t[2]*8 +cpf_t[3]*7 +cpf_t[4]*6 +cpf_t[5]*5 +cpf_t[6]*4 +cpf_t[7]*3 +cpf_t[8]*2)%11);
+                    if(digito1 > 9) {
+                        digito1 = 0;
+                    }
+                    digito2 = 11-((cpf_t[0]*11 +cpf_t[1]*10 +cpf_t[2]*9 +cpf_t[3]*8 +cpf_t[4]*7 +cpf_t[5]*6 +cpf_t[6]*5 +cpf_t[7]*4 +cpf_t[8]*3 + cpf_t[9]*2)%11);
+                    if(digito2 > 9) {
+                        digito2 = 0;
+                    }
+                    if(digito1 == cpf_t[9] && digito2 == cpf_t[10]) {
+                        $scope.dados.CPF = cpf_t;
+                        return true;
+                    }
+                    else {
+                        return false;
+                    }
+                }
+            }
+            else {
+                return false;
+            }
+        }
+        else{
+            return false;
+        }
+
+    };
+
     /**
      * ENVIA PARA O SERVIDOR: TOKEN + FORM DATA
      * SERVIDOR VERIFICA TOKEN, CASO ESTEJA CORRETO, TENTA INSERIR NO BANCO
@@ -119,18 +155,22 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
             });
         }
         else {
-            var data = {
-                infoPessoa: $scope.dados
-            };
-            $rootScope.reqWithToken('/inserirPessoa', data, 'POST', function (success) {
-                sessionStorage.setItem("ID", success.ID);
-                $state.go('usuario', {
-                    acao: "novo",
-                    id: success.ID
-                })
-            }, function (err) {
-                $scope.getDataErro(err);
-            });
+            if($scope.validaCPF()){
+                var data = {
+                    infoPessoa: $scope.dados
+                };
+                $rootScope.reqWithToken('/inserirPessoa', data, 'POST', function (success) {
+                    sessionStorage.setItem("ID", success.ID);
+                    $state.go('usuario', {
+                        acao: "novo",
+                        id: success.ID
+                    })
+                }, function (err) {
+                    $scope.getDataErro(err);
+                });
+            }else{
+                $scope.getDataErro("CPFI");
+            }
         }
     };
 
@@ -152,10 +192,14 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
              */
             alert("Identidade já existe no sistema");//
         }
+        else if (err === 'CPFI'){
+            alert("CPF Inválido");
+        }
         else {
             alert("ERRO ESTRANHO, CONTATE A EQUIPE DE DESENVOLVIMENTO");
         }
     };
+
     /**
      * Coloca no objeto dados o resultado da requisicao do banco.
      * Requisita ao banco os dados de Pessoa do usuario com ID passado pela sessao
@@ -168,7 +212,6 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
             console.log(err);
         })
     };
-
 
     if(sessionStorage.getItem("acao")=="editar") {
         $scope.cadastroEditar();
