@@ -133,7 +133,7 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
                     $scope.qrSave(data);
                 },
                 function () { //Clicou o botão recusar
-                    $scope.status = 'You decided to keep your debt.';
+                    $scope.status = 'Nada foi realizado';
                 });
         }
     };

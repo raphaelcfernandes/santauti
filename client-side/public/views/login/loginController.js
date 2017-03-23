@@ -2,81 +2,39 @@
  * Created by raphael on 2/9/17.
  */
 
-app.controller('loginCtrl', function($scope,  $state, $window, $location, $timeout,$sessionStorage,$rootScope) {
-
+app.controller('loginCtrl', function($scope,  $state, $window, $location, $timeout,$sessionStorage,$rootScope,$mdDialog) {
+    var opQR = undefined;
     $scope.showGreeting = false;
-    $scope.showInvalidUserPasswordMessage = function(flag,qr,err) {
-        if(qr == 0) {
+    $scope.showInvalidUserPasswordMessage = function(flag) {
             flag == true ? $scope.msg = "Usuario e/ou Senha inválidos." : $scope.msg = "Campos não podem ser vazios.";
             $scope.showGreeting = true;
             $timeout(function () {
                 $scope.showGreeting = false;
             }, 5000);
-        }
-        else{
-            if(flag){
-                $scope.msg = "QR-Code Inválido!";
-            }
-            //flag == true ? $scope.msg = "Qr-code Inválido!" : $scope.msg = "Campos não podem ser vazios.";
-            $scope.showGreeting = true;
-            $timeout(function () {
-                $scope.showGreeting = false;
-            }, 5000);
-            if(flag == false){
-                $scope.msg = err;
-                $scope.showGreeting = true;
-                $timeout(function () {
-                    $scope.showGreeting = false;
-                }, 5000);
-            }
-        }
     };
 
-    $scope.onSuccess = function(data) {
-        if (data) {
-            var datas = {
-                user: "no",
-                data: data
-            };
-            $rootScope.req('/login', datas, 'POST', function (success) {
-                sessionStorage.setItem("token", success.token);
-                sessionStorage.setItem("tipoProfissional", success.tipoProfissional);
-                $state.go('home');
-            }, function (err) {
-                $scope.showInvalidUserPasswordMessage(true, 1);
-            });
-        }
-    };
-
-    $scope.onError = function(error) {
-        $scope.showInvalidUserPasswordMessage(false,1,error);
-    };
-    $scope.onVideoError = function(error) {
-        $scope.showInvalidUserPasswordMessage(false,1,error);
-    };
-
-    $scope.onSuccess = function(data) {
-        if(data) {
-            var datas = {
-                USER: "no",
-                data: data
-            };
-            $rootScope.req('/login', datas, 'POST', function (success) {
-                sessionStorage.setItem("token", success.token);
-                sessionStorage.setItem("tipoProfissional", success.tipoProfissional);
-                $state.go('home');
-            }, function (err) {
-                $scope.showInvalidUserPasswordMessage(true);
-            });
-        }
-        else console.log("Ops");
-    };
-    $scope.onError = function(error) {
-        console.log(error);
-    };
-    $scope.onVideoError = function(error) {
-        console.log(error);
-    };
+    // $scope.onSuccess = function(data) {
+    //     if (data) {
+    //         var datas = {
+    //             user: "no",
+    //             data: data
+    //         };
+    //         $rootScope.req('/login', datas, 'POST', function (success) {
+    //             sessionStorage.setItem("token", success.token);
+    //             sessionStorage.setItem("tipoProfissional", success.tipoProfissional);
+    //             $state.go('home');
+    //         }, function (err) {
+    //             $scope.showInvalidUserPasswordMessage(true, 1);
+    //         });
+    //     }
+    // };
+    //
+    // $scope.onError = function(error) {
+    //     $scope.showInvalidUserPasswordMessage(false,1,error);
+    // };
+    // $scope.onVideoError = function(error) {
+    //     $scope.showInvalidUserPasswordMessage(false,1,error);
+    // };
 
     $scope.login = function() {
         if ($scope.user != undefined && $scope.password != undefined){
@@ -89,11 +47,25 @@ app.controller('loginCtrl', function($scope,  $state, $window, $location, $timeo
                 sessionStorage.setItem("tipoProfissional", success.tipoProfissional);
                 $state.go('home');
             }, function (err) {
-                $scope.showInvalidUserPasswordMessage(true,0,null);
+                $scope.showInvalidUserPasswordMessage(true);
             });
         }
         else
-            $scope.showInvalidUserPasswordMessage(false,0,null);
+            $scope.showInvalidUserPasswordMessage(false);
     };
+    /*
+     Abrir janela para login com qr code
+     */
+    $scope.openQrl = function(ev){
+        var opQR = $mdDialog.show({
+            templateUrl: '../modals/qrlogin/qrLogin.html',
+            controller: 'qrLoginCtrl',
+            parent: angular.element(document.body),
+            targetEvent: ev,
+            clickOutsideToClose:true,
+        })
+
+    }
+
 
 });

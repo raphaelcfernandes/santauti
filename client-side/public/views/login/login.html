@@ -12,6 +12,7 @@
             </div>
             <div class="form-group">
                 <button class="btn btn-primary btn-block" type="submit">Log In</button>
+                <button type="button" class="btn btn-primary btn-block" ng-click="openQrl($event)"> Qr-Code Log In</button>
             </div>
             <div class="login-msg">
                 <span ng-show="showGreeting "><br>{{msg}}</span>
@@ -21,5 +22,6 @@
     <!--<qr-scanner width="400" height="300" ng-success="onSuccess(data)" ng-error="onError(error)" />-->
 </div>
 
-<qr-scanner width="400" height="300" ng-success="onSuccess(data)" ng-error="onError(error)" />
+
+
 
