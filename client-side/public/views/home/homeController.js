@@ -11,7 +11,7 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
 
     /*****************************VARIABLES && $SCOPE DECLARATION*********************/
     $scope.flagStatus=false;
-    $scope.status="Mostrar todos";
+    $scope.status="inativos";
     $scope.nomeUtilizador = '';
     $scope.pessoas = [];
     $scope.trustedHtml=null;
@@ -32,11 +32,11 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
     $scope.mostrarStatus = function () {
         if($scope.flagStatus==false){
             $scope.flagStatus = true;
-            $scope.status="Esconder inativos";
+            $scope.status="ativos";
         }
         else {
             $scope.flagStatus = false;
-            $scope.status="Mostrar todos";
+            $scope.status="inativos";
         }
     };
 
@@ -67,15 +67,14 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
      */
     $scope.qrSave = function (data) {
         $rootScope.reqWithToken('/gerarQr', data, 'POST', function (success) {
-            //console.log(success);
             //Atualiza o array #pessoa
-            for (var i = 0; i < $scope.pessoas.length; i++) {
-                if ($scope.pessoas[i].id == success.ID) {
-                    $scope.pessoas[i].qrkey = success.QRKey;
-                }
-            }
+            var i=0;
+            while($scope.pessoas[i].id!=success.ID)
+                i++;
+            $scope.pessoas[i].qrkey = success.QRKey;
             $scope.html = success.IMG;
             $scope.trustedHtml = $sce.trustAsHtml($scope.html);
+
         }, function (err) {
             console.log("Erro de roteamento");
         });
@@ -134,9 +133,11 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
      * @return sucesso ou falha
      */
     $scope.desativarProfissional = function (id) {
-        var data = {id: id};
+        var data = {id: id},i=0;
         $rootScope.reqWithToken('/desativarProfissional', data, 'PUT', function (success) {
-            console.log(success);
+            while($scope.pessoas[i].id!=id)
+                i++;
+            $scope.pessoas[i].Ativo=0;
         }, function (err) {
             console.log(err);
         });
@@ -156,12 +157,23 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
         });
     };
 
+    $scope.reativarProfissional = function (id) {
+        var data = {id: id},i=0;
+        $rootScope.reqWithToken('/reativarProfissional', data, 'PUT', function (success) {
+            while($scope.pessoas[i].id!=id)
+                i++;
+            $scope.pessoas[i].Ativo=1;
+        }, function (err) {
+            console.log(err);
+        });
+    };
+
     /**
      * Abre modal para confirmacao de desativar profissional
      * @param id
      * @param ev
      */
-    $scope.showConfirm = function(id,ev) {
+    $scope.showDesativar = function(id,ev) {
         // Appending dialog to document.body to cover sidenav in docs app
         var confirm = $mdDialog.confirm(id)
             .title('Desativaćao de Usuário.')
@@ -173,6 +185,20 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
 
         $mdDialog.show(confirm).then(function() {
             $scope.desativarProfissional(id);
+        });
+    };
+    $scope.showReativar = function(id,ev) {
+        // Appending dialog to document.body to cover sidenav in docs app
+        var confirm = $mdDialog.confirm(id)
+            .title('Reativaćao de Usuário.')
+            .textContent('Este usuário será reativado e terá acesso ao sistema novament. Deseja realizar essa aćão?')
+            .ariaLabel('Lucky day')
+            .targetEvent(ev)
+            .ok('Desativar.')
+            .cancel('Não.');
+
+        $mdDialog.show(confirm).then(function() {
+            $scope.reativarProfissional(id);
         });
     };
 });
