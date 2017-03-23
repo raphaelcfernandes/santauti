@@ -74,11 +74,12 @@ module.exports = function(app){
                 res.sendStatus(401);
             }
         },
-        updateCadastroPessoa: function(req,res,next){
+
+        updateCadastroPessoa: function(req,res,next) {
             try {
                 Jwt.verify(req.headers.access_token, privateKey);
                 Pessoa.findOne({
-                    where: { ID: req.body.id}
+                    where: {ID: req.body.id}
                 }).then(function (result) {
                     if (result) {
                         req.body.data.DataNascimento = moment(req.body.data.DataNascimento,'DD/MM/YYYY').format("YYYY-MM-DD");
@@ -95,14 +96,13 @@ module.exports = function(app){
                             Cep: req.body.data.Cep,
                             Cidade: req.body.data.Cidade,
                             DataNascimento: req.body.data.DataNascimento
-                        }).catch(models.Sequelize.UniqueConstraintError,function (err) {
-                            console.log(err.fields);
+                        }).catch(models.Sequelize.UniqueConstraintError, function (err) {
                             res.status(400).end(objToString(err.fields));
                         });
                         res.sendStatus(201);
                     }
                 })
-            } catch(err){
+            } catch (err) {
                 res.sendStatus(401);
             }
 

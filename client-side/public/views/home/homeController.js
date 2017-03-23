@@ -75,13 +75,6 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
         });
     };
 
-    /*
-     sudo apt-get install libcairo2-dev libjpeg-dev libpango1.0-dev libgif-dev build-essential g++
-     npm install canvas
-     npm install npm-qrcode ou qrcode-npm (n lembro qual kkkk)
-     Isso para letura
-     */
-
     $scope.gerarQrCode = function (ev, id, qrval) {
         var data = {
             id: id
