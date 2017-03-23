@@ -17,35 +17,35 @@
             </div>
             <div class="row">
                 <div class="col-sm-2">
-                    <input type="text" ng-model="cadastro.registro" class="form-control">
+                    <input type="text" ng-model="cadastro.Registro" class="form-control">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="text" ng-model="cadastro.usuario" class="form-control">
+                    <input type="text" ng-model="cadastro.Usuario" class="form-control">
                 </div>
 
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="password" ng-model="cadastro.senha" class="form-control">
+                    <input type="password" ng-model="cadastro.Senha" class="form-control">
                 </div>
             </div>
 
-            <br>
+            <br><br>
             <div class="row">
                 <div class="col-sm-3">
-                    <h3><label>Tipo de Profissional</label></h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-3">
-                    <select id="tipoProfissional" ng-model="profissional" ng-change="escolherProfissional(option)">
-                        <option ng-repeat="option in tipoProfissional.options" value="{{option.value}}">{{option.name}}</option>
-                    </select>
+                    <div layout="row">
+                        <md-input-container>
+                            <label>Nivel Profissional</label>
+                            <md-select ng-model="selectedItem" md-selected-text="getSelectedText()">
+                                <md-option ng-value="item" ng-repeat="item in TipoProfissional">{{item}}</md-option>
+                            </md-select>
+                        </md-input-container>
+                    </div>
                 </div>
 
 
                 <br><br>
                 <div class="row">
                     <div class="col-sm-2" >
-                        <button type="button" class="btn btn-primary btn-sm" ng-click="criarProfissional()">
+                        <button type="button" class="btn btn-primary btn-sm" ng-click="submit()">
                             <span class="glyphicon glyphicon-plus-sign"></span> Criar Usuário</button>
                     </div>
                 </div>
