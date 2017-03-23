@@ -17,47 +17,6 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
 
     //Separar profissional de paciente.
 
-
-    //OS BOTÕES DE CONFIRMAÇÃO
-    $scope.html = '  ';
-    $scope.customFullscreen = false;
-    $scope.trustedHtml = "";
-
-    /* $scope.showAlert = function(ev) {
-     // Appending dialog to document.body to cover sidenav in docs app
-     // Modal dialogs should fully cover application
-     // to prevent interaction outside of dialog
-     $mdDialog.show(
-     $mdDialog.alert()
-     //.parent(angular.element(document.querySelector('#popupContainer')))
-     .clickOutsideToClose(true)
-     .title('This is an alert title')
-     .textContent('You can specify some description text in here.')
-     .ariaLabel('Alert Dialog Demo')
-     .ok('Got it!')
-     .targetEvent(ev)
-     );
-     };*/
-
-    /*$scope.showConfirm = function(ev) {
-     // Appending dialog to document.body to cover sidenav in docs app
-     var confirm = $mdDialog.confirm()
-     .title('Would you like to delete your debt?')
-     .textContent('All of the banks have agreed to forgive you your debts.')
-     .ariaLabel('Lucky day')
-     .targetEvent(ev)
-     .ok('Please do it!')
-     .cancel('Sounds like a scam');
-
-     $mdDialog.show(confirm).then(function() {
-     $scope.status = 'You decided to get rid of your debt.';
-     }, function() {
-     $scope.status = 'You decided to keep your debt.';
-     });
-     };*/
-    //FIM BOTÕES CONFIRMAÇÃO
-
-
     $scope.nivelProfissional == 1 ? $scope.nomeUtilizador = 'Profissionais' : $scope.nomeUtilizador = 'Pacientes';
     /*****************************VARIABLES && $SCOPE DECLARATION*********************/
 
@@ -81,33 +40,27 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
             console.log(err);
         });
 
-    },
-        /*
-         Função para reuso do gerador de QRCODE (usar nas duas possibilidades, QR EXISTE E QR NÃO EXISTE
-         Também é responsável por gerar a imagem do QR-CODE
-         */
-        $scope.qrSave = function (data) {
-            $rootScope.reqWithToken('/gerarQr', data, 'POST', function (success) {
-                //console.log(success);
-                //Atualiza o array #pessoa
-                for (var i = 0; i < $scope.pessoas.length; i++) {
-                    if ($scope.pessoas[i].id == success.ID) {
-                        $scope.pessoas[i].qrkey = success.QRKey;
-                    }
-                }
-                $scope.html = success.IMG;
-                $scope.trustedHtml = $sce.trustAsHtml($scope.html);
-            }, function (err) {
-                console.log("Erro de roteamento");
-            });
-        };
+    };
+    
     /*
-     sudo apt-get install libcairo2-dev libjpeg-dev libpango1.0-dev libgif-dev build-essential g++
-     npm install canvas
-     npm install npm-qrcode ou qrcode-npm (n lembro qual kkkk)
-     Isso para letura
+     Função para reuso do gerador de QRCODE (usar nas duas possibilidades, QR EXISTE E QR NÃO EXISTE
+     Também é responsável por gerar a imagem do QR-CODE
      */
-
+    $scope.qrSave = function (data) {
+        $rootScope.reqWithToken('/gerarQr', data, 'POST', function (success) {
+            //console.log(success);
+            //Atualiza o array #pessoa
+            for (var i = 0; i < $scope.pessoas.length; i++) {
+                if ($scope.pessoas[i].id == success.ID) {
+                    $scope.pessoas[i].qrkey = success.QRKey;
+                }
+            }
+            $scope.html = success.IMG;
+            $scope.trustedHtml = $sce.trustAsHtml($scope.html);
+        }, function (err) {
+            console.log("Erro de roteamento");
+        });
+    };
 
 
 
