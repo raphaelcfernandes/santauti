@@ -18,6 +18,8 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
     $scope.html='';
     $scope.nivelProfissional = parseInt(sessionStorage.tipoProfissional);
     $scope.nivelProfissional == 1 ? $scope.nomeUtilizador = 'Profissionais' : $scope.nomeUtilizador = 'Pacientes';
+    sessionStorage.removeItem("ID");
+    sessionStorage.removeItem("acao");
     /*****************************VARIABLES && $SCOPE DECLARATION*********************/
     $scope.imprimir = function (){
         var myWindow = window.open("");

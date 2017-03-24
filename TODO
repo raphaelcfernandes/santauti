@@ -6,16 +6,42 @@ Implementar HTTPS TSL/SSL -> Done
 */
 
 
-Nao imprimir XHR no console do browser
 
-MASCARA PARA VALIDAR -> CPF,IDENTIDADE
+
+
+
+
+
+
+
+
+/*******************!!!!!!!!!!!!!!IMPORTANTE!!!!!!!!!!!!!!!!!!!!!!!!!*************/
+NO ROOTSCOPE.REQWITHTOKEN, NAS FUNĆOES DE ERRO E SUCESSO, VERIRICAR SE O RETORNO DE ERRO VEM COM MENSAGEM E CODIGO, ASSIM COMO O QUE O SERVER ENFIA
+ACHO QUE TEM COMO UTILIZAR CORRETAMENTE ESSE RETORNO. ELE VEM COM DATA,STATUSCODE, AUTOMATICAMENTE.
+/*******************!!!!!!!!!!!!!!IMPORTANTE!!!!!!!!!!!!!!!!!!!!!!!!!*************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Tentar separar htmls que tem padroes repetidos em arquivos separados (Problemas e pendencias por exemplo)
 Ficha noturna = diaria porem com campos de auto preenchimento da ficha diaria do mesmo dia
 Navbar deve estar em 2 linhas
-
-
 
 
 

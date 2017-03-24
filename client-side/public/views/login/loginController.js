@@ -26,6 +26,7 @@ app.controller('loginCtrl', function($scope,  $state, $window, $location, $timeo
                 sessionStorage.setItem("tipoProfissional", success.tipoProfissional);
                 $state.go('home');
             }, function (err) {
+                console.log(err);
                 $scope.showInvalidUserPasswordMessage(true);
             });
         }

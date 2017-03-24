@@ -131,6 +131,7 @@ module.exports = function(app){
                         'TipoProfissional'
                     ]
                 }).then(function (result) {
+                    result.Senha = Common.decrypt(result.Senha);
                     res.json(result);
                 });
             } catch(err){

@@ -57,18 +57,23 @@ sudo ln -s /usr/bin/nodejs /usr/bin/node
 npm install passport
 nodemon
 /****************************************************/
+PATH TO MERGE TO MASTER:
+check if you are in your branch
+git branch
+git add .
+git commit -m "message"
+git push origin <your_branch>
+git pull origin master
+    correct conflicts if any
+        git push origin <your_branch>
 
-TO CREATE A NEW BRANCH:
-git checkout -b branch_name
-
-TO SWITCH BRANCH
-git checkout branch_name
-
-TO PUSH YOUR BRANCH INTO THE SERVER
-git push origin branch_name
-
-TO PULL DATA FROM <branch>
-git pull origin branch_name
+git push origin <your_branch>
+git checkout master
+git pull origin master
+    (if your branch is behind any commits)
+        git add .
+git merge <your_branch>
+git push origin master
 
 
 TESTANDO BRANCH GUILHERME

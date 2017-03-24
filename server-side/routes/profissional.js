@@ -10,4 +10,4 @@ module.exports = function(app){
     app.get('/getDadosProfissional',profissional.getDadosProfissional);
     app.put('/atualizarProfissional',profissional.atualizarCadastro);
 
-}
+};

@@ -13,12 +13,12 @@ app.run(function ($rootScope,$location,$window,$state, $stateParams, $http) {
             method: type,
             data: params
         })
-            .success(function(data) {
-                success(data);
-            })
-            .error(function(err) {
-                error(err);
+            .then(function(response) {
+                success(response.data);
+            },function(err){
+                error(err.data);
             });
+
     };
 
     $rootScope.reqWithToken = function(service, params, type, success, error) {
@@ -30,13 +30,10 @@ app.run(function ($rootScope,$location,$window,$state, $stateParams, $http) {
                 'access_token': sessionStorage.getItem("token")
             }
         })
-            .success(function(data) {
-                //Loading.close({});
-                success(data);
-            })
-            .error(function(err) {
-                //Loading.close({});
-                error(err);
+            .then(function(response) {
+                success(response.data);
+            },function(err){
+                error(err.data);
             });
     };
 });
@@ -521,7 +518,9 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
     }
 //    $locationProvider.html5Mode(true);
 }]);
-
+app.config(['$locationProvider', function($locationProvider) {
+    $locationProvider.hashPrefix('');
+}]);
 // app.config(['momentPickerProvider', function (momentPickerProvider) {
 //     momentPickerProvider.options({
 //         /* Picker properties */

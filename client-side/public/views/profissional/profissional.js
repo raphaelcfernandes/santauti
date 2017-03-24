@@ -9,23 +9,29 @@ app.controller('usuarioCtrl', function($scope,  $state,$rootScope) {
     $scope.selectedItem;
     /***************************VAR && SCOPE DECLARATIONS********************/
 
+    /**
+     * Configura o body da requisicao (dados) para enviar para o servidor
+     * @return {{infoUsuario: ({}|*), id}}
+     */
+    $scope.configuraDataDeEnvio=function(){
+        if($scope.selectedItem=='Administrador')
+            $scope.cadastro.TipoProfissional=1;
+        else
+            $scope.cadastro.TipoProfissional=2;
+        var data = {
+            infoUsuario: $scope.cadastro,
+            id: sessionStorage.getItem("ID")
+        };
+        return data;
+    };
 
     $scope.submit = function () {
         if(sessionStorage.getItem("acao")=="editar") {
-            if($scope.selectedItem=='Administrador')
-                $scope.cadastro.TipoProfissional=1;
-            else
-                $scope.cadastro.TipoProfissional=2;
-            var data = {
-                infoUsuario: $scope.cadastro,
-                id: sessionStorage.getItem("ID")
-            };
-            $rootScope.reqWithToken('/atualizarProfissional',data,'PUT',function(success){
-
-                // sessionStorage.removeItem("ID");
-                // sessionStorage.remove("acao");
+            $rootScope.reqWithToken('/atualizarProfissional',$scope.configuraDataDeEnvio(),'PUT',function(success){
+                sessionStorage.removeItem("ID");
+                sessionStorage.removeItem("acao");
                 alert("Cadastro alterado com sucesso");
-                // $state.go('home');
+                $state.go('home');
             },function(err){
                 $scope.getDataErro(err);
             });
@@ -36,11 +42,7 @@ app.controller('usuarioCtrl', function($scope,  $state,$rootScope) {
     };
 
     $scope.criarProfissional = function(){
-        var data = {
-            infoUsuario: $scope.cadastro,
-            idPessoa: sessionStorage.getItem("ID")
-        };
-        $rootScope.reqWithToken('/inserirProfissional',data,'POST',function(success){
+        $rootScope.reqWithToken('/inserirProfissional',$scope.configuraDataDeEnvio(),'POST',function(success){
             sessionStorage.removeItem("ID");
             alert("Cadastro inserido com sucesso");
             $state.go('home');
@@ -64,9 +66,9 @@ app.controller('usuarioCtrl', function($scope,  $state,$rootScope) {
                 $scope.selectedItem='Administrador';
             else
                 $scope.selectedItem='Médico';
-            console.log($scope.cadastro);
         },function (err) {
             console.log(err);
         });
-    }
+    };
+
 });
