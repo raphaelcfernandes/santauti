@@ -19,6 +19,8 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
     $scope.nivelProfissional = parseInt(sessionStorage.tipoProfissional);
     $scope.nivelProfissional == 1 ? $scope.nomeUtilizador = 'Profissionais' : $scope.nomeUtilizador = 'Pacientes';
     sessionStorage.removeItem("ID");
+    if($rootScope.cache!==undefined)
+        delete $rootScope.cache;
     /*****************************VARIABLES && $SCOPE DECLARATION*********************/
     $scope.criarFichaDiurno = function (id) {
         sessionStorage.setItem("ID",id);

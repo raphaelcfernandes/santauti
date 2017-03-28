@@ -4,6 +4,7 @@
 
 app.controller('loginCtrl', function($scope,  $state, $window, $location, $timeout,$sessionStorage,$rootScope,$mdDialog) {
     console.log(sessionStorage);
+    console.log($rootScope);
     var opQR = undefined;
     $scope.showGreeting = false;
     $scope.showInvalidUserPasswordMessage = function(flag) {
