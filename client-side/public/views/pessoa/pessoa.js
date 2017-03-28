@@ -1,7 +1,7 @@
 /**
  * Created by raphael on 3/16/17.
  */
-app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$sce) {
+app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$sce,$stateParams) {
     /*******************DECLARACAO DE VARIAVEIS E SCOPES*************/
     $scope.dados={};
     $scope.flagcep = -1; //Flag para descobrir qual servidor está conectado
@@ -138,7 +138,7 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
      * Return ERRO: RECEBERÁ UM HTTP CODE + MENSAGEM REFERENTE AO ERRO.
      */
     $scope.proximaPagina = function () {
-        if(sessionStorage.getItem("acao")=="editar") {
+        if($stateParams.acao==="editar") {
             if($scope.dados.Apartamento=='')
                 $scope.dados.Apartamento = null;
             var data = {
@@ -147,8 +147,7 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
             };
             $rootScope.reqWithToken('/updatePessoa', data, 'PUT', function (success) {
                 $state.go('usuario', {
-                    acao: "editar",
-                    id: sessionStorage.getItem("ID")
+                    acao: "editar"
                 })
             }, function (err) {
                 $scope.getDataErro(err);
@@ -162,8 +161,7 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
                 $rootScope.reqWithToken('/inserirPessoa', data, 'POST', function (success) {
                     sessionStorage.setItem("ID", success.ID);
                     $state.go('usuario', {
-                        acao: "novo",
-                        id: success.ID
+                        acao: "novo"
                     })
                 }, function (err) {
                     $scope.getDataErro(err);
@@ -205,7 +203,7 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
      * Requisita ao banco os dados de Pessoa do usuario com ID passado pela sessao
      */
     $scope.cadastroEditar = function () {
-        var id= parseInt(sessionStorage.getItem("ID"));
+        var id = parseInt(sessionStorage.getItem("ID"));
         $rootScope.reqWithToken('/getPessoa?idPessoa='+id,'','GET',function (success) {
             $scope.dados = success;
         },function (err) {
@@ -213,7 +211,7 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
         })
     };
 
-    if(sessionStorage.getItem("acao")=="editar") {
+    if($stateParams.acao ==="editar") {
         $scope.cadastroEditar();
     }
 

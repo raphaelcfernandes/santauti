@@ -2,7 +2,7 @@
  * Created by raphael on 2/13/17.
  */
 
-app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$sce,$interval) {
+app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$sce,$interval,$stateParams) {
 
     /**
      * NIVELPROFISSIONAL = 1 -> ADMIN
@@ -19,8 +19,12 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
     $scope.nivelProfissional = parseInt(sessionStorage.tipoProfissional);
     $scope.nivelProfissional == 1 ? $scope.nomeUtilizador = 'Profissionais' : $scope.nomeUtilizador = 'Pacientes';
     sessionStorage.removeItem("ID");
-    sessionStorage.removeItem("acao");
     /*****************************VARIABLES && $SCOPE DECLARATION*********************/
+    $scope.criarFichaDiurno = function (id) {
+        sessionStorage.setItem("ID",id);
+        $state.go("eventosSignificantes");
+    };
+
     $scope.imprimir = function (){
         var myWindow = window.open("");
         myWindow.document.write($scope.html);
@@ -47,10 +51,10 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
      * Tem como retorno lista de profissionais
      */
     $scope.getProfissional = function () {
-        $rootScope.reqWithToken('/homeGETProfissionais', sessionStorage.getItem("token"), 'GET', function (success) {
+        $rootScope.reqWithToken('/getProfissionais', sessionStorage.getItem("token"), 'GET', function (success) {
             for (var i = 0; i < success.length; i++) {
                 $scope.pessoas.push({
-                    name: success[i].Nome,
+                    nome: success[i].Nome,
                     sobrenome: success[i].Sobrenome,
                     id: success[i].ID,
                     Ativo: success[i].Ativo,
@@ -60,9 +64,28 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
         }, function (err) {
             console.log(err);
         });
-
     };
 
+    /**
+     * Requisita ao server todos os pacientes
+     * Tem como retorno lista de pacientes
+     */
+    $scope.getPacientes = function () {
+        $rootScope.reqWithToken('/getPacientes', sessionStorage.getItem("token"), 'GET', function (success) {
+            for (var i = 0; i < success.length; i++) {
+                $scope.pessoas.push({
+                    nome: success[i].Nome,
+                    sobrenome: success[i].Sobrenome,
+                    id: success[i].ID,
+                    internado: success[i].Internado,
+                    nomeMedico: success[i].NomeMedico,
+                    sobrenomeMedico: success[i].SobrenomeMedico
+                });
+            }
+        }, function (err) {
+            console.log(err);
+        });
+    };
     /*
      Função para reuso do gerador de QRCODE (usar nas duas possibilidades, QR EXISTE E QR NÃO EXISTE
      Também é responsável por gerar a imagem do QR-CODE
@@ -110,16 +133,25 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
         }
     };
 
-
+    /**
+     * Caso nivelProfissional seja ADMIM, requisita ao server lista de PROFISSIONAIS
+     */
     if ($scope.nivelProfissional == 1) {
         $scope.getProfissional();
+    }
+
+    /**
+     * Caso nivelProfissional seja MEDICO, requisita ao server lista de PACIENTES
+     */
+    if($scope.nivelProfissional==2){
+        $scope.flagStatus=true;
+        $scope.getPacientes();
     }
 
     /**
      * Direciona para pagina de Pessoa para usuario inserir dados
      */
     $scope.adicionarNovo = function () {
-        sessionStorage.setItem("acao", "novo");
         if ($scope.nivelProfissional == 1) {//Redireciona para pagina de cadastro de PROFISSIONAL
             $state.go("pessoa", {
                 acao: "novo"
@@ -127,6 +159,10 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
         }
     };
 
+    $scope.visualizarPaciente = function (id) {
+        sessionStorage.setItem("ID",id);
+        $state.go("visualizarPaciente");
+    };
 
     /**
      * Recebe o ID do profissional como parametro.
@@ -145,17 +181,14 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
         });
     };
 
-
     /**
      * Recebe ID do usuario como parametro e direciona para pagina de Pessoa, para editar dados
      * @param id
      */
     $scope.editar = function (id) {
         sessionStorage.setItem("ID", id);
-        sessionStorage.setItem("acao", "editar");
         $state.go("pessoa", {
-            acao: "editar",
-            id: id
+            acao: "editar"
         });
     };
 
@@ -189,6 +222,7 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
             $scope.desativarProfissional(id);
         });
     };
+
     $scope.showReativar = function(id,ev) {
         // Appending dialog to document.body to cover sidenav in docs app
         var confirm = $mdDialog.confirm(id)

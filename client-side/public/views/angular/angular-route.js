@@ -64,7 +64,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             }
         })
         .state('visualizarPaciente',{
-            url: '/visualizarPaciente/:id',
+            url: '/visualizarPaciente',
             resolve: {
                 authenticate: usuarioLogado
             },
@@ -75,10 +75,11 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                 },
                 'navbar':{
                     templateUrl: '../toolbar/toolbar.html',
-                    controller: 'headerCtrl'
+                    controller: 'toolbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html',
+                    controller: 'informacaoBoxCtrl'
                 }
             }
         })
@@ -89,30 +90,36 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             },
             views:{
                 '':{
-                    templateUrl: '../ficha/listaDeProblemas/listaDeProblemas.html',
-                    controller: 'listaDeProblemaCtrl'
+                    templateUrl: '../fichas/evolucaoDiaria/listaDeProblemas/listaDeProblemas.html',
+                    controller: 'evolucaoDiariaCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html'
+                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
+                    controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html',
+                    controller: 'informacaoBoxCtrl'
                 }
             }
         })
-        .state('eventoSignificantes',{
-            url: '/eventoSignificantes',
+        .state('eventosSignificantes',{
+            url: '/eventosSignificantes',
             resolve: {
                 authenticate: usuarioLogado
             },
             views:{
                 '':{
-                    templateUrl: '../ficha/eventoSignificantes/eventoSignificantes.html',
-                    controller: 'eventoSignificanteCtrl'
+                    templateUrl: '../fichas/evolucaoDiaria/eventoSignificantes/eventoSignificantes.html',
+                    controller: 'evolucaoDiariaCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
+                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
                     controller: 'navbarCtrl'
+                },
+                'informacaoBox':{
+                    templateUrl: '../informacaoBox/informacaoBox.html',
+                    controller: 'informacaoBoxCtrl'
                 }
             }
         })
@@ -123,11 +130,11 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             },
             views:{
                 '':{
-                    templateUrl: '../ficha/neurologico/neurologico.html',
-                    controller: 'neurologicoCtrl'
+                    templateUrl: '../fichas/evolucaoDiaria/neurologico/neurologico.html',
+                    controller: 'evolucaoDiariaCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
+                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
@@ -142,11 +149,11 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             },
             views:{
                 '':{
-                    templateUrl: '../ficha/hemodinamica/hemodinamica.html',
-                    controller: 'hemodinamicaCtrl'
+                    templateUrl: '../fichas/evolucaoDiaria/hemodinamica/hemodinamica.html',
+                    controller: 'evolucaoDiariaCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
+                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
@@ -162,11 +169,11 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             },
             views:{
                 '':{
-                    templateUrl: '../ficha/respiratorio/respiratorio.html',
-                    controller: 'respiratorioCtrl'
+                    templateUrl: '../fichas/evolucaoDiaria/respiratorio/respiratorio.html',
+                    controller: 'evolucaoDiariaCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
+                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
@@ -182,11 +189,11 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             },
             views:{
                 '':{
-                    templateUrl: '../ficha/gastrointestinal/gastrointestinal.html',
-                    controller: 'gastrointestinalCtrl'
+                    templateUrl: '../fichas/evolucaoDiaria/gastrointestinal/gastrointestinal.html',
+                    controller: 'evolucaoDiariaCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
+                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
@@ -202,11 +209,11 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             },
             views:{
                 '':{
-                    templateUrl: '../ficha/renal/renal.html',
-                    controller: 'renalCtrl'
+                    templateUrl: '../fichas/evolucaoDiaria/renal/renal.html',
+                    controller: 'evolucaoDiariaCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
+                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
@@ -222,11 +229,11 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             },
             views:{
                 '':{
-                    templateUrl: '../ficha/hematologico/hematologico.html',
-                    controller: 'hematologicoCtrl'
+                    templateUrl: '../fichas/evolucaoDiaria/hematologico/hematologico.html',
+                    controller: 'evolucaoDiariaCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
+                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
@@ -242,11 +249,11 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             },
             views:{
                 '':{
-                    templateUrl: '../ficha/endocrino/endocrino.html',
-                    controller: 'endocrinoCtrl'
+                    templateUrl: '../fichas/evolucaoDiaria/endocrino/endocrino.html',
+                    controller: 'evolucaoDiariaCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
+                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
@@ -262,11 +269,11 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             },
             views:{
                 '':{
-                    templateUrl: '../ficha/infeccioso/infeccioso.html',
-                    controller: 'infecciosoCtrl'
+                    templateUrl: '../fichas/evolucaoDiaria/infeccioso/infeccioso.html',
+                    controller: 'evolucaoDiariaCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
+                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
@@ -282,11 +289,11 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             },
             views:{
                 '':{
-                    templateUrl: '../ficha/dispositivos/dispositivos.html',
-                    controller: 'dispositivosCtrl'
+                    templateUrl: '../fichas/evolucaoDiaria/dispositivos/dispositivos.html',
+                    controller: 'evolucaoDiariaCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
+                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
@@ -302,11 +309,11 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             },
             views:{
                 '':{
-                    templateUrl: '../ficha/metabolico/metabolico.html',
-                    controller: 'metabolicoCtrl'
+                    templateUrl: '../fichas/evolucaoDiaria/metabolico/metabolico.html',
+                    controller: 'evolucaoDiariaCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
+                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
@@ -322,11 +329,11 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             },
             views:{
                 '':{
-                    templateUrl: '../ficha/nutricao/nutricao.html',
-                    controller: 'nutricaoCtrl'
+                    templateUrl: '../fichas/evolucaoDiaria/nutricao/nutricao.html',
+                    controller: 'evolucaoDiariaCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
+                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
@@ -342,11 +349,11 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             },
             views:{
                 '':{
-                    templateUrl: '../ficha/psicosocial/psicosocial.html',
-                    controller: 'psicosocialCtrl'
+                    templateUrl: '../fichas/evolucaoDiaria/psicosocial/psicosocial.html',
+                    controller: 'evolucaoDiariaCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
+                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
@@ -362,11 +369,11 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             },
             views:{
                 '':{
-                    templateUrl: '../ficha/analise/analise.html',
-                    controller: 'analiseCtrl'
+                    templateUrl: '../fichas/evolucaoDiaria/analise/analise.html',
+                    controller: 'evolucaoDiariaCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
+                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
@@ -382,11 +389,11 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             },
             views:{
                 '':{
-                    templateUrl: '../ficha/pendencias/pendencias.html',
-                    controller: 'pendenciasCtrl'
+                    templateUrl: '../fichas/evolucaoDiaria/pendencias/pendencias.html',
+                    controller: 'evolucaoDiariaCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
+                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
@@ -402,11 +409,11 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             },
             views:{
                 '':{
-                    templateUrl: '../ficha/exames/exames.html',
-                    controller: 'examesCtrl'
+                    templateUrl: '../fichas/evolucaoDiaria/exames/exames.html',
+                    controller: 'evolucaoDiariaCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
+                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
@@ -422,11 +429,11 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             },
             views:{
                 '':{
-                    templateUrl: '../ficha/interconsulta/interconsulta.html',
-                    controller: 'interconsultaCtrl'
+                    templateUrl: '../fichas/evolucaoDiaria/interconsulta/interconsulta.html',
+                    controller: 'evolucaoDiariaCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
+                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
@@ -442,11 +449,11 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             },
             views:{
                 '':{
-                    templateUrl: '../ficha/planos/planos.html',
-                    controller: 'planosCtrl'
+                    templateUrl: '../fichas/evolucaoDiaria/planos/planos.html',
+                    controller: 'evolucaoDiariaCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
+                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
@@ -462,11 +469,11 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             },
             views:{
                 '':{
-                    templateUrl: '../ficha/examesLaboratoriais/examesLaboratoriais.html',
-                    controller: 'examesLabCtrl'
+                    templateUrl: '../fichas/evolucaoDiaria/examesLaboratoriais/examesLaboratoriais.html',
+                    controller: 'evolucaoDiariaCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
+                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
@@ -476,7 +483,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             }
         })
         .state('pessoa',{
-            url: '/pessoa/:acao/:id?',
+            url: '/pessoa/:acao/',
             resolve: {
                 authenticate: usuarioLogado
             },
@@ -492,7 +499,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             }
         })
         .state('usuario',{
-            url:'/profissional/:acao/:id',
+            url:'/profissional/:acao/',
             resolve: {
                 authenticate: usuarioLogado
             },

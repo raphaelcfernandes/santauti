@@ -91,6 +91,23 @@ CREATE TABLE IF NOT EXISTS `santauti`.`Paciente` (
     ON UPDATE NO ACTION)
   ENGINE = InnoDB;
 
+-- -----------------------------------------------------
+-- Table `santauti`.`Internacao`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `santauti`.`Internacao` ;
+
+CREATE TABLE IF NOT EXISTS `santauti`.`Internacao` (
+  `ID` INT NOT NULL,
+  `DataInternacao` DATETIME NOT NULL,
+  `DataAlta` DATETIME NOT NULL,
+  PRIMARY KEY (`ID`,`DataInternacao`),
+  INDEX `fk_Internacao_idx` (`ID` ASC),
+  CONSTRAINT `fk_Internacao`
+  FOREIGN KEY (`ID`)
+  REFERENCES `santauti`.`Paciente` (`ID`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+  ENGINE = InnoDB;
 
 -- -----------------------------------------------------
 -- Table `santauti`.`Telefone`
@@ -349,15 +366,21 @@ CREATE TABLE IF NOT EXISTS `santauti`.`Pendencias` (
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+#ADMIN
 INSERT INTO Pessoa VALUES (1,'02483575145','ADMIN','ADMIN','ADMIN123','1994-09-11',NULL,NULL,NULL,NULL,NULL,NULL,NULL);
-INSERT INTO Profissional VALUES (1,1,'admin','U2FsdGVkX1/ReFEwS2yxxqw6imqy3IRzdLzjbOkoak4=',1,TRUE,NULL);
-# Usuario: admin, senha: 1
-
-INSERT INTO Pessoa VALUES (2,'123456798','Joao','Pessoa','Joao123','1994-09-11','Joao Naves de Avila',632,'Sta Monica',NULL,'38410614','Uberlandia','joao@gmail.com');
-INSERT INTO Paciente VALUES (2,04,01,'Jornalista','Particular',TRUE,1);
-#Paciente: 2, responsavel: 1(registro)
-
+#PACIENTE
+INSERT INTO Pessoa VALUES (2,'123456798','Joao','Manioc','Joao123','1994-09-11','Joao Naves de Avila',632,'Sta Monica',NULL,'38410614','Uberlandia','joao@gmail.com');
+INSERT INTO Pessoa VALUES (5,'987564231','Antonio','Fonseca Peixoto','Antonio123','1994-09-11','Joao Naves de Avila',632,'Sta Monica',NULL,'38410614','Uberlandia','antonio@gmail.com');
+INSERT INTO Pessoa VALUES (6,'357159877','Lourdes','Da Silva','Lourdes123','1994-09-11','Joao Naves de Avila',632,'Sta Monica',NULL,'38410614','Uberlandia','lourdes@gmail.com');
+#MEDICO
 INSERT INTO Pessoa VALUES (3,'465879','Angelo','Caetano Fernandes','Angelo123','1968-11-30','Pedro Crosara Cherulli','271','Cazeca',NULL,'34567','Uberlandia','angelo@gmail.com');
-INSERT INTO Profissional VALUES (259687,3,'udiacf','U2FsdGVkX1/ReFEwS2yxxqw6imqy3IRzdLzjbOkoak4=',2,FALSE,NULL);
-INSERT INTO Pessoa (CPF,Nome,Sobrenome,Identidade,DataNascimento,Rua,Numero,Bairro,Apartamento,Cep,Cidade,Email) VALUES ('62840673649','Neide','Garcia Cardoso','567678','1970-01-31','Itutinga',181,'Gravatas',NULL,'38410614','Uberlandia','neide@gmail.com');
-INSERT INTO Profissional VALUES (249687,4,'neide','U2FsdGVkX1/ReFEwS2yxxqw6imqy3IRzdLzjbOkoak4=',2,FALSE,NULL);
+INSERT INTO Pessoa VALUES (4,'62840673649','Neide','Garcia Cardoso','567678','1970-01-31','Itutinga',181,'Gravatas',NULL,'38410614','Uberlandia','neide@gmail.com');
+
+INSERT INTO Profissional VALUES (1,1,'admin','U2FsdGVkX1/ReFEwS2yxxqw6imqy3IRzdLzjbOkoak4=',1,TRUE,NULL);
+INSERT INTO Profissional VALUES (259687,3,'udiacf','U2FsdGVkX1/ReFEwS2yxxqw6imqy3IRzdLzjbOkoak4=',2,TRUE,NULL);
+INSERT INTO Profissional VALUES (249687,4,'neide','U2FsdGVkX1/ReFEwS2yxxqw6imqy3IRzdLzjbOkoak4=',2,TRUE,NULL);
+
+INSERT INTO Paciente VALUES (2,05,04,'Pedreiro','UNIMED',TRUE,249687);
+INSERT INTO Paciente VALUES (5,01,02,'Jornalista','UNIMED',TRUE,249687);
+INSERT INTO Paciente VALUES (6,02,01,'Bombeiro','PARTICULAR',TRUE,259687);

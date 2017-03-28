@@ -6,12 +6,12 @@
                 <ul>
                     <li ng-repeat="todo in problemas">
 
-                            <div class="col-sm-3">
-                                <span class="done-{{todo.done}}">{{todo.text}}</span>
-                            </div>
-                            <div class="col-sm-4">
-                                <span>{{todo.date!=null && todo.done? todo.date*1000 : '' | date:'dd-MM-yyyy HH:mm'}}</span><br>
-                            </div>
+                        <div class="col-sm-3">
+                            <span class="done-{{todo.done}}">{{todo.text}}</span>
+                        </div>
+                        <div class="col-sm-4">
+                            <span>{{todo.date!=null && todo.done? todo.date*1000 : '' | date:'dd-MM-yyyy HH:mm'}}</span><br>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -33,9 +33,7 @@
                     </div>
                 </div>
                 <div class="box-body">
-                    <div class="chart">
-                        <canvas id="myChart" style="height:250px"></canvas>
-                    </div>
+                    <canvas id="myChart" style="height:250px"></canvas>
                 </div>
                 <!-- /.box-body -->
             </div>
@@ -52,9 +50,7 @@
                     </div>
                 </div>
                 <div class="box-body">
-                    <div class="chart">
-                        <canvas id="pieChart" style="height:250px"></canvas>
-                    </div>
+                    <canvas id="pieChart" style="height:250px"></canvas>
                 </div>
             </div>
             <!-- /.box -->
@@ -73,9 +69,7 @@
                     </div>
                 </div>
                 <div class="box-body">
-                    <div class="chart">
-                        <canvas id="lineChart" style="height:250px"></canvas>
-                    </div>
+                    <canvas id="lineChart" style="height:250px"></canvas>
                 </div>
                 <!-- /.box-body -->
             </div>
@@ -92,9 +86,7 @@
                     </div>
                 </div>
                 <div class="box-body">
-                    <div class="chart">
-                        <canvas id="barChart" style="height:250px"></canvas>
-                    </div>
+                    <canvas id="barChart" style="height:250px"></canvas>
                 </div>
                 <!-- /.box-body -->
             </div>

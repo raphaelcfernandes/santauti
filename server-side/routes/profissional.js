@@ -9,5 +9,5 @@ module.exports = function(app){
     app.put('/reativarProfissional',profissional.reativarProfissional);
     app.get('/getDadosProfissional',profissional.getDadosProfissional);
     app.put('/atualizarProfissional',profissional.atualizarCadastro);
-
+    app.get('/getProfissionais', profissional.getProfissionais);
 };

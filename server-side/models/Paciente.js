@@ -38,6 +38,16 @@ module.exports = function(sequelize, DataTypes) {
             }
         }
     }, {
+        classMethods: {
+            associate: function (models) {
+                Paciente.belongsTo(models.Profissional, {
+                    foreignKey: 'Responsavel'
+                });
+                Paciente.belongsTo(models.Pessoa,{
+                    foreignKey: 'ID'
+                });
+            }
+        },
         tableName: 'Paciente',
         timestamps:false
     });

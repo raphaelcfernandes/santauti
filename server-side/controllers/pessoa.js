@@ -97,7 +97,7 @@ module.exports = function(app){
                             Cidade: req.body.data.Cidade,
                             DataNascimento: req.body.data.DataNascimento
                         }).catch(models.Sequelize.UniqueConstraintError, function (err) {
-                            res.status(400).end(objToString(err.fields));
+                            res.status(400).send(objToString(err.fields));
                         });
                         res.sendStatus(201);
                     }

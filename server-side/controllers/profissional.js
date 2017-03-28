@@ -160,6 +160,22 @@ module.exports = function(app){
                 res.sendStatus(401);
 
             }
+        },
+        /**
+         * Obtem os dados de TODOS os profissionais do banco
+         * @param req
+         * @param res
+         */
+        getProfissionais: function(req,res){
+            try{
+                Jwt.verify(req.headers.access_token, privateKey);
+                models.sequelize.query("SELECT * FROM Profissional AS PF INNER JOIN Pessoa AS PE ON PF.ID=PE.ID;", { type: models.sequelize.QueryTypes.SELECT})
+                    .then(function (results) {
+                        res.json(results);
+                    });
+            }catch(err){
+                res.sendStatus(401);
+            }
         }
     };
 

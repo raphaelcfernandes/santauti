@@ -2,7 +2,7 @@
  * Created by raphael on 3/17/17.
  */
 
-app.controller('usuarioCtrl', function($scope,  $state,$rootScope) {
+app.controller('usuarioCtrl', function($scope,  $state,$rootScope,$stateParams) {
     /***************************VAR && SCOPE DECLARATIONS********************/
     $scope.TipoProfissional=['Administrador','Médico'];
     $scope.cadastro={};
@@ -26,10 +26,9 @@ app.controller('usuarioCtrl', function($scope,  $state,$rootScope) {
     };
 
     $scope.submit = function () {
-        if(sessionStorage.getItem("acao")=="editar") {
+        if($stateParams.acao==="editar") {
             $rootScope.reqWithToken('/atualizarProfissional',$scope.configuraDataDeEnvio(),'PUT',function(success){
                 sessionStorage.removeItem("ID");
-                sessionStorage.removeItem("acao");
                 alert("Cadastro alterado com sucesso");
                 $state.go('home');
             },function(err){
@@ -58,7 +57,7 @@ app.controller('usuarioCtrl', function($scope,  $state,$rootScope) {
         console.log(err);
     };
 
-    if(sessionStorage.getItem("acao")=="editar"){
+    if($stateParams.acao==="editar"){
         var id= parseInt(sessionStorage.getItem("ID"));
         $rootScope.reqWithToken('/getDadosProfissional?idPessoa='+id,'','GET',function (success) {
             $scope.cadastro=success;

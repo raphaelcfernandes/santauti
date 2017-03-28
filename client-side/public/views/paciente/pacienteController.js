@@ -1,14 +1,14 @@
 /**
  * Created by raphael on 2/16/17.
  */
-app.controller('pacienteCtrl', function($scope,  $state, $stateParams) {
-    $scope.age = $stateParams.id;
+app.controller('pacienteCtrl', function($scope) {
+
 
     $scope.problemas = [
         {text:'Dengue', done:true, date: 1392658632},
         {text:'Cancer', done:false},
         {text:'Tuberculose', done:false}
-    ]
+    ];
 
 
 

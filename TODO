@@ -6,37 +6,9 @@ Implementar HTTPS TSL/SSL -> Done
 */
 
 
-
-
-
-
-
-
-
-
-
-/*******************!!!!!!!!!!!!!!IMPORTANTE!!!!!!!!!!!!!!!!!!!!!!!!!*************/
-NO ROOTSCOPE.REQWITHTOKEN, NAS FUNĆOES DE ERRO E SUCESSO, VERIRICAR SE O RETORNO DE ERRO VEM COM MENSAGEM E CODIGO, ASSIM COMO O QUE O SERVER ENFIA
-ACHO QUE TEM COMO UTILIZAR CORRETAMENTE ESSE RETORNO. ELE VEM COM DATA,STATUSCODE, AUTOMATICAMENTE.
-/*******************!!!!!!!!!!!!!!IMPORTANTE!!!!!!!!!!!!!!!!!!!!!!!!!*************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+INFORMACAOBOX:
+    AINDA NÃO ESTÁ BUSCANDO A DATA DE INTERNACAO (ISSO DEVE SER RESOLVIDO!) -> A TABELA JA EXISTE NO BANCO, PORÉM SEM DADOS
+    DEVE SE BUSCAR POR ID, DATAINTERNACAO + RECENTE E DataALTA NULL
 
 
 Tentar separar htmls que tem padroes repetidos em arquivos separados (Problemas e pendencias por exemplo)

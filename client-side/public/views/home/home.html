@@ -1,8 +1,9 @@
 <div ui-view='toolbar' ></div>
 
-<div class="container">
+<!--MENU PARA ADMIN VER OS USUARIOS PROFISSIONAIS-->
+<div class="container" ng-show="nivelProfissional==1">
     <div class="row">
-        <div class="cols-sm-3">
+        <div class="cols-sm-3" >
             <button type="button" class="btn btn-primary btn-sm" ng-click="mostrarStatus()">
                 <span class="glyphicon glyphicon-qrcode"></span> Mostrar apenas {{status}}</button>
         </div>
@@ -11,7 +12,7 @@
         <table class="table">
             <thead>
             <tr>
-                <th ng-show="nivelProfissional>1">Paciente</th>
+                <th ng-show="nivelProfissional==2">Paciente</th>
                 <th ng-show="nivelProfissional==1">Profissional</th>
                 <th>Ações</th>
                 <th> <input type="search" ng-model="q" placeholder="Filtrar {{nomeUtilizador}}" aria-label="filter friends" /></th>
@@ -21,7 +22,7 @@
             </thead>
             <tbody>
             <tr ng-repeat="pessoa in pessoas | orderBy:'name' | filter:q as results" ng-if="pessoa.Ativo==1" ng-show="flagStatus==false">
-                <td>{{pessoa.name}} {{pessoa.sobrenome}}</td>
+                <td>{{pessoa.nome}} {{pessoa.sobrenome}}</td>
                 <td>
                     <div class="btn-group" ng-show="nivelProfissional>1">
                         <button type="button" class="btn btn-primary btn-sm" ng-click="visualizar(pessoa.age)">
@@ -46,7 +47,7 @@
                 </td>
             </tr>
             <tr ng-repeat="pessoa in pessoas | orderBy:'name' | filter:q as results" ng-if="pessoa.Ativo==0" ng-show="flagStatus==true">
-                <td>{{pessoa.name}} {{pessoa.sobrenome}}</td>
+                <td>{{pessoa.nome}} {{pessoa.sobrenome}}</td>
                 <td>
                     <div class="btn-group" ng-show="nivelProfissional>1">
                         <button type="button" class="btn btn-primary btn-sm" ng-click="visualizar(pessoa.age)">
@@ -70,11 +71,74 @@
         </table>
     </div>
 </div>
+<!--MENU PARA ADMIN VER OS USUARIOS PROFISSIONAIS-->
+
+<!--MENU PARA OS PROFISSIONAIS VER OS PACIENTES-->
+<div class="container" ng-show="nivelProfissional!==1">
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Paciente</th>
+                <th>Responsável</th>
+                <th>Ações</th>
+                <th> <input type="search" ng-model="q" placeholder="Filtrar {{nomeUtilizador}}" aria-label="filter friends" /></th>
+                <th><button type="button" class="btn btn-primary btn-sm" ng-click="adicionarNovo()">
+                    <span class="glyphicon glyphicon-plus-sign"></span> Criar Novo</button></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="pessoa in pessoas | orderBy:'name' | filter:q as results" ng-if="pessoa.internado==1">
+                <td>{{pessoa.nome}} {{pessoa.sobrenome}}</td>
+                <td>{{pessoa.nomeMedico}} {{pessoa.sobrenomeMedico}}</td>
+                <td>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary btn-sm" ng-click="visualizarPaciente(pessoa.id)">
+                            <span class="glyphicon glyphicon-eye-open"></span> Visualizar</button>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown">
+                                <span class="glyphicon glyphicon-pencil"></span> Criar Ficha <span class="caret"></span></button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href ng-click="criarFichaDiurno(pessoa.id)">Diurno</a></li>
+                                <li><a href="#">Noturno</a></li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm"> <span class="glyphicon glyphicon-check"></span> Encerrar Paciente</button>
+                    </div>
+                </td>
+            </tr>
+            <tr ng-repeat="pessoa in pessoas | orderBy:'name' | filter:q as results" ng-if="pessoa.internado==0" ng-show="flagStatus==true">
+                <td>{{pessoa.nome}} {{pessoa.sobrenome}}</td>
+                <td>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary btn-sm" ng-click="visualizar(pessoa.age)">
+                            <span class="glyphicon glyphicon-eye-open"></span> Visualizar</button>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown">
+                                <span class="glyphicon glyphicon-pencil"></span> Criar Ficha <span class="caret"></span></button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#/eventoSignificantes">Diurno</a></li>
+                                <li><a href="#">Noturno</a></li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn btn-primary btn-sm"> <span class="glyphicon glyphicon-check"></span> Encerrar Paciente</button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary btn-sm" ng-click="showReativar(pessoa.id,$event)"> <span class="glyphicon glyphicon-trash"></span> Reativar Usuário</button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<!--MENU PARA OS PROFISSIONAIS VER OS PACIENTES-->
+
 
 <!--
 Estes códigos são só para testes, correto seria abrir em uma nova janela!
 -->
-<table align="center">
+<table align="center" ng-show="nivelProfissional==1">
     <tr >
         <th><p align="center"> QR CODE IMAGEM </p></th>
     </tr>
@@ -90,50 +154,3 @@ Estes códigos são só para testes, correto seria abrir em uma nova janela!
         </td>
     </tr>
 </table>
-
-
-<!--<div class="container">-->
-<!--<h2>Contextual Classes</h2>-->
-<!--<p>Contextual classes can be used to color table rows or table cells. The classes that can be used are: .active, .success, .info, .warning, and .danger.</p>-->
-<!--<table class="table">-->
-<!--<thead>-->
-<!--<tr>-->
-<!--<th>Firstname</th>-->
-<!--<th>Lastname</th>-->
-<!--<th>Email</th>-->
-<!--</tr>-->
-<!--</thead>-->
-<!--<tbody>-->
-<!--<tr>-->
-<!--<td>Default</td>-->
-<!--<td>Defaultson</td>-->
-<!--<td>def@somemail.com</td>-->
-<!--</tr>-->
-<!--<tr class="success">-->
-<!--<td>Success</td>-->
-<!--<td>Doe</td>-->
-<!--<td>john@example.com</td>-->
-<!--</tr>-->
-<!--<tr class="danger">-->
-<!--<td>Danger</td>-->
-<!--<td>Moe</td>-->
-<!--<td>mary@example.com</td>-->
-<!--</tr>-->
-<!--<tr class="info">-->
-<!--<td>Info</td>-->
-<!--<td>Dooley</td>-->
-<!--<td>july@example.com</td>-->
-<!--</tr>-->
-<!--<tr class="warning">-->
-<!--<td>Warning</td>-->
-<!--<td>Refs</td>-->
-<!--<td>bo@example.com</td>-->
-<!--</tr>-->
-<!--<tr class="active">-->
-<!--<td>Active</td>-->
-<!--<td>Activeson</td>-->
-<!--<td>act@example.com</td>-->
-<!--</tr>-->
-<!--</tbody>-->
-<!--</table>-->
-<!--</div>-->
