@@ -30,7 +30,7 @@ app.controller('usuarioCtrl', function($scope,  $state,$rootScope,$stateParams) 
             $rootScope.reqWithToken('/atualizarProfissional',$scope.configuraDataDeEnvio(),'PUT',function(success){
                 sessionStorage.removeItem("ID");
                 alert("Cadastro alterado com sucesso");
-                $state.go('santauti.home');
+                $state.go('home');
             },function(err){
                 $scope.getDataErro(err);
             });
@@ -44,7 +44,7 @@ app.controller('usuarioCtrl', function($scope,  $state,$rootScope,$stateParams) 
         $rootScope.reqWithToken('/inserirProfissional',$scope.configuraDataDeEnvio(),'POST',function(success){
             sessionStorage.removeItem("ID");
             alert("Cadastro inserido com sucesso");
-            $state.go('santauti.home');
+            $state.go('home');
         },function(err){
             $scope.getDataErro(err);
         });

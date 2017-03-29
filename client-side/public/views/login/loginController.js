@@ -24,7 +24,7 @@ app.controller('loginCtrl', function($scope,  $state, $window, $location, $timeo
             $rootScope.req('/login', data, 'POST', function (success) {
                 sessionStorage.setItem("token", success.token);
                 sessionStorage.setItem("tipoProfissional", success.tipoProfissional);
-                $state.go('santauti.home');
+                $state.go('home');
             }, function (err) {
                 console.log(err);
                 $scope.showInvalidUserPasswordMessage(true);

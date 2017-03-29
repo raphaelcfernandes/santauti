@@ -11,6 +11,8 @@ INFORMACAOBOX:
     DEVE SE BUSCAR POR ID, DATAINTERNACAO + RECENTE E DataALTA NULL
 
 
+CONTROLLER DE FICHA ESTÁ RECARREGANDO, COMO FAZER PARA MANTER O MESMO CONTROLLER E SALVAR O QUE O USUARIO DIGITOU NOS INPUTS???
+
 Tentar separar htmls que tem padroes repetidos em arquivos separados (Problemas e pendencias por exemplo)
 Ficha noturna = diaria porem com campos de auto preenchimento da ficha diaria do mesmo dia
 Navbar deve estar em 2 linhas

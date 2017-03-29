@@ -42,16 +42,12 @@ app.run(function ($rootScope,$location,$window,$state, $stateParams, $http) {
  */
 app.config(['$stateProvider','$locationProvider', function ($stateProvider,$locationProvider,$rootScope) {
     $stateProvider
-        .state('santauti',{
-            url:'/santauti',
-            templateUrl:'../santauti.html'
-        })
-        .state('santauti.login', {
-            url: '/login',
+        .state('login', {
+            url: '/',
             templateUrl: '../login/login.html',
             controller: 'loginCtrl'
         })
-        .state('santauti.home',{
+        .state('home',{
             url: '/home',
             resolve: {
                 authenticate: usuarioLogado
@@ -67,7 +63,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                 }
             }
         })
-        .state('santauti.visualizarPaciente',{
+        .state('visualizarPaciente',{
             url: '/visualizarPaciente',
             resolve: {
                 authenticate: usuarioLogado
@@ -87,18 +83,18 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                 }
             }
         })
-        .state('santauti.listaDeProblemas',{
+        .state('listaDeProblemas',{
             url: '/listaDeProblemas',
             resolve: {
                 authenticate: usuarioLogado
             },
             views:{
-               '':{
-                    templateUrl: '../fichas/evolucaoDiaria/listaDeProblemas/listaDeProblemas.html',
-                    controller: 'evolucaoDiariaCtrl'
+                '':{
+                    templateUrl: '../ficha/listaDeProblemas/listaDeProblemas.html',
+                    controller: 'listaDeProblemaCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
@@ -107,18 +103,18 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                 }
             }
         })
-        .state('santauti.eventosSignificantes',{
+        .state('eventosSignificantes',{
             url: '/eventosSignificantes',
             resolve: {
                 authenticate: usuarioLogado
             },
             views:{
                 '':{
-                    templateUrl: '../fichas/evolucaoDiaria/eventoSignificantes/eventoSignificantes.html',
-                    controller: 'evolucaoDiariaCtrl'
+                    templateUrl: '../ficha/eventoSignificantes/eventoSignificantes.html',
+                    controller: 'eventoSignificanteCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
@@ -127,384 +123,366 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                 }
             }
         })
-        .state('santauti.neurologico',{
+        .state('neurologico',{
             url: '/neurologico',
             resolve: {
                 authenticate: usuarioLogado
             },
             views:{
                 '':{
-                    templateUrl: '../fichas/evolucaoDiaria/neurologico/neurologico.html',
-                    controller: 'evolucaoDiariaCtrl'
+                    templateUrl: '../ficha/neurologico/neurologico.html',
+                    controller: 'neurologicoCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html',
-                    controller: 'informacaoBoxCtrl'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
             }
         })
-        .state('santauti.hemodinamica',{
+        .state('hemodinamica',{
             url: '/hemodinamica',
             resolve: {
                 authenticate: usuarioLogado
             },
             views:{
                 '':{
-                    templateUrl: '../fichas/evolucaoDiaria/hemodinamica/hemodinamica.html',
-                    controller: 'evolucaoDiariaCtrl'
+                    templateUrl: '../ficha/hemodinamica/hemodinamica.html',
+                    controller: 'hemodinamicaCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html',
-                    controller: 'informacaoBoxCtrl'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
         })
-        .state('santauti.respiratorio',{
+        .state('respiratorio',{
             url: '/respiratorio',
             resolve: {
                 authenticate: usuarioLogado
             },
             views:{
                 '':{
-                    templateUrl: '../fichas/evolucaoDiaria/respiratorio/respiratorio.html',
-                    controller: 'evolucaoDiariaCtrl'
+                    templateUrl: '../ficha/respiratorio/respiratorio.html',
+                    controller: 'respiratorioCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html',
-                    controller: 'informacaoBoxCtrl'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
         })
-        .state('santauti.gastrointestinal',{
+        .state('gastrointestinal',{
             url: '/gastrointestinal',
             resolve: {
                 authenticate: usuarioLogado
             },
             views:{
                 '':{
-                    templateUrl: '../fichas/evolucaoDiaria/gastrointestinal/gastrointestinal.html',
-                    controller: 'evolucaoDiariaCtrl'
+                    templateUrl: '../ficha/gastrointestinal/gastrointestinal.html',
+                    controller: 'gastrointestinalCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html',
-                    controller: 'informacaoBoxCtrl'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
         })
-        .state('santauti.renal',{
+        .state('renal',{
             url: '/renal',
             resolve: {
                 authenticate: usuarioLogado
             },
             views:{
                 '':{
-                    templateUrl: '../fichas/evolucaoDiaria/renal/renal.html',
-                    controller: 'evolucaoDiariaCtrl'
+                    templateUrl: '../ficha/renal/renal.html',
+                    controller: 'renalCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html',
-                    controller: 'informacaoBoxCtrl'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
         })
-        .state('santauti.hematologico',{
+        .state('hematologico',{
             url: '/hematologico',
             resolve: {
                 authenticate: usuarioLogado
             },
             views:{
                 '':{
-                    templateUrl: '../fichas/evolucaoDiaria/hematologico/hematologico.html',
-                    controller: 'evolucaoDiariaCtrl'
+                    templateUrl: '../ficha/hematologico/hematologico.html',
+                    controller: 'hematologicoCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html',
-                    controller: 'informacaoBoxCtrl'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
         })
-        .state('santauti.endocrino',{
+        .state('endocrino',{
             url: '/endocrino',
             resolve: {
                 authenticate: usuarioLogado
             },
             views:{
                 '':{
-                    templateUrl: '../fichas/evolucaoDiaria/endocrino/endocrino.html',
-                    controller: 'evolucaoDiariaCtrl'
+                    templateUrl: '../ficha/endocrino/endocrino.html',
+                    controller: 'endocrinoCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html',
-                    controller: 'informacaoBoxCtrl'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
         })
-        .state('santauti.infeccioso',{
+        .state('infeccioso',{
             url: '/infeccioso',
             resolve: {
                 authenticate: usuarioLogado
             },
             views:{
                 '':{
-                    templateUrl: '../fichas/evolucaoDiaria/infeccioso/infeccioso.html',
-                    controller: 'evolucaoDiariaCtrl'
+                    templateUrl: '../ficha/infeccioso/infeccioso.html',
+                    controller: 'infecciosoCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html',
-                    controller: 'informacaoBoxCtrl'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
         })
-        .state('santauti.dispositivos',{
+        .state('dispositivos',{
             url: '/dispositivos',
             resolve: {
                 authenticate: usuarioLogado
             },
             views:{
                 '':{
-                    templateUrl: '../fichas/evolucaoDiaria/dispositivos/dispositivos.html',
-                    controller: 'evolucaoDiariaCtrl'
+                    templateUrl: '../ficha/dispositivos/dispositivos.html',
+                    controller: 'dispositivosCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html',
-                    controller: 'informacaoBoxCtrl'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
         })
-        .state('santauti.metabolico',{
+        .state('metabolico',{
             url: '/metabolico',
             resolve: {
                 authenticate: usuarioLogado
             },
             views:{
                 '':{
-                    templateUrl: '../fichas/evolucaoDiaria/metabolico/metabolico.html',
-                    controller: 'evolucaoDiariaCtrl'
+                    templateUrl: '../ficha/metabolico/metabolico.html',
+                    controller: 'metabolicoCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html',
-                    controller: 'informacaoBoxCtrl'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
         })
-        .state('santauti.nutricao',{
+        .state('nutricao',{
             url: '/nutricao',
             resolve: {
                 authenticate: usuarioLogado
             },
             views:{
                 '':{
-                    templateUrl: '../fichas/evolucaoDiaria/nutricao/nutricao.html',
-                    controller: 'evolucaoDiariaCtrl'
+                    templateUrl: '../ficha/nutricao/nutricao.html',
+                    controller: 'nutricaoCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html',
-                    controller: 'informacaoBoxCtrl'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
         })
-        .state('santauti.psicosocial',{
+        .state('psicosocial',{
             url: '/psicosocial',
             resolve: {
                 authenticate: usuarioLogado
             },
             views:{
                 '':{
-                    templateUrl: '../fichas/evolucaoDiaria/psicosocial/psicosocial.html',
-                    controller: 'evolucaoDiariaCtrl'
+                    templateUrl: '../ficha/psicosocial/psicosocial.html',
+                    controller: 'psicosocialCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html',
-                    controller: 'informacaoBoxCtrl'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
         })
-        .state('santauti.analise',{
+        .state('analise',{
             url: '/analise',
             resolve: {
                 authenticate: usuarioLogado
             },
             views:{
                 '':{
-                    templateUrl: '../fichas/evolucaoDiaria/analise/analise.html',
-                    controller: 'evolucaoDiariaCtrl'
+                    templateUrl: '../ficha/analise/analise.html',
+                    controller: 'analiseCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html',
-                    controller: 'informacaoBoxCtrl'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
         })
-        .state('santauti.pendencias',{
+        .state('pendencias',{
             url: '/pendencias',
             resolve: {
                 authenticate: usuarioLogado
             },
             views:{
                 '':{
-                    templateUrl: '../fichas/evolucaoDiaria/pendencias/pendencias.html',
-                    controller: 'evolucaoDiariaCtrl'
+                    templateUrl: '../ficha/pendencias/pendencias.html',
+                    controller: 'pendenciasCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html',
-                    controller: 'informacaoBoxCtrl'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
         })
-        .state('santauti.exames',{
+        .state('exames',{
             url: '/exames',
             resolve: {
                 authenticate: usuarioLogado
             },
             views:{
                 '':{
-                    templateUrl: '../fichas/evolucaoDiaria/exames/exames.html',
-                    controller: 'evolucaoDiariaCtrl'
+                    templateUrl: '../ficha/exames/exames.html',
+                    controller: 'examesCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html',
-                    controller: 'informacaoBoxCtrl'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
         })
-        .state('santauti.interconsulta',{
+        .state('interconsulta',{
             url: '/interconsulta',
             resolve: {
                 authenticate: usuarioLogado
             },
             views:{
                 '':{
-                    templateUrl: '../fichas/evolucaoDiaria/interconsulta/interconsulta.html',
-                    controller: 'evolucaoDiariaCtrl'
+                    templateUrl: '../ficha/interconsulta/interconsulta.html',
+                    controller: 'interconsultaCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html',
-                    controller: 'informacaoBoxCtrl'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
         })
-        .state('santauti.planos',{
+        .state('planos',{
             url: '/planos',
             resolve: {
                 authenticate: usuarioLogado
             },
             views:{
                 '':{
-                    templateUrl: '../fichas/evolucaoDiaria/planos/planos.html',
-                    controller: 'evolucaoDiariaCtrl'
+                    templateUrl: '../ficha/planos/planos.html',
+                    controller: 'planosCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html',
-                    controller: 'informacaoBoxCtrl'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
         })
-        .state('santauti.examesLab',{
+        .state('examesLab',{
             url: '/examesLab',
             resolve: {
                 authenticate: usuarioLogado
             },
             views:{
                 '':{
-                    templateUrl: '../fichas/evolucaoDiaria/examesLaboratoriais/examesLaboratoriais.html',
-                    controller: 'evolucaoDiariaCtrl'
+                    templateUrl: '../ficha/examesLaboratoriais/examesLaboratoriais.html',
+                    controller: 'examesLabCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../fichas/evolucaoDiaria/navbarFicha.html',
+                    templateUrl: '../ficha/navbarFicha.html',
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html',
-                    controller: 'informacaoBoxCtrl'
+                    templateUrl: '../informacaoBox/informacaoBox.html'
                 }
 
             }
         })
-        .state('santauti.pessoa',{
+        .state('pessoa',{
             url: '/pessoa/:acao/',
             resolve: {
                 authenticate: usuarioLogado
@@ -520,7 +498,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                 }
             }
         })
-        .state('santauti.usuario',{
+        .state('usuario',{
             url:'/profissional/:acao/',
             resolve: {
                 authenticate: usuarioLogado
@@ -543,11 +521,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             url: '/verifyToken',
             data: {token: sessionStorage.getItem("token") }
         };
-        $http(req).then(function (response) {
-            return response;
-        },function (error) {
-            $state.go("p")
-        });
+        return $http(req);
     }
 //    $locationProvider.html5Mode(true);
 }]);
