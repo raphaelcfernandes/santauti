@@ -3,10 +3,8 @@
  */
 
 app.controller('loginCtrl', function($scope,  $state, $window, $location, $timeout,$sessionStorage,$rootScope,$mdDialog) {
-    console.log(sessionStorage);
-    console.log($rootScope);
-    var opQR = undefined;
     $scope.showGreeting = false;
+    sessionStorage.clear();
     $scope.showInvalidUserPasswordMessage = function(flag) {
             flag == true ? $scope.msg = "Usuario e/ou Senha inválidos." : $scope.msg = "Campos não podem ser vazios.";
             $scope.showGreeting = true;
@@ -26,7 +24,7 @@ app.controller('loginCtrl', function($scope,  $state, $window, $location, $timeo
             $rootScope.req('/login', data, 'POST', function (success) {
                 sessionStorage.setItem("token", success.token);
                 sessionStorage.setItem("tipoProfissional", success.tipoProfissional);
-                $state.go('home');
+                $state.go('santauti.home');
             }, function (err) {
                 console.log(err);
                 $scope.showInvalidUserPasswordMessage(true);

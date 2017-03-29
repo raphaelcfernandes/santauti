@@ -24,7 +24,7 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
     /*****************************VARIABLES && $SCOPE DECLARATION*********************/
     $scope.criarFichaDiurno = function (id) {
         sessionStorage.setItem("ID",id);
-        $state.go("eventosSignificantes");
+        $state.go("santauti.listaDeProblemas");
     };
 
     $scope.imprimir = function (){
@@ -155,7 +155,7 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
      */
     $scope.adicionarNovo = function () {
         if ($scope.nivelProfissional == 1) {//Redireciona para pagina de cadastro de PROFISSIONAL
-            $state.go("pessoa", {
+            $state.go("santauti.pessoa", {
                 acao: "novo"
             });
         }
@@ -163,7 +163,7 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
 
     $scope.visualizarPaciente = function (id) {
         sessionStorage.setItem("ID",id);
-        $state.go("visualizarPaciente");
+        $state.go("santauti.visualizarPaciente");
     };
 
     /**
@@ -189,7 +189,7 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
      */
     $scope.editar = function (id) {
         sessionStorage.setItem("ID", id);
-        $state.go("pessoa", {
+        $state.go("santauti.pessoa", {
             acao: "editar"
         });
     };

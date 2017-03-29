@@ -42,12 +42,16 @@ app.run(function ($rootScope,$location,$window,$state, $stateParams, $http) {
  */
 app.config(['$stateProvider','$locationProvider', function ($stateProvider,$locationProvider,$rootScope) {
     $stateProvider
-        .state('login', {
-            url: '/',
+        .state('santauti',{
+            url:'/santauti',
+            templateUrl:'../santauti.html'
+        })
+        .state('santauti.login', {
+            url: '/login',
             templateUrl: '../login/login.html',
             controller: 'loginCtrl'
         })
-        .state('home',{
+        .state('santauti.home',{
             url: '/home',
             resolve: {
                 authenticate: usuarioLogado
@@ -63,7 +67,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                 }
             }
         })
-        .state('visualizarPaciente',{
+        .state('santauti.visualizarPaciente',{
             url: '/visualizarPaciente',
             resolve: {
                 authenticate: usuarioLogado
@@ -83,13 +87,13 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                 }
             }
         })
-        .state('listaDeProblemas',{
+        .state('santauti.listaDeProblemas',{
             url: '/listaDeProblemas',
             resolve: {
                 authenticate: usuarioLogado
             },
             views:{
-                '':{
+               '':{
                     templateUrl: '../fichas/evolucaoDiaria/listaDeProblemas/listaDeProblemas.html',
                     controller: 'evolucaoDiariaCtrl'
                 },
@@ -103,7 +107,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                 }
             }
         })
-        .state('eventosSignificantes',{
+        .state('santauti.eventosSignificantes',{
             url: '/eventosSignificantes',
             resolve: {
                 authenticate: usuarioLogado
@@ -123,7 +127,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                 }
             }
         })
-        .state('neurologico',{
+        .state('santauti.neurologico',{
             url: '/neurologico',
             resolve: {
                 authenticate: usuarioLogado
@@ -143,7 +147,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                 }
             }
         })
-        .state('hemodinamica',{
+        .state('santauti.hemodinamica',{
             url: '/hemodinamica',
             resolve: {
                 authenticate: usuarioLogado
@@ -164,7 +168,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
 
             }
         })
-        .state('respiratorio',{
+        .state('santauti.respiratorio',{
             url: '/respiratorio',
             resolve: {
                 authenticate: usuarioLogado
@@ -185,7 +189,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
 
             }
         })
-        .state('gastrointestinal',{
+        .state('santauti.gastrointestinal',{
             url: '/gastrointestinal',
             resolve: {
                 authenticate: usuarioLogado
@@ -206,7 +210,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
 
             }
         })
-        .state('renal',{
+        .state('santauti.renal',{
             url: '/renal',
             resolve: {
                 authenticate: usuarioLogado
@@ -227,7 +231,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
 
             }
         })
-        .state('hematologico',{
+        .state('santauti.hematologico',{
             url: '/hematologico',
             resolve: {
                 authenticate: usuarioLogado
@@ -248,7 +252,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
 
             }
         })
-        .state('endocrino',{
+        .state('santauti.endocrino',{
             url: '/endocrino',
             resolve: {
                 authenticate: usuarioLogado
@@ -269,7 +273,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
 
             }
         })
-        .state('infeccioso',{
+        .state('santauti.infeccioso',{
             url: '/infeccioso',
             resolve: {
                 authenticate: usuarioLogado
@@ -290,7 +294,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
 
             }
         })
-        .state('dispositivos',{
+        .state('santauti.dispositivos',{
             url: '/dispositivos',
             resolve: {
                 authenticate: usuarioLogado
@@ -311,7 +315,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
 
             }
         })
-        .state('metabolico',{
+        .state('santauti.metabolico',{
             url: '/metabolico',
             resolve: {
                 authenticate: usuarioLogado
@@ -332,7 +336,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
 
             }
         })
-        .state('nutricao',{
+        .state('santauti.nutricao',{
             url: '/nutricao',
             resolve: {
                 authenticate: usuarioLogado
@@ -353,7 +357,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
 
             }
         })
-        .state('psicosocial',{
+        .state('santauti.psicosocial',{
             url: '/psicosocial',
             resolve: {
                 authenticate: usuarioLogado
@@ -374,7 +378,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
 
             }
         })
-        .state('analise',{
+        .state('santauti.analise',{
             url: '/analise',
             resolve: {
                 authenticate: usuarioLogado
@@ -395,7 +399,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
 
             }
         })
-        .state('pendencias',{
+        .state('santauti.pendencias',{
             url: '/pendencias',
             resolve: {
                 authenticate: usuarioLogado
@@ -416,7 +420,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
 
             }
         })
-        .state('exames',{
+        .state('santauti.exames',{
             url: '/exames',
             resolve: {
                 authenticate: usuarioLogado
@@ -437,7 +441,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
 
             }
         })
-        .state('interconsulta',{
+        .state('santauti.interconsulta',{
             url: '/interconsulta',
             resolve: {
                 authenticate: usuarioLogado
@@ -458,7 +462,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
 
             }
         })
-        .state('planos',{
+        .state('santauti.planos',{
             url: '/planos',
             resolve: {
                 authenticate: usuarioLogado
@@ -479,7 +483,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
 
             }
         })
-        .state('examesLab',{
+        .state('santauti.examesLab',{
             url: '/examesLab',
             resolve: {
                 authenticate: usuarioLogado
@@ -500,7 +504,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
 
             }
         })
-        .state('pessoa',{
+        .state('santauti.pessoa',{
             url: '/pessoa/:acao/',
             resolve: {
                 authenticate: usuarioLogado
@@ -516,7 +520,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                 }
             }
         })
-        .state('usuario',{
+        .state('santauti.usuario',{
             url:'/profissional/:acao/',
             resolve: {
                 authenticate: usuarioLogado
@@ -539,7 +543,11 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             url: '/verifyToken',
             data: {token: sessionStorage.getItem("token") }
         };
-        return $http(req);
+        $http(req).then(function (response) {
+            return response;
+        },function (error) {
+            $state.go("p")
+        });
     }
 //    $locationProvider.html5Mode(true);
 }]);

@@ -146,7 +146,7 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
                 id: sessionStorage.getItem("ID")
             };
             $rootScope.reqWithToken('/updatePessoa', data, 'PUT', function (success) {
-                $state.go('usuario', {
+                $state.go('santauti.usuario', {
                     acao: "editar"
                 })
             }, function (err) {
@@ -160,7 +160,7 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
                 };
                 $rootScope.reqWithToken('/inserirPessoa', data, 'POST', function (success) {
                     sessionStorage.setItem("ID", success.ID);
-                    $state.go('usuario', {
+                    $state.go('santauti.usuario', {
                         acao: "novo"
                     })
                 }, function (err) {
