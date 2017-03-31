@@ -2,6 +2,9 @@
  * Created by raphael on 2/22/17.
  */
 app.controller('dispositivosCtrl', function($scope,$rootScope) {
+    if($rootScope.dados===undefined) {
+        $rootScope.dados = {};
+    }
     /**********SCOPE VARIABLES***********/
     $scope.cateterVenosoInput=false;
     $scope.cateterHemodialiseInput=false;

@@ -304,8 +304,9 @@ CREATE TABLE IF NOT EXISTS `santauti`.`Evolucao` (
 DROP TABLE IF EXISTS `santauti`.`ListaProblemas` ;
 
 CREATE TABLE IF NOT EXISTS `santauti`.`ListaProblemas` (
+  `IDListaProblemas` INT NOT NULL AUTO_INCREMENT,
+  `IDPaciente` INT NOT NULL,
   `NroAtendimento` INT NOT NULL,
-  `IDProblema` INT NOT NULL AUTO_INCREMENT,
   `AntecedentesPessoais` MEDIUMTEXT NULL,
   `DiagnosticoEntrada` MEDIUMTEXT NULL,
   `Comentarios` MEDIUMTEXT NULL,
@@ -313,10 +314,16 @@ CREATE TABLE IF NOT EXISTS `santauti`.`ListaProblemas` (
   `DataDiagnosticado` DATETIME NULL,
   `DataResolvido` DATETIME NULL,
   INDEX `fk_ListaProblemas_idx` (`NroAtendimento` ASC),
-  PRIMARY KEY (`IDProblema`),
-  CONSTRAINT `fk_ListaProblemas`
+  INDEX `fk_ListaProblemas_Paciente_idx` (`IDPaciente` ASC),
+  PRIMARY KEY (`IDListaProblemas`),
+  CONSTRAINT `fk_ListaProblemas_NroAtendimento`
   FOREIGN KEY (`NroAtendimento`)
-  REFERENCES `santauti`.`Evolucao` (`NroAtendimento`)
+  REFERENCES `santauti`.`Fichas` (`NroAtendimento`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_ListaProblemas_Paciente`
+  FOREIGN KEY (`IDPaciente`)
+  REFERENCES `santauti`.`Paciente` (`ID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
   ENGINE = InnoDB;
@@ -328,8 +335,8 @@ CREATE TABLE IF NOT EXISTS `santauti`.`ListaProblemas` (
 DROP TABLE IF EXISTS `santauti`.`Dispositivos` ;
 
 CREATE TABLE IF NOT EXISTS `santauti`.`Dispositivos`(
-  `IDPaciente` INT NOT NULL,
   `IDDispositivo` INT NOT NULL AUTO_INCREMENT,
+  `IDPaciente` INT NOT NULL,
   `DispositivoDescricao` TINYTEXT NULL,
   `DataInicio` DATETIME NULL,
   `DataFim` DATETIME NULL,
@@ -347,17 +354,24 @@ CREATE TABLE IF NOT EXISTS `santauti`.`Dispositivos`(
 DROP TABLE IF EXISTS `santauti`.`Pendencias` ;
 
 CREATE TABLE IF NOT EXISTS `santauti`.`Pendencias` (
+  `IDPendencias` INT NOT NULL AUTO_INCREMENT,
   `NroAtendimento` INT NOT NULL,
-  `IDPendencias` INT NOT NULL,
+  `IDPaciente` INT NOT NULL,
   `Comentarios` MEDIUMTEXT NULL,
   `Descricao` TINYTEXT NULL,
   `DataDiagnosticado` DATETIME NULL,
   `DataResolvido` DATETIME NULL,
   INDEX `fk_Pendencias_idx` (`NroAtendimento` ASC),
+  INDEX `fk_Pendencias_Paciente_idx` (`IDPaciente` ASC),
   PRIMARY KEY (`IDPendencias`),
   CONSTRAINT `fk_Pendencias`
   FOREIGN KEY (`NroAtendimento`)
-  REFERENCES `santauti`.`Evolucao` (`NroAtendimento`)
+  REFERENCES `santauti`.`Fichas` (`NroAtendimento`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Pendencias_Paciente`
+  FOREIGN KEY (`IDPaciente`)
+  REFERENCES `santauti`.`Paciente` (`ID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
   ENGINE = InnoDB;

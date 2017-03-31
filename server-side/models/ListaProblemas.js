@@ -4,20 +4,27 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
     var ListaProblemas = sequelize.define('ListaProblemas', {
-        NroAtendimento: { //FK to Evolucao
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            unique: true,
-            reference:{
-                model: 'Evolucao',
-                key: 'NroAtendimento'
-            }
-        },
-        IDProblema:{
+        IDListaProblemas:{
             type: DataTypes.INTEGER,
             autoIncrement:true,
             primaryKey:true,
             allowNull:false
+        },
+        NroAtendimento: { //FK to Evolucao
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            reference:{
+                model: 'Fichas',
+                key: 'NroAtendimento'
+            }
+        },
+        IDPaciente:{
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            reference:{
+                model: 'Paciente',
+                key: 'ID'
+            }
         },
         AntecedentesPessoais:{
             type: DataTypes.TEXT,
@@ -44,6 +51,16 @@ module.exports = function(sequelize, DataTypes) {
             allowNull: true
         }
     }, {
+        classMethods: {
+            associate: function (models) {
+                ListaProblemas.belongsTo(models.Fichas, {
+                    foreignKey: 'NroAtendimento'
+                });
+                ListaProblemas.belongsTo(models.Paciente,{
+                    foreignKey: 'IDPaciente'
+                });
+            }
+        },
         tableName: 'ListaProblemas',
         timestamps:false
     });

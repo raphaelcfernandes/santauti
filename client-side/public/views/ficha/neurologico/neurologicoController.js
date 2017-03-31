@@ -3,7 +3,9 @@
  */
 
 app.controller('neurologicoCtrl', function($scope,$rootScope) {
-
+    if($rootScope.dados===undefined) {
+        $rootScope.dados = {};
+    }
     /*****SCOPE DECLARATION****/
     $scope.resultado = 0;
     /*****SCOPE DECLARATION****/
@@ -85,6 +87,6 @@ app.controller('neurologicoCtrl', function($scope,$rootScope) {
             {value: 5, name: 'Grau 5: dormindo, responde lentamente ao estímulo glabelar ou ao estímulo sonoro vigoroso'},
             {value: 6, name: 'Grau 6: dormindo, sem resposta'}
         ]
-    }
+    };
     /*****METHODS DECLARATION****/
 });

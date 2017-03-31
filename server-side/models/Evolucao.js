@@ -13,14 +13,6 @@ module.exports = function(sequelize, DataTypes) {
                 key: 'NroAtendimento'
             }
         },
-        Registro: { //FK to Profissional
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            reference:{
-                model: 'Profissional',
-                key: 'Registro'
-            }
-        },
         TipoEvolucao:{
             type: DataTypes.STRING,
             allowNull: false
@@ -491,6 +483,13 @@ module.exports = function(sequelize, DataTypes) {
             allowNull:true
         }
     }, {
+        classMethods: {
+            associate: function (models) {
+                Evolucao.belongsTo(models.Fichas,{
+                    foreignKey: 'NroAtendimento'
+                });
+            }
+        },
         tableName: 'Evolucao',
         timestamps:false
     });

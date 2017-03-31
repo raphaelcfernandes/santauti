@@ -4,20 +4,27 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
     var Pendencias = sequelize.define('Pendencias', {
-        NroAtendimento: { //FK to Evolucao
-            type: DataTypes.INTEGER,
-            allowNull: false,
-            unique: true,
-            reference:{
-                model: 'Evolucao',
-                key: 'NroAtendimento'
-            }
-        },
         IDPendencias:{
             type: DataTypes.INTEGER,
             autoIncrement:true,
             primaryKey:true,
             allowNull:false
+        },
+        NroAtendimento: { //FK to Evolucao
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            reference:{
+                model: 'Fichas',
+                key: 'NroAtendimento'
+            }
+        },
+        IDPaciente:{ //FK to Paciente
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            reference:{
+                model: 'Paciente',
+                key: 'ID'
+            }
         },
         Comentarios:{
             type: DataTypes.TEXT,
@@ -37,6 +44,14 @@ module.exports = function(sequelize, DataTypes) {
         }
     }, {
         classMethods: {
+            associate: function (models) {
+                Pendencias.belongsTo(models.Fichas, {
+                    foreignKey: 'NroAtendimento'
+                });
+                Pendencias.belongsTo(models.Paciente,{
+                    foreignKey: 'IDPaciente'
+                });
+            }
         },
         tableName: 'Pendencias',
         timestamps:false

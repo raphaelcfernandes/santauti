@@ -16,14 +16,23 @@
             </div>
             <div class="row">
                 <div class="col-sm-2">
-                    <!--<div class="input-group date" id="date0" datetimepicker >-->
-                        <!--<input type="text" class="form-control" />-->
-                        <!--<span class="input-group-addon">-->
-                        <!--<span class="glyphicon glyphicon-calendar"></span></span>-->
-                    <!--</div>-->
+                    <div class="input-group" moment-picker="dados.exame.DataRaioxTorax"
+                         locale="pt-br"
+                         format="L"
+                         min-view="decade"
+                         autoclose="true"
+                         today="true">
+                        <input name="DataNascimento" class="form-control"
+                               placeholder="Selecione uma data"
+                               ng-model="dados.exame.DataRaioxTorax"
+                               ng-model-options="{ updateOn: 'blur' }">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                        </span>
+                    </div>
                 </div>
                 <div class="col-sm-7 col-sm-offset-3">
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" ng-model="dados.exame.DataRaioxToraxDescricao">
                 </div>
             </div>
         </div>
@@ -43,14 +52,23 @@
             </div>
             <div class="row">
                 <div class="col-sm-2">
-                    <!--<div class="input-group date" id="date1" datetimepicker>-->
-                        <!--<input type="text" class="form-control" />-->
-                        <!--<span class="input-group-addon">-->
-                        <!--<span class="glyphicon glyphicon-calendar"></span></span>-->
-                    <!--</div>-->
+                    <div class="input-group" moment-picker="dados.exame.EcoCardiograma"
+                         locale="pt-br"
+                         format="L"
+                         min-view="decade"
+                         autoclose="true"
+                         today="true">
+                        <input name="DataNascimento" class="form-control"
+                               placeholder="Selecione uma data"
+                               ng-model="dados.exame.EcoCardiograma"
+                               ng-model-options="{ updateOn: 'blur' }">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                        </span>
+                    </div>
                 </div>
                 <div class="col-sm-7 col-sm-offset-3">
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" ng-model="dados.exame.EcoCardiogramaDescricao">
                 </div>
             </div>
         </div>
@@ -70,14 +88,23 @@
             </div>
             <div class="row">
                 <div class="col-sm-2">
-                    <!--<div class="input-group date" id="date2" datetimepicker>-->
-                        <!--<input type="text" class="form-control" />-->
-                        <!--<span class="input-group-addon">-->
-                        <!--<span class="glyphicon glyphicon-calendar"></span></span>-->
-                    <!--</div>-->
+                    <div class="input-group" moment-picker="dados.exame.TomografiaTorax"
+                         locale="pt-br"
+                         format="L"
+                         min-view="decade"
+                         autoclose="true"
+                         today="true">
+                        <input name="DataNascimento" class="form-control"
+                               placeholder="Selecione uma data"
+                               ng-model="dados.exame.TomografiaTorax"
+                               ng-model-options="{ updateOn: 'blur' }">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                        </span>
+                    </div>
                 </div>
                 <div class="col-sm-7 col-sm-offset-3">
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" ng-model="dados.exame.TomografiaToraxDescricao">
                 </div>
             </div>
         </div>
@@ -97,14 +124,23 @@
             </div>
             <div class="row">
                 <div class="col-sm-2">
-                    <!--<div class="input-group date" id="date3" datetimepicker>-->
-                        <!--<input type="text" class="form-control" />-->
-                        <!--<span class="input-group-addon">-->
-                        <!--<span class="glyphicon glyphicon-calendar"></span></span>-->
-                    <!--</div>-->
+                    <div class="input-group" moment-picker="dados.exame.TomografiaAbdome"
+                         locale="pt-br"
+                         format="L"
+                         min-view="decade"
+                         autoclose="true"
+                         today="true">
+                        <input name="DataNascimento" class="form-control"
+                               placeholder="Selecione uma data"
+                               ng-model="dados.exame.TomografiaAbdome"
+                               ng-model-options="{ updateOn: 'blur' }">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                        </span>
+                    </div>
                 </div>
                 <div class="col-sm-7 col-sm-offset-3">
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" ng-model="dados.exame.TomografiaAbdomeDescricao">
                 </div>
             </div>
         </div>
@@ -124,14 +160,23 @@
             </div>
             <div class="row">
                 <div class="col-sm-2">
-                    <!--<div class="input-group date" id="date4" datetimepicker>-->
-                        <!--<input type="text" class="form-control" />-->
-                        <!--<span class="input-group-addon">-->
-                        <!--<span class="glyphicon glyphicon-calendar"></span></span>-->
-                    <!--</div>-->
+                    <div class="input-group" moment-picker="dados.exame.TomografiaCranio"
+                         locale="pt-br"
+                         format="L"
+                         min-view="decade"
+                         autoclose="true"
+                         today="true">
+                        <input name="DataNascimento" class="form-control"
+                               placeholder="Selecione uma data"
+                               ng-model="dados.exame.TomografiaCranio"
+                               ng-model-options="{ updateOn: 'blur' }">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                        </span>
+                    </div>
                 </div>
                 <div class="col-sm-7 col-sm-offset-3">
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" ng-model="dados.exame.TomografiaCranioDescricao">
                 </div>
             </div>
         </div>
@@ -151,14 +196,23 @@
             </div>
             <div class="row">
                 <div class="col-sm-2">
-                    <!--<div class="input-group date" id="date5" datetimepicker>-->
-                        <!--<input type="text" class="form-control" />-->
-                        <!--<span class="input-group-addon">-->
-                        <!--<span class="glyphicon glyphicon-calendar"></span></span>-->
-                    <!--</div>-->
+                    <div class="input-group" moment-picker="dados.exame.EndoscopiaDigestiva"
+                         locale="pt-br"
+                         format="L"
+                         min-view="decade"
+                         autoclose="true"
+                         today="true">
+                        <input name="DataNascimento" class="form-control"
+                               placeholder="Selecione uma data"
+                               ng-model="dados.exame.EndoscopiaDigestiva"
+                               ng-model-options="{ updateOn: 'blur' }">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                        </span>
+                    </div>
                 </div>
                 <div class="col-sm-7 col-sm-offset-3">
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" ng-model="dados.exame.EndoscopiaDigestivaDescricao">
                 </div>
             </div>
         </div>
@@ -178,14 +232,23 @@
             </div>
             <div class="row">
                 <div class="col-sm-2">
-                    <!--<div class="input-group date" id="date6" datetimepicker>-->
-                        <!--<input type="text" class="form-control" />-->
-                        <!--<span class="input-group-addon">-->
-                        <!--<span class="glyphicon glyphicon-calendar"></span></span>-->
-                    <!--</div>-->
+                    <div class="input-group" moment-picker="dados.exame.Urina"
+                         locale="pt-br"
+                         format="L"
+                         min-view="decade"
+                         autoclose="true"
+                         today="true">
+                        <input name="DataNascimento" class="form-control"
+                               placeholder="Selecione uma data"
+                               ng-model="dados.exame.Urina"
+                               ng-model-options="{ updateOn: 'blur' }">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                        </span>
+                    </div>
                 </div>
                 <div class="col-sm-7 col-sm-offset-3">
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" ng-model="dados.exame.UrinaDescricao">
                 </div>
             </div>
         </div>
@@ -205,14 +268,23 @@
             </div>
             <div class="row">
                 <div class="col-sm-2">
-                    <!--<div class="input-group date" id="date7" datetimepicker>-->
-                        <!--<input type="text" class="form-control" />-->
-                        <!--<span class="input-group-addon">-->
-                        <!--<span class="glyphicon glyphicon-calendar"></span></span>-->
-                    <!--</div>-->
+                    <div class="input-group" moment-picker="dados.exame.Eletrocefalograma"
+                         locale="pt-br"
+                         format="L"
+                         min-view="decade"
+                         autoclose="true"
+                         today="true">
+                        <input name="DataNascimento" class="form-control"
+                               placeholder="Selecione uma data"
+                               ng-model="dados.exame.Eletrocefalograma"
+                               ng-model-options="{ updateOn: 'blur' }">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                        </span>
+                    </div>
                 </div>
                 <div class="col-sm-7 col-sm-offset-3">
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" ng-model="dados.exame.EletrocefalogramaDescricao">
                 </div>
             </div>
         </div>
@@ -232,14 +304,23 @@
             </div>
             <div class="row">
                 <div class="col-sm-2">
-                    <!--<div class="input-group date" id="date8" datetimepicker>-->
-                        <!--<input type="text" class="form-control" />-->
-                        <!--<span class="input-group-addon">-->
-                        <!--<span class="glyphicon glyphicon-calendar"></span></span>-->
-                    <!--</div>-->
+                    <div class="input-group" moment-picker="dados.exame.Eletrocardiograma"
+                         locale="pt-br"
+                         format="L"
+                         min-view="decade"
+                         autoclose="true"
+                         today="true">
+                        <input name="DataNascimento" class="form-control"
+                               placeholder="Selecione uma data"
+                               ng-model="dados.exame.Eletrocardiograma"
+                               ng-model-options="{ updateOn: 'blur' }">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                        </span>
+                    </div>
                 </div>
                 <div class="col-sm-7 col-sm-offset-3">
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" ng-model="dados.exame.EletrocardiogramaDescricao">
                 </div>
             </div>
         </div>
@@ -256,7 +337,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <textarea class="form-control" rows="5"></textarea>
+                    <textarea class="form-control" ng-model="dados.exame.CulturasDescricao" rows="5"></textarea>
                 </div>
             </div>
         </div>

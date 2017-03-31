@@ -5,6 +5,12 @@
 
 module.exports = function(sequelize, DataTypes) {
     var Dispositivos = sequelize.define('Dispositivos', {
+        IDDispositivos:{
+            type: DataTypes.INTEGER,
+            autoIncrement:true,
+            primaryKey:true,
+            allowNull:false
+        },
         IDPaciente: { //FK to Evolucao
             type: DataTypes.INTEGER,
             allowNull: false,
@@ -13,12 +19,6 @@ module.exports = function(sequelize, DataTypes) {
                 model: "Paciente",
                 key: 'ID'
             }
-        },
-        IDDispositivos:{
-            type: DataTypes.INTEGER,
-            autoIncrement:true,
-            primaryKey:true,
-            allowNull:false
         },
         DispositivoDescricao:{
             type: DataTypes.TEXT,
@@ -33,6 +33,13 @@ module.exports = function(sequelize, DataTypes) {
             allowNull: true
         }
     }, {
+        classMethods: {
+            associate: function (models) {
+                Dispositivos.belongsTo(models.Paciente, {
+                    foreignKey: 'IDPaciente'
+                });
+            }
+        },
         tableName: 'Dispositivos',
         timestamps:false
     });
