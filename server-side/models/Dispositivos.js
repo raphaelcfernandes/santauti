@@ -5,7 +5,7 @@
 
 module.exports = function(sequelize, DataTypes) {
     var Dispositivos = sequelize.define('Dispositivos', {
-        IDDispositivos:{
+        IDDispositivo:{
             type: DataTypes.INTEGER,
             autoIncrement:true,
             primaryKey:true,

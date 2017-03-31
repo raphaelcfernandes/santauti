@@ -10,7 +10,7 @@ module.exports = function(sequelize, DataTypes) {
             primaryKey:true,
             allowNull:false
         },
-        NroAtendimento: { //FK to Evolucao
+        NroAtendimento: { //FK to Fichas
             type: DataTypes.INTEGER,
             allowNull: false,
             reference:{

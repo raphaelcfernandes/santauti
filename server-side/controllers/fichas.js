@@ -20,16 +20,25 @@ module.exports = function(app){
         getFichasEvolucaoPorIdPaciente: function (req,res) {
             try{
                 Jwt.verify(req.headers.access_token, privateKey);
-                Evolucao.findAll({
-                    // include:[
-                    //     {model: ListaProblemas,required:true},
-                    //     {model: Pendencias,required:true}],
-                    // where:{
-                    //     IDPaciente: parseInt(req.query.idPaciente)
-                    // },
-                    limit:1000
+                Fichas.findAll({
+                    include:[
+                        {model: ListaProblemas,required:true},
+                        {model: Pendencias,required:true}
+                        ],
+                    limit: 100
                 }).then(function (result) {
-                    res.json(result);
+                    Dispositivos.findAll({
+                        where:{
+                            IDPaciente: req.query.idPaciente
+                        },
+                        limit: 100
+                    }).then(function (results){
+                        var obj = {
+                            Fichas: result,
+                            Dispositivos:results
+                        };
+                        res.json(obj);
+                    });
                 });
             }catch(err){
                 res.sendStatus(401);
@@ -37,4 +46,4 @@ module.exports = function(app){
         }
     };
     return fichasController;
-}
+};

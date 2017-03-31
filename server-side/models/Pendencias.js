@@ -45,7 +45,7 @@ module.exports = function(sequelize, DataTypes) {
     }, {
         classMethods: {
             associate: function (models) {
-                Pendencias.belongsTo(models.Fichas, {
+                Pendencias.belongsTo(models.Fichas,{
                     foreignKey: 'NroAtendimento'
                 });
                 Pendencias.belongsTo(models.Paciente,{
