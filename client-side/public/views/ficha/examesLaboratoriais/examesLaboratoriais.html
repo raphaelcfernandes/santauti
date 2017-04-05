@@ -8,11 +8,20 @@
             </div>
             <div class="row">
                 <div class="col-sm-2">
-                    <!--<div class='input-group date' id='dataExame' datetimepicker>-->
-                        <!--<input type='text' class="form-control" />-->
-                        <!--<span class="input-group-addon">-->
-                        <!--<span class="glyphicon glyphicon-calendar"></span></span>-->
-                    <!--</div>-->
+                    <div class="input-group" moment-picker="dados.exameLaboratorial.DataExameRealizado"
+                         locale="pt-br"
+                         format="L"
+                         min-view="decade"
+                         autoclose="true"
+                         today="true">
+                        <input name="DataNascimento" class="form-control"
+                               placeholder="Selecione uma data"
+                               ng-model="dados.exameLaboratorial.DataExameRealizado"
+                               ng-model-options="{ updateOn: 'blur' }">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -30,13 +39,13 @@
             </div>
             <div class="row">
                 <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Hemoglobina">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Hematocrito">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Leucocitos">
                 </div>
             </div>
         </div>
@@ -54,13 +63,13 @@
             </div>
             <div class="row">
                 <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Promielocitos">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Hielocitos">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Metamielocitos">
                 </div>
             </div>
         </div>
@@ -78,13 +87,13 @@
             </div>
             <div class="row">
                 <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Bastonetes">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Segmentados">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Eosinofilos">
                 </div>
             </div>
         </div>
@@ -102,13 +111,13 @@
             </div>
             <div class="row">
                 <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Basofilos">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Linfocitos">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Monocitos">
                 </div>
             </div>
         </div>
@@ -126,13 +135,13 @@
             </div>
             <div class="row">
                 <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Plaquetas">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Sodio">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Potassio">
                 </div>
             </div>
         </div>
@@ -150,13 +159,13 @@
             </div>
             <div class="row">
                 <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Ureia">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Creatinina">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Magnesio">
                 </div>
             </div>
         </div>
@@ -174,13 +183,13 @@
             </div>
             <div class="row">
                 <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Calcio">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Fosforo">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Cloro">
                 </div>
             </div>
         </div>
@@ -193,18 +202,18 @@
                     <h4><label>Albumina</label></h4>
                 </div>
                 <div class="col-sm-4">
-                    <h4><label>TAP/RNI</label></h4>
+                    <h4><label>TAP</label></h4>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.PCR">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Albumina">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.TAP">
                 </div>
             </div>
         </div>
@@ -222,13 +231,13 @@
             </div>
             <div class="row">
                 <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.TTPA">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Troponina">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.CPKTOTAL">
                 </div>
             </div>
         </div>
@@ -246,13 +255,13 @@
             </div>
             <div class="row">
                 <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.CKMB">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.DimeroD">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Glicose">
                 </div>
             </div>
         </div>
@@ -270,13 +279,13 @@
             </div>
             <div class="row">
                 <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Fibrogenio">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.PH">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.PCO2">
                 </div>
             </div>
         </div>
@@ -294,37 +303,13 @@
             </div>
             <div class="row">
                 <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.PO2">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.HCO3">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="row">
-                <div class="col-sm-4">
-                    <h4><label>PO2</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>HCO3</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>Saturaćao</label></h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Saturacao">
                 </div>
             </div>
         </div>
@@ -342,13 +327,13 @@
             </div>
             <div class="row">
                 <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.SaturacaoCentral">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.PAO2">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.FIO2">
                 </div>
             </div>
         </div>
@@ -366,13 +351,13 @@
             </div>
             <div class="row">
                 <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Lactatos">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.BBT">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.BBD">
                 </div>
             </div>
         </div>
@@ -390,13 +375,13 @@
             </div>
             <div class="row">
                 <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.TGO">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.TGP">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.GGT">
                 </div>
             </div>
         </div>
@@ -408,13 +393,19 @@
                 <div class="col-sm-4">
                     <h4><label>Procalcitonina</label></h4>
                 </div>
+                <div class="col-sm-4">
+                    <h4><label>RNI</label></h4>
+                </div>
             </div>
             <div class="row">
                 <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.FA">
                 </div>
                 <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Procalcitonina">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.RNI">
                 </div>
             </div>
         </div>

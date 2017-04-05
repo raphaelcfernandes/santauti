@@ -7,7 +7,11 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.INTEGER,
             allowNull:false,
             unique:true,
-            primaryKey:true
+            primaryKey:true,
+            references:{
+                model: 'Paciente',
+                key: 'ID'
+            }
         },
         DataInternacao: {
             type: DataTypes.DATE,
@@ -19,6 +23,13 @@ module.exports = function(sequelize, DataTypes) {
             allowNull: false
         }
     }, {
+        classMethods: {
+            associate: function (models) {
+                Internacao.belongsTo(models.Paciente, {
+                    foreignKey: 'ID'
+                });
+            }
+        },
         tableName: 'Internacao',
         timestamps:false
     });

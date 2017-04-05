@@ -1,0 +1,49 @@
+/**
+ * Created by raphael on 3/31/17.
+ */
+/**
+ * Created by raphael on 3/28/17.
+ */
+const Config = require('../config/generalConfig');
+const Jwt = require('jsonwebtoken');
+const privateKey = Config.key.privateKey;
+var models = require('../models/index');
+
+module.exports = function(app){
+
+    Fichas = app.serverSide.models.index.Fichas;
+    ListaProblemas = app.serverSide.models.index.ListaProblemas;
+    Pendencias = app.serverSide.models.index.Pendencias;
+    Evolucao = app.serverSide.models.index.Evolucao;
+    Dispositivos = app.serverSide.models.index.Dispositivos;
+    var fichasController = {
+        getFichasEvolucaoPorIdPaciente: function (req,res) {
+            try{
+                Jwt.verify(req.headers.access_token, privateKey);
+                Fichas.findAll({
+                    include:[
+                        {model: ListaProblemas,required:true},
+                        {model: Pendencias,required:true}
+                        ],
+                    limit: 100
+                }).then(function (result) {
+                    Dispositivos.findAll({
+                        where:{
+                            IDPaciente: req.query.idPaciente
+                        },
+                        limit: 100
+                    }).then(function (results){
+                        var obj = {
+                            Fichas: result,
+                            Dispositivos:results
+                        };
+                        res.json(obj);
+                    });
+                });
+            }catch(err){
+                res.sendStatus(401);
+            }
+        }
+    };
+    return fichasController;
+};

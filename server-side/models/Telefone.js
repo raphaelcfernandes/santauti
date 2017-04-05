@@ -21,7 +21,13 @@ module.exports = function(sequelize, DataTypes) {
         },
         TipoTelefone: DataTypes.STRING
     }, {
-        classMethods: {},
+        classMethods: {
+            associate: function (models) {
+                Telefone.belongsTo(models.Pessoa, {
+                    foreignKey: 'ID'
+                });
+            }
+        },
         tableName: 'Telefone',
         timestamps:false
     });

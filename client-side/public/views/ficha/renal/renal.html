@@ -14,13 +14,13 @@
             </div>
             <div class="row">
                 <div class="col-sm-4">
-                    <input type="number" min="0" id="diurese">
+                    <input type="number" min="0" id="diurese" ng-model="dados.renal.Diurese">
                 </div>
                 <div class="col-sm-4">
-                    <input type="number" min="0" id="peso">
+                    <input type="number" min="0" id="peso" ng-model="dados.renal.Peso">
                 </div>
                 <div class="col-sm-4">
-                    <input type="number" min="0" id="balancoHidrico">
+                    <input type="number" min="0" id="balancoHidrico" ng-model="dados.renal.BalancoHidrico">
                 </div>
             </div>
         </div>
@@ -41,16 +41,16 @@
             </div>
             <div class="row">
                 <div class="col-sm-6">
-                    <input type="text" class="form-control" id="tipoDialise">
+                    <input type="text" class="form-control" id="tipoDialise" ng-model="dados.renal.TipoDialise">
                 </div>
                 <div class="col-sm-6">
-                    <input type="number" min="0" id="volumeDialise">
+                    <input type="number" min="0" id="volumeDialise" ng-model="dados.renal.VolumeDialise">
                 </div>
             </div>
         </div>
         <div class="form-group">
             <label for="escoriasRenais">Escorias Renais</label>
-            <input type="text" class="form-control" id="escoriasRenais">
+            <input type="text" class="form-control" id="escoriasRenais" ng-model="dados.renal.EscoriasRenais">
         </div>
     </form>
 </div>
