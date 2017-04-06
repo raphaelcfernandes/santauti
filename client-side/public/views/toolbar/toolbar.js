@@ -5,4 +5,5 @@ app.controller('toolbarCtrl',function($scope){
     $scope.destroySession = function () {
         sessionStorage.clear();
     };
+    $scope.currentNavItem = "Home";
 });

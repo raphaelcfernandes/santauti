@@ -528,6 +528,54 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
 app.config(['$locationProvider', function($locationProvider) {
     $locationProvider.hashPrefix('');
 }]);
+
+app.config(function($mdThemingProvider) {
+
+    $mdThemingProvider.definePalette('paletaAzul', {
+        '50': '337ab7',
+        '100': '337ab7',
+        '200': '337ab7',
+        '300': '337ab7',
+        '400': '337ab7',
+        '500': '337ab7',
+        '600': '337ab7',
+        '700': '337ab7',
+        '800': '337ab7',
+        '900': '337ab7',
+        'A100': '337ab7',
+        'A200': '337ab7',
+        'A400': '337ab7',
+        'A700': '337ab7',
+        'contrastDefaultColor': 'light',    // whether, by default, text (contrast)
+                                            // on this palette should be dark or light
+
+        'contrastDarkColors': ['50', '100', //hues which contrast should be 'dark' by default
+            '200', '300', '400', 'A100'],
+        'contrastLightColors': undefined    // could also specify this if default was 'dark'
+    });
+    $mdThemingProvider
+        .theme('temaNavbar')
+        .primaryPalette('yellow')
+        .warnPalette('red')
+        .accentPalette('yellow')
+        .backgroundPalette('paletaAzul')
+    $mdThemingProvider
+        .theme('temaToolbar')
+        .primaryPalette('paletaAzul')
+        .warnPalette('paletaAzul')
+        .accentPalette('paletaAzul')
+        .backgroundPalette('paletaAzul');
+});
+//exemplos de uso da paleta de cores
+// .backgroundPalette('light-blue')
+// app.config(function ($mdThemingProvider) {
+//     $mdThemingProvider
+//         .theme('default')
+//         .primaryPalette('indigo')
+//         .accentPalette('pink')
+//         .warnPalette('red')
+//         .backgroundPalette('blue-grey');
+// });
 // app.config(['momentPickerProvider', function (momentPickerProvider) {
 //     momentPickerProvider.options({
 //         /* Picker properties */

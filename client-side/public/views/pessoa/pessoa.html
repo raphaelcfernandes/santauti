@@ -68,13 +68,37 @@
 
             <div class="row">
                 <div class="col-sm-4">
+                    <h3><label>CEP</label></h3>
+                </div>
+                <div class="col-sm-4">
+                    <h3><label>Cidade</label></h3>
+                </div>
+                <div class="col-sm-4">
+                    <h3><label>Bairro</label></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-1 ">
+                    <input type="text" name="Cep" ng-model="dados.Cep" class="form-control" ng-blur="pesquisaCep()">
+                </div>
+                <div class="col-sm-2 col-sm-offset-3">
+                    <input type="text" name="Cidade" ng-model="dados.Cidade" class="form-control">
+                </div>
+                <div class="col-sm-2 col-sm-offset-2">
+                    <input type="text" name="Bairro" ng-model="dados.Bairro" class="form-control">
+                </div>
+            </div>
+
+            <br>
+            <div class="row">
+                <div class="col-sm-4">
                     <h3><label>Logradouro</label></h3>
                 </div>
                 <div class="col-sm-4">
                     <h3><label>Numero</label></h3>
                 </div>
                 <div class="col-sm-4">
-                    <h3><label>Apartamento</label></h3>
+                    <h3><label>Complemento</label></h3>
                 </div>
             </div>
             <div class="row">
@@ -86,30 +110,6 @@
                 </div>
                 <div class="col-sm-2 col-sm-offset-3">
                     <input type="text" name="Apartamento" ng-model="dados.Apartamento" class="form-control">
-                </div>
-            </div>
-
-            <br>
-            <div class="row">
-                <div class="col-sm-4">
-                    <h3><label>Bairro</label></h3>
-                </div>
-                <div class="col-sm-4">
-                    <h3><label>CEP</label></h3>
-                </div>
-                <div class="col-sm-4">
-                    <h3><label>Cidade</label></h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2">
-                    <input type="text" name="Bairro" ng-model="dados.Bairro" class="form-control">
-                </div>
-                <div class="col-sm-1 col-sm-offset-2">
-                    <input type="text" name="Cep" ng-model="dados.Cep" class="form-control" ng-blur="pesquisaCep()">
-                </div>
-                <div class="col-sm-2 col-sm-offset-3">
-                    <input type="text" name="Cidade" ng-model="dados.Cidade" class="form-control">
                 </div>
             </div>
 
