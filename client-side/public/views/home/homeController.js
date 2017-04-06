@@ -30,7 +30,7 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
 
     $scope.criarFichaDiurno = function (id) {
         sessionStorage.setItem("ID",id);
-        $state.go("listaDeProblemas");
+        $state.go("eventosSignificantes");
     };
 
     $scope.imprimir = function (){
