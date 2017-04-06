@@ -23,3 +23,7 @@ Navbar deve estar em 2 linhas
 
 **** Implementar JANELA de impressão QR-CODE
 ***Implantar sistema de LOGIN com QR-CODE
+
+Implementar sistema de validação de formulários em pessoa (conferir se não vai bugar o editar)
+
+Implementar sistemas das fichas diurnas (recuperar os dados anteriores)
