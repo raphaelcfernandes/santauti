@@ -2,7 +2,7 @@
  * Created by raphael on 2/21/17.
  */
 app.controller('navbarCtrl', function($scope,$state,$location) {
-    console.log($state.current.name);
+
     if($state.current.name == "home"){
         $scope.selectedIndex = 0;
     }else if($state.current.name == "eventosSignificantes"){
@@ -119,6 +119,7 @@ app.controller('navbarCtrl', function($scope,$state,$location) {
                 break;
         }
     });
+
     $scope.button=false;
     $scope.Button = function(){
         $scope.button=true;
