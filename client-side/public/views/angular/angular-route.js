@@ -4,7 +4,7 @@ app.run(function ($rootScope,$location,$window,$state, $stateParams, $http) {
 
     $rootScope.$state = $state;
     $rootScope.$stateParams = $stateParams;
-
+    moment.locale('pt-br');
     $rootScope.reqApiURL = '';
 
     $rootScope.req = function(service, params, type, success, error) {
@@ -138,7 +138,8 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html',
+                    controller: 'informacaoBoxCtrl'
                 }
             }
         })
@@ -157,7 +158,8 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html',
+                    controller: 'informacaoBoxCtrl'
                 }
 
             }
@@ -177,7 +179,8 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html',
+                    controller: 'informacaoBoxCtrl'
                 }
 
             }
@@ -197,7 +200,8 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html',
+                    controller: 'informacaoBoxCtrl'
                 }
 
             }
@@ -217,7 +221,8 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html',
+                    controller: 'informacaoBoxCtrl'
                 }
 
             }
@@ -237,7 +242,8 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html',
+                    controller: 'informacaoBoxCtrl'
                 }
 
             }
@@ -257,7 +263,8 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html',
+                    controller: 'informacaoBoxCtrl'
                 }
 
             }
@@ -277,7 +284,8 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html',
+                    controller: 'informacaoBoxCtrl'
                 }
 
             }
@@ -289,15 +297,16 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
             },
             views:{
                 '':{
-                    templateUrl: '../ficha/dispositivos/dispositivos.html',
+                    templateUrl: '../dispositivos/dispositivos.html',
                     controller: 'dispositivosCtrl'
                 },
                 'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
-                    controller: 'navbarCtrl'
+                    templateUrl: '../toolbar/toolbar.html',
+                    controller: 'toolbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html',
+                    controller: 'informacaoBoxCtrl'
                 }
 
             }
@@ -317,7 +326,8 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html',
+                    controller: 'informacaoBoxCtrl'
                 }
 
             }
@@ -337,7 +347,8 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html',
+                    controller: 'informacaoBoxCtrl'
                 }
 
             }
@@ -357,7 +368,8 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html',
+                    controller: 'informacaoBoxCtrl'
                 }
 
             }
@@ -377,7 +389,8 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html',
+                    controller: 'informacaoBoxCtrl'
                 }
 
             }
@@ -397,7 +410,8 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html',
+                    controller: 'informacaoBoxCtrl'
                 }
 
             }
@@ -417,7 +431,8 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html',
+                    controller: 'informacaoBoxCtrl'
                 }
 
             }
@@ -437,7 +452,8 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html',
+                    controller: 'informacaoBoxCtrl'
                 }
 
             }
@@ -457,7 +473,8 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html',
+                    controller: 'informacaoBoxCtrl'
                 }
 
             }
@@ -477,7 +494,8 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                     controller: 'navbarCtrl'
                 },
                 'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html'
+                    templateUrl: '../informacaoBox/informacaoBox.html',
+                    controller: 'informacaoBoxCtrl'
                 }
 
             }
@@ -528,27 +546,12 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
 app.config(['$locationProvider', function($locationProvider) {
     $locationProvider.hashPrefix('');
 }]);
-// app.config(['momentPickerProvider', function (momentPickerProvider) {
-//     momentPickerProvider.options({
-//         /* Picker properties */
-//         locale:        'pt-br',
-//         format:        'lll',
-//         minView:       'year',
-//         maxView:       'minute',
-//         startView:     'year',
-//         autoclose:     true,
-//         today:         false,
-//         keyboard:      false,
-//
-//         /* Extra: Views properties */
-//         leftArrow:     '&larr;',
-//         rightArrow:    '&rarr;',
-//         yearsFormat:   'YYYY',
-//         monthsFormat:  'MMM',
-//         daysFormat:    'D',
-//         hoursFormat:   'HH:[00]',
-//         minutesFormat: moment.localeData().longDateFormat('LT').replace(/[aA]/, ''),
-//         secondsFormat: moment.localeData().longDateFormat('LT').replace(/[aA]/, ''),
-//         minutesStep:   5,
-//         secondsStep:   1
-//     })}    ]);
+app.config(['momentPickerProvider', function (momentPickerProvider) {
+    momentPickerProvider.options({
+        /* Picker properties */
+        locale: 'pt-br',
+        position: "bottom-right",
+        autoclose: true,
+        /* Extra: Views properties */
+        minutesStep:   1
+    })}    ]);

@@ -10,6 +10,57 @@
             <h4><label>Data Resolvido</label></h4>
         </div>
     </div>
+    <div ng-repeat="item in res">
+        <div class="row">
+            <div class="col-sm-5">
+                <input type="text" placeholder="{{item.Descricao}}" ng-model="item.Descricao" class="form-control"
+                       ng-disabled="item.resolvido">
+            </div>
+            <div class="col-sm-2">
+                <div class="input-group" moment-picker="dados.DataNascimento"
+                     locale="pt-br"
+                     format="lll"
+                     min-view="decade"
+                     autoclose="true"
+                     today="true">
+                    <input name="DataNascimento" class="form-control"
+                           placeholder="Selecione uma data"
+                           ng-model="dados.DataNascimento"
+                           ng-model-options="{ updateOn: 'blur' }">
+                    <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                        </span>
+
+                </div>
+            </div>
+            <div class="col-sm-2" ng-show="item.resolvido">
+                <div class="input-group" moment-picker="dados.DataNascimento"
+                     locale="pt-br"
+                     format="lll"
+                     min-view="decade"
+                     autoclose="true"
+                     today="true">
+                    <input name="DataNascimento" class="form-control"
+                           placeholder="Selecione uma data"
+                           ng-model="dados.DataNascimento"
+                           ng-model-options="{ updateOn: 'blur' }">
+                    <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                        </span>
+                </div>
+            </div>
+            <div class="col-sm-1" ng-hide="item.resolvido">
+                <button ng-click="resolvido(item.id)">Resolvido</button>
+            </div>
+            <div class="col-sm-2" ng-show="item.resolvido">
+                <button ng-click="cancelarResolvido(item.id)">Refazer aćão</button>
+            </div>
+            <div class="col-sm-1">
+                <button ng-click="remove(item.id)">Excluir</button>
+            </div>
+        </div>
+        <br class="clearfix">
+    </div>
     <div ng-repeat="item in items">
         <div class="row">
             <div class="col-sm-5">
@@ -17,21 +68,37 @@
                        ng-disabled="item.resolvido">
             </div>
             <div class="col-sm-2">
-                <div class="form-group">
-                    <!--<div class='input-group date' datetimepicker id="{{'dataCadastrado' + item.id}}" >-->
-                        <!--<input type='text' class="form-control" placeholder="Selecione uma data"/>-->
-                        <!--<span class="input-group-addon">-->
-                        <!--<span class="glyphicon glyphicon-calendar"></span></span>-->
-                    <!--</div>-->
+                <div class="input-group" moment-picker="dados.DataNascimento"
+                     locale="pt-br"
+                     format="lll"
+                     min-view="decade"
+                     autoclose="true"
+                     today="true">
+                    <input name="DataNascimento" class="form-control"
+                           placeholder="Selecione uma data"
+                           ng-model="dados.DataNascimento"
+                           ng-model-options="{ updateOn: 'blur' }">
+                    <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                        </span>
+
                 </div>
             </div>
             <div class="col-sm-2" ng-show="item.resolvido">
-                <div class="form-group">
-                    <!--<div class='input-group date' datetimepicker id="{{'dataResolvido' + item.id}}" >-->
-                        <!--<input type='text' class="form-control" placeholder="Selecione uma data" />-->
-                        <!--<span class="input-group-addon">-->
-                        <!--<span class="glyphicon glyphicon-calendar"></span></span>-->
-                    <!--</div>-->
+                <div class="input-group" moment-picker="dados.DataNascimento"
+                     locale="pt-br"
+                     format="lll"
+                     min-view="decade"
+                     autoclose="true"
+                     today="true">
+                    <input name="DataNascimento" class="form-control"
+                           placeholder="Selecione uma data"
+                           ng-model="dados.DataNascimento"
+                           ng-model-options="{ updateOn: 'blur' }">
+                    <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                        </span>
+
                 </div>
             </div>
             <div class="col-sm-1" ng-hide="item.resolvido">
@@ -58,7 +125,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <textarea rows="5" class="form-control"></textarea>
+                    <textarea rows="5" class="form-control" ng-model="dados.pendencias.Comentarios"></textarea>
                 </div>
             </div>
         </div>

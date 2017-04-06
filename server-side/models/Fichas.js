@@ -46,6 +46,7 @@ module.exports = function(sequelize, DataTypes) {
                 });
                 Fichas.hasMany(models.ListaProblemas, {foreignKey: 'NroAtendimento'});
                 Fichas.hasMany(models.Pendencias, {foreignKey: 'NroAtendimento'});
+                Fichas.hasOne(models.Evolucao,{foreignKey:'NroAtendimento'});
             }
         },
         tableName: 'Fichas',

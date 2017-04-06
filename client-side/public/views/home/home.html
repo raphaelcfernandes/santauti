@@ -1,5 +1,3 @@
-<div ui-view='toolbar' ></div>
-
 <!--MENU PARA ADMIN VER OS USUARIOS PROFISSIONAIS-->
 <div class="container" ng-show="nivelProfissional==1">
     <div class="row">
@@ -24,33 +22,18 @@
             <tr ng-repeat="pessoa in pessoas | orderBy:'name' | filter:q as results" ng-if="pessoa.Ativo==1" ng-show="flagStatus==false">
                 <td>{{pessoa.nome}} {{pessoa.sobrenome}}</td>
                 <td>
-                    <div class="btn-group" ng-show="nivelProfissional>1">
-                        <button type="button" class="btn btn-primary btn-sm" ng-click="visualizar(pessoa.age)">
-                            <span class="glyphicon glyphicon-eye-open"></span> Visualizar</button>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown">
-                                <span class="glyphicon glyphicon-pencil"></span> Criar Ficha <span class="caret"></span></button>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#/eventoSignificantes">Diurno</a></li>
-                                <li><a href="#">Noturno</a></li>
-                            </ul>
-                        </div>
-                        <button type="button" class="btn btn-primary btn-sm"> <span class="glyphicon glyphicon-check"></span> Encerrar Paciente</button>
-                    </div>
-                    <div class="btn-group" ng-show="nivelProfissional==1">
-                        <button type="button" class="btn btn-primary btn-sm" ng-click="gerarQrCode($event,pessoa.id,pessoa.qrkey)">
-                            <span class="glyphicon glyphicon-qrcode"></span> Gerar QR-Code</button>
-                        <button type="button" class="btn btn-primary btn-sm" ng-click="editar(pessoa.id)">
-                            <span class="glyphicon glyphicon-pencil"></span> Alterar Dados</button>
-                        <button type="button" class="btn btn-primary btn-sm" ng-click="showDesativar(pessoa.id,$event)"> <span class="glyphicon glyphicon-trash"></span> Desativar Usuário</button>
-                    </div>
+                    <button type="button" class="btn btn-primary btn-sm" ng-click="gerarQrCode($event,pessoa.id,pessoa.qrkey)">
+                        <span class="glyphicon glyphicon-qrcode"></span> Gerar QR-Code</button>
+                    <button type="button" class="btn btn-primary btn-sm" ng-click="editar(pessoa.id)">
+                        <span class="glyphicon glyphicon-pencil"></span> Alterar Dados</button>
+                    <button type="button" class="btn btn-primary btn-sm" ng-click="showDesativar(pessoa.id,$event)"> <span class="glyphicon glyphicon-trash"></span> Desativar Usuário</button>
                 </td>
             </tr>
             <tr ng-repeat="pessoa in pessoas | orderBy:'name' | filter:q as results" ng-if="pessoa.Ativo==0" ng-show="flagStatus==true">
                 <td>{{pessoa.nome}} {{pessoa.sobrenome}}</td>
                 <td>
                     <div class="btn-group" ng-show="nivelProfissional>1">
-                        <button type="button" class="btn btn-primary btn-sm" ng-click="visualizar(pessoa.age)">
+                        <button type="button" class="btn btn-primary btn-sm" ng-click="visualizar(pessoa.id)">
                             <span class="glyphicon glyphicon-eye-open"></span> Visualizar</button>
                         <div class="btn-group">
                             <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown">
@@ -95,6 +78,8 @@
                     <div class="btn-group">
                         <button type="button" class="btn btn-primary btn-sm" ng-click="visualizarPaciente(pessoa.id)">
                             <span class="glyphicon glyphicon-eye-open"></span> Visualizar</button>
+                        <button type="button" class="btn btn-primary btn-sm" ng-click="dispositivos(pessoa.id)">
+                            <span class="glyphicon glyphicon-eye-open"></span> Dispositivos</button>
                         <div class="btn-group">
                             <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown">
                                 <span class="glyphicon glyphicon-pencil"></span> Criar Ficha <span class="caret"></span></button>

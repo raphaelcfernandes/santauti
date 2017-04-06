@@ -99,7 +99,7 @@ DROP TABLE IF EXISTS `santauti`.`Internacao` ;
 CREATE TABLE IF NOT EXISTS `santauti`.`Internacao` (
   `ID` INT NOT NULL,
   `DataInternacao` DATETIME NOT NULL,
-  `DataAlta` DATETIME NOT NULL,
+  `DataAlta` DATETIME,
   PRIMARY KEY (`ID`,`DataInternacao`),
   INDEX `fk_Internacao_idx` (`ID` ASC),
   CONSTRAINT `fk_Internacao`
@@ -398,3 +398,23 @@ INSERT INTO Profissional VALUES (249687,4,'neide','U2FsdGVkX1/ReFEwS2yxxqw6imqy3
 INSERT INTO Paciente VALUES (2,05,04,'Pedreiro','UNIMED',TRUE,249687);
 INSERT INTO Paciente VALUES (5,01,02,'Jornalista','UNIMED',TRUE,249687);
 INSERT INTO Paciente VALUES (6,02,01,'Bombeiro','PARTICULAR',TRUE,259687);
+INSERT INTO Internacao VALUES (2,'2016-04-01 14:30','2016-05-01');
+INSERT INTO Internacao VALUES (2,'2017-04-01 14:30',NULL);
+INSERT INTO Fichas (Registro,IDPaciente,DataCriado,DataModificado) VALUES (249687,2,'2014-05-05 20:04','2014-05-05 20:04');
+INSERT INTO Fichas (Registro,IDPaciente,DataCriado,DataModificado) VALUES (249687,2,'2014-05-05 20:04','2014-05-05 20:04');
+INSERT INTO Evolucao VALUES(1,"Diaria","Analise","Glicemia alta","Usando Insulina","Endocrino Observacoes","sem evento significante",'2016-05-05',"raioxToraxDescricao",'2016-05-05',"ecocardiograma descricao",'2016-05-05',"tomografia torax descricao",'2016-05-05',"tomografia abdome descricao",'2016-05-05',"tomografia cranio",'2016-05-05',"endoscopia digestiva",'2016-05-05',"urina descricao",'2016-05-05',"eletrocefalograma descricao",'2016-05-05',"eletrocardiograma descricao","culturas descricao",'2016-05-05',1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,"texto1","texto2","texto3","texto4","texto5","texto6",1,"texto1",2,"texto2",3,"texto1","texto2","texto3","texto4",5,"texto1","texto2","texto3","texto4","texto5","texto6",6,7,8,"texto6",5,6,7,8,9,"texto1","texto2","texto3","texto4","texto5","texto6","texto7","texto8",1,2,3,"dialise",4,"texto1","texto2","texto3","texto4","texto5",1,2);
+INSERT INTO Evolucao VALUES(2,"Noturna","Analise","Glicemia alta","Usando Insulina","Endocrino Observacoes","sem evento significante",'2016-05-05',"raioxToraxDescricao",'2016-05-05',"ecocardiograma descricao",'2016-05-05',"tomografia torax descricao",'2016-05-05',"tomografia abdome descricao",'2016-05-05',"tomografia cranio",'2016-05-05',"endoscopia digestiva",'2016-05-05',"urina descricao",'2016-05-05',"eletrocefalograma descricao",'2016-05-05',"eletrocardiograma descricao","culturas descricao",'2016-05-05',1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,"texto1","texto2","texto3","texto4","texto5","texto6",1,"texto1",2,"texto2",3,"texto1","texto2","texto3","texto4",5,"texto1","texto2","texto3","texto4","texto5","texto6",6,7,8,"texto6",5,6,7,8,9,"texto1","texto2","texto3","texto4","texto5","texto6","texto7","texto8",1,2,3,"dialise",4,"texto1","texto2","texto3","texto4","texto5",1,2);
+INSERT INTO Dispositivos (IDPaciente,DispositivoDescricao,DataInicio,DataFim) VALUES (2,"Dreno de Torax",'2014-05-30 20:04',NULL);
+INSERT INTO Dispositivos (IDPaciente,DispositivoDescricao,DataInicio,DataFim) VALUES (2,"Dreno de Abdominal",'2014-11-22 20:04',NULL);
+INSERT INTO Dispositivos (IDPaciente,DispositivoDescricao,DataInicio,DataFim) VALUES (2,"Sonda Vesical",'2014-02-24 20:04','2014-05-06');
+INSERT INTO Dispositivos (IDPaciente,DispositivoDescricao,DataInicio,DataFim) VALUES (2,"Traqueostomia",'2014-10-11 20:04','2014-05-06');
+INSERT INTO Dispositivos (IDPaciente,DispositivoDescricao,DataInicio,DataFim) VALUES (2,"Venoclise",'2014-05-05 20:04','2014-05-06');
+INSERT INTO Dispositivos (IDPaciente,DispositivoDescricao,DataInicio,DataFim) VALUES (2,"Cateter PAI",'2014-11-11 20:04',NULL);
+INSERT INTO Dispositivos (IDPaciente,DispositivoDescricao,DataInicio,DataFim) VALUES (2,"Cateter Hemodialise",'2014-12-09 20:04',NULL);
+INSERT INTO Dispositivos (IDPaciente,DispositivoDescricao,DataInicio,DataFim) VALUES (2,"Sonda Enteral",'2017-04-01 20:04',NULL);
+INSERT INTO Dispositivos (IDPaciente,DispositivoDescricao,DataInicio,DataFim) VALUES (2,"Sonda Oroenteral",'2017-04-02 04:00',NULL);
+INSERT INTO Dispositivos (IDPaciente,DispositivoDescricao,DataInicio,DataFim) VALUES (2,"Sonda Orograstrica",'2017-04-03 20:30','2014-05-06');
+INSERT INTO Pendencias (NroAtendimento,IDPaciente,Comentarios,Descricao,DataDiagnosticado,DataResolvido) VALUES (1,2,"blablabla","a",'2014-05-05 20:04','2014-05-06');
+INSERT INTO Pendencias (NroAtendimento,IDPaciente,Comentarios,Descricao,DataDiagnosticado,DataResolvido) VALUES (2,2,"blablabla","a",'2014-05-05 20:04',NULL);
+INSERT INTO ListaProblemas (IDPaciente,NroAtendimento,AntecedentesPessoais,DiagnosticoEntrada,Comentarios,Descricao,DataDiagnosticado,DataResolvido) VALUES (2,1,"Cancer","Cancer estado avancado","Comentario","sem descricao",'2014-05-05 20:04','2014-05-06');
+INSERT INTO ListaProblemas (IDPaciente,NroAtendimento,AntecedentesPessoais,DiagnosticoEntrada,Comentarios,Descricao,DataDiagnosticado,DataResolvido) VALUES (2,2,"Cancer","Cancer estado avancado","Comentario","sem descricao",'2014-05-05 20:04',NULL);

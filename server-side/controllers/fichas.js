@@ -23,15 +23,14 @@ module.exports = function(app){
                 Fichas.findAll({
                     include:[
                         {model: ListaProblemas,required:true},
-                        {model: Pendencias,required:true}
-                        ],
-                    limit: 100
+                        {model: Pendencias,required:true},
+                        {model: Evolucao,required:true}
+                    ]
                 }).then(function (result) {
                     Dispositivos.findAll({
                         where:{
                             IDPaciente: req.query.idPaciente
-                        },
-                        limit: 100
+                        }
                     }).then(function (results){
                         var obj = {
                             Fichas: result,
@@ -39,6 +38,21 @@ module.exports = function(app){
                         };
                         res.json(obj);
                     });
+                });
+            }catch(err){
+                res.sendStatus(401);
+            }
+        },
+        getPendenciasPorIdPaciente:function (req,res) {
+            try{
+                Jwt.verify(req.headers.access_token, privateKey);
+                Pendencias.findAll({
+                    where:{
+                        IDPaciente: req.query.idPaciente,
+                        DataResolvido: null
+                    }
+                }).then(function (result) {
+                    res.json(result);
                 });
             }catch(err){
                 res.sendStatus(401);

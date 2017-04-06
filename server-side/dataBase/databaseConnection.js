@@ -15,5 +15,5 @@ var sequelize = new Sequelize('santauti', 'raphael', '123', {
         max: 5,
         min: 0,
         idle: 10000
-    },
+    }
 });

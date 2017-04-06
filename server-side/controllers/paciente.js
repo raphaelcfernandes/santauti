@@ -10,6 +10,7 @@ module.exports = function(app){
     Paciente = app.serverSide.models.index.Paciente;
     Profissional = app.serverSide.models.index.Profissional;
     Pessoa = app.serverSide.models.index.Pessoa;
+    Dispositivos = app.serverSide.models.index.Dispositivos;
     var pacienteController = {
         /**
          * Obtem os dados de TODOS os pacientes
@@ -61,7 +62,7 @@ module.exports = function(app){
             }catch(err){
                 res.sendStatus(401);
             }
-        }
+        },
     };
     return pacienteController;
-}
+};

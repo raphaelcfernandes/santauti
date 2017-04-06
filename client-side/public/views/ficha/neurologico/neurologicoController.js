@@ -49,7 +49,7 @@ app.controller('neurologicoCtrl', function($scope,$rootScope) {
     };
     $scope.updateEscalaRamsay = function () {
         return parseInt($scope.ramsay);
-    }
+    };
     $scope.respostaOcular= {
         model: respostaOcular,
         options: [
