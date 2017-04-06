@@ -54,16 +54,26 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
             //Se passa na validação
             if(validacep.test(cep)){
                 //A url é colocada como confiável e é feito o get na página do servidor 1
-                var url = "//viacep.com.br/ws/"+ cep + "/json/?callback=JSON_CALLBACK";
+                var url = "//viacep.com.br/ws/"+ cep + "/json/";
                 $sce.trustAsResourceUrl(url);
-                $http.jsonp(url)
-                    .success(function(data){
+                $http({method: 'GET', url: url})
+                    .then(function (response){
                         $scope.flagcep = 1;
-                        $scope.escreve_forms(data);
+                        $scope.escreve_forms(response.data);
                         $scope.flagcep = -1;
-                    }).error(function(data) {
-                    $scope.pesquisaSeg(cep);
-                });
+                    }, function (err){
+                        $scope.pesquisaSeg(cep);
+                    });
+                // $http.jsonp(url)
+                //     .then(function(data){
+                //         console.log(data);
+                //         $scope.flagcep = 1;
+                //         $scope.escreve_forms(data);
+                //         $scope.flagcep = -1;
+                //     },function(err) {
+                //         console.log(err);
+                //     $scope.pesquisaSeg(cep);
+                // });
             }
             else{
                 //cep inválido
@@ -86,11 +96,11 @@ app.controller('pessoaCtrl', function($scope,$timeout,$state,$rootScope,$http,$s
         $sce.trustAsResourceUrl(urll);
         //O get é feito manualmente pois não é uma callback a url
         $http({method: 'GET', url: urll})
-            .success(function(data){
+            .then(function(response){
                 $scope.flagcep = 2;
-                $scope.escreve_forms(data);
+                $scope.escreve_forms(response.data);
                 $scope.flacep = -1;
-            }).error(function(data){
+            },function(err){
             alert("Escreva os dados manualmente");
         });
     };

@@ -1,0 +1,24 @@
+.head{
+    font-size: 20px !important;
+    font-family: "Roboto", sans-serif !important;
+    color:yellow !important;
+}
+all-tabs {
+    font-size: 12px !important;
+    font-family: "Roboto", sans-serif !important;
+}
+.demo-tab {
+    color:#000 !important;
+}
+md-tabs.md-default-theme md-ink-bar, md-tabs md-ink-bar {
+    color: yellow !important;
+    background-color:yellow !important;
+}
+.btnhl{
+    font-family: "Roboto", sans-serif !important;
+    font-size: 14px !important;
+    color:yellow !important;
+    margin-top: 15px !important;
+    -webkit-font-smoothing: antialiased !important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004) !important;
+}

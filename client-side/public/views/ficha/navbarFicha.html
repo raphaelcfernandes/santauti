@@ -1,4 +1,172 @@
-<nav class="navbar navbar-static-top">
+<md-toolbar md-theme="temaToolbar">
+    <md-content layout="row">
+    <md-button class="btnhl" aria-label="Home" ui-sref="home">
+        <b>Home</b>
+    </md-button>
+    <h2 class="md-toolbar-tools">
+        <span class="head"><b>SantaUTI Ficha Diária</b></span>
+    </h2>
+    <md-button class="btnhl" aria-label="Logout" ui-sref="login" ng-click="destroySession()">
+        <span class="glyphicon glyphicon-user"></span>
+        <b>Logout</b>
+    </md-button>
+    </md-content>
+</md-toolbar>
+<md-tabs md-stretch-tabs
+         md-selected="selectedIndex"
+         md-dynamic-height md-border-bottom>
+    <md-tab label>
+       <!-- <span ui-sref="home"></span>-->
+            <all-tabs class="demo-tab">Home</all-tabs>
+    </md-tab>
+    <md-tab label>
+        <all-tabs class="demo-tab">Eventos significantes</all-tabs>
+    </md-tab>
+    <md-tab label>
+        <all-tabs class="demo-tab">Neurologico</all-tabs>
+    </md-tab>
+    <md-tab label>
+        <all-tabs class="demo-tab">Hemodinamica</all-tabs>
+    </md-tab>
+    <md-tab label>
+        <all-tabs class="demo-tab">Respiratório</all-tabs>
+    </md-tab>
+    <md-tab label>
+        <all-tabs class="demo-tab">Gastrointestinal</all-tabs>
+    </md-tab>
+    <md-tab label>
+        <all-tabs class="demo-tab">Renal</all-tabs>
+    </md-tab>
+    <md-tab label>
+        <all-tabs class="demo-tab">Hematologico</all-tabs>
+    </md-tab>
+    <md-tab label>
+        <all-tabs class="demo-tab">Endocrino</all-tabs>
+    </md-tab>
+    <md-tab label>
+        <all-tabs class="demo-tab">Infeccioso</all-tabs>
+    </md-tab>
+    <md-tab label>
+        <all-tabs class="demo-tab">Dispositivos</all-tabs>
+    </md-tab>
+    <md-tab label>
+        <all-tabs class="demo-tab">Metabolico</all-tabs>
+    </md-tab>
+    <md-tab label>
+        <all-tabs class="demo-tab">Nutrição</all-tabs>
+    </md-tab>
+    <md-tab label>
+        <all-tabs class="demo-tab">Psicosocial</all-tabs>
+    </md-tab>
+    <md-tab label>
+        <all-tabs class="demo-tab">Lista de Problemas</all-tabs>
+    </md-tab>
+    <md-tab label>
+        <all-tabs class="demo-tab">Análise</all-tabs>
+    </md-tab>
+    <md-tab label>
+        <all-tabs class="demo-tab">Planos</all-tabs>
+    </md-tab>
+    <md-tab label>
+        <all-tabs class="demo-tab">Pendências</all-tabs>
+    </md-tab>
+    <md-tab label>
+        <all-tabs class="demo-tab">Exames</all-tabs>
+    </md-tab>
+    <md-tab label>
+        <all-tabs class="demo-tab">Exames Laboratoriais</all-tabs>
+    </md-tab>
+    <md-tab label>
+        <all-tabs class="demo-tab">Interconsulta/Parecer Especialista</all-tabs>
+    </md-tab>
+    <md-tab label>
+        <span class="glyphicon glyphicon-user"></span>
+        <!--<span ui-sref="login"></span>-->
+            <all-tabs class="demo-tab">Logout</all-tabs>
+    </md-tab>
+</md-tabs>
+
+
+
+<!--OLD-->
+<!--<md-content class="md-padding" md-theme="temaNavbar">
+    <md-nav-bar
+            md-selected-nav-item="currentNavItem"
+            nav-bar-aria-label="santauti">
+        <div flex layout="100%">
+        <md-nav-item md-nav-sref="home" name="Home">
+            <label class = "testefont">Home</label>
+        </md-nav-item>
+        <md-nav-item md-nav-sref="eventosSignificantes" name="eventosSignificantes" value="eventosSignificantes">
+            <label class = "testefont">Eventos significantes</label>
+        </md-nav-item>
+        <md-nav-item md-nav-sref="neurologico" name="neurologico" value="neurologico">
+            <label class = "testefont">Neurologico</label>
+        </md-nav-item>
+        <md-nav-item md-nav-sref="hemodinamica" name="hemodinamica">
+            <label class = "testefont">Hemodinamica</label>
+        </md-nav-item>
+        <md-nav-item md-nav-sref="respiratorio" name="respiratorio">
+            <label class = "testefont">Respiratório</label>
+        </md-nav-item>
+        <md-nav-item md-nav-sref="gastrointestinal" name="gastrointestinal">
+            <label class = "testefont">Gastrointestinal</label>
+        </md-nav-item>
+        <md-nav-item md-nav-sref="renal" name="renal">
+            <label class = "testefont">Renal</label>
+        </md-nav-item>
+        <md-nav-item md-nav-sref="hematologico" name="hematologico">
+            <label class = "testefont">Hematologico</label>
+        </md-nav-item>
+        <md-nav-item md-nav-sref="endocrino" name="endocrino">
+            <label class = "testefont">Endocrino</label>
+        </md-nav-item>
+        <md-nav-item md-nav-sref="infeccioso" name="infeccioso">
+            <label class = "testefont">Infeccioso</label>
+        </md-nav-item>
+        <md-nav-item md-nav-sref="dispositivos" name="dispositivos">
+            <label class = "testefont">Dispositivos</label>
+        </md-nav-item>
+        <md-nav-item md-nav-sref="metabolico" name="metabolico">
+            <label class = "testefont">Metabolico</label>
+        </md-nav-item>
+        <md-nav-item md-nav-sref="nutricao" name="nutricao">
+            <label class = "testefont">Nutrição</label>
+        </md-nav-item>
+        <md-nav-item md-nav-sref="psicosocial" name="psicosocial">
+            <label class = "testefont">Psicosocial</label>
+        </md-nav-item>
+        <md-nav-item md-nav-sref="listaDeProblemas" name="listaDeProblemas">
+            <label class = "testefont">Lista de Problemas</label>
+        </md-nav-item>
+        <md-nav-item md-nav-sref="analise" name="analise">
+            <label class = "testefont">Análise</label>
+        </md-nav-item>
+        <md-nav-item md-nav-sref="planos" name="planos">
+            <label class = "testefont">Planos</label>
+        </md-nav-item>
+        <md-nav-item md-nav-sref="pendencias" name="pendencias">
+            <label class = "testefont">Pendências</label>
+        </md-nav-item>
+        <md-nav-item md-nav-sref="exames" name="exames">
+            <label class = "testefont">Exames</label>
+        </md-nav-item>
+        <md-nav-item md-nav-sref="examesLab" name="examesLab">
+            <label class = "testefont">Exames Laboratoriais</label>
+        </md-nav-item>
+        <md-nav-item md-nav-sref="interconsulta" name="interconsulta">
+            <label class = "testefont">Interconsulta/Parecer Especialista</label>
+        </md-nav-item>
+        <span flex></span>
+        <md-nav-item md-nav-sref="login" name="Logout" ng-click="destroySession()">
+            <span class="glyphicon glyphicon-user"></span>
+            <label class = "testefont">Logout</label>
+        </md-nav-item>
+        </div>
+    </md-nav-bar>
+</md-content>-->
+
+<!--<nav class="navbar navbar-static-top">
     <div class="container-fluid">
         <ul class="nav navbar-nav">
             <li><a ui-sref="home">Home</a></li>
@@ -26,5 +194,18 @@
             <li><a ui-sref="login" ng-click="destroySession()"><span class="glyphicon glyphicon-user"></span> Logout</a></li>
         </ul>
     </div>
-</nav>
-
+</nav>-->
+<!--
+<style>
+    .md-padding {
+        padding: 10px;
+        margin: 0px;
+        margin-bottom: 5px;
+    }
+    .testefont{
+        color: yellow;
+    }
+    md-nav-bar md-nav-ink-bar {
+        background: yellow;
+    }
+</style>-->
