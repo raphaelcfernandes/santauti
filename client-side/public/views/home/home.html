@@ -10,8 +10,7 @@
         <table class="table">
             <thead>
             <tr>
-                <th ng-show="nivelProfissional==2">Paciente</th>
-                <th ng-show="nivelProfissional==1">Profissional</th>
+                <th>Profissional</th>
                 <th>Ações</th>
                 <th> <input type="search" ng-model="q" placeholder="Filtrar {{nomeUtilizador}}" aria-label="filter friends" /></th>
                 <th><button type="button" class="btn btn-primary btn-sm" ng-click="adicionarNovo()">
@@ -32,7 +31,7 @@
             <tr ng-repeat="pessoa in pessoas | orderBy:'name' | filter:q as results" ng-if="pessoa.Ativo==0" ng-show="flagStatus==true">
                 <td>{{pessoa.nome}} {{pessoa.sobrenome}}</td>
                 <td>
-                    <div class="btn-group" ng-show="nivelProfissional>1">
+                    <div class="btn-group">
                         <button type="button" class="btn btn-primary btn-sm" ng-click="visualizar(pessoa.id)">
                             <span class="glyphicon glyphicon-eye-open"></span> Visualizar</button>
                         <div class="btn-group">
@@ -45,7 +44,7 @@
                         </div>
                         <button type="button" class="btn btn-primary btn-sm"> <span class="glyphicon glyphicon-check"></span> Encerrar Paciente</button>
                     </div>
-                    <div class="btn-group" ng-show="nivelProfissional==1">
+                    <div class="btn-group">
                         <button type="button" class="btn btn-primary btn-sm" ng-click="showReativar(pessoa.id,$event)"> <span class="glyphicon glyphicon-trash"></span> Reativar Usuário</button>
                     </div>
                 </td>

@@ -35,15 +35,18 @@ module.exports = function(app){
          * @param req
          * @param res
          */
-        getDadosPaciente: function (req,res) {
+        getDadosPacienteByIdPacienteAndByUltimaInternacao: function (req,res) {
             try{
                 Jwt.verify(req.headers.access_token, privateKey);
-                Paciente.findOne({
-                    include:[{model: Profissional,required:true},{model: Pessoa,required:true}],
+                Paciente.findOne({//PEGA TODOS OS DADOS DO PACIENTE
+                    include:[
+                        {model: Profissional,required:true,attributes:['ID']},
+                        {model: Pessoa,required:true},
+                        {model: Internacao, required:true,where:{DataAlta: null}}],
                     where:{
                         ID: parseInt(req.query.idPaciente)
                     }
-                }).then(function (result) {
+                }).then(function (result) {//PEGA NOME E SOBRENOME DO MEDICO RESPONSAVEL
                     Pessoa.findOne({
                         where:{
                             ID: result.Profissional.ID
@@ -62,7 +65,7 @@ module.exports = function(app){
             }catch(err){
                 res.sendStatus(401);
             }
-        },
+        }
     };
     return pacienteController;
 };

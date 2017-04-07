@@ -4,4 +4,4 @@
 module.exports = function(app){
     login = app.serverSide.controllers.login;
     app.post('/login', login.login);
-}
+};

@@ -58,20 +58,36 @@
             </div>
             <div class="col-sm-2">
                 <div class="form-group">
-                    <!--<div class='input-group date' datetimepicker id="{{'dataCadastrado' + item.id}}" >-->
-                    <!--<input type='text' class="form-control" placeholder="Selecione uma data"/>-->
-                    <!--<span class="input-group-addon">-->
-                    <!--<span class="glyphicon glyphicon-calendar"></span></span>-->
-                    <!--</div>-->
+                    <div class="input-group" moment-picker="item.DataInsercao"
+                         format="LLL"
+                         min-view="decade"
+                         today="true"
+                         minutes-step= 1>
+                        <input name="DataNascimento" class="form-control"
+                               placeholder="Selecione uma data"
+                               ng-model="item.DataInsercao"
+                               ng-model-options="{ updateOn: 'blur' }">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                        </span>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-2" ng-show="item.resolvido">
                 <div class="form-group">
-                    <!--<div class='input-group date' datetimepicker id="{{'dataResolvido' + item.id}}" >-->
-                    <!--<input type='text' class="form-control" placeholder="Selecione uma data" />-->
-                    <!--<span class="input-group-addon">-->
-                    <!--<span class="glyphicon glyphicon-calendar"></span></span>-->
-                    <!--</div>-->
+                    <div class="input-group" moment-picker="item.DataInsercao"
+                         format="LLL"
+                         min-view="decade"
+                         today="true"
+                         minutes-step= 1>
+                        <input name="DataNascimento" class="form-control"
+                               placeholder="Selecione uma data"
+                               ng-model="item.DataInsercao"
+                               ng-model-options="{ updateOn: 'blur' }">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                        </span>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-1" ng-hide="item.resolvido">

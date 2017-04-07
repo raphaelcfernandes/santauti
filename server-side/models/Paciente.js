@@ -46,6 +46,7 @@ module.exports = function(sequelize, DataTypes) {
                 Paciente.belongsTo(models.Pessoa,{
                     foreignKey: 'ID'
                 });
+                Paciente.hasMany(models.Internacao,{foreignKey:'ID'});
             }
         },
         tableName: 'Paciente',

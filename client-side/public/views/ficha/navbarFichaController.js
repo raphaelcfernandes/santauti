@@ -22,28 +22,26 @@ app.controller('navbarCtrl', function($scope,$state,$location) {
         $scope.selectedIndex = 7;
     }else if($state.current.name == "infeccioso"){
         $scope.selectedIndex = 8;
-    }else if($state.current.name == "dispositivos"){
-        $scope.selectedIndex = 9;
     }else if($state.current.name == "metabolico"){
-        $scope.selectedIndex = 10;
+        $scope.selectedIndex = 9;
     }else if($state.current.name == "nutricao"){
-        $scope.selectedIndex = 11;
+        $scope.selectedIndex = 10;
     }else if($state.current.name == "psicosocial"){
-        $scope.selectedIndex = 12;
+        $scope.selectedIndex = 11;
     }else if($state.current.name == "listaDeProblemas"){
-        $scope.selectedIndex = 13;
+        $scope.selectedIndex = 12;
     }else if($state.current.name == "analise"){
-        $scope.selectedIndex = 14;
+        $scope.selectedIndex = 13;
     }else if($state.current.name == "planos"){
-        $scope.selectedIndex = 15;
+        $scope.selectedIndex = 14;
     }else if($state.current.name == "pendencias"){
-        $scope.selectedIndex = 16;
+        $scope.selectedIndex = 15;
     }else if($state.current.name == "exames"){
-        $scope.selectedIndex = 17;
+        $scope.selectedIndex = 16;
     }else if($state.current.name == "examesLab"){
-        $scope.selectedIndex = 18;
+        $scope.selectedIndex = 17;
     }else if($state.current.name == "interconsulta") {
-        $scope.selectedIndex = 19;
+        $scope.selectedIndex = 18;
     }
 
     $scope.$watch('selectedIndex', function(current, old) {
@@ -76,36 +74,33 @@ app.controller('navbarCtrl', function($scope,$state,$location) {
                 $location.url("infeccioso");
                 break;
             case 9:
-                $location.url("dispositivos");
-                break;
-            case 10:
                 $location.url("metabolico");
                 break;
-            case 11:
+            case 10:
                 $location.url("nutricao");
                 break;
-            case 12:
+            case 11:
                 $location.url("psicosocial");
                 break;
-            case 13:
+            case 12:
                 $location.url("listaDeProblemas");
                 break;
-            case 14:
+            case 13:
                 $location.url("analise");
                 break;
-            case 15:
+            case 14:
                 $location.url("planos");
                 break;
-            case 16:
+            case 15:
                 $location.url("pendencias");
                 break;
-            case 17:
+            case 16:
                 $location.url("exames");
                 break;
-            case 18:
+            case 17:
                 $location.url("examesLab");
                 break;
-            case 19:
+            case 18:
                 $location.url("interconsulta");
                 break;
         }

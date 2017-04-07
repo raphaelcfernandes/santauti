@@ -6,6 +6,7 @@ app.controller('listaDeProblemaCtrl', function($scope,$state,$rootScope) {
     if($rootScope.dados===undefined) {
         $rootScope.dados = {};
     }
+
     $scope.items = [];
     $scope.colunaResolvido=false;
     var id=0;

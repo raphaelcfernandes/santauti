@@ -1,7 +1,6 @@
 <div class="content">
-    Paciente: {{cache.paciente.Pessoa.Nome}} {{cache.paciente.Pessoa.Sobrenome}}, {{cache.paciente.Profissao}}<br>
+    Paciente: {{cache.paciente.Pessoa.Nome}} {{cache.paciente.Pessoa.Sobrenome}}, Profissão: {{cache.paciente.Profissao}}<br>
     Box: {{cache.paciente.Box}}, Leito: {{cache.paciente.Leito}}<br>
     Medico responsavel: {{cache.profissional.Nome}} {{cache.profissional.Sobrenome}}<br>
-    Data de internacao: <span>RESOLVER!!!!!!!!!!!!! LEIA TODO</span><br>
-    Mais informacoes aqui...<br>
+    Data de internacao: {{cache.paciente.Internacaos[0].DataInternacao}}
 </div>
