@@ -1,4 +1,4 @@
-var app = angular.module('SantaUTIApp', ['ngMaterial','ui.router','ngStorage','qrScanner','moment-picker']);
+var app = angular.module('SantaUTIApp', ['ngMaterial','ui.router','ngStorage','qrScanner','moment-picker','ngMessages']);
 
 app.run(function ($rootScope,$location,$window,$state, $stateParams, $http) {
 

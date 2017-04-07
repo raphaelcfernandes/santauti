@@ -47,6 +47,7 @@ module.exports = function(sequelize, DataTypes) {
                     foreignKey: 'ID'
                 });
                 Paciente.hasMany(models.Internacao,{foreignKey:'ID'});
+                Paciente.hasMany(models.Dispositivos,{foreignKey:'IDPaciente'});
             }
         },
         tableName: 'Paciente',

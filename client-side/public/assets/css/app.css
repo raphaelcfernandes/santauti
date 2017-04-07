@@ -1,13 +1,1 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
-
-html, body {
-    font-family: 'Roboto', sans-serif;
-    font-size:15px;
-    height:100%;
-    margin: 0px;
-    padding: 0px;
-    background-color: #eaeaea;
-}
-textarea {
-    resize: none;
-}

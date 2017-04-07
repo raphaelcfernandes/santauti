@@ -15,7 +15,12 @@ DISPOSITIVOS:
     FAZER EXCLUIR, EDITAR
     PROCURAR DISPOSITIVO POR DATALTA=NULL E NAO POR DATA > DATA_INTERNACAO
 
+HOME:
+    ADEQUAR AS POSICOES E BGROUND DA HOME E TAMANHO DAS COISAS
+    CONVERTER ICONES DE GLYPHICON PARA ANGULAR MATERIAL
 
+
+FZER ARQUIVO UNICO DE CSS (ASSETS/APP.CSS)
 
 
 
@@ -29,8 +34,13 @@ Navbar deve estar em 2 linhas
 
 /*Faćo a encrip/decrip no server side usando Crypto-JS, essa lib é mesmo safe? Inicio da string sempre igual*/
 
-**** Implementar JANELA de impressão QR-CODE
 
+**HOME:
+Refazer o modal para confirmação de geração de novo QR-CODE
+Corrigir aparição do QR-CODE.. Tirar ou encontrar uam forma de deixar isso bonito... um modal talvez?
+
+---
 Implementar sistema de validação de formulários em pessoa (conferir se não vai bugar o editar)
 
 Implementar sistemas das fichas diurnas (recuperar os dados anteriores)
+
