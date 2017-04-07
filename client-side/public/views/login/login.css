@@ -38,7 +38,9 @@
     color: #5bc0de;
     /*background-color: #5bc0de;*/
 }
-
+.login_conteudo{
+    background-color: #FFFFFF;
+}
 .md-content {
     flex-shrink: 0;
 }
@@ -48,7 +50,6 @@
     margin-right: 0px;
     margin-top :10px;
     margin-bottom: 10px;
-    color: #5bc0de;
     background-color: #5bc0de;
 }
 .md-primary{
@@ -58,6 +59,7 @@
     max-width: 400px;
     width: 400px;
     height: 505px;
+    background-color: #ffffff;
     position: relative;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);

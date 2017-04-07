@@ -21,5 +21,6 @@ Navbar deve estar em 2 linhas
 
 /*Faćo a encrip/decrip no server side usando Crypto-JS, essa lib é mesmo safe? Inicio da string sempre igual*/
 
-**** Implementar JANELA de impressão QR-CODE
-***Implantar sistema de LOGIN com QR-CODE
+**HOME:
+Refazer o modal para confirmação de geração de novo QR-CODE
+Corrigir aparição do QR-CODE.. Tirar ou encontrar uam forma de deixar isso bonito... um modal talvez?

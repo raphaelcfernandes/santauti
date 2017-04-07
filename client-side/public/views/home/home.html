@@ -1,156 +1,156 @@
 <div ui-view='toolbar' ></div>
 
 <!--MENU PARA ADMIN VER OS USUARIOS PROFISSIONAIS-->
+<div id ="bg2">
+</div>
 <div class="container" ng-show="nivelProfissional==1">
-    <div class="row">
-        <div class="cols-sm-3" >
-            <button type="button" class="btn btn-primary btn-sm" ng-click="mostrarStatus()">
-                <span class="glyphicon glyphicon-qrcode"></span> Mostrar apenas {{status}}</button>
+    <md-content class="content_custom">
+        <div class="cols-sm-1" >
+            <md-button type="button" class="md-raised md-primary" ng-click="mostrarStatus()">
+                <span class="glyphicon glyphicon-qrcode"></span> Mostrar apenas {{status}}</md-button>
         </div>
-    </div>
-    <div class="table-responsive">
-        <table class="table">
-            <thead>
-            <tr>
-                <th ng-show="nivelProfissional==2">Paciente</th>
-                <th ng-show="nivelProfissional==1">Profissional</th>
-                <th>Ações</th>
-                <th> <input type="search" ng-model="q" placeholder="Filtrar {{nomeUtilizador}}" aria-label="filter friends" /></th>
-                <th><button type="button" class="btn btn-primary btn-sm" ng-click="adicionarNovo()">
-                    <span class="glyphicon glyphicon-plus-sign"></span> Criar Novo</button></th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr ng-repeat="pessoa in pessoas | orderBy:'name' | filter:q as results" ng-if="pessoa.Ativo==1" ng-show="flagStatus==false">
-                <td>{{pessoa.nome}} {{pessoa.sobrenome}}</td>
-                <td>
-                    <div class="btn-group" ng-show="nivelProfissional>1">
-                        <button type="button" class="btn btn-primary btn-sm" ng-click="visualizar(pessoa.age)">
-                            <span class="glyphicon glyphicon-eye-open"></span> Visualizar</button>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown">
-                                <span class="glyphicon glyphicon-pencil"></span> Criar Ficha <span class="caret"></span></button>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#/eventoSignificantes">Diurno</a></li>
-                                <li><a href="#">Noturno</a></li>
-                            </ul>
-                        </div>
-                        <button type="button" class="btn btn-primary btn-sm"> <span class="glyphicon glyphicon-check"></span> Encerrar Paciente</button>
-                    </div>
-                    <div class="btn-group" ng-show="nivelProfissional==1">
-                        <button type="button" class="btn btn-primary btn-sm" ng-click="gerarQrCode($event,pessoa.id,pessoa.qrkey)">
-                            <span class="glyphicon glyphicon-qrcode"></span> Gerar QR-Code</button>
-                        <button type="button" class="btn btn-primary btn-sm" ng-click="editar(pessoa.id)">
-                            <span class="glyphicon glyphicon-pencil"></span> Alterar Dados</button>
-                        <button type="button" class="btn btn-primary btn-sm" ng-click="showDesativar(pessoa.id,$event)"> <span class="glyphicon glyphicon-trash"></span> Desativar Usuário</button>
-                    </div>
-                </td>
-            </tr>
-            <tr ng-repeat="pessoa in pessoas | orderBy:'name' | filter:q as results" ng-if="pessoa.Ativo==0" ng-show="flagStatus==true">
-                <td>{{pessoa.nome}} {{pessoa.sobrenome}}</td>
-                <td>
-                    <div class="btn-group" ng-show="nivelProfissional>1">
-                        <button type="button" class="btn btn-primary btn-sm" ng-click="visualizar(pessoa.age)">
-                            <span class="glyphicon glyphicon-eye-open"></span> Visualizar</button>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown">
-                                <span class="glyphicon glyphicon-pencil"></span> Criar Ficha <span class="caret"></span></button>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#/eventoSignificantes">Diurno</a></li>
-                                <li><a href="#">Noturno</a></li>
-                            </ul>
-                        </div>
-                        <button type="button" class="btn btn-primary btn-sm"> <span class="glyphicon glyphicon-check"></span> Encerrar Paciente</button>
-                    </div>
-                    <div class="btn-group" ng-show="nivelProfissional==1">
-                        <button type="button" class="btn btn-primary btn-sm" ng-click="showReativar(pessoa.id,$event)"> <span class="glyphicon glyphicon-trash"></span> Reativar Usuário</button>
-                    </div>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
+        <div class="col-sm-4 col-sm-offset-6">
+            <div class="paddin">
+                <md-input-container class="md-block" flex-gt-sm="" align="right">
+                    <label>Buscar</label>
+                    <input id= "busca" type="search" ng-model="q" placeholder="Filtrar {{nomeUtilizador}}" aria-label="filter friends" />
+                </md-input-container>
+            </div>
+        </div>
+        <div class="col-sm-">
+            <md-button class="md-raised md-primary paddin" ng-click="adicionarNovo()">
+                <span class="glyphicon glyphicon-plus-sign"></span> Criar Novo</md-button>
+        </div>
+    </md-content>
+    <md-content class="content_custom">
+        <div class="table-responsive">
+            <md-list-item ng-repeat="pessoa in pessoas | orderBy:'name' | filter:q as results" ng-if="pessoa.Ativo==1" ng-show="flagStatus==false" ng-click="goToPerson()" class="noright">
+                <div class="md-list-item-text">
+                    <h3>{{pessoa.nome}} {{pessoa.sobrenome}}</h3>
+                </div>
+                <md-button type="button" class="md-raised md-secondary " ng-click="gerarQrCode($event,pessoa.id,pessoa.qrkey)">
+                    <span class="glyphicon glyphicon-qrcode"></span> Gerar QR-Code</md-button>
+                <md-button type="button" class=" md-secondary md-raised" ng-click="editar(pessoa.id)">
+                    <span class="glyphicon glyphicon-pencil"></span> Alterar Dados</md-button>
+                </md-button>
+                <md-button type="button" class="md-raised md-secondary" ng-click="showDesativar(pessoa.id,$event)">
+                    <span class="glyphicon glyphicon-trash"></span> Desativar Usuário</md-button>
+            </md-list-item>
+        </div>
+    </md-content>
+    <md-content class="content_custom">
+        <div class="table-responsive">
+            <md-list-item ng-repeat="pessoa in pessoas | orderBy:'name' | filter:q as results" ng-if="pessoa.Ativo==0" ng-show="flagStatus==true" ng-click="goToPerson()" class="noright">
+                <div class="md-list-item-text">
+                    <h3>{{pessoa.nome}} {{pessoa.sobrenome}}</h3>
+                </div>
+                <md-button type="button" class="md-raised md-secondary " ng-click="showReativar(pessoa.id,$event)">
+                    <span class="glyphicon glyphicon-trash"></span> Reativar Usuário</md-button>
+        </div>
+    </md-content>
 </div>
 <!--MENU PARA ADMIN VER OS USUARIOS PROFISSIONAIS-->
 
 <!--MENU PARA OS PROFISSIONAIS VER OS PACIENTES-->
 <div class="container" ng-show="nivelProfissional!==1">
-    <div class="table-responsive">
-        <table class="table">
-            <thead>
-            <tr>
-                <th>Paciente</th>
-                <th>Responsável</th>
-                <th>Ações</th>
-                <th> <input type="search" ng-model="q" placeholder="Filtrar {{nomeUtilizador}}" aria-label="filter friends" /></th>
-                <th><button type="button" class="btn btn-primary btn-sm" ng-click="adicionarNovo()">
-                    <span class="glyphicon glyphicon-plus-sign"></span> Criar Novo</button></th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr ng-repeat="pessoa in pessoas | orderBy:'name' | filter:q as results" ng-if="pessoa.internado==1">
-                <td>{{pessoa.nome}} {{pessoa.sobrenome}}</td>
-                <td>{{pessoa.nomeMedico}} {{pessoa.sobrenomeMedico}}</td>
-                <td>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary btn-sm" ng-click="visualizarPaciente(pessoa.id)">
-                            <span class="glyphicon glyphicon-eye-open"></span> Visualizar</button>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown">
-                                <span class="glyphicon glyphicon-pencil"></span> Criar Ficha <span class="caret"></span></button>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href ng-click="criarFichaDiurno(pessoa.id)">Diurno</a></li>
-                                <li><a href="#">Noturno</a></li>
-                            </ul>
-                        </div>
-                        <button type="button" class="btn btn-primary btn-sm"> <span class="glyphicon glyphicon-check"></span> Encerrar Paciente</button>
-                    </div>
-                </td>
-            </tr>
-            <tr ng-repeat="pessoa in pessoas | orderBy:'name' | filter:q as results" ng-if="pessoa.internado==0" ng-show="flagStatus==true">
-                <td>{{pessoa.nome}} {{pessoa.sobrenome}}</td>
-                <td>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary btn-sm" ng-click="visualizar(pessoa.age)">
-                            <span class="glyphicon glyphicon-eye-open"></span> Visualizar</button>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown">
-                                <span class="glyphicon glyphicon-pencil"></span> Criar Ficha <span class="caret"></span></button>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#/eventoSignificantes">Diurno</a></li>
-                                <li><a href="#">Noturno</a></li>
-                            </ul>
-                        </div>
-                        <button type="button" class="btn btn-primary btn-sm"> <span class="glyphicon glyphicon-check"></span> Encerrar Paciente</button>
-                    </div>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-primary btn-sm" ng-click="showReativar(pessoa.id,$event)"> <span class="glyphicon glyphicon-trash"></span> Reativar Usuário</button>
-                    </div>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
+    <md-content class="content_custom">
+
+        <div class="col-sm-4 col-sm-offset-6">
+            <div class="paddin">
+                <md-input-container class="md-block" flex-gt-sm="" align="right">
+                    <label>Buscar</label>
+                    <input id= "busca" type="search" ng-model="q" placeholder="Filtrar {{nomeUtilizador}}" aria-label="filter friends" />
+                </md-input-container>
+            </div>
+        </div>
+        <div class="col-sm-">
+            <md-button class="md-raised md-primary paddin" ng-click="adicionarNovo()">
+                <span class="glyphicon glyphicon-plus-sign"></span> Criar Novo</md-button>
+        </div>
+    </md-content>
+    <md-content class="content_custom">
+        <div class="table-responsive">
+            <md-list-item ng-repeat="pessoa in pessoas | orderBy:'name' | filter:q as results " ng-if="pessoa.internado==1" ng-click="goToPerson()" class="noright">
+                <div class="md-list-item-text">
+                    <h3>{{pessoa.nome}} {{pessoa.sobrenome}}</h3>
+                    <h5> Responsável: {{pessoa.nomeMedico}} {{pessoa.sobrenomeMedico}}</h5>
+                </div>
+                <md-button type="button" class="md-raised md-secondary " ng-click="visualizarPaciente(pessoa.id)">
+                    <span class="glyphicon glyphicon-eye-open"></span> Visualizar</md-button>
+                <md-menu class="md-secondary">
+                    <md-button aria-label="Abrir Menu Criar Fichas" class="md-raised md-primary  " ng-click="openMenu($mdMenu, $event)">
+                        <span class="glyphicon glyphicon-pencil"></span> Criar Ficha  <span class="caret"></span>
+                    </md-button>
+                    <md-menu-content width="3">
+                        <md-menu-item>
+                            <md-button ng-click="criarFichaDiurno(pessoa.id)">
+                                Diurno
+                            </md-button>
+                        </md-menu-item>
+                        <md-menu-item>
+                            <md-button disabled="disabled" ng-click="">
+                                Noturno
+                            </md-button>
+                        </md-menu-item>
+                    </md-menu-content>
+                </md-menu>
+                <md-button type="button" class="md-raised md-secondary" ng-click=""> <span class="glyphicon glyphicon-check"></span> Encerrar Paciente</md-button>
+            </md-list-item>
+            <md-list-item ng-repeat="pessoa in pessoas | orderBy:'name' | filter:q as results" ng-if="pessoa.internado==0" ng-show="flagStatus==true" ng-click="goToPerson()" class="noright">
+                <div class="md-list-item-text">
+                    <h3>{{pessoa.nome}} {{pessoa.sobrenome}}</h3>
+                </div>
+                <md-button type="button" class="md-raised md-secondary " ng-click="visualizarPaciente(pessoa.id)">
+                    <span class="glyphicon glyphicon-eye-open"></span> Visualizar</md-button>
+                <md-menu class="md-secondary">
+                    <md-button aria-label="Abrir Menu Criar Fichas" class="md-raised md-primary  " ng-click="openMenu($mdMenu, $event)">
+                        <span class="glyphicon glyphicon-pencil"></span> Criar Ficha  <span class="caret"></span>
+                    </md-button>
+                    <md-menu-content width="3">
+                        <md-menu-item>
+                            <md-button ng-click="criarFichaDiurno(pessoa.id)">
+                                Diurno
+                            </md-button>
+                        </md-menu-item>
+                        <md-menu-item>
+                            <md-button disabled="disabled" ng-click="">
+                                Noturno
+                            </md-button>
+                        </md-menu-item>
+                    </md-menu-content>
+                </md-menu>
+                <md-button type="button" class="md-raised md-secondary" ng-click=""> <span class="glyphicon glyphicon-check"></span> Encerrar Paciente</md-button>
+                <div class="btn-group">
+                    <button type="button" class="md-raised md-secondary" ng-click="showReativar(pessoa.id,$event)"> <span class="glyphicon glyphicon-trash"></span> Reativar Usuário</button>
+                </div>
+            </md-list-item>
+        </div>
+    </md-content>
 </div>
+
 <!--MENU PARA OS PROFISSIONAIS VER OS PACIENTES-->
 
 
 <!--
 Estes códigos são só para testes, correto seria abrir em uma nova janela!
 -->
+<md-content class ="content_custom">
 <table align="center" ng-show="nivelProfissional==1">
     <tr >
         <th><p align="center"> QR CODE IMAGEM </p></th>
     </tr>
     <tr>
-        <td><div align="center" ng-bind-html="trustedHtml"></div></td>
+        <td><div align="center" class="qr-img" ng-bind-html="trustedHtml"></div></td>
     </tr>
     <tr>
         <td>
-            <div align="center">
-                <button  align = "center" type="button" class="btn btn-primary btn-sm" ng-click="imprimir()">
-                    <span align = "center" class="glyphicon glyphicon-print"></span> Imprimir</button>
+            <div align="center" >
+                <md-button  align = "center" type="button" class="md-primary md-raised" ng-click="imprimir()">
+                    <span align = "center" class="glyphicon glyphicon-print"></span> Imprimir</md-button>
             </div>
         </td>
     </tr>
 </table>
+</md-content>
+
+

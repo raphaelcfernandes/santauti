@@ -27,6 +27,11 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
         $state.go("listaDeProblemas");
     };
 
+    $scope.openMenu = function($mdMenu, ev) {
+        originatorEv = ev;
+        $mdMenu.open(ev);
+    };
+
     $scope.imprimir = function (){
         var myWindow = window.open("");
         myWindow.document.write($scope.html);
@@ -121,7 +126,6 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
             var confirm = $mdDialog.confirm()
                 .title('Gerar novo QR-CODE?')
                 .textContent('Você deseja realmente gerar um novo qr-code para esta pessoa? Com essa ação, todos os qr-code gerados anteriormente serão invalidados!')
-                .ariaLabel('Lucky day')
                 .targetEvent(ev)
                 .ok('Gerar novo')
                 .cancel('Cancelar');
@@ -214,8 +218,7 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
         // Appending dialog to document.body to cover sidenav in docs app
         var confirm = $mdDialog.confirm(id)
             .title('Desativaćao de Usuário.')
-            .textContent('Este usuário será desativado e não fará mais parte do sistema, sendo necessário sua reativacao posteriormente. Deseja continuar mesmo assim?')
-            .ariaLabel('Lucky day')
+            .textContent('Este usuário será desativado e não fará mais parte do sistema, sendo necessário sua reativação posteriormente. Deseja continuar mesmo assim?')
             .targetEvent(ev)
             .ok('Desativar.')
             .cancel('Não.');
@@ -229,8 +232,7 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
         // Appending dialog to document.body to cover sidenav in docs app
         var confirm = $mdDialog.confirm(id)
             .title('Reativaćao de Usuário.')
-            .textContent('Este usuário será reativado e terá acesso ao sistema novament. Deseja realizar essa aćão?')
-            .ariaLabel('Lucky day')
+            .textContent('Este usuário será reativado e terá acesso ao sistema novamente. Deseja realizar essa ação?')
             .targetEvent(ev)
             .ok('Desativar.')
             .cancel('Não.');
