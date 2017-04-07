@@ -83,421 +83,394 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                 }
             }
         })
-        .state('listaDeProblemas',{
-            url: '/listaDeProblemas',
-            resolve: {
-                authenticate: usuarioLogado
-            },
-            views:{
-                '':{
-                    templateUrl: '../ficha/listaDeProblemas/listaDeProblemas.html',
-                    controller: 'listaDeProblemaCtrl'
-                },
-                'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
-                    controller: 'navbarCtrl'
-                },
-                'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html',
-                    controller: 'informacaoBoxCtrl'
-                }
-            }
+        .state('tabs', {
+            abstract: true,
+            url: '/tabs',
+            templateUrl: '../ficha/navbarFicha.html',
+            controller: 'navbarCtrl'/*function($scope) {
+                $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
+                    $scope.currentTab = toState.data.selectedTab;
+                });*/
+            //}
         })
-        .state('eventosSignificantes',{
+        .state('tabs.eventosSig',{
             url: '/eventosSignificantes',
+            data: {
+                'selectedTab': 0
+            },
             resolve: {
                 authenticate: usuarioLogado
             },
-            views:{
-                '':{
+            views: {
+                'eventosSignificantes': {
                     templateUrl: '../ficha/eventoSignificantes/eventoSignificantes.html',
                     controller: 'eventoSignificanteCtrl'
                 },
-                'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
-                    controller: 'navbarCtrl'
-                },
                 'informacaoBox':{
                     templateUrl: '../informacaoBox/informacaoBox.html',
                     controller: 'informacaoBoxCtrl'
                 }
             }
         })
-        .state('neurologico',{
+        .state('tabs.neuroLogico',{
             url: '/neurologico',
+            data: {
+                'selectedTab': 1
+            },
             resolve: {
                 authenticate: usuarioLogado
             },
-            views:{
-                '':{
+            views: {
+                'neuroLogico': {
                     templateUrl: '../ficha/neurologico/neurologico.html',
                     controller: 'neurologicoCtrl'
                 },
-                'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
-                    controller: 'navbarCtrl'
-                },
                 'informacaoBox':{
                     templateUrl: '../informacaoBox/informacaoBox.html',
                     controller: 'informacaoBoxCtrl'
                 }
             }
         })
-        .state('hemodinamica',{
+        .state('tabs.hemodinamica',{
             url: '/hemodinamica',
+            data: {
+                'selectedTab': 2
+            },
             resolve: {
                 authenticate: usuarioLogado
             },
-            views:{
-                '':{
+            views: {
+                'hemodinamica': {
                     templateUrl: '../ficha/hemodinamica/hemodinamica.html',
                     controller: 'hemodinamicaCtrl'
                 },
-                'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
-                    controller: 'navbarCtrl'
-                },
                 'informacaoBox':{
                     templateUrl: '../informacaoBox/informacaoBox.html',
                     controller: 'informacaoBoxCtrl'
                 }
-
             }
         })
-        .state('respiratorio',{
+        .state('tabs.respiratorio',{
             url: '/respiratorio',
+            data: {
+                'selectedTab': 3
+            },
             resolve: {
                 authenticate: usuarioLogado
             },
-            views:{
-                '':{
+            views: {
+                'respiratorio': {
                     templateUrl: '../ficha/respiratorio/respiratorio.html',
                     controller: 'respiratorioCtrl'
                 },
-                'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
-                    controller: 'navbarCtrl'
-                },
                 'informacaoBox':{
                     templateUrl: '../informacaoBox/informacaoBox.html',
                     controller: 'informacaoBoxCtrl'
                 }
-
             }
         })
-        .state('gastrointestinal',{
+        .state('tabs.gastrointestinal',{
             url: '/gastrointestinal',
+            data: {
+                'selectedTab': 4
+            },
             resolve: {
                 authenticate: usuarioLogado
             },
-            views:{
-                '':{
+            views: {
+                'gastrointestinal': {
                     templateUrl: '../ficha/gastrointestinal/gastrointestinal.html',
                     controller: 'gastrointestinalCtrl'
                 },
-                'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
-                    controller: 'navbarCtrl'
-                },
                 'informacaoBox':{
                     templateUrl: '../informacaoBox/informacaoBox.html',
                     controller: 'informacaoBoxCtrl'
                 }
-
             }
         })
-        .state('renal',{
+        .state('tabs.renal',{
             url: '/renal',
+            data: {
+                'selectedTab': 5
+            },
             resolve: {
                 authenticate: usuarioLogado
             },
-            views:{
-                '':{
+            views: {
+                'renal': {
                     templateUrl: '../ficha/renal/renal.html',
                     controller: 'renalCtrl'
                 },
-                'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
-                    controller: 'navbarCtrl'
-                },
                 'informacaoBox':{
                     templateUrl: '../informacaoBox/informacaoBox.html',
                     controller: 'informacaoBoxCtrl'
                 }
-
             }
         })
-        .state('hematologico',{
+        .state('tabs.hematologico',{
             url: '/hematologico',
+            data: {
+                'selectedTab': 6
+            },
             resolve: {
                 authenticate: usuarioLogado
             },
-            views:{
-                '':{
+            views: {
+                'hematologico': {
                     templateUrl: '../ficha/hematologico/hematologico.html',
                     controller: 'hematologicoCtrl'
                 },
-                'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
-                    controller: 'navbarCtrl'
-                },
                 'informacaoBox':{
                     templateUrl: '../informacaoBox/informacaoBox.html',
                     controller: 'informacaoBoxCtrl'
                 }
-
             }
         })
-        .state('endocrino',{
+        .state('tabs.endocrino',{
             url: '/endocrino',
+            data: {
+                'selectedTab': 7
+            },
             resolve: {
                 authenticate: usuarioLogado
             },
-            views:{
-                '':{
+            views: {
+                'endocrino': {
                     templateUrl: '../ficha/endocrino/endocrino.html',
                     controller: 'endocrinoCtrl'
                 },
-                'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
-                    controller: 'navbarCtrl'
-                },
                 'informacaoBox':{
                     templateUrl: '../informacaoBox/informacaoBox.html',
                     controller: 'informacaoBoxCtrl'
                 }
-
             }
         })
-        .state('infeccioso',{
+        .state('tabs.infeccioso',{
             url: '/infeccioso',
+            data: {
+                'selectedTab': 9
+            },
             resolve: {
                 authenticate: usuarioLogado
             },
-            views:{
-                '':{
+            views: {
+                'infeccioso': {
                     templateUrl: '../ficha/infeccioso/infeccioso.html',
                     controller: 'infecciosoCtrl'
                 },
-                'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
-                    controller: 'navbarCtrl'
-                },
                 'informacaoBox':{
                     templateUrl: '../informacaoBox/informacaoBox.html',
                     controller: 'informacaoBoxCtrl'
                 }
-
             }
         })
-        .state('dispositivos',{
+        .state('tabs.dispositivos',{
             url: '/dispositivos',
+            data: {
+                'selectedTab': 10
+            },
             resolve: {
                 authenticate: usuarioLogado
             },
-            views:{
-                '':{
+            views: {
+                'dispositivos': {
                     templateUrl: '../dispositivos/dispositivos.html',
                     controller: 'dispositivosCtrl'
                 },
-                'navbar':{
-                    templateUrl: '../toolbar/toolbar.html',
-                    controller: 'toolbarCtrl'
-                },
                 'informacaoBox':{
                     templateUrl: '../informacaoBox/informacaoBox.html',
                     controller: 'informacaoBoxCtrl'
                 }
-
             }
         })
-        .state('metabolico',{
+        .state('tabs.metabolico',{
             url: '/metabolico',
+            data: {
+                'selectedTab': 11
+            },
             resolve: {
                 authenticate: usuarioLogado
             },
-            views:{
-                '':{
+            views: {
+                'metabolico': {
                     templateUrl: '../ficha/metabolico/metabolico.html',
                     controller: 'metabolicoCtrl'
                 },
-                'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
-                    controller: 'navbarCtrl'
-                },
                 'informacaoBox':{
                     templateUrl: '../informacaoBox/informacaoBox.html',
                     controller: 'informacaoBoxCtrl'
                 }
-
             }
         })
-        .state('nutricao',{
+        .state('tabs.nutricao',{
             url: '/nutricao',
+            data: {
+                'selectedTab': 12
+            },
             resolve: {
                 authenticate: usuarioLogado
             },
-            views:{
-                '':{
+            views: {
+                'nutricao': {
                     templateUrl: '../ficha/nutricao/nutricao.html',
                     controller: 'nutricaoCtrl'
                 },
-                'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
-                    controller: 'navbarCtrl'
-                },
                 'informacaoBox':{
                     templateUrl: '../informacaoBox/informacaoBox.html',
                     controller: 'informacaoBoxCtrl'
                 }
-
             }
         })
-        .state('psicosocial',{
+        .state('tabs.psicosocial',{
             url: '/psicosocial',
+            data: {
+                'selectedTab': 13
+            },
             resolve: {
                 authenticate: usuarioLogado
             },
-            views:{
-                '':{
+            views: {
+                'psicosocial': {
                     templateUrl: '../ficha/psicosocial/psicosocial.html',
                     controller: 'psicosocialCtrl'
                 },
-                'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
-                    controller: 'navbarCtrl'
+                'informacaoBox':{
+                    templateUrl: '../informacaoBox/informacaoBox.html',
+                    controller: 'informacaoBoxCtrl'
+                }
+            }
+        })
+        .state('tabs.listaproblemas',{
+            url: '/listaproblemas',
+            data: {
+                'selectedTab': 14
+            },
+            resolve: {
+                authenticate: usuarioLogado
+            },
+            views: {
+                'listaproblemas': {
+                    templateUrl: '../ficha/listaDeProblemas/listaDeProblemas.html',
+                    controller: 'listaDeProblemaCtrl'
                 },
                 'informacaoBox':{
                     templateUrl: '../informacaoBox/informacaoBox.html',
                     controller: 'informacaoBoxCtrl'
                 }
-
             }
         })
-        .state('analise',{
+        .state('tabs.analise',{
             url: '/analise',
+            data: {
+                'selectedTab': 15
+            },
             resolve: {
                 authenticate: usuarioLogado
             },
-            views:{
-                '':{
+            views: {
+                'analise': {
                     templateUrl: '../ficha/analise/analise.html',
                     controller: 'analiseCtrl'
                 },
-                'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
-                    controller: 'navbarCtrl'
-                },
                 'informacaoBox':{
                     templateUrl: '../informacaoBox/informacaoBox.html',
                     controller: 'informacaoBoxCtrl'
                 }
-
             }
         })
-        .state('pendencias',{
-            url: '/pendencias',
-            resolve: {
-                authenticate: usuarioLogado
-            },
-            views:{
-                '':{
-                    templateUrl: '../ficha/pendencias/pendencias.html',
-                    controller: 'pendenciasCtrl'
-                },
-                'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
-                    controller: 'navbarCtrl'
-                },
-                'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html',
-                    controller: 'informacaoBoxCtrl'
-                }
-
-            }
-        })
-        .state('exames',{
-            url: '/exames',
-            resolve: {
-                authenticate: usuarioLogado
-            },
-            views:{
-                '':{
-                    templateUrl: '../ficha/exames/exames.html',
-                    controller: 'examesCtrl'
-                },
-                'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
-                    controller: 'navbarCtrl'
-                },
-                'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html',
-                    controller: 'informacaoBoxCtrl'
-                }
-
-            }
-        })
-        .state('interconsulta',{
-            url: '/interconsulta',
-            resolve: {
-                authenticate: usuarioLogado
-            },
-            views:{
-                '':{
-                    templateUrl: '../ficha/interconsulta/interconsulta.html',
-                    controller: 'interconsultaCtrl'
-                },
-                'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
-                    controller: 'navbarCtrl'
-                },
-                'informacaoBox':{
-                    templateUrl: '../informacaoBox/informacaoBox.html',
-                    controller: 'informacaoBoxCtrl'
-                }
-
-            }
-        })
-        .state('planos',{
+        .state('tabs.planos',{
             url: '/planos',
+            data: {
+                'selectedTab': 16
+            },
             resolve: {
                 authenticate: usuarioLogado
             },
-            views:{
-                '':{
+            views: {
+                'planos': {
                     templateUrl: '../ficha/planos/planos.html',
                     controller: 'planosCtrl'
                 },
-                'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
-                    controller: 'navbarCtrl'
-                },
                 'informacaoBox':{
                     templateUrl: '../informacaoBox/informacaoBox.html',
                     controller: 'informacaoBoxCtrl'
                 }
-
             }
         })
-        .state('examesLab',{
-            url: '/examesLab',
+        .state('tabs.pendencias',{
+            url: '/pendencias',
+            data: {
+                'selectedTab': 17
+            },
             resolve: {
                 authenticate: usuarioLogado
             },
-            views:{
-                '':{
-                    templateUrl: '../ficha/examesLaboratoriais/examesLaboratoriais.html',
-                    controller: 'examesLabCtrl'
-                },
-                'navbar':{
-                    templateUrl: '../ficha/navbarFicha.html',
-                    controller: 'navbarCtrl'
+            views: {
+                'pendencias': {
+                    templateUrl: '../ficha/pendencias/pendencias.html',
+                    controller: 'pendenciasCtrl'
                 },
                 'informacaoBox':{
                     templateUrl: '../informacaoBox/informacaoBox.html',
                     controller: 'informacaoBoxCtrl'
                 }
-
+            }
+        })
+        .state('tabs.exames',{
+            url: '/exames',
+            data: {
+                'selectedTab': 18
+            },
+            resolve: {
+                authenticate: usuarioLogado
+            },
+            views: {
+                'exames': {
+                    templateUrl: '../ficha/exames/exames.html',
+                    controller: 'examesCtrl'
+                },
+                'informacaoBox':{
+                    templateUrl: '../informacaoBox/informacaoBox.html',
+                    controller: 'informacaoBoxCtrl'
+                }
+            }
+        })
+        .state('tabs.examesLab',{
+            url: '/examesLab',
+            data: {
+                'selectedTab': 19
+            },
+            resolve: {
+                authenticate: usuarioLogado
+            },
+            views: {
+                'examesLab': {
+                    templateUrl: '../ficha/examesLaboratoriais/examesLaboratoriais.html',
+                    controller: 'examesLabCtrl'
+                },
+                'informacaoBox':{
+                    templateUrl: '../informacaoBox/informacaoBox.html',
+                    controller: 'informacaoBoxCtrl'
+                }
+            }
+        })
+        .state('tabs.interconsulta',{
+            url: '/interconsulta',
+            data: {
+                'selectedTab': 20
+            },
+            resolve: {
+                authenticate: usuarioLogado
+            },
+            views: {
+                'interconsulta': {
+                    templateUrl: '../ficha/interconsulta/interconsulta.html',
+                    controller: 'interconsultaCtrl'
+                },
+                'informacaoBox':{
+                    templateUrl: '../informacaoBox/informacaoBox.html',
+                    controller: 'informacaoBoxCtrl'
+                }
             }
         })
         .state('pessoa',{

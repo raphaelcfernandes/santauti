@@ -22,3 +22,13 @@ md-tabs.md-default-theme md-ink-bar, md-tabs md-ink-bar {
     -webkit-font-smoothing: antialiased !important;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004) !important;
 }
+#content > md-tabs {
+    -webkit-transition: all 0.0s !important;
+    transition: all 0.0s !important;
+}
+
+md-tabs > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item:not([disabled]) {
+    color: #000 !important;
+    font-size: 12px !important;
+    font-family: "Roboto", sans-serif !important;
+}
