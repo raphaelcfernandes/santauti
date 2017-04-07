@@ -5,5 +5,4 @@ app.controller('eventoSignificanteCtrl', function($scope,$state,$rootScope) {
     if($rootScope.dados===undefined) {
         $rootScope.dados = {};
     }
-    console.log($rootScope);
 });
