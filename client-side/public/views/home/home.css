@@ -2,14 +2,8 @@
     overflow-x: visible !important;
     overflow-y: visible !important;
 }
-#bg2 {
-    position: fixed;
-    background-color: #f7f7f7;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-}
+
+
 .warning {
     background: #cdd400;
 }
@@ -33,11 +27,14 @@
     align-items: center;
 }
 .paddin{
-    padding-top: 4px;
+    padding-top: 20px;
 }
 .md-block{
     font-size: large!important;
 }
 .qr-img{
     border: solid;
+}
+.bgs{
+    background-color: #f7f7f7;
 }
