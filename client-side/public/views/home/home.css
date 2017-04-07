@@ -2,11 +2,42 @@
     overflow-x: visible !important;
     overflow-y: visible !important;
 }
-
+#bg2 {
+    position: fixed;
+    background-color: #f7f7f7;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+}
 .warning {
     background: #cdd400;
 }
 .danger{
     background: #ef0209;
 }
-
+.content_custom{
+    background-color: #f7f7f7;
+    position: relative;
+}
+.md-secondary{
+    background-color: #0071bb!important;
+    color: #d5e4ec!important;
+}
+.md-no-sticky{
+    background-color: #f7f7f7!important;
+}
+.md-toolbar-tools{
+    background-color: #0279c7!important;
+    color: #f5ef15!important;
+    align-items: center;
+}
+.paddin{
+    padding-top: 4px;
+}
+.md-block{
+    font-size: large!important;
+}
+.qr-img{
+    border: solid;
+}
