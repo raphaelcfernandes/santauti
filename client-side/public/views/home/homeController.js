@@ -22,9 +22,15 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
     if($rootScope.cache!==undefined)
         delete $rootScope.cache;
     /*****************************VARIABLES && $SCOPE DECLARATION*********************/
+
+    $scope.dispositivos = function(id){
+      sessionStorage.setItem("ID",id);
+      $state.go("dispositivos");
+    };
+
     $scope.criarFichaDiurno = function (id) {
         sessionStorage.setItem("ID",id);
-        $state.go("listaDeProblemas");
+        $state.go("eventosSignificantes");
     };
 
     $scope.openMenu = function($mdMenu, ev) {

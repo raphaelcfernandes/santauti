@@ -2,12 +2,26 @@
  * Created by raphael on 2/23/17.
  */
 app.controller('pendenciasCtrl', function($scope,$rootScope) {
-    if($rootScope.dados===undefined) {
-        $rootScope.dados = {};
-    }
+    /********************SCOPES AND VARIABLES **************************/
     $scope.items = [];
     $scope.colunaResolvido=false;
     var id=0;
+    /********************SCOPES AND VARIABLES **************************/
+
+    if($rootScope.dados===undefined) {
+        $rootScope.dados = {};
+        //$rootScope.dados.pendencias=[];
+    }
+    $scope.res={};
+    $rootScope.reqWithToken('/getPendenciasPorIdPaciente?idPaciente='+sessionStorage.getItem("ID"),sessionStorage.getItem("token"), 'GET', function (success) {
+        $scope.res=success;
+        console.log($scope.res);
+    }, function (err) {
+        console.log(err);
+    });
+
+
+
     $scope.add = function () {
         $scope.items.push({
             id: id,
@@ -18,8 +32,8 @@ app.controller('pendenciasCtrl', function($scope,$rootScope) {
             dataResolvido: new Date(),
             resolvido: false
         });
-        $('#dataCadastrado'+id).datetimepicker;
         id++;
+        console.log($rootScope.dados);
     };
     $scope.remove = function(id){
         var i=0;
@@ -33,7 +47,6 @@ app.controller('pendenciasCtrl', function($scope,$rootScope) {
         var i=0;
         while($scope.items[i].id!=id)
             i++;
-        $('#dataResolvido'+id).datetimepicker;
         $scope.items[i].resolvido=true;
         $scope.colunaResolvido=true;
         checkResolvido();

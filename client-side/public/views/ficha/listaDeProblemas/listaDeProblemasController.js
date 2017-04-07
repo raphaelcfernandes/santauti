@@ -6,6 +6,7 @@ app.controller('listaDeProblemaCtrl', function($scope,$state,$rootScope) {
     if($rootScope.dados===undefined) {
         $rootScope.dados = {};
     }
+
     $scope.items = [];
     $scope.colunaResolvido=false;
     var id=0;
@@ -19,7 +20,6 @@ app.controller('listaDeProblemaCtrl', function($scope,$state,$rootScope) {
             dataResolvido: new Date(),
             resolvido: false
         });
-        $('#dataCadastrado'+id).datetimepicker;
         id++;
     };
     $scope.remove = function(id){
@@ -34,7 +34,6 @@ app.controller('listaDeProblemaCtrl', function($scope,$state,$rootScope) {
         var i=0;
         while($scope.items[i].id!=id)
             i++;
-        $('#dataResolvido'+id).datetimepicker;
         $scope.items[i].resolvido=true;
         $scope.colunaResolvido=true;
         checkResolvido();

@@ -1,5 +1,3 @@
-<div ui-view='toolbar' ></div>
-
 <!--MENU PARA ADMIN VER OS USUARIOS PROFISSIONAIS-->
 <div id ="bg2">
 </div>
@@ -135,22 +133,22 @@
 Estes códigos são só para testes, correto seria abrir em uma nova janela!
 -->
 <md-content class ="content_custom">
-<table align="center" ng-show="nivelProfissional==1">
-    <tr >
-        <th><p align="center"> QR CODE IMAGEM </p></th>
-    </tr>
-    <tr>
-        <td><div align="center" class="qr-img" ng-bind-html="trustedHtml"></div></td>
-    </tr>
-    <tr>
-        <td>
-            <div align="center" >
-                <md-button  align = "center" type="button" class="md-primary md-raised" ng-click="imprimir()">
-                    <span align = "center" class="glyphicon glyphicon-print"></span> Imprimir</md-button>
-            </div>
-        </td>
-    </tr>
-</table>
+    <table align="center" ng-show="nivelProfissional==1">
+        <tr >
+            <th><p align="center"> QR CODE IMAGEM </p></th>
+        </tr>
+        <tr>
+            <td><div align="center" class="qr-img" ng-bind-html="trustedHtml"></div></td>
+        </tr>
+        <tr>
+            <td>
+                <div align="center" >
+                    <md-button  align = "center" type="button" class="md-primary md-raised" ng-click="imprimir()">
+                        <span align = "center" class="glyphicon glyphicon-print"></span> Imprimir</md-button>
+                </div>
+            </td>
+        </tr>
+    </table>
 </md-content>
 
 

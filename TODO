@@ -7,11 +7,19 @@ Implementar HTTPS TSL/SSL -> Done
 
 
 INFORMACAOBOX:
-    AINDA NÃO ESTÁ BUSCANDO A DATA DE INTERNACAO (ISSO DEVE SER RESOLVIDO!) -> A TABELA JA EXISTE NO BANCO, PORÉM SEM DADOS
+    AINDA NÃO ESTÁ BUSCANDO A DATA DE INTERNACAO (ISSO DEVE SER RESOLVIDO!) -> A TABELA JA EXISTE NO BANCO
     DEVE SE BUSCAR POR ID, DATAINTERNACAO + RECENTE E DataALTA NULL
 
+DISPOSITIVOS:
+    NAO PERMITIR INSERIR DATA DE REMOĆAO < DATA_INTERNACAO && DATA_INSERCAO DO DISPOSITIVO EM QUESTAO (DEVE INDICAR QUAL CAMPO ESTÁ ERRADO NO HTML)
+    FAZER EXCLUIR, EDITAR
+    PROCURAR DISPOSITIVO POR DATALTA=NULL E NAO POR DATA > DATA_INTERNACAO
 
-CONTROLLER DE FICHA ESTÁ RECARREGANDO, COMO FAZER PARA MANTER O MESMO CONTROLLER E SALVAR O QUE O USUARIO DIGITOU NOS INPUTS???
+
+
+
+
+
 
 Tentar separar htmls que tem padroes repetidos em arquivos separados (Problemas e pendencias por exemplo)
 Ficha noturna = diaria porem com campos de auto preenchimento da ficha diaria do mesmo dia
@@ -21,6 +29,13 @@ Navbar deve estar em 2 linhas
 
 /*Faćo a encrip/decrip no server side usando Crypto-JS, essa lib é mesmo safe? Inicio da string sempre igual*/
 
+
 **HOME:
 Refazer o modal para confirmação de geração de novo QR-CODE
 Corrigir aparição do QR-CODE.. Tirar ou encontrar uam forma de deixar isso bonito... um modal talvez?
+
+---
+Implementar sistema de validação de formulários em pessoa (conferir se não vai bugar o editar)
+
+Implementar sistemas das fichas diurnas (recuperar os dados anteriores)
+

@@ -68,6 +68,6 @@ module.exports = function(app){
 
 
         }
-    }
+    };
     return loginController;
-}
+};

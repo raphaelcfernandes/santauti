@@ -4,5 +4,5 @@
 module.exports = function(app){
     var paciente = app.serverSide.controllers.paciente;
     app.get('/getPacientes', paciente.getPacientes);
-    app.get('/getDadosPaciente',paciente.getDadosPaciente);
+    app.get('/getDadosPacienteByIdPacienteAndByUltimaInternacao',paciente.getDadosPacienteByIdPacienteAndByUltimaInternacao);
 };
