@@ -34,7 +34,6 @@ Navbar deve estar em 2 linhas
 
 /*Faćo a encrip/decrip no server side usando Crypto-JS, essa lib é mesmo safe? Inicio da string sempre igual*/
 
-
 **HOME:
 Refazer o modal para confirmação de geração de novo QR-CODE
 Corrigir aparição do QR-CODE.. Tirar ou encontrar uam forma de deixar isso bonito... um modal talvez?
@@ -43,4 +42,8 @@ Corrigir aparição do QR-CODE.. Tirar ou encontrar uam forma de deixar isso bon
 Implementar sistema de validação de formulários em pessoa (conferir se não vai bugar o editar)
 
 Implementar sistemas das fichas diurnas (recuperar os dados anteriores)
+
+**** Implementar JANELA de impressão QR-CODE
+***Implantar sistema de LOGIN com QR-CODE
+
 
