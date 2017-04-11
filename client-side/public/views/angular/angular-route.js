@@ -281,7 +281,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                 'navbar':{
                     templateUrl: '../toolbar/toolbar.html',
                     controller: 'toolbarCtrl'
-                },
+                }
             }
         })
         .state('tabs.metabolico',{

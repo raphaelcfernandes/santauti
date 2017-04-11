@@ -1,28 +1,60 @@
+<div layout="column" ng-cloak class="md-inline-form">
+    <md-content layout-padding>
+        <div>
+            <form name="userForm">
+                <div layout>
+                    <md-input-container class="md-block" flex="auto">
+                        <label for="exameRespiratorio">Exame Respiratorio</label>
+                        <input type="text" id="exameRespiratorio" ng-model="dados.respiratorio.ExameRespiratorio">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex="auto">
+                        <label for="parametroVentilatorio">Parametro Ventilatório</label>
+                        <input type="text" id="parametroVentilatorio" ng-model="dados.respiratorio.ParametroVentilatorio">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex="10">
+                        <label for="pressaoCuff">Pressao do Cuff</label>
+                        <input type="number" min="0" id="pressaoCuff" ng-model="dados.respiratorio.PressaoCuff">
+                    </md-input-container>
+                </div>
+
+                <div layout>
+                    <md-input-container class="md-block" flex="auto">
+                        <label for="gasometriaArterial">Gasometria Arterial</label>
+                        <input type="text" id="gasometriaArterial" ng-model="dados.respiratorio.GasometriaArterial">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex="auto">
+                        <label for="raioxTorax">Raio-x de Tórax</label>
+                        <input type="text" id="raioxTorax" ng-model="dados.respiratorio.RaioxTorax">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex="10">
+                        <label for="canulaLatraquial">Cânula Latraquial</label>
+                        <input type="number" min="0" id="canulaLatraquial" ng-model="dados.respiratorio.CanulaLatraquial">
+                    </md-input-container>
+
+                </div>
+            </form>
+        </div>
+    </md-content>
+
+</div>
+
+
+
+
 <div class="content">
     <form>
         <div class="form-group">
-            <label for="exameRespiratorio">Exame Respiratorio</label>
-            <input type="text" class="form-control" id="exameRespiratorio" ng-model="dados.respiratorio.ExameRespiratorio">
+
         </div>
         <div class="form-group">
-            <label for="parametroVentilatorio">Parametro Ventilatório</label><br>
-            <input type="text" class="form-control" id="parametroVentilatorio" ng-model="dados.respiratorio.ParametroVentilatorio">
+
         </div>
         <div class="form-group">
-            <label for="gasometriaArterial">Gasometria Arterial</label>
-            <input type="text" class="form-control" id="gasometriaArterial" ng-model="dados.respiratorio.GasometriaArterial">
-        </div>
-        <div class="form-group">
-            <label for="raioxTorax">Raio-x de Tórax</label> <br>
-            <input type="text" class="form-control" id="raioxTorax" ng-model="dados.respiratorio.RaioxTorax">
-        </div>
-        <div class="form-group">
-            <label for="pressaoCuff">Pressao do Cuff</label> <br>
-            <input type="number" min="0" id="pressaoCuff" ng-model="dados.respiratorio.PressaoCuff">
-        </div>
-        <div class="form-group">
-            <label for="canulaLatraquial">Cânula Latraquial</label> <br>
-            <input type="number" min="0" id="canulaLatraquial" ng-model="dados.respiratorio.CanulaLatraquial">
+
         </div>
     </form>
 </div>

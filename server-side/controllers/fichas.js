@@ -1,9 +1,7 @@
 /**
  * Created by raphael on 3/31/17.
  */
-/**
- * Created by raphael on 3/28/17.
- */
+
 const Config = require('../config/generalConfig');
 const Jwt = require('jsonwebtoken');
 const privateKey = Config.key.privateKey;

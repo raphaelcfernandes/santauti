@@ -18,7 +18,7 @@ app.controller('neurologicoCtrl', function($scope,$rootScope) {
 
     /*****METHODS DECLARATION****/
     $scope.updateOcular = function(){
-        var ocular = parseInt($scope.ocular);
+        var ocular = parseInt($rootScope.dados.neurologico.AberturaOcular);
         if(anteriorOcular == null)
             anteriorOcular = ocular;
         if(anteriorOcular != ocular){
@@ -28,7 +28,7 @@ app.controller('neurologicoCtrl', function($scope,$rootScope) {
         $scope.resultado += anteriorOcular;
     };
     $scope.updateVerbal = function () {
-        var verbal = parseInt($scope.verbal);
+        var verbal = parseInt($rootScope.dados.neurologico.RespostaVerbal);
         if(anteriorVerbal == null)
             anteriorVerbal = verbal;
         if(anteriorVerbal != verbal){
@@ -38,7 +38,7 @@ app.controller('neurologicoCtrl', function($scope,$rootScope) {
         $scope.resultado += anteriorVerbal;
     };
     $scope.updateMotora = function () {
-        var motora = parseInt($scope.motora);
+        var motora = parseInt($rootScope.dados.neurologico.RespostaMotora);
         if(anteriorMotora == null)
             anteriorMotora = motora;
         if(anteriorMotora != motora){
@@ -48,7 +48,7 @@ app.controller('neurologicoCtrl', function($scope,$rootScope) {
         $scope.resultado += anteriorMotora;
     };
     $scope.updateEscalaRamsay = function () {
-        return parseInt($scope.ramsay);
+        return parseInt($rootScope.dados.neurologico.EscalaRamsay);
     };
     $scope.respostaOcular= {
         model: respostaOcular,
@@ -80,13 +80,14 @@ app.controller('neurologicoCtrl', function($scope,$rootScope) {
     $scope.escalaRamsay = {
         model : escalaRamsay,
         options:[
-            {value: 1, name: 'Grau 1: paciente ansioso, agitado'},
-            {value: 2, name: 'Grau 2: cooperativo, orientado, tranquilo'},
-            {value: 3, name: 'Grau 3: sonolento, atendendo aos comandos'},
-            {value: 4, name: 'Grau 4: dormindo, responde rapidamente ao estímulo glabelar ou ao estímulo sonoro vigoroso'},
-            {value: 5, name: 'Grau 5: dormindo, responde lentamente ao estímulo glabelar ou ao estímulo sonoro vigoroso'},
-            {value: 6, name: 'Grau 6: dormindo, sem resposta'}
+            {value: 1, name: '1 - Paciente ansioso, agitado'},
+            {value: 2, name: '2 - Cooperativo, orientado, tranquilo'},
+            {value: 3, name: '3 - Sonolento, atendendo aos comandos'},
+            {value: 4, name: '4 - Dormindo, responde rapidamente ao estímulo glabelar ou ao estímulo sonoro vigoroso'},
+            {value: 5, name: '5 - Dormindo, responde lentamente ao estímulo glabelar ou ao estímulo sonoro vigoroso'},
+            {value: 6, name: '6 - Dormindo, sem resposta'}
         ]
     };
+
     /*****METHODS DECLARATION****/
 });

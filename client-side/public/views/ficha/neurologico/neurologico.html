@@ -1,97 +1,93 @@
-<div class="content">
-    <form>
-        <div class="form-group">
-            <label for="nivelConsciencia">Nível de Consciência</label>
-            <input type="text" class="form-control" id="nivelConsciencia">
-        </div>
-        <div class="form-group">
-            <label for="pupilas">Pupilas</label>
-            <input type="text" class="form-control" id="pupilas">
-        </div>
-        <div class="form-group">
-            <label>Escala de Glasgow</label><br>
-            <div class="row">
-                <div class="col-sm-3">
-                    <label for="respostaOcular">Abertura Ocular</label>
-                </div>
-                <div class="col-sm-3">
-                    <label for="respostaVerbal">Resposta Verbal</label><br>
-                </div>
-                <div class="col-sm-3">
-                    <label for="respostaMotora">Resposta Motora</label><br>
-                </div>
-                <div class="col-sm-3">
-                    <label for="resultado">Resultado</label><br>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-3">
-                    <select class="form-group" id="respostaOcular" ng-model="ocular" ng-change="updateOcular(option)">
-                        <option ng-repeat="option in respostaOcular.options" value="{{option.value}}">{{option.name}}</option>
-                    </select>
-                </div>
-                <div class="col-sm-3">
-                    <select class="form-group" id="respostaVerbal" ng-model="verbal" ng-change="updateVerbal(option)">
-                        <option ng-repeat="option in respostaVerbal.options" value="{{option.value}}">{{option.name}}</option>
-                    </select>
-                </div>
-                <div class="col-sm-3">
-                    <select class="form-group" id="respostaMotora" ng-model="motora" ng-change="updateMotora(option)">
-                        <option ng-repeat="option in respostaMotora.options" value="{{option.value}}">{{option.name}}</option>
-                    </select>
-                </div>
-                <div class="col-sm-3">
-                    <input type="text" id="resultado" ng-disabled="true" ng-model="resultado">
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="deficitMotor">Deficit Motora</label>
-            <input type="text" class="form-control" id="deficitMotor">
-        </div>
-        <div class="form-group">
-            <div class="row">
-                <div class="col-sm-4">
-                    <label for="pic">PIC</label>
-                </div>
-                <div class="col-sm-4">
-                    <label for="ppc">PPC</label>
-                </div>
-                <div class="col-sm-4">
-                    <label for="sjo2">SjO2</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <input type="number" min="0" id="pic">
-                </div>
-                <div class="col-sm-4">
-                    <input type="number" min="0" id="ppc">
-                </div>
-                <div class="col-sm-4">
-                    <input type="number" min="0" id="sjo2">
-                </div>
-            </div>
-            <br class="clearfix">
-            <div class="row">
-                <div class="col-sm-4">
-                    <label for="sedativo">Dose de Sedativo</label>
-                </div>
-                <div class="col-sm-4">
-                    <label for="escalaRamsay">Escala de Ramsay</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <input type="number" min="0" id="sedativo">
-                </div>
-                <div class="col-sm-5">
-                    <select class="form-group" id="escalaRamsay" ng-model="ramsay" ng-change="updateEscalaRamsay(option)">
-                        <option ng-repeat="option in escalaRamsay.options" value="{{option.value}}">{{option.name}}</option>
-                    </select>
+<div layout="column" ng-cloak class="md-inline-form">
+    <md-content layout-padding>
+        <div>
+            <form name="userForm">
+                <div layout>
+                    <md-input-container class="md-block" flex="auto">
+                        <label>Nível de Consciência</label>
+                        <input ng-model="dados.neurologico.NivelConsciencia" >
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex="auto">
+                        <label>Pupilas</label>
+                        <input ng-model="dados.neurologico.Pupilas">
+                    </md-input-container>
                 </div>
 
-            </div>
+                <div layout>
+                    <md-input-container class="md-block" flex="auto">
+                        <label>Abertura Ocular</label>
+                        <md-select id="respostaOcular" ng-model="dados.neurologico.AberturaOcular" ng-change="updateOcular(option)">
+                            <md-option ng-repeat="option in respostaOcular.options" value="{{option.value}}">{{option.name}}</md-option>
+                        </md-select>
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex="auto">
+                        <label>Resposta Verbal</label>
+                        <md-select id="respostaVerbal" ng-model="dados.neurologico.RespostaVerbal" ng-change="updateVerbal(option)">
+                            <md-option ng-repeat="option in respostaVerbal.options" value="{{option.value}}">{{option.name}}</md-option>
+                        </md-select>
+                    </md-input-container>
+                    <md-input-container class="md-block" flex="auto">
+                        <label>Resposta Motora</label>
+                        <md-select class="form-group" id="respostaMotora" ng-model="dados.neurologico.RespostaMotora" ng-change="updateMotora(option)">
+                            <md-option ng-repeat="option in respostaMotora.options" value="{{option.value}}">{{option.name}}</md-option>
+                        </md-select>
+                    </md-input-container>
+                    <md-input-container class="md-block" flex="auto">
+                        <label>Resultado</label>
+                        <input  disabled ng-model="resultado">
+                    </md-input-container>
+                </div>
+
+                <div layout>
+                    <md-input-container class="md-block" flex="auto">
+                        <label >Deficit Motora</label>
+                        <input type="text" class="form-control" ng-model="dados.neurologico.DeficitMotora">
+                    </md-input-container>
+                </div>
+
+                <div layout>
+                    <md-input-container class="md-block" flex="auto">
+                        <label >PIC</label>
+                        <input type="number" min="0" ng-model="dados.neurologico.PIC">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex="auto">
+                        <label >PPC</label>
+                        <input type="number" min="0" ng-model="dados.neurologico.PPC" ng-pattern="/^[0-9]*$/">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex="auto">
+                        <label >SjO2</label>
+                        <input type="number" min="0" id="teste" ng-model="dados.neurologico.SJO2" ng-pattern="/^[0-9]*$/">
+                        <!--<div ng-messages="userForm.dados.neurologico.SJO2.$error" role="alert" multiple>-->
+                        <!--<div ng-message="required" class="my-message">You must supply a postal code.</div>-->
+                        <!--<div ng-message="pattern" class="my-message">That doesn't look like a valid postal-->
+                        <!--code.-->
+                        <!--</div>-->
+                        <!--<div ng-message="md-maxlength" class="my-message">-->
+                        <!--Don't use the long version silly...we don't need to be that specific...-->
+                        <!--</div>-->
+                        <!--</div>-->
+                    </md-input-container>
+                    <md-input-container class="md-block" flex="auto">
+                        <label >Dose de Sedativo</label>
+                        <input type="number" min="0" ng-model="dados.neurologico.DoseSedativo" ng-pattern="/^[0-9]*$/">
+                    </md-input-container>
+                </div>
+
+                <div >
+                    <md-input-container class="md-block" flex="55">
+                        <label >Escala de Ramsay</label>
+                        <md-select id="escalaRamsay" ng-model="dados.neurologico.EscalaRamsay" ng-change="updateEscalaRamsay(option)">
+                            <md-option ng-repeat="option in escalaRamsay.options" value="{{option.value}}">{{option.name}}</md-option>
+                        </md-select>
+                    </md-input-container>
+                </div>
+
+            </form>
         </div>
-    </form>
+    </md-content>
+
 </div>

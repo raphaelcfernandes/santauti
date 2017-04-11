@@ -1,36 +1,54 @@
-<div class="content">
-    <form>
-        <div class="form-group">
-            <label for="ritmo">Ritmo</label>
-            <input type="text" class="form-control" id="ritmo" ng-model="dados.hemodinamica.Ritmo">
+<div layout="column" ng-cloak class="md-inline-form">
+    <md-content layout-padding>
+        <div>
+            <form name="userForm">
+                <div layout>
+                    <md-input-container class="md-block" flex="auto">
+                        <label>Ritmo</label>
+                        <input type="text"   id="ritmo" ng-model="dados.hemodinamica.Ritmo">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex="10">
+                        <label for="frequencia">Frequencia</label>
+                        <input type="number" min="0" id="frequencia" ng-model="dados.hemodinamica.Frequencia">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex="auto">
+                        <label for="bulhas">Bulhas</label>
+                        <input type="text"   id="bulhas" ng-model="dados.hemodinamica.Bulhas">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex="10">
+                        <label for="pam">PAM</label>
+                        <input type="number" min="0" id="pam" ng-model="dados.hemodinamica.PAM">
+                    </md-input-container>
+                </div>
+
+                <div layout>
+                    <md-input-container class="md-block" flex="auto">
+                        <label for="drogasVasoativas">Drogas Vasoativas</label> <br>
+                        <input type="text" id="drogasVasoativas" ng-model="dados.hemodinamica.DrogasVasoativas">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex="10">
+                        <label for="pvc">PVC</label> <br>
+                        <input type="number" min="0" id="pvc" ng-model="dados.hemodinamica.PVC">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex="auto">
+                        <label for="swanganz">Swan-Ganz</label> <br>
+                        <input type="text" id="swanganz" ng-model="dados.hemodinamica.Swanganz">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex="auto">
+                        <label for="oxigenacaoTissular">Oxigenacão Tissular</label> <br>
+                        <input type="text" id="oxigenacaoTissular" ng-model="dados.hemodinamica.OxigenacaoTissular">
+                    </md-input-container>
+
+                </div>
+            </form>
         </div>
-        <div class="form-group">
-            <label for="frequencia">Frequencia</label><br>
-            <input type="number" min="0" id="frequencia" ng-model="dados.hemodinamica.Frequencia">
-        </div>
-        <div class="form-group">
-            <label for="bulhas">Bulhas</label>
-            <input type="text" class="form-control" id="bulhas" ng-model="dados.hemodinamica.Bulhas">
-        </div>
-        <div class="form-group">
-            <label for="pam">PAM</label> <br>
-            <input type="number" min="0" id="pam" ng-model="dados.hemodinamica.PAM">
-        </div>
-        <div class="form-group">
-            <label for="drogasVasoativas">Drogas Vasoativas</label> <br>
-            <input type="text" class="form-control" id="drogasVasoativas" ng-model="dados.hemodinamica.DrogasVasoativas">
-        </div>
-        <div class="form-group">
-            <label for="pvc">PVC</label> <br>
-            <input type="number" min="0" id="pvc" ng-model="dados.hemodinamica.PVC">
-        </div>
-        <div class="form-group">
-            <label for="swanganz">Swan-Ganz</label> <br>
-            <input type="text" class="form-control" id="swanganz" ng-model="dados.hemodinamica.Swanganz">
-        </div>
-        <div class="form-group">
-            <label for="oxigenacaoTissular">Oxigenacão Tissular</label> <br>
-            <input type="text" class="form-control" id="oxigenacaoTissular" ng-model="dados.hemodinamica.OxigenacaoTissular">
-        </div>
-    </form>
+    </md-content>
+
 </div>
+
