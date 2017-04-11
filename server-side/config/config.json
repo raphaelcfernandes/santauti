@@ -1,21 +1,21 @@
 {
   "development": {
     "username": "raphael",
-    "password": "123",
+    "password": "1234",
     "database": "santauti",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "raphael",
-    "password": "123",
+    "password": "1234",
     "database": "santauti",
     "host": "localhost",
     "dialect": "mysql"
   },
   "production": {
     "username": "raphael",
-    "password": "123",
+    "password": "1234",
     "database": "santauti",
     "host": "localhost",
     "dialect": "mysql"

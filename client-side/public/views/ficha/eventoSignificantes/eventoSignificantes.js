@@ -2,7 +2,46 @@
  * Created by raphael on 2/21/17.
  */
 app.controller('eventoSignificanteCtrl', function($scope,$state,$rootScope) {
+    /*********************SCOPES AND VARIABLES************************/
+    $scope.status = "Mostrar";
+    $scope.flagStatus=false;
+    /*********************SCOPES AND VARIABLES************************/
+
+    /**
+     * flagStatus==false? Esconde eventos significantes antigos
+     * flagStatus==true? Mostra eventos significantes antigos
+     */
+    $scope.mostrarStatus = function () {
+        if($scope.flagStatus==false){
+            $scope.flagStatus = true;
+            $scope.status="Esconder";
+        }
+        else {
+            $scope.flagStatus = false;
+            $scope.status="Mostrar";
+        }
+    };
+    /**
+     * Deve-se criar esse objeto para armazenar os dados das Tabs
+     */
     if($rootScope.dados===undefined) {
         $rootScope.dados = {};
     }
+
+    /**
+     * Verifica se fichasAntigas foi inicializada. Esse if DEVE existir para evitar que seja feito requisicao no banco
+     * toda vez que seja acessado a tab de Eventos Significantes
+     */
+    if($rootScope.fichasAntigas===undefined) {
+        $rootScope.fichasAntigas={};
+        $rootScope.reqWithToken('/getAllEvolucaoByIdPacientePorInternacaoMaisRecente?idPaciente='+sessionStorage.getItem("ID"), '', 'GET', function (success) {
+            for(var i=success.length-1;i>=0;i--)
+                success[i].DataCriado = moment(success[i].DataCriado, 'YYYY-MM-DD H:m').format("LLL")
+            $rootScope.fichasAntigas=success;
+            console.log(success);
+        }, function (err) {
+            console.log(err);
+        });
+    }
+    console.log($rootScope.dados);
 });

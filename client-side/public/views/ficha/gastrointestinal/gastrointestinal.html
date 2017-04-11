@@ -1,16 +1,27 @@
-<div class="content">
-    <form>
-        <div class="form-group">
-            <label for="exameAbdome">Exame do Abdome</label>
-            <input type="text" class="form-control" id="exameAbdome" ng-model="dados.gastrointestinal.ExameAbdome">
+<div layout="column" ng-cloak class="md-inline-form">
+    <md-content layout-padding>
+        <div>
+            <form name="userForm">
+                <div layout>
+                    <md-input-container class="md-block" flex="auto">
+                        <label for="exameAbdome">Exame do Abdome</label>
+                        <input type="text" id="exameAbdome" ng-model="dados.gastrointestinal.ExameAbdome">
+                    </md-input-container>
+                </div>
+
+                <div layout>
+                    <md-input-container class="md-block" flex="auto">
+                        <label for="debitoSondas">Debito de Sondas</label><br>
+                        <input type="text"id="debitoSondas" ng-model="dados.gastrointestinal.DebitoSondas">
+                    </md-input-container>
+                </div>
+                <div layout>
+                    <md-input-container class="md-block" flex="auto">
+                        <label for="evacuacoes">Evacuacoes</label>
+                        <input type="text" id="evacuacoes" ng-model="dados.gastrointestinal.Evacuacoes">
+                    </md-input-container>
+                </div>
+            </form>
         </div>
-        <div class="form-group">
-            <label for="debitoSondas">Debito de Sondas</label><br>
-            <input type="text" class="form-control" id="debitoSondas" ng-model="dados.gastrointestinal.DebitoSondas">
-        </div>
-        <div class="form-group">
-            <label for="evacuacoes">Evacuacoes</label>
-            <input type="text" class="form-control" id="evacuacoes" ng-model="dados.gastrointestinal.Evacuacoes">
-        </div>
-    </form>
+    </md-content>
 </div>

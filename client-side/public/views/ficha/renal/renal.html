@@ -1,56 +1,43 @@
-<div class="content">
-    <form>
-        <div class="form-group">
-            <div class="row">
-                <div class="col-sm-4">
-                    <label for="diurese">Diurese</label>
+<div layout="column" ng-cloak class="md-inline-form">
+    <md-content layout-padding>
+        <div>
+            <form name="userForm">
+                <div layout>
+                    <md-input-container class="md-block" flex="40">
+                        <label for="diurese">Diurese</label>
+                        <input type="number" min="0" id="diurese" ng-model="dados.renal.Diurese">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex="40">
+                        <label for="peso">Peso</label>
+                        <input type="number" min="0" id="peso" ng-model="dados.renal.Peso">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex="40">
+                        <label for="balancoHidrico">Balanćo Hidrico</label>
+                        <input type="number" min="0" id="balancoHidrico" ng-model="dados.renal.BalancoHidrico">
+                    </md-input-container>
                 </div>
-                <div class="col-sm-4">
-                    <label for="peso">Peso</label><br>
+
+                <div layout>
+                    <md-input-container class="md-block" flex="auto">
+                        <label for="tipoDialise">Tipo Diálise</label>
+                        <input type="text" id="tipoDialise" ng-model="dados.renal.TipoDialise">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex="10">
+                        <label for="volumeDialise">Volume Diálise</label>
+                        <input type="number" min="0" id="volumeDialise" ng-model="dados.renal.VolumeDialise">
+                    </md-input-container>
                 </div>
-                <div class="col-sm-4">
-                    <label for="balancoHidrico">Balanćo Hidrico</label><br>
+                <div layout>
+                    <md-input-container class="md-block" flex="auto">
+                        <label for="escoriasRenais">Escorias Renais</label>
+                        <input type="text" id="escoriasRenais" ng-model="dados.renal.EscoriasRenais">
+                    </md-input-container>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <input type="number" min="0" id="diurese" ng-model="dados.renal.Diurese">
-                </div>
-                <div class="col-sm-4">
-                    <input type="number" min="0" id="peso" ng-model="dados.renal.Peso">
-                </div>
-                <div class="col-sm-4">
-                    <input type="number" min="0" id="balancoHidrico" ng-model="dados.renal.BalancoHidrico">
-                </div>
-            </div>
+            </form>
         </div>
-        <div class="form-group">
-            <div class="row">
-                <div class="col-sm-6">
-                    <h4><label >Dialise</label></h4>
-                </div>
-                <br class="clearfix">
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <label for="tipoDialise">Tipo</label>
-                </div>
-                <div class="col-sm-6">
-                    <label for="volumeDialise">Volume</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <input type="text" class="form-control" id="tipoDialise" ng-model="dados.renal.TipoDialise">
-                </div>
-                <div class="col-sm-6">
-                    <input type="number" min="0" id="volumeDialise" ng-model="dados.renal.VolumeDialise">
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="escoriasRenais">Escorias Renais</label>
-            <input type="text" class="form-control" id="escoriasRenais" ng-model="dados.renal.EscoriasRenais">
-        </div>
-    </form>
+    </md-content>
 </div>
+

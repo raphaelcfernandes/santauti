@@ -248,7 +248,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         .state('tabs.infeccioso',{
             url: '/infeccioso',
             data: {
-                'selectedTab': 9
+                'selectedTab': 8
             },
             resolve: {
                 authenticate: usuarioLogado
@@ -264,29 +264,30 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
                 }
             }
         })
-        .state('tabs.dispositivos',{
+        .state('dispositivos',{
             url: '/dispositivos',
-            data: {
-                'selectedTab': 10
-            },
             resolve: {
                 authenticate: usuarioLogado
             },
             views: {
-                'dispositivos': {
+                '': {
                     templateUrl: '../dispositivos/dispositivos.html',
                     controller: 'dispositivosCtrl'
                 },
                 'informacaoBox':{
                     templateUrl: '../informacaoBox/informacaoBox.html',
                     controller: 'informacaoBoxCtrl'
+                },
+                'navbar':{
+                    templateUrl: '../toolbar/toolbar.html',
+                    controller: 'toolbarCtrl'
                 }
             }
         })
         .state('tabs.metabolico',{
             url: '/metabolico',
             data: {
-                'selectedTab': 11
+                'selectedTab': 9
             },
             resolve: {
                 authenticate: usuarioLogado
@@ -305,7 +306,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         .state('tabs.nutricao',{
             url: '/nutricao',
             data: {
-                'selectedTab': 12
+                'selectedTab': 10
             },
             resolve: {
                 authenticate: usuarioLogado
@@ -324,7 +325,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         .state('tabs.psicosocial',{
             url: '/psicosocial',
             data: {
-                'selectedTab': 13
+                'selectedTab': 11
             },
             resolve: {
                 authenticate: usuarioLogado
@@ -343,7 +344,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         .state('tabs.listaproblemas',{
             url: '/listaproblemas',
             data: {
-                'selectedTab': 14
+                'selectedTab': 12
             },
             resolve: {
                 authenticate: usuarioLogado
@@ -362,7 +363,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         .state('tabs.analise',{
             url: '/analise',
             data: {
-                'selectedTab': 15
+                'selectedTab': 13
             },
             resolve: {
                 authenticate: usuarioLogado
@@ -381,7 +382,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         .state('tabs.planos',{
             url: '/planos',
             data: {
-                'selectedTab': 16
+                'selectedTab': 14
             },
             resolve: {
                 authenticate: usuarioLogado
@@ -400,7 +401,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         .state('tabs.pendencias',{
             url: '/pendencias',
             data: {
-                'selectedTab': 17
+                'selectedTab': 15
             },
             resolve: {
                 authenticate: usuarioLogado
@@ -419,7 +420,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         .state('tabs.exames',{
             url: '/exames',
             data: {
-                'selectedTab': 18
+                'selectedTab': 16
             },
             resolve: {
                 authenticate: usuarioLogado
@@ -438,7 +439,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         .state('tabs.examesLab',{
             url: '/examesLab',
             data: {
-                'selectedTab': 19
+                'selectedTab': 17
             },
             resolve: {
                 authenticate: usuarioLogado
@@ -457,7 +458,7 @@ app.config(['$stateProvider','$locationProvider', function ($stateProvider,$loca
         .state('tabs.interconsulta',{
             url: '/interconsulta',
             data: {
-                'selectedTab': 20
+                'selectedTab': 18
             },
             resolve: {
                 authenticate: usuarioLogado

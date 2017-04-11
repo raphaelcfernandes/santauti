@@ -19,6 +19,17 @@ HOME:
     ADEQUAR AS POSICOES E BGROUND DA HOME E TAMANHO DAS COISAS
     CONVERTER ICONES DE GLYPHICON PARA ANGULAR MATERIAL
 
+Fichas:
+    Validaćao de campos obrigatorios e nao-obrigatorios
+    Diaria:
+        Pegar dados de fichas anteriores caso o usuario queira ver o que ja foi escrito. Separar por data + tipo ficha
+    Noturna:
+        Verificar se existe ficha diaria previamente criada no mesmo dia, ou dia anterior.
+        Possibilitar botao de auto-preenchimento, para que os campos da TAB da ficha noturna fique semelhante ao da ficha diaria.
+    Eventos significantes:
+        Melhor 1 campo text area ou a pessoa poder adicionar uma quantidade de eventos como em dispositivo.
+    Neurologico:
+        Dose sedativo: Em ML? Por peso? algum nome em especifico?
 
 FZER ARQUIVO UNICO DE CSS (ASSETS/APP.CSS)
 
