@@ -240,7 +240,7 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
             .title('Reativaćao de Usuário.')
             .textContent('Este usuário será reativado e terá acesso ao sistema novamente. Deseja realizar essa ação?')
             .targetEvent(ev)
-            .ok('Desativar.')
+            .ok('Sim.')
             .cancel('Não.');
 
         $mdDialog.show(confirm).then(function() {
