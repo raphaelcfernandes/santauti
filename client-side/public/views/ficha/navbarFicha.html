@@ -77,3 +77,7 @@
         <div ui-view="interconsulta"></div>
     </md-tab>
 </md-tabs>
+<md-progress-linear md-mode="determinate" value="{{determinateValue}}"></md-progress-linear>
+<md-button ng-show="determinateValue == 100" class="btnhl" aria-label="Enviar" ui-sref="home">
+    <b>Enviar</b>
+</md-button>

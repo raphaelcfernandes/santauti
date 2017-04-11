@@ -3,6 +3,9 @@
  */
 app.controller('navbarCtrl', function($scope,$state,$location) {
 
+
+    $scope.determinateValue = 100;
+
     $scope.selectedIndex=0;
     $scope.$on('$stateChangeSuccess', function(event, toState) {
         $scope.selectedIndex = toState.data.selectedTab;
