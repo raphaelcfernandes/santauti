@@ -21,53 +21,23 @@
 
                 <div layout>
                     <md-input-container class="md-block" flex="auto">
-                        <label for="debitoSondas">Debito de Sondas</label>
-                        <input type="text" class="form-control" id="debitoSondas" ng-model="dados.gastrointestinal.DebitoSondas">
+                        <label for="tipoDialise">Tipo Diálise</label>
+                        <input type="text" id="tipoDialise" ng-model="dados.renal.TipoDialise">
+                    </md-input-container>
+
+                    <md-input-container class="md-block" flex="10">
+                        <label for="volumeDialise">Volume Diálise</label>
+                        <input type="number" min="0" id="volumeDialise" ng-model="dados.renal.VolumeDialise">
                     </md-input-container>
                 </div>
                 <div layout>
                     <md-input-container class="md-block" flex="auto">
-                        <label for="evacuacoes">Evacuacoes</label>
-                        <input type="text" class="form-control" id="evacuacoes" ng-model="dados.gastrointestinal.Evacuacoes">
+                        <label for="escoriasRenais">Escorias Renais</label>
+                        <input type="text" id="escoriasRenais" ng-model="dados.renal.EscoriasRenais">
                     </md-input-container>
                 </div>
             </form>
         </div>
     </md-content>
-
 </div>
 
-
-
-<div class="content">
-    <form>
-        <div class="form-group">
-            <div class="row">
-                <div class="col-sm-6">
-                    <h4><label >Dialise</label></h4>
-                </div>
-                <br class="clearfix">
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <label for="tipoDialise">Tipo</label>
-                </div>
-                <div class="col-sm-6">
-                    <label for="volumeDialise">Volume</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <input type="text" class="form-control" id="tipoDialise" ng-model="dados.renal.TipoDialise">
-                </div>
-                <div class="col-sm-6">
-                    <input type="number" min="0" id="volumeDialise" ng-model="dados.renal.VolumeDialise">
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="escoriasRenais">Escorias Renais</label>
-            <input type="text" class="form-control" id="escoriasRenais" ng-model="dados.renal.EscoriasRenais">
-        </div>
-    </form>
-</div>
