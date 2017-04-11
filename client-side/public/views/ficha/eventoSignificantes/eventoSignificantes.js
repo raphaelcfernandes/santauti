@@ -28,6 +28,16 @@ app.controller('eventoSignificanteCtrl', function($scope,$state,$rootScope) {
         $rootScope.dados = {};
     }
 
+    if(Object.keys($rootScope.dados).length > 0 && $rootScope.quantidadeBarra < Object.keys($rootScope.dados).length){
+        if($rootScope.determinateValue < 100){
+            $rootScope.quantidadeBarra +=1;
+            $rootScope.determinateValue = (5.3)*(Object.keys($rootScope.dados).length);
+            console.log($rootScope.determinateValue);
+            console.log($rootScope.quantidadeBarra)
+        }
+    }
+    //Para Visualizar dentro do objeto, é só checar o tamanho dentro deles, dai consigo dividir a progress bar em elementos
+
     /**
      * Verifica se fichasAntigas foi inicializada. Esse if DEVE existir para evitar que seja feito requisicao no banco
      * toda vez que seja acessado a tab de Eventos Significantes
