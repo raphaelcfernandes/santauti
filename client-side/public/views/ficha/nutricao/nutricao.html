@@ -1,9 +1,47 @@
+
+<div ng-controller='nutricaoCtrl as cc' layout="column" ng-cloak class="md-inline-form">
+    <md-content layout-padding>
+        <div>
+            <form name="userForm">
+                <div layout>
+                    <md-divider></md-divider>
+
+                    <md-radio-group ng-model="cc.selectedId" >
+                        <div ng-repeat='person in cc.contacts' class="row">
+                            <div flex layout='row' layout-padding layout-align="start center" >
+
+                                <div flex style="max-width:200px;">
+                                    {{person.title}}
+                                </div>
+                                <md-radio-button flex
+                                                 ng-value="person.id"
+                                                 class="md-primary" >
+
+                                    {{person.fullName}}
+
+                                </md-radio-button>
+
+                            </div>
+                        </div>
+                    </md-radio-group>
+
+                    <md-divider></md-divider>
+                </div>
+
+
+            </form>
+        </div>
+    </md-content>
+</div>
+
+
+
 <div class="content">
     <form>
         <div class="form-group">
             <div class="row">
                 <div class="col-sm-12">
-                    <h4><label>Recebendo Dieta?</label></h4>
+
                 </div>
             </div>
             <div class="row">
