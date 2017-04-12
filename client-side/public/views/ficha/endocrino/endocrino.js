@@ -3,7 +3,7 @@
  */
 app.controller('endocrinoCtrl', function($scope,$rootScope) {
     if($rootScope.dados===undefined) {
-        $rootScope.dados = {};
+        $rootScope.dados = [];
     }
     if(Object.keys($rootScope.dados).length > 0 && $rootScope.quantidadeBarra < Object.keys($rootScope.dados).length){
         if($rootScope.determinateValue <= 100){

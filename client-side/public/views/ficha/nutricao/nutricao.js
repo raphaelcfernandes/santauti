@@ -3,9 +3,9 @@
  */
 app.controller('nutricaoCtrl', function($scope,$rootScope) {
     if($rootScope.dados===undefined) {
-        $rootScope.dados = {};
+        $rootScope.dados = [];
     }
-
+    $scope.simDieta=false;
     if(Object.keys($rootScope.dados).length > 0 && $rootScope.quantidadeBarra < Object.keys($rootScope.dados).length){
         if($rootScope.determinateValue <= 100){
             $rootScope.quantidadeBarra +=1;

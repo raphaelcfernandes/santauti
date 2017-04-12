@@ -1,77 +1,18 @@
-
-<div ng-controller='nutricaoCtrl as cc' layout="column" ng-cloak class="md-inline-form">
+<div layout="column" ng-cloak class="md-inline-form">
     <md-content layout-padding>
-        <div>
             <form name="userForm">
                 <div layout>
-                    <md-divider></md-divider>
-
-                    <md-radio-group ng-model="cc.selectedId" >
-                        <div ng-repeat='person in cc.contacts' class="row">
-                            <div flex layout='row' layout-padding layout-align="start center" >
-
-                                <div flex style="max-width:200px;">
-                                    {{person.title}}
-                                </div>
-                                <md-radio-button flex
-                                                 ng-value="person.id"
-                                                 class="md-primary" >
-
-                                    {{person.fullName}}
-
-                                </md-radio-button>
-
-                            </div>
-                        </div>
-                    </md-radio-group>
-
-                    <md-divider></md-divider>
+                    <md-input-container class="md-block" flex="auto">
+                        <label for="dieta">Dieta</label>
+                        <textarea id="dieta" ng-model="dados.nutricao.dieta" md-maxlength="150" rows="5" md-select-on-focus></textarea>
+                    </md-input-container>
                 </div>
-
-
+                <div layout>
+                    <md-input-container class="md-block" flex="auto">
+                        <label for="outrasObs">Outras Observacoes</label>
+                        <textarea id="outrasObs" ng-model="dados.nutricao.observacoes" md-maxlength="150" rows="5" md-select-on-focus></textarea>
+                    </md-input-container>
+                </div>
             </form>
-        </div>
     </md-content>
-</div>
-
-
-
-<div class="content">
-    <form>
-        <div class="form-group">
-            <div class="row">
-                <div class="col-sm-12">
-
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <input type="radio" name="dieta" id="simDieta" required>
-                    <label for="simDieta">Sim</label>
-                    <div class="reveal-if-active">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <h4><label>Dieta</label></h4>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <textarea class="form-control" id="dieta" rows="10" ng-model="dados.nutricao.Dieta"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <input type="radio" name="dieta" id="naoDieta">
-                    <label for="naoDieta">Não</label>
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <h4><label for="comentarios">Outros comentários</label></h4>
-            <textarea class="form-control" id="comentarios" rows="10" ng-model="dados.nutricao.Comentarios"></textarea>
-        </div>
-    </form>
 </div>

@@ -25,7 +25,7 @@ app.controller('eventoSignificanteCtrl', function($scope,$state,$rootScope) {
      * Deve-se criar esse objeto para armazenar os dados das Tabs
      */
     if($rootScope.dados===undefined) {
-        $rootScope.dados = {};
+        $rootScope.dados = [];
     }
 
     if(Object.keys($rootScope.dados).length > 0 && $rootScope.quantidadeBarra < Object.keys($rootScope.dados).length){

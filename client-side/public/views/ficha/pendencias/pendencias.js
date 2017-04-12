@@ -9,7 +9,7 @@ app.controller('pendenciasCtrl', function($scope,$rootScope) {
     /********************SCOPES AND VARIABLES **************************/
 
     if($rootScope.dados===undefined) {
-        $rootScope.dados = {};
+        $rootScope.dados = [];
         //$rootScope.dados.pendencias=[];
     }
     if(Object.keys($rootScope.dados).length > 0 && $rootScope.quantidadeBarra < Object.keys($rootScope.dados).length){
@@ -20,7 +20,7 @@ app.controller('pendenciasCtrl', function($scope,$rootScope) {
             console.log($rootScope.quantidadeBarra)
         }
     }
-    $scope.res={};
+    $scope.res=[];
     $rootScope.reqWithToken('/getPendenciasPorIdPaciente?idPaciente='+sessionStorage.getItem("ID"),sessionStorage.getItem("token"), 'GET', function (success) {
         $scope.res=success;
         console.log($scope.res);

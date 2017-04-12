@@ -30,8 +30,13 @@ Fichas:
         Melhor 1 campo text area ou a pessoa poder adicionar uma quantidade de eventos como em dispositivo.
     Neurologico:
         Dose sedativo: Em ML? Por peso? algum nome em especifico?
+    Nutricao:
+        Fazer Dieta aparecer apenas se o kra clicar em SIM na pergunta se Existe Dieta
+    Psicosocial:
+        Igual nutricao (tem exemplo de como fazer no codigo comentado)
 
-FZER ARQUIVO UNICO DE CSS (ASSETS/APP.CSS)
+CSS:
+    md-primary
 
 
 
