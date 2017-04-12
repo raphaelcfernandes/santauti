@@ -13,4 +13,6 @@ app.controller('psicosocialCtrl', function($scope,$rootScope) {
             console.log($rootScope.quantidadeBarra)
         }
     }
+
+
 });

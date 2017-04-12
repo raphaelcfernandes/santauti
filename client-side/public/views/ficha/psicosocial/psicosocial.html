@@ -38,163 +38,53 @@
     </md-content>
 </div>
 
+<md-content>
+    <form>
+        <label><h4>Familiares Inteirados?</h4></label>
+        <md-input-container class="md-block">
+            <md-radio-group ng-model="familiares">
+                <md-radio-button Value="Sim" ng-value="true" aria-label="Sim">Sim</md-radio-button>
+                <md-radio-button Value="Não" ng-value="false" aria-label="Não">Não</md-radio-button>
+            </md-radio-group>
+                <textarea ng-show="familiares"  id="dieta" rows="10" ng-model="dados.psicosocial.FamiliaresInteirados" md-select-on-focus aria-label="dieta"></textarea>
+        </md-input-container>
 
-<!--<div class="content">-->
-    <!--<form>-->
-        <!--<div class="form-group">-->
-            <!--<div class="row">-->
-                <!--<div class="col-sm-12">-->
-                    <!--<h4><label>Familiares Inteirados?</label></h4>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="row">-->
-                <!--<div class="col-sm-4">-->
-                    <!--<input type="radio" name="familiares" id="simFamiliares" required>-->
-                    <!--<label for="simFamiliares">Sim</label>-->
-                    <!--<div class="reveal-if-active">-->
-                        <!--<div class="row">-->
-                            <!--<div class="col-sm-12">-->
-                                <!--<h4><label>Comentário</label></h4>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="row">-->
-                            <!--<div class="col-sm-12">-->
-                                <!--<div class="form-group">-->
-                                    <!--<textarea class="form-control" id="dieta" rows="10" ng-model="dados.psicosocial.FamiliaresInteirados"></textarea>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="col-sm-6">-->
-                    <!--<input type="radio" name="familiares" id="naoFamiliares">-->
-                    <!--<label for="naoFamiliares">Não</label>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="form-group">-->
-            <!--<div class="row">-->
-                <!--<div class="col-sm-12">-->
-                    <!--<h4><label>Depressa/Delirium?</label></h4>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="row">-->
-                <!--<div class="col-sm-4">-->
-                    <!--<input type="radio" name="depressao" id="simDepressao" required>-->
-                    <!--<label for="simDepressao">Sim</label>-->
-                    <!--<div class="reveal-if-active">-->
-                        <!--<div class="row">-->
-                            <!--<div class="col-sm-12">-->
-                                <!--<h4><label>Comentário</label></h4>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="row">-->
-                            <!--<div class="col-sm-12">-->
-                                <!--<div class="form-group">-->
-                                    <!--<textarea class="form-control" id="depressao" rows="10" ng-model="dados.psicosocial.Depressao"></textarea>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="col-sm-6">-->
-                    <!--<input type="radio" name="depressao" id="naoDepressao">-->
-                    <!--<label for="naoDepressao">Não</label>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="form-group">-->
-            <!--<div class="row">-->
-                <!--<div class="col-sm-12">-->
-                    <!--<h4><label>Acompanhamento Psicologico?</label></h4>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="row">-->
-                <!--<div class="col-sm-4">-->
-                    <!--<input type="radio" name="acompanhamento" id="simAcompanhamento" required>-->
-                    <!--<label for="simAcompanhamento">Sim</label>-->
-                    <!--<div class="reveal-if-active">-->
-                        <!--<div class="row">-->
-                            <!--<div class="col-sm-12">-->
-                                <!--<h4><label>Comentário</label></h4>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="row">-->
-                            <!--<div class="col-sm-12">-->
-                                <!--<div class="form-group">-->
-                                    <!--<textarea class="form-control" id="acompanhamento" rows="10" ng-model="dados.psicosocial.AcompanhamentoPsico"></textarea>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="col-sm-6">-->
-                    <!--<input type="radio" name="acompanhamento" id="naoAcompanhamento">-->
-                    <!--<label for="naoDepressao">Não</label>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="form-group">-->
-            <!--<div class="row">-->
-                <!--<div class="col-sm-12">-->
-                    <!--<h4><label>Terapia Ocupacional?</label></h4>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="row">-->
-                <!--<div class="col-sm-4">-->
-                    <!--<input type="radio" name="terapia" id="simTerapia" required>-->
-                    <!--<label for="simTerapia">Sim</label>-->
-                    <!--<div class="reveal-if-active">-->
-                        <!--<div class="row">-->
-                            <!--<div class="col-sm-12">-->
-                                <!--<h4><label>Comentário</label></h4>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="row">-->
-                            <!--<div class="col-sm-12">-->
-                                <!--<div class="form-group">-->
-                                    <!--<textarea class="form-control" id="terapia" rows="10" ng-model="dados.psicosocial.TerapiaOcupacional"></textarea>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="col-sm-6">-->
-                    <!--<input type="radio" name="terapia" id="naoTerapia">-->
-                    <!--<label for="naoTerapia">Não</label>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="form-group">-->
-            <!--<div class="row">-->
-                <!--<div class="col-sm-12">-->
-                    <!--<h4><label>Storm?</label></h4>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="row">-->
-                <!--<div class="col-sm-4">-->
-                    <!--<input type="radio" name="storm" id="simStorm" required>-->
-                    <!--<label for="simStorm">Sim</label>-->
-                    <!--<div class="reveal-if-active">-->
-                        <!--<div class="row">-->
-                            <!--<div class="col-sm-12">-->
-                                <!--<h4><label>Comentário</label></h4>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="row">-->
-                            <!--<div class="col-sm-12">-->
-                                <!--<div class="form-group">-->
-                                    <!--<textarea class="form-control" id="storm" rows="10" ng-model="dados.psicosocial.Storm"></textarea>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
-                <!--<div class="col-sm-6">-->
-                    <!--<input type="radio" name="storm" id="naoStorm">-->
-                    <!--<label for="naoStorm">Não</label>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</form>-->
-<!--</div>-->
+        <label><h4>Depressa/Delirium?</h4></label>
+        <md-input-container class="md-block">
+            <md-radio-group ng-model="depres">
+                <md-radio-button Value="Sim" ng-value="true" aria-label="Sim">Sim</md-radio-button>
+                <md-radio-button Value="Não" ng-value="false" aria-label="Não">Não</md-radio-button>
+            </md-radio-group>
+            <textarea ng-show="depres" id="depressao" rows="10" ng-model="dados.psicosocial.Depressao" aria-label="depressao"></textarea>
+        </md-input-container>
+
+        <label><h4>Acompanhamento Psicológico?</h4></label>
+        <md-input-container class="md-block">
+            <md-radio-group ng-model="psico">
+                <md-radio-button Value="Sim" ng-value="true" aria-label="Sim">Sim</md-radio-button>
+                <md-radio-button Value="Não" ng-value="false" aria-label="Não">Não</md-radio-button>
+            </md-radio-group>
+            <textarea ng-show="psico"  id="acompanhamento" rows="10" ng-model="dados.psicosocial.AcompanhamentoPsico" aria-label="Psico"></textarea>
+        </md-input-container>
+
+        <label><h4>Terapia Ocupacional?</h4></label>
+        <md-input-container class="md-block">
+            <md-radio-group ng-model="tocup">
+                <md-radio-button Value="Sim" ng-value="true" aria-label="Sim">Sim</md-radio-button>
+                <md-radio-button Value="Não" ng-value="false" aria-label="Não">Não</md-radio-button>
+            </md-radio-group>
+            <textarea ng-show="tocup" id="terapia" rows="10" ng-model="dados.psicosocial.TerapiaOcupacional" aria-label="TOcup"></textarea>
+
+        </md-input-container>
+
+        <label><h4>Storm?</h4></label>
+        <md-input-container class="md-block">
+            <md-radio-group ng-model="storm">
+                <md-radio-button Value="Sim" ng-value="true" aria-label="Sim">Sim</md-radio-button>
+                <md-radio-button Value="Não" ng-value="false" aria-label="Não">Não</md-radio-button>
+            </md-radio-group>
+            <textarea ng-show="storm" id="storm" rows="10" ng-model="dados.psicosocial.Storm" aria-label="Storm"></textarea>
+        </md-input-container>
+    </form>
+</md-content>
+<!--
