@@ -109,7 +109,13 @@ md-tabs > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item
     border-bottom: groove;
 
 }
-
+md-progress-linear{
+    overflow-y: auto;
+}
+[role="tabpanel"] {
+    transition-delay: 400ms;
+    /*transition-duration: 800ms;*/
+}
 /*------------------------------------------------------------------------------------------------------------------*/
 /*Css da página de login*/
 .login-msg{

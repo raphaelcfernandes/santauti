@@ -23,6 +23,7 @@ app.controller('navbarCtrl', function($scope,$state,$location,$rootScope) {
         $scope.button=true;
     };
     $scope.destroySession = function () {
+        $state.go("login");
         sessionStorage.clear();
     };
 });
