@@ -3,6 +3,7 @@
  */
 app.controller('navbarCtrl', function($scope,$state,$location,$rootScope) {
 
+    $scope.currentNavItem = "diaria";
 
 
     if($rootScope.determinateValue === undefined){

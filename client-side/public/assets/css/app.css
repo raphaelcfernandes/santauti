@@ -70,7 +70,8 @@ input[type="radio"]:checked ~ .reveal-if-active, input[type="checkbox"]:checked 
     font-size: 20px !important;
     font-family: "Roboto", sans-serif !important;
     color:blue !important;
-    margin-left: 40%;
+    margin-left: 41%;
+    margin-bottom: 10px;
 }
 .md-toolbar-tools{
     background-color: #ffffff!important;
@@ -106,7 +107,7 @@ md-tabs > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item
 }
 .informacaoClass{
     border-bottom: groove;
-    border-top: groove;
+
 }
 
 /*------------------------------------------------------------------------------------------------------------------*/
