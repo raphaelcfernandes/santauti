@@ -4,11 +4,9 @@
 <!--</div>-->
 <div class="container" ng-show="nivelProfissional==1">
     <md-content class="content_custom bgs">
-        <div class="cols-sm-1" >
+        <div layout = "row" layout-align="end center" >
             <md-button type="button" class="md-raised md-primary" ng-click="mostrarStatus()">
                 <span class="glyphicon glyphicon-qrcode"></span> Mostrar apenas {{status}}</md-button>
-        </div>
-        <div class="col-sm-4 col-sm-offset-6">
             <div class="paddin">
                 <md-input-container class="md-block" flex-gt-sm="" align="left">
                     <input id="busca" type="search" ng-model="q" placeholder="Filtrar {{nomeUtilizador}}" aria-label="filter friends" />
