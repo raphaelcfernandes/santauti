@@ -12,7 +12,7 @@
     background: #ef0209;
 }
 .content_custom{
-    background-color: #f7f7f7;
+    /*background-color: #f7f7f7;*/
     position: relative;
 }
 .md-secondary{
@@ -162,7 +162,7 @@ md-tabs > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item
 .md_card{
     max-width: 400px;
     width: 400px;
-    height: 505px;
+    height: 510px;
     background-color: #ffffff;
     position: relative;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);

@@ -2,37 +2,38 @@
 <!--MENU PARA ADMIN VER OS USUARIOS PROFISSIONAIS-->
 <!--<div id ="bg2">-->
 <!--</div>-->
-<div class="container" ng-show="nivelProfissional==1">
-    <md-content class="content_custom bgs">
-        <div layout = "row" layout-align="end center" >
+<div layout="column" ng-show="nivelProfissional==1" class ="bgs">
+    <md-content class="content_custom">
+        <div layout = "row" layout-align="start center" >
             <md-button type="button" class="md-raised md-primary" ng-click="mostrarStatus()">
-                <span class="glyphicon glyphicon-qrcode"></span> Mostrar apenas {{status}}</md-button>
-            <div class="paddin">
-                <md-input-container class="md-block" flex-gt-sm="" align="left">
+                <span class="glyphicon glyphicon-qrcode"></span> Mostrar {{status}}</md-button>
+
+            <md-button class="md-raised md-primary paddin" ng-click="adicionarNovo()">
+                <span class="glyphicon glyphicon-plus-sign"></span> Criar Novo</md-button>
+
+            <div flex="18" class ="paddin">
+                <md-input-container class="md-block" align="left">
                     <input id="busca" type="search" ng-model="q" placeholder="Filtrar {{nomeUtilizador}}" aria-label="filter friends" />
                 </md-input-container>
             </div>
         </div>
-        <div>
-            <md-button class="md-raised md-primary paddin" ng-click="adicionarNovo()">
-                <span class="glyphicon glyphicon-plus-sign"></span> Criar Novo</md-button>
-        </div>
     </md-content>
-    <md-content class="content_custom bgs">
-        <div class="table-responsive">
-            <md-list-item ng-repeat="pessoa in pessoas | orderBy:'name' | filter:q as results" ng-if="pessoa.Ativo==1" ng-show="flagStatus==false" ng-click="goToPerson()" class="noright">
-                <div class="md-list-item-text">
-                    <h3>{{pessoa.nome}} {{pessoa.sobrenome}}</h3>
-                </div>
-                <md-button type="button" class="md-raised md-secondary " ng-click="gerarQrCode($event,pessoa.id,pessoa.qrkey)">
-                    <span class="glyphicon glyphicon-qrcode"></span> Gerar QR-Code</md-button>
-                <md-button type="button" class=" md-secondary md-raised" ng-click="editar(pessoa.id)">
-                    <span class="glyphicon glyphicon-pencil"></span> Alterar Dados</md-button>
-                <md-button type="button" class="md-raised md-secondary" ng-click="showDesativar(pessoa.id,$event)">
-                    <span class="glyphicon glyphicon-trash"></span> Desativar Usuário</md-button>
-            </md-list-item>
-        </div>
+    <md-content class="content_custom">
+
+        <md-list-item ng-repeat="pessoa in pessoas | orderBy:'name' | filter:q as results" ng-if="pessoa.Ativo==1" ng-show="flagStatus==false" ng-click="goToPerson()" class="noright">
+            <div class="md-list-item-text">
+                <h3>{{pessoa.nome}} {{pessoa.sobrenome}}</h3>
+            </div>
+            <md-button type="button" class="md-raised md-secondary " ng-click="gerarQrCode($event,pessoa.id,pessoa.qrkey)">
+                <span class="glyphicon glyphicon-qrcode"></span> Gerar QR-Code</md-button>
+            <md-button type="button" class=" md-secondary md-raised" ng-click="editar(pessoa.id)">
+                <span class="glyphicon glyphicon-pencil"></span> Alterar Dados</md-button>
+            <md-button type="button" class="md-raised md-secondary" ng-click="showDesativar(pessoa.id,$event)">
+                <span class="glyphicon glyphicon-trash"></span> Desativar</md-button>
+        </md-list-item>
+
     </md-content>
+
     <md-content class="content_custom">
         <div class="table-responsive">
             <md-list-item ng-repeat="pessoa in pessoas | orderBy:'name' | filter:q as results" ng-if="pessoa.Ativo==0" ng-show="flagStatus==true" ng-click="goToPerson()" class="noright">
@@ -47,19 +48,16 @@
 <!--MENU PARA ADMIN VER OS USUARIOS PROFISSIONAIS-->
 
 <!--MENU PARA OS PROFISSIONAIS VER OS PACIENTES-->
-<div class="container" ng-show="nivelProfissional!==1">
+<div layout="column" ng-show="nivelProfissional!==1">
     <md-content class="content_custom">
-        <div class="col-sm-4 col-sm-offset-6">
-            <div class="paddin">
-                <md-input-container class="md-block" flex-gt-sm="" align="right">
-                    <label>Buscar</label>
+        <div layout="row" layout-align="start center">
+            <md-button class="md-raised md-primary paddin" ng-click="adicionarNovo()">
+                <span class="glyphicon glyphicon-plus-sign"></span> Criar Novo</md-button>
+            <div flex="20" class ="paddin">
+                <md-input-container class="md-block"  align="left">
                     <input id= "buscarPacientes" type="search" ng-model="q" placeholder="Filtrar {{nomeUtilizador}}" aria-label="filter friends" />
                 </md-input-container>
             </div>
-        </div>
-        <div>
-            <md-button class="md-raised md-primary paddin" ng-click="adicionarNovo()">
-                <span class="glyphicon glyphicon-plus-sign"></span> Criar Novo</md-button>
         </div>
     </md-content>
     <md-content class="content_custom">
@@ -90,7 +88,7 @@
                         </md-menu-item>
                     </md-menu-content>
                 </md-menu>
-                <md-button type="button" class="md-raised md-secondary" ng-click=""> <span class="glyphicon glyphicon-check"></span> Encerrar Paciente</md-button>
+                <md-button type="button" class="md-raised md-secondary" ng-click=""> <span class="glyphicon glyphicon-check"></span>Encerrar</md-button>
             </md-list-item>
             <md-list-item ng-repeat="pessoa in pessoas | orderBy:'name' | filter:q as results" ng-if="pessoa.internado==0" ng-show="flagStatus==true" ng-click="goToPerson()" class="noright">
                 <div class="md-list-item-text">
@@ -123,7 +121,7 @@
         </div>
     </md-content>
 </div>
-
+</div>
 <!--MENU PARA OS PROFISSIONAIS VER OS PACIENTES-->
 
 
