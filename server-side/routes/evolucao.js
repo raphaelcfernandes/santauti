@@ -4,4 +4,5 @@
 module.exports = function(app){
     var evolucao = app.serverSide.controllers.evolucao;
     app.get('/getAllEvolucaoByIdPacientePorInternacaoMaisRecente',evolucao.getAllEvolucaoByIdPacientePorInternacaoMaisRecente);
+    app.post('/salvarFichaEvolucao',evolucao.salvarFichaEvolucao);
 };

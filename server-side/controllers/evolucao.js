@@ -7,6 +7,7 @@ const Jwt = require('jsonwebtoken');
 const privateKey = Config.key.privateKey;
 var models = require('../models/index');
 const moment = require('moment');
+
 module.exports = function(app){
 
     Fichas = app.serverSide.models.index.Fichas;
@@ -39,6 +40,22 @@ module.exports = function(app){
                     });
                 });
             }catch(err){
+                res.sendStatus(401);
+            }
+        },
+        salvarFichaEvolucao: function (req,res) {
+            try {
+                Jwt.verify(req.headers.access_token, privateKey);
+                console.log("MOMENT QUE O NODE CONVERTE: "+moment().format('YYYY-MM-DD H:m:s'));
+                Fichas.create({
+                    Registro: parseInt(req.query.RegistroMedico),
+                    IDPaciente: parseInt(req.query.idPaciente),
+                    DataCriado: moment().format('YYYY-MM-DD H:m:s'),
+                    DataModificado: moment().format('YYYY-MM-DD H:m:s')
+                }).then(function (result) {
+
+                })
+            } catch (err) {
                 res.sendStatus(401);
             }
         }

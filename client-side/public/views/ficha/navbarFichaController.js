@@ -6,8 +6,8 @@ app.controller('navbarCtrl', function($scope,$state,$location,$rootScope) {
     $scope.currentNavItem = "diaria";
 
 
-    if($rootScope.determinateValue === undefined){
-        $rootScope.determinateValue = 0;
+    if($rootScope.determinatedValue === undefined){
+        $rootScope.determinatedValue = 100;
     }
     if($rootScope.quantidadeBarra === undefined){
         $rootScope.quantidadeBarra = 0;
@@ -25,4 +25,13 @@ app.controller('navbarCtrl', function($scope,$state,$location,$rootScope) {
     $scope.destroySession = function () {
         sessionStorage.clear();
     };
+    $scope.enviarFicha = function () {
+        console.log($rootScope.dados);
+        $rootScope.reqWithToken('/salvarFichaEvolucao?idPaciente='+$rootScope.cache.paciente.ID+'&RegistroMedico='+$rootScope.cache.paciente.Responsavel,
+            $rootScope.dados, 'POST', function (success) {
+            console.log(success);
+        }, function (err) {
+            $scope.getDataErro(err);
+        });
+    }
 });

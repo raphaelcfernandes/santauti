@@ -9,7 +9,7 @@ app.controller('pendenciasCtrl', function($scope,$rootScope) {
     /********************SCOPES AND VARIABLES **************************/
 
     if($rootScope.dados===undefined) {
-        $rootScope.dados = [];
+        $rootScope.dados = {};
         //$rootScope.dados.pendencias=[];
     }
     if(Object.keys($rootScope.dados).length > 0 && $rootScope.quantidadeBarra < Object.keys($rootScope.dados).length){

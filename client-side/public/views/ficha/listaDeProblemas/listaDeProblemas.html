@@ -1,19 +1,19 @@
-<div layout="column" ng-cloak class="md-inline-form">
-    <form>
-        <md-input-container class="md-block">
-            <h3><label>Antecedentes Pessoais</label></h3>
-            <textarea rows="5" ng-model="dados.listaProblemas.AntecedentesPessoais"></textarea>
-        </md-input-container>
-        <md-input-container class="md-block">
-            <h3><label>Diagnostico de Entrada</label></h3>
-            <textarea rows="5" ng-model="dados.listaProblemas.DiagnosticoEntrada"></textarea>
-        </md-input-container>
-        <md-input-container class="md-block">
-            <h3><label>Comentarios</label></h3>
-            <textarea rows="5" ng-model="dados.listaProblemas.Comentarios"></textarea>
-        </md-input-container>
-    </form>
-</div>
+<!--<div layout="column" ng-cloak class="md-inline-form">-->
+    <!--<form>-->
+        <!--<md-input-container class="md-block">-->
+            <!--<h3><label>Antecedentes Pessoais</label></h3>-->
+            <!--<textarea rows="5" ng-model="dados.listaProblemas.AntecedentesPessoais"></textarea>-->
+        <!--</md-input-container>-->
+        <!--<md-input-container class="md-block">-->
+            <!--<h3><label>Diagnostico de Entrada</label></h3>-->
+            <!--<textarea rows="5" ng-model="dados.listaProblemas.DiagnosticoEntrada"></textarea>-->
+        <!--</md-input-container>-->
+        <!--<md-input-container class="md-block">-->
+            <!--<h3><label>Comentarios</label></h3>-->
+            <!--<textarea rows="5" ng-model="dados.listaProblemas.Comentarios"></textarea>-->
+        <!--</md-input-container>-->
+    <!--</form>-->
+<!--</div>-->
 
 <div class="content">
     <div class="row" ng-show="items.length>0">
@@ -30,10 +30,9 @@
     <div ng-repeat="item in items">
         <div class="row">
             <div class="col-sm-5">
-                <input type="text" placeholder="{{item.questionPlaceholder}}" ng-model="item.question" class="form-control"
-                       ng-disabled="item.resolvido">
+                <input type="text" placeholder="Descricao" ng-model="item.question">
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-4">
                 <div class="form-group">
                     <div class="input-group" moment-picker="item.DataInsercao"
                          format="LLL"
@@ -49,29 +48,6 @@
                         </span>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-2" ng-show="item.resolvido">
-                <div class="form-group">
-                    <div class="input-group" moment-picker="item.DataInsercao"
-                         format="LLL"
-                         min-view="decade"
-                         today="true"
-                         minutes-step= 1>
-                        <input name="DataNascimento" class="form-control"
-                               placeholder="Selecione uma data"
-                               ng-model="item.DataInsercao"
-                               ng-model-options="{ updateOn: 'blur' }">
-                        <span class="input-group-addon">
-                            <i class="glyphicon glyphicon-calendar"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-1" ng-hide="item.resolvido">
-                <button ng-click="resolvido(item.id)">Resolvido</button>
-            </div>
-            <div class="col-sm-2" ng-show="item.resolvido">
-                <button ng-click="cancelarResolvido(item.id)">Refazer aćão</button>
             </div>
             <div class="col-sm-1">
                 <button ng-click="remove(item.id)">Excluir</button>

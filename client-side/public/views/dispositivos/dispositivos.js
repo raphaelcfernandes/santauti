@@ -7,7 +7,7 @@ app.controller('dispositivosCtrl', function($scope,$rootScope,$state) {
     $scope.items = [];
     $scope.flagDispositivosShow=false;
     $scope.id=0;
-    $scope.Dispositivos = [
+    $scope.Dispositivos =   [
         { 'nome' : 'Cateter Venoso Central' },
         { 'nome' : 'Cateter De Hemodialise' },
         { 'nome' : 'Cateter de PAI' },
