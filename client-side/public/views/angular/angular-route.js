@@ -585,10 +585,10 @@ app.config(function($mdThemingProvider) {
         .backgroundPalette('paletaBranca')
     $mdThemingProvider
         .theme('temaToolbar')
-        .primaryPalette('paletaAzul')
-        .warnPalette('paletaAzul')
-        .accentPalette('paletaAzul')
-        .backgroundPalette('paletaAzul');
+        .primaryPalette('paletaBranca')
+        .warnPalette('paletaBranca')
+        .accentPalette('paletaBranca')
+        .backgroundPalette('paletaBranca');
 });
 //exemplos de uso da paleta de cores
 // .backgroundPalette('light-blue')
