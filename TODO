@@ -20,6 +20,9 @@ HOME:
     CONVERTER ICONES DE GLYPHICON PARA ANGULAR MATERIAL
 
 Fichas:
+    HORARIO DE VERAO? COMO FZER? NA HORA DE INSERIR A FICHA PEGA O DATE.NOW(), E SE FOR HORARIO DE VERAO?
+    LEMBRANDO Q O SEQULIZE (CONFIG.JSON) TEM UM TIMEZONE-=03:00
+    
     Validaćao de campos obrigatorios e nao-obrigatorios
     Diaria:
         Pegar dados de fichas anteriores caso o usuario queira ver o que ja foi escrito. Separar por data + tipo ficha

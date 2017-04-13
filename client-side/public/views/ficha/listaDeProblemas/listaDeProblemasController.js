@@ -7,10 +7,10 @@ app.controller('listaDeProblemaCtrl', function($scope,$state,$rootScope) {
         $rootScope.dados = {};
     }
     if(Object.keys($rootScope.dados).length > 0 && $rootScope.quantidadeBarra < Object.keys($rootScope.dados).length){
-        if($rootScope.determinateValue <= 100){
+        if($rootScope.determinatedValue <= 100){
             $rootScope.quantidadeBarra +=1;
-            $rootScope.determinateValue = 100; /*(5.3)*(Object.keys($rootScope.dados).length);*/
-            console.log($rootScope.determinateValue);
+            $rootScope.determinatedValue = 100; /*(5.3)*(Object.keys($rootScope.dados).length);*/
+            console.log($rootScope.determinatedValue);
             console.log($rootScope.quantidadeBarra)
         }
     }

@@ -7,7 +7,7 @@ app.controller('navbarCtrl', function($scope,$state,$location,$rootScope) {
 
 
     if($rootScope.determinatedValue === undefined){
-        $rootScope.determinatedValue = 100;
+        $rootScope.determinatedValue = 0;
     }
     if($rootScope.quantidadeBarra === undefined){
         $rootScope.quantidadeBarra = 0;
@@ -23,6 +23,7 @@ app.controller('navbarCtrl', function($scope,$state,$location,$rootScope) {
         $scope.button=true;
     };
     $scope.destroySession = function () {
+        $state.go("login");
         sessionStorage.clear();
     };
     $scope.enviarFicha = function () {
