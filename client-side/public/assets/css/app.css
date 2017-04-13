@@ -156,7 +156,7 @@ md-tabs > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item
     margin-bottom: 10px;
     background-color: #5bc0de;
 }
-.md-primary{
+.md-button.md-primary{
     background-color: #0071bb!important;
 }
 .md_card{

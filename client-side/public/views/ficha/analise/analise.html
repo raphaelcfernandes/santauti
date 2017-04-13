@@ -1,8 +1,30 @@
-<div class="content">
+<div >
+    <!--<md-button type="button" class="md-raised md-primary" ng-click="mostrarStatus()">-->
+        <!--<span class="glyphicon glyphicon-qrcode"></span> {{status}} eventos significantes de fichas anteriores</md-button>-->
+    <!--<md-content class="md-padding" layout-xs="column" layout="row" ng-show="flagStatus===true">-->
+        <!--<div flex-xs flex-gt-xs="50" layout="column">-->
+            <!--<md-card md-theme-watch>-->
+                <!--<md-card-title>-->
+                    <!--<md-card-title-text>-->
+                        <!--<span class="md-headline">Registros anteriores</span>-->
+                    <!--</md-card-title-text>-->
+                <!--</md-card-title>-->
+                <!--<md-card-content>-->
+                    <!--<div class="table-responsive">-->
+                        <!--<md-list-item ng-repeat="i in fichasAntigas " class="noright">-->
+                            <!--<div class="md-list-item-text">-->
+                                <!--<h3>{{i.Evolucao.EventosSignificantes}} em: {{i.DataCriado}}</h3>-->
+                            <!--</div>-->
+                        <!--</md-list-item>-->
+                    <!--</div>-->
+                <!--</md-card-content>-->
+            <!--</md-card>-->
+        <!--</div>-->
+    <!--</md-content>-->
     <form>
-        <div class="form-group">
-            <h2><label for="exampleTextarea">Análise</label></h2>
-            <textarea class="form-control" id="exampleTextarea" ng-model="dados.analise" rows="20"></textarea>
-        </div>
+        <md-input-container class="md-block">
+            <h3><label>Análise</label></h3>
+            <textarea ng-model="dados.analise" md-maxlength="150" rows="5" md-select-on-focus></textarea>
+        </md-input-container>
     </form>
 </div>

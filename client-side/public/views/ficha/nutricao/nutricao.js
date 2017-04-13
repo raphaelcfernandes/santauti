@@ -3,8 +3,18 @@
  */
 app.controller('nutricaoCtrl', function($scope,$rootScope) {
     if($rootScope.dados===undefined) {
-        $rootScope.dados = {};
+        $rootScope.dados = [];
     }
+    $scope.simDieta=false;
+    if(Object.keys($rootScope.dados).length > 0 && $rootScope.quantidadeBarra < Object.keys($rootScope.dados).length){
+        if($rootScope.determinateValue <= 100){
+            $rootScope.quantidadeBarra +=1;
+            $rootScope.determinateValue = (5.3)*(Object.keys($rootScope.dados).length);
+            console.log($rootScope.determinateValue);
+            console.log($rootScope.quantidadeBarra)
+        }
+    }
+
     var self = this;
 
     self.contacts = [{
@@ -32,4 +42,5 @@ app.controller('nutricaoCtrl', function($scope,$rootScope) {
     self.selectedUser = function() {
         return $filter('filter')(self.contacts, { id: self.selectedId })[0].lastName;
     };
+
 });

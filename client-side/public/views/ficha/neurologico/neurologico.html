@@ -1,7 +1,7 @@
 <div layout="column" ng-cloak class="md-inline-form">
     <md-content layout-padding>
         <div>
-            <form name="userForm">
+            <form name="userForm" novalidate>
                 <div layout>
                     <md-input-container class="md-block" flex="auto">
                         <label>Nível de Consciência</label>
@@ -60,15 +60,11 @@
 
                     <md-input-container class="md-block" flex="auto">
                         <label >SjO2</label>
-                        <input type="number" min="0" id="teste" ng-model="dados.neurologico.SJO2" ng-pattern="/^[0-9]*$/">
-                        <!--<div ng-messages="userForm.dados.neurologico.SJO2.$error" role="alert" multiple>-->
-                        <!--<div ng-message="required" class="my-message">You must supply a postal code.</div>-->
-                        <!--<div ng-message="pattern" class="my-message">That doesn't look like a valid postal-->
-                        <!--code.-->
-                        <!--</div>-->
-                        <!--<div ng-message="md-maxlength" class="my-message">-->
-                        <!--Don't use the long version silly...we don't need to be that specific...-->
-                        <!--</div>-->
+                        <input type="number" min="0" ng-model="dados.neurologico.SJO2" ng-pattern="/^[0-9]*$/" required>
+                        <!--<div ng-messages="userForm.email.$error" role="alert" multiple>-->
+                            <!--<div ng-message="required" >That doesn't look like a valid postal-->
+                                <!--code.-->
+                            <!--</div>-->
                         <!--</div>-->
                     </md-input-container>
                     <md-input-container class="md-block" flex="auto">
