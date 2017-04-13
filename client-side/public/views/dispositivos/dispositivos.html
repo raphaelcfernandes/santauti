@@ -13,28 +13,29 @@
             </md-card-title>
             <md-card-content>
                 <div class="table-responsive">
-                    <div layout="row">
-                        <div flex>
+                    <div layout="row" layout-wrap layout-align="space-around center">
+                        <div flex="33">
                             Dispositivo
                         </div>
-                        <div flex>
+                        <div flex ="33">
                             Inserido em
                         </div>
-                        <div flex>
+                        <div flex="33">
                             Removido em
                         </div>
                     </div>
-                    <md-list-item ng-repeat="dispositivo in dispositivos" class="noright" ng-if="dispositivo.DataFim !== null">
-                        <div layout="row" layout-align="space-around center">
-
+                    <div ng-repeat="dispositivo in dispositivos" ng-if="dispositivo.DataFim !== null" class="md-list-item-text" layout="row" layout-align="space-around center">
+                        <div flex="33">
                             {{dispositivo.DispositivoDescricao}}
-
+                        </div>
+                        <div flex="33">
                             {{dispositivo.DataInicio}}
+                        </div>
+                        <div flex="33">
 
                             {{dispositivo.DataFim}}
-
                         </div>
-                    </md-list-item>
+                    </div>
                 </div>
             </md-card-content>
         </md-card>
@@ -50,7 +51,7 @@
             <h3><label>Dispositivos conectados ao Paciente</label></h3>
         </div>
         <form>
-            <div ng-repeat="dispositivo in dispositivos" ng-if="dispositivo.DataFim === null">
+            <div ng-repeat="dispositivo in dispositivos" ng-if="dispositivo.DataFim === null" >
                 <div class="row">
                     <div class="col-sm-2">
                         {{dispositivo.DispositivoDescricao}}
