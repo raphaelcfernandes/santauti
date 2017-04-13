@@ -1,227 +1,231 @@
-<form title="formExames">
-    <div>
-        <h4><label>Raio-x de Torax</label></h4>
-    </div>
-    <div>
-        <md-input-container>
-            <h4><label>Data</label></h4>
-            <div moment-picker="dados.exame.DataRaioxTorax"
-                 locale="pt-br"
-                 format="L"
-                 min-view="decade"
-                 autoclose="true"
-                 today="true">
-                <input name="DataNascimento" class="form-control"
-                       placeholder="Selecione uma data"
-                       ng-model="dados.exame.DataRaioxTorax"
-                       ng-model-options="{ updateOn: 'blur' }">
-                <span class="input-group-addon">
+<div layout="column" ng-cloak class="md-inline-form">
+    <form title="formExames">
+        <div>
+            <h4><label>Raio-x de Torax</label></h4>
+        </div>
+        <div>
+            <md-input-container>
+                <h4><label>Data</label></h4>
+                <div moment-picker="dados.exame.DataRaioxTorax"
+                     locale="pt-br"
+                     format="LLL"
+                     min-view="decade"
+                     autoclose="true"
+                     today="true">
+                    <input name="DataNascimento" class="form-control"
+                           placeholder="Selecione uma data"
+                           ng-model="dados.exame.DataRaioxTorax"
+                           ng-model-options="{ updateOn: 'blur' }">
+                    <span class="input-group-addon">
                     <i class="glyphicon glyphicon-calendar"></i>
                 </span>
-            </div>
-        </md-input-container>
-        <md-input-container>
-            <h4><label>Descricao</label></h4>
-            <input title="raioxdesc" type="text" class="form-control" ng-model="dados.exame.DataRaioxToraxDescricao">
-        </md-input-container>
-    </div>
-    <div>
-        <h4><label>Ecocardiograma</label></h4>
-        <md-input-container>
-            <h4><label>Data</label></h4>
-            <div class="input-group" moment-picker="dados.exame.EcoCardiograma"
-                 locale="pt-br"
-                 format="L"
-                 min-view="decade"
-                 autoclose="true"
-                 today="true">
-                <input name="DataNascimento" class="form-control"
-                       placeholder="Selecione uma data"
-                       ng-model="dados.exame.EcoCardiograma"
-                       ng-model-options="{ updateOn: 'blur' }">
-                <span class="input-group-addon">
+                </div>
+            </md-input-container>
+            <md-input-container>
+                <h4><label>Descricao</label></h4>
+                <input title="raioxdesc" type="text" class="form-control" ng-model="dados.exame.DataRaioxToraxDescricao">
+            </md-input-container>
+        </div>
+        <div>
+            <h4><label>Ecocardiograma</label></h4>
+            <md-input-container>
+                <h4><label>Data</label></h4>
+                <div class="input-group" moment-picker="dados.exame.EcoCardiograma"
+                     locale="pt-br"
+                     format="LLL"
+                     min-view="decade"
+                     autoclose="true"
+                     today="true">
+                    <input name="DataNascimento" class="form-control"
+                           placeholder="Selecione uma data"
+                           ng-model="dados.exame.EcoCardiograma"
+                           ng-model-options="{ updateOn: 'blur' }">
+                    <span class="input-group-addon">
                     <i class="glyphicon glyphicon-calendar"></i>
                 </span>
-            </div>
-        </md-input-container>
-        <md-input-container>
-            <h4><label>Descricao</label></h4>
-            <input title="ecocardidesc" type="text" class="form-control" ng-model="dados.exame.EcoCardiogramaDescricao">
-        </md-input-container>
-    </div>
-    <div>
-        <h4><label>Tomografia de Torax</label></h4>
-        <md-input-container>
-            <h4><label>Data</label></h4>
-            <div class="input-group" moment-picker="dados.exame.TomografiaTorax"
-                 locale="pt-br"
-                 format="L"
-                 min-view="decade"
-                 autoclose="true"
-                 today="true">
-                <input name="DataNascimento" class="form-control"
-                       placeholder="Selecione uma data"
-                       ng-model="dados.exame.TomografiaTorax"
-                       ng-model-options="{ updateOn: 'blur' }">
-                <span class="input-group-addon">
+                </div>
+            </md-input-container>
+            <md-input-container>
+                <h4><label>Descricao</label></h4>
+                <input title="ecocardidesc" type="text" class="form-control" ng-model="dados.exame.EcoCardiogramaDescricao">
+            </md-input-container>
+        </div>
+        <div>
+            <h4><label>Tomografia de Torax</label></h4>
+            <md-input-container>
+                <h4><label>Data</label></h4>
+                <div class="input-group" moment-picker="dados.exame.TomografiaTorax"
+                     locale="pt-br"
+                     format="LLL"
+                     min-view="decade"
+                     autoclose="true"
+                     today="true">
+                    <input name="DataNascimento" class="form-control"
+                           placeholder="Selecione uma data"
+                           ng-model="dados.exame.TomografiaTorax"
+                           ng-model-options="{ updateOn: 'blur' }">
+                    <span class="input-group-addon">
                     <i class="glyphicon glyphicon-calendar"></i>
                 </span>
-            </div>
-        </md-input-container>
-        <md-input-container>
-            <h4><label>Descricao</label></h4>
-            <input title="toraxdesc" type="text" class="form-control" ng-model="dados.exame.TomografiaToraxDescricao">
-        </md-input-container>
-    </div>
-    <div>
-        <h4><label>Tomografia de Abdome</label></h4>
-        <md-input-container>
-            <h4><label>Data</label></h4>
-            <div class="input-group" moment-picker="dados.exame.TomografiaAbdome"
-                 locale="pt-br"
-                 format="L"
-                 min-view="decade"
-                 autoclose="true"
-                 today="true">
-                <input name="DataNascimento" class="form-control"
-                       placeholder="Selecione uma data"
-                       ng-model="dados.exame.TomografiaAbdome"
-                       ng-model-options="{ updateOn: 'blur' }">
-                <span class="input-group-addon">
+                </div>
+            </md-input-container>
+            <md-input-container>
+                <h4><label>Descricao</label></h4>
+                <input title="toraxdesc" type="text" class="form-control" ng-model="dados.exame.TomografiaToraxDescricao">
+            </md-input-container>
+        </div>
+        <div>
+            <h4><label>Tomografia de Abdome</label></h4>
+            <md-input-container>
+                <h4><label>Data</label></h4>
+                <div class="input-group" moment-picker="dados.exame.TomografiaAbdome"
+                     locale="pt-br"
+                     format="LLL"
+                     min-view="decade"
+                     autoclose="true"
+                     today="true">
+                    <input name="DataNascimento" class="form-control"
+                           placeholder="Selecione uma data"
+                           ng-model="dados.exame.TomografiaAbdome"
+                           ng-model-options="{ updateOn: 'blur' }">
+                    <span class="input-group-addon">
                     <i class="glyphicon glyphicon-calendar"></i>
                 </span>
-            </div>
-        </md-input-container>
-        <md-input-container>
-            <h4><label>Descricao</label></h4>
-            <input title="abdomedesc" type="text" class="form-control" ng-model="dados.exame.TomografiaAbdomeDescricao">
-        </md-input-container>
-    </div>
-    <div>
-        <h4><label>Tomografia de Cranio</label></h4>
-        <md-input-container>
-            <h4><label>Data</label></h4>
-            <div class="input-group" moment-picker="dados.exame.TomografiaCranio"
-                 locale="pt-br"
-                 format="L"
-                 min-view="decade"
-                 autoclose="true"
-                 today="true">
-                <input name="DataNascimento" class="form-control"
-                       placeholder="Selecione uma data"
-                       ng-model="dados.exame.TomografiaCranio"
-                       ng-model-options="{ updateOn: 'blur' }">
-                <span class="input-group-addon">
+                </div>
+            </md-input-container>
+            <md-input-container>
+                <h4><label>Descricao</label></h4>
+                <input title="abdomedesc" type="text" class="form-control" ng-model="dados.exame.TomografiaAbdomeDescricao">
+            </md-input-container>
+        </div>
+        <div>
+            <h4><label>Tomografia de Cranio</label></h4>
+            <md-input-container>
+                <h4><label>Data</label></h4>
+                <div class="input-group" moment-picker="dados.exame.TomografiaCranio"
+                     locale="pt-br"
+                     format="LLL"
+                     min-view="decade"
+                     autoclose="true"
+                     today="true">
+                    <input name="DataNascimento" class="form-control"
+                           placeholder="Selecione uma data"
+                           ng-model="dados.exame.TomografiaCranio"
+                           ng-model-options="{ updateOn: 'blur' }">
+                    <span class="input-group-addon">
                     <i class="glyphicon glyphicon-calendar"></i>
                 </span>
-            </div>
-        </md-input-container>
-        <md-input-container>
-            <h4><label>Descricao</label></h4>
-            <input title="craniodesc" type="text" class="form-control" ng-model="dados.exame.TomografiaCranioDescricao">
-        </md-input-container>
-    </div>
-    <div>
-        <h4><label>Endoscopia Digestiva</label></h4>
-        <md-input-container>
-            <h4><label>Data</label></h4>
-            <div class="input-group" moment-picker="dados.exame.EndoscopiaDigestiva"
-                 locale="pt-br"
-                 format="L"
-                 min-view="decade"
-                 autoclose="true"
-                 today="true">
-                <input name="DataNascimento" class="form-control"
-                       placeholder="Selecione uma data"
-                       ng-model="dados.exame.EndoscopiaDigestiva"
-                       ng-model-options="{ updateOn: 'blur' }">
-                <span class="input-group-addon">
+                </div>
+            </md-input-container>
+            <md-input-container>
+                <h4><label>Descricao</label></h4>
+                <input title="craniodesc" type="text" class="form-control" ng-model="dados.exame.TomografiaCranioDescricao">
+            </md-input-container>
+        </div>
+        <div>
+            <h4><label>Endoscopia Digestiva</label></h4>
+            <md-input-container>
+                <h4><label>Data</label></h4>
+                <div class="input-group" moment-picker="dados.exame.EndoscopiaDigestiva"
+                     locale="pt-br"
+                     format="LLL"
+                     min-view="decade"
+                     autoclose="true"
+                     today="true">
+                    <input name="DataNascimento" class="form-control"
+                           placeholder="Selecione uma data"
+                           ng-model="dados.exame.EndoscopiaDigestiva"
+                           ng-model-options="{ updateOn: 'blur' }">
+                    <span class="input-group-addon">
                     <i class="glyphicon glyphicon-calendar"></i>
                 </span>
-            </div>
-        </md-input-container>
-        <md-input-container>
-            <h4><label>Descricao</label></h4>
-            <input title="endigidesc" type="text" class="form-control" ng-model="dados.exame.EndoscopiaDigestivaDescricao">
-        </md-input-container>
-    </div>
-    <div>
-        <h4><label>Urina</label></h4>
-        <md-input-container>
-            <h4><label>Data</label></h4>
-            <div class="input-group" moment-picker="dados.exame.Urina"
-                 locale="pt-br"
-                 format="L"
-                 min-view="decade"
-                 autoclose="true"
-                 today="true">
-                <input name="DataNascimento" class="form-control"
-                       placeholder="Selecione uma data"
-                       ng-model="dados.exame.Urina"
-                       ng-model-options="{ updateOn: 'blur' }">
-                <span class="input-group-addon">
+                </div>
+            </md-input-container>
+            <md-input-container>
+                <h4><label>Descricao</label></h4>
+                <input title="endigidesc" type="text" class="form-control" ng-model="dados.exame.EndoscopiaDigestivaDescricao">
+            </md-input-container>
+        </div>
+        <div>
+            <h4><label>Urina</label></h4>
+            <md-input-container>
+                <h4><label>Data</label></h4>
+                <div class="input-group" moment-picker="dados.exame.Urina"
+                     locale="pt-br"
+                     format="LLL"
+                     min-view="decade"
+                     autoclose="true"
+                     today="true">
+                    <input name="DataNascimento" class="form-control"
+                           placeholder="Selecione uma data"
+                           ng-model="dados.exame.Urina"
+                           ng-model-options="{ updateOn: 'blur' }">
+                    <span class="input-group-addon">
                     <i class="glyphicon glyphicon-calendar"></i>
                 </span>
-            </div>
-        </md-input-container>
-        <md-input-container>
-            <h4><label>Descricao</label></h4>
-            <input title="urinadesc" type="text" class="form-control" ng-model="dados.exame.UrinaDescricao">
-        </md-input-container>
-    </div>
-    <div>
-        <h4><label>Eletrocefalograma</label></h4>
-        <md-input-container>
-            <h4><label>Data</label></h4>
-            <div class="input-group" moment-picker="dados.exame.Eletrocefalograma"
-                 locale="pt-br"
-                 format="L"
-                 min-view="decade"
-                 autoclose="true"
-                 today="true">
-                <input name="DataNascimento" class="form-control"
-                       placeholder="Selecione uma data"
-                       ng-model="dados.exame.Eletrocefalograma"
-                       ng-model-options="{ updateOn: 'blur' }">
-                <span class="input-group-addon">
+                </div>
+            </md-input-container>
+            <md-input-container>
+                <h4><label>Descricao</label></h4>
+                <input title="urinadesc" type="text" class="form-control" ng-model="dados.exame.UrinaDescricao">
+            </md-input-container>
+        </div>
+        <div>
+            <h4><label>Eletrocefalograma</label></h4>
+            <md-input-container>
+                <h4><label>Data</label></h4>
+                <div class="input-group" moment-picker="dados.exame.Eletrocefalograma"
+                     locale="pt-br"
+                     format="LLL"
+                     min-view="decade"
+                     autoclose="true"
+                     today="true">
+                    <input name="DataNascimento" class="form-control"
+                           placeholder="Selecione uma data"
+                           ng-model="dados.exame.Eletrocefalograma"
+                           ng-model-options="{ updateOn: 'blur' }">
+                    <span class="input-group-addon">
                     <i class="glyphicon glyphicon-calendar"></i>
                 </span>
-            </div>
-        </md-input-container>
-        <md-input-container>
-            <h4><label>Descricao</label></h4>
-            <input title="eletrocefadesc" type="text" class="form-control" ng-model="dados.exame.EletrocefalogramaDescricao">
-        </md-input-container>
-    </div>
-    <div>
-        <h4><label>Eletrocardiograma</label></h4>
-        <md-input-container>
-            <h4><label>Data</label></h4>
-            <div class="input-group" moment-picker="dados.exame.Eletrocardiograma"
-                 locale="pt-br"
-                 format="L"
-                 min-view="decade"
-                 autoclose="true"
-                 today="true">
-                <input name="DataNascimento" class="form-control"
-                       placeholder="Selecione uma data"
-                       ng-model="dados.exame.Eletrocardiograma"
-                       ng-model-options="{ updateOn: 'blur' }">
-                <span class="input-group-addon">
+                </div>
+            </md-input-container>
+            <md-input-container>
+                <h4><label>Descricao</label></h4>
+                <input title="eletrocefadesc" type="text" class="form-control" ng-model="dados.exame.EletrocefalogramaDescricao">
+            </md-input-container>
+        </div>
+        <div>
+            <h4><label>Eletrocardiograma</label></h4>
+            <md-input-container>
+                <h4><label>Data</label></h4>
+                <div class="input-group" moment-picker="dados.exame.Eletrocardiograma"
+                     locale="pt-br"
+                     format="LLL"
+                     min-view="decade"
+                     autoclose="true"
+                     today="true">
+                    <input name="DataNascimento" class="form-control"
+                           placeholder="Selecione uma data"
+                           ng-model="dados.exame.Eletrocardiograma"
+                           ng-model-options="{ updateOn: 'blur' }">
+                    <span class="input-group-addon">
                     <i class="glyphicon glyphicon-calendar"></i>
                 </span>
-            </div>
-        </md-input-container>
-        <md-input-container>
-            <h4><label>Descricao</label></h4>
-            <input title="eletrodesc" type="text" class="form-control" ng-model="dados.exame.EletrocardiogramaDescricao">
-        </md-input-container>
-    </div>
-    <div>
-        <h4><label>Culturas</label></h4>
-        <md-input-container>
-            <h4><label>Descricao</label></h4>
-            <textarea title="culturas" class="form-control" ng-model="dados.exame.CulturasDescricao" rows="5"></textarea>
-        </md-input-container>
-    </div>
-</form>
+                </div>
+            </md-input-container>
+            <md-input-container>
+                <h4><label>Descricao</label></h4>
+                <input title="eletrodesc" type="text" class="form-control" ng-model="dados.exame.EletrocardiogramaDescricao">
+            </md-input-container>
+        </div>
+        <div>
+            <h4><label>Culturas</label></h4>
+        </div>
+        <div>
+            <md-input-container class="md-block">
+                <h4><label>Descricao</label></h4>
+                <textarea title="culturas" ng-model="dados.exame.CulturasDescricao" md-maxlength="150" rows="5"></textarea>
+            </md-input-container>
+        </div>
+    </form>
+</div>

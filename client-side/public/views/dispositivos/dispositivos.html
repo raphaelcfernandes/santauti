@@ -1,194 +1,151 @@
-<div class="content">
-    <!--<div class="container">-->
-        <!--<div class="row">-->
-            <!--<div class='col-sm-6'>-->
-                <!--<div class="form-group">-->
-                    <!--<div class='input-group date' id='datetimepicker1'>-->
-                        <!--<input type='text' class="form-control" />-->
-                        <!--<span class="input-group-addon">-->
-                        <!--<span class="glyphicon glyphicon-calendar"></span>-->
-                    <!--</span>-->
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<script type="text/javascript">-->
-                <!--$(function () {-->
-                    <!--$('#datetimepicker1').datetimepicker();-->
-                <!--});-->
-            <!--</script>-->
-        <!--</div>-->
-    <!--</div>-->
-    <div class="row">
-        <div class="cols-sm-3" >
-            <button type="button" class="btn btn-primary btn-sm" ng-click="mostrarTodos()">
-                <span class="glyphicon glyphicon-qrcode"></span> {{status}} </button>
-        </div>
+<div>
+    <md-button type="button" class="md-raised md-primary" ng-click="mostrarTodos()">
+        <span class="glyphicon glyphicon-qrcode"></span> {{status}} eventos significantes de fichas anteriores</md-button>
+</div>
+
+<md-content class="md-padding" layout-xs="column" layout="row" ng-show="flagDispositivosShow===true">
+    <div flex-xs flex-gt-xs="50" layout="column">
+        <md-card md-theme-watch>
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">Registros anteriores</span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+                <div class="table-responsive">
+                    <div layout="row">
+                        <div flex>
+                            Dispositivo
+                        </div>
+                        <div flex>
+                            Inserido em
+                        </div>
+                        <div flex>
+                            Removido em
+                        </div>
+                    </div>
+                    <md-list-item ng-repeat="dispositivo in dispositivos" class="noright" ng-if="dispositivo.DataFim !== null">
+                        <div layout="row" layout-align="space-around center">
+
+                            {{dispositivo.DispositivoDescricao}}
+
+                            {{dispositivo.DataInicio}}
+
+                            {{dispositivo.DataFim}}
+
+                        </div>
+                    </md-list-item>
+                </div>
+            </md-card-content>
+        </md-card>
     </div>
-    <form>
-        <div class="row">
-            <div class="col-sm-12">
-                <h3><label>Dispositivos conectados ao Paciente</label></h3>
-            </div>
+</md-content>
+
+
+
+
+<div layout="column" ng-cloak class="md-inline-form">
+    <md-content layout-padding>
+        <div layout>
+            <h3><label>Dispositivos conectados ao Paciente</label></h3>
         </div>
-        <div class="row">
-            <div class="col-sm-4">
-            </div>
-        </div>
-        <div ng-repeat="dispositivo in dispositivos" ng-if="dispositivo.DataFim === null">
-            <div class="row">
-                <div class="col-sm-2">
-                    {{dispositivo.DispositivoDescricao}}
-                </div>
-                <div class="col-sm-3">
-                    <div class="input-group" moment-picker="dispositivo.DataInicio"
-                         locale="pt-br"
-                         format="LLL"
-                         min-view="decade"
-                         autoclose="true"
-                         today="true">
-                        <input name="DataNascimento" class="form-control"
-                               placeholder="Selecione uma data"
-                               ng-model="dispositivo.DataInicio"
-                               ng-model-options="{ updateOn: 'blur' }" ng-disabled="true">
-                        <span class="input-group-addon">
-                            <i class="glyphicon glyphicon-calendar"></i>
+        <form>
+            <div ng-repeat="dispositivo in dispositivos" ng-if="dispositivo.DataFim === null">
+                <div class="row">
+                    <div class="col-sm-2">
+                        {{dispositivo.DispositivoDescricao}}
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="input-group" moment-picker="dispositivo.DataInicio"
+                             locale="pt-br"
+                             format="LLL"
+                             min-view="decade"
+                             autoclose="true"
+                             today="true">
+                            <input name="DataNascimento" class="form-control"
+                                   placeholder="Selecione uma data"
+                                   ng-model="dispositivo.DataInicio"
+                                   ng-model-options="{ updateOn: 'blur' }" ng-disabled="true">
+                            <span class="input-group-addon">
+                        <i class="glyphicon glyphicon-calendar"></i>
                         </span>
+                        </div>
+                    </div>
+                    <div class="col-sm-3" ng-show="dispositivo.resolvido">
+                        <div class="input-group" moment-picker="dispositivo.DataFim"
+                             locale="pt-br"
+                             format="LLL"
+                             min-view="decade"
+                             autoclose="true"
+                             today="true">
+                            <input name="DataFim" class="form-control"
+                                   placeholder="Selecione uma data"
+                                   ng-model="dispositivo.DataFim"
+                                   ng-model-options="{ updateOn: 'blur' }">
+                            <span class="input-group-addon">
+<i class="glyphicon glyphicon-calendar"></i>
+</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-1" ng-hide="dispositivo.resolvido">
+                        <button ng-click="resolver(dispositivo.IDDispositivo)">Resolvido</button>
+                    </div>
+                    <div class="col-sm-2" ng-show="dispositivo.resolvido">
+                        <button ng-click="cancelarResolvido(dispositivo.IDDispositivo)">Refazer aćão</button>
                     </div>
                 </div>
-                <div class="col-sm-3" ng-show="dispositivo.resolvido">
-                    <div class="input-group" moment-picker="dispositivo.DataFim"
-                         locale="pt-br"
-                         format="LLL"
-                         min-view="decade"
-                         autoclose="true"
-                         today="true">
-                        <input name="DataFim" class="form-control"
-                               placeholder="Selecione uma data"
-                               ng-model="dispositivo.DataFim"
-                               ng-model-options="{ updateOn: 'blur' }">
-                        <span class="input-group-addon">
-                            <i class="glyphicon glyphicon-calendar"></i>
-                        </span>
-                    </div>
-                </div>
-                <div class="col-sm-1" ng-hide="dispositivo.resolvido">
-                    <button ng-click="resolver(dispositivo.IDDispositivo)">Resolvido</button>
-                </div>
-                <div class="col-sm-2" ng-show="dispositivo.resolvido">
-                    <button ng-click="cancelarResolvido(dispositivo.IDDispositivo)">Refazer aćão</button>
-                </div>
+                <br class="clearfix">
             </div>
-            <br class="clearfix">
-        </div>
-        <br>
-        <div class="row" ng-show="items.length>0">
-            <div class="col-sm-4">
-                <label>Dispositivo</label>
-            </div>
-            <div class="col-sm-4">
-                <label>Data Inserido</label>
-            </div>
-        </div>
-        <div ng-repeat="item in items">
-            <div class="row">
+            <br>
+            <div class="row" ng-show="items.length>0">
                 <div class="col-sm-4">
-                    <select ng-model="item.DispositivoDescricao">
-                        <option ng-repeat="DispositivoDescricao in Dispositivos"
-                                value="{{DispositivoDescricao.nome}}">{{DispositivoDescricao.nome}}
-                        </option>
-                    </select>
+                    <label>Dispositivo</label>
                 </div>
-                <div class="col-sm-3">
-                    <div class="input-group" moment-picker="item.DataInsercao"
-                         format="LLL"
-                         min-view="decade"
-                         today="true"
-                         minutes-step= 1>
-                        <input name="DataNascimento" class="form-control"
-                               placeholder="Selecione uma data"
-                               ng-model="item.DataInsercao"
-                               ng-model-options="{ updateOn: 'blur' }">
-                        <span class="input-group-addon">
-                            <i class="glyphicon glyphicon-calendar"></i>
-                        </span>
+                <div class="col-sm-4">
+                    <label>Data Inserido</label>
+                </div>
+            </div>
+            <div ng-repeat="item in items">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <select ng-model="item.DispositivoDescricao">
+                            <option ng-repeat="DispositivoDescricao in Dispositivos"
+                                    value="{{DispositivoDescricao.nome}}">{{DispositivoDescricao.nome}}
+                            </option>
+                        </select>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="input-group" moment-picker="item.DataInsercao"
+                             format="LLL"
+                             min-view="decade"
+                             today="true"
+                             minutes-step= 1>
+                            <input name="DataNascimento" class="form-control"
+                                   placeholder="Selecione uma data"
+                                   ng-model="item.DataInsercao"
+                                   ng-model-options="{ updateOn: 'blur' }">
+                            <span class="input-group-addon">
+<i class="glyphicon glyphicon-calendar"></i>
+</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-1">
+                        <button ng-click="remove(item.id)">Excluir</button>
                     </div>
                 </div>
-                <div class="col-sm-1">
-                    <button ng-click="remove(item.id)">Excluir</button>
-                </div>
+                <br class="clearfix">
             </div>
-            <br class="clearfix">
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                <button ng-click="add()">Adicionar Dispositivo</button>
-            </div>
-            <div class="col-sm-6">
-                <button ng-click="enviar()">Salvar</button>
-            </div>
-        </div>
-        <br>
-
-    </form>
-    <div ng-show="flagDispositivosShow==true">
-        <div class="row">
-            <div class="col-sm-12">
-                <h3><label>Dispositivos já removidos</label></h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <label>Nome dispositivo</label>
-            </div>
-            <div class="col-sm-4">
-                <label>Data Inserido</label>
-            </div>
-            <div class="col-sm-4">
-                <label>Data Removido</label>
-            </div>
-        </div>
-        <br>
-        <div ng-repeat="dispositivo in dispositivos" ng-if="dispositivo.DataFim !== null">
             <div class="row">
-                <div class="col-sm-2">
-                    {{dispositivo.DispositivoDescricao}}
+                <div class="col-sm-6">
+                    <button ng-click="add()">Adicionar Dispositivo</button>
                 </div>
-                <div class="col-sm-3 col-sm-offset-2">
-                    <div class="input-group" moment-picker="dispositivo.DataInicio"
-                         locale="pt-br"
-                         format="LLL"
-                         min-view="decade"
-                         autoclose="true"
-                         today="true">
-                        <input name="DataNascimento" class="form-control"
-                               placeholder="Selecione uma data"
-                               ng-model="dispositivo.DataInicio"
-                               ng-model-options="{ updateOn: 'blur' }" ng-disabled="true">
-                        <span class="input-group-addon">
-                            <i class="glyphicon glyphicon-calendar"></i>
-                        </span>
-
-                    </div>
-                </div>
-                <div class="col-sm-3 col-sm-offset-1">
-                    <div class="input-group" moment-picker="dispositivo.DataFim"
-                         locale="pt-br"
-                         format="LLL"
-                         min-view="decade"
-                         autoclose="true"
-                         today="true">
-                        <input name="DataFim" class="form-control"
-                               placeholder="Selecione uma data"
-                               ng-model="dispositivo.DataFim"
-                               ng-model-options="{ updateOn: 'blur' }" ng-disabled="true">
-                        <span class="input-group-addon">
-                            <i class="glyphicon glyphicon-calendar"></i>
-                        </span>
-                    </div>
+                <div class="col-sm-6">
+                    <button ng-click="enviar()">Salvar</button>
                 </div>
             </div>
             <br>
-        </div>
-        <br class="clearfix">
-    </div>
+        </form>
+    </md-content>
 </div>
+
+

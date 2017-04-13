@@ -132,7 +132,7 @@ app.controller('dispositivosCtrl', function($scope,$rootScope,$state) {
      * Requisita ao server todos os disposotivos do Paciente filtrado pela data de internacao mais recente.
      * Apenas dispositivos com data de inseridos > data internacao serao buscados.
      */
-    $rootScope.reqWithToken('/getAllDispositivosByIdPaciente?idPaciente=' + sessionStorage.getItem("ID"), '', 'GET', function (success) {
+    $rootScope.reqWithToken('/getAllDispositivosByLastDataInternacaoAndByIdPaciente?idPaciente=' + sessionStorage.getItem("ID"), '', 'GET', function (success) {
         $scope.dispositivos = success;
         for(var i=0;i<$scope.dispositivos.length;i++){
             $scope.dispositivos[i].DataInicio = moment($scope.dispositivos[i].DataInicio,'YYYY-MM-DD H:m:s').format("LLL");
@@ -141,6 +141,7 @@ app.controller('dispositivosCtrl', function($scope,$rootScope,$state) {
                 $scope.dispositivos[i].preenchido=true;
             }
         }
+        console.log($scope.dispositivos);
     }, function (err) {
         console.log(err);
     });

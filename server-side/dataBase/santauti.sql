@@ -415,7 +415,7 @@ INSERT INTO Dispositivos (IDPaciente,DispositivoDescricao,DataInicio,DataFim) VA
 INSERT INTO Dispositivos (IDPaciente,DispositivoDescricao,DataInicio,DataFim) VALUES (2,"Cateter Hemodialise",'2014-12-09 20:04',NULL);
 INSERT INTO Dispositivos (IDPaciente,DispositivoDescricao,DataInicio,DataFim) VALUES (2,"Sonda Enteral",'2017-04-01 20:04',NULL);
 INSERT INTO Dispositivos (IDPaciente,DispositivoDescricao,DataInicio,DataFim) VALUES (2,"Sonda Oroenteral",'2017-04-02 04:00',NULL);
-INSERT INTO Dispositivos (IDPaciente,DispositivoDescricao,DataInicio,DataFim) VALUES (2,"Sonda Orograstrica",'2017-04-03 20:30','2014-05-06');
+INSERT INTO Dispositivos (IDPaciente,DispositivoDescricao,DataInicio,DataFim) VALUES (2,"Sonda Orograstrica",'2017-04-03 20:30','2017-04-05 21:00');
 INSERT INTO Pendencias (NroAtendimento,IDPaciente,Comentarios,Descricao,DataDiagnosticado,DataResolvido) VALUES (1,2,"blablabla","a",'2014-05-05 20:04','2014-05-06');
 INSERT INTO Pendencias (NroAtendimento,IDPaciente,Comentarios,Descricao,DataDiagnosticado,DataResolvido) VALUES (2,2,"blablabla","a",'2014-05-05 20:04',NULL);
 INSERT INTO ListaProblemas (IDPaciente,NroAtendimento,AntecedentesPessoais,DiagnosticoEntrada,Comentarios,Descricao,DataDiagnosticado,DataResolvido) VALUES (2,1,"Cancer","Cancer estado avancado","Comentario","sem descricao",'2014-05-05 20:04','2014-05-06');
