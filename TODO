@@ -63,3 +63,6 @@ Implementar sistemas das fichas diurnas (recuperar os dados anteriores)
 ***Implantar sistema de LOGIN com QR-CODE
 
 
+Remover Glifcon itens do site (parte do bootstrap)
+Corrigir alguns estilos de forms que estão puxando class do bootstrap
+Resolver layout do pendencias e lista de problemas

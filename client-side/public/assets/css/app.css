@@ -100,6 +100,10 @@ md-tabs > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item
     font-size: 12px !important;
     font-family: "Roboto", sans-serif !important;
 }
+.informacaoClass{
+    border-bottom: groove;
+    border-top: groove;
+}
 
 /*------------------------------------------------------------------------------------------------------------------*/
 /*Css da página de login*/
@@ -200,15 +204,41 @@ md-tabs > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item
     margin-bottom: 5px !important;
 }
 .testefont{
-    color: yellow !important;
+    color: blue !important;
     font-family: "Roboto", sans-serif !important;
     font-weight: bolder !important;
     -webkit-font-smoothing: antialiased !important;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004) !important;
 }
 md-nav-bar md-nav-ink-bar {
-    background: yellow !important;
+    background: blue !important;
 }
 .glyphicon-user{
-    color:yellow !important;
+    color:blue !important;
 }
+._md-nav-button {
+    color: #fff !important;
+    background-color: #fff !important;
+}
+._md-nav-button.md-accent{
+    color: #000 !important;
+}
+._md-nav-button.md-focused{
+    color: #fff !important;
+}
+._md-nav-button.md-active {
+    color: #fff !important;
+}
+._md-nav-button.md-primary{
+    color: #fff !important;
+}
+._md-nav-button.md-ink-ripple{
+    color: #000 !important;
+}
+._md-nav-button.md-button{
+    background-color: #fff!important;
+}
+/*
+<a class="_md-nav-button md-accent md-button md-ink-ripple md-temaNavbar-theme md-active md-primary md-focused" ng-transclude="" ng-class="ctrl.getNgClassMap()" ng-blur="ctrl.setFocused(false)" tabindex="-1" ui-sref="home" href="#/home" style=""><span ng-transclude="" class="_md-nav-button-text ng-scope">
+<label class="testefont ng-scope">Home</label>
+                                        </span></a>*/

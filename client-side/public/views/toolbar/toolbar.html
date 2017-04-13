@@ -3,12 +3,11 @@
     <md-nav-bar
         md-selected-nav-item="currentNavItem"
         nav-bar-aria-label="santauti">
-        <md-nav-item md-nav-sref="home" name="Home">
-            <label class = "testefont">Home</label>
+        <md-nav-item name="Home" md-nav-sref="home">
+            <label class="testefont">Home</label>
         </md-nav-item>
         <spam flex></spam>
-        <md-nav-item md-nav-sref="login" name="Logout" ng-click="destroySession()">
-            <spam class="glyphicon glyphicon-user"></spam>
+        <md-nav-item  name="Logout" md-nav-click="destroySession()">
             <label class = "testefont">Logout</label>
         </md-nav-item>
     </md-nav-bar>

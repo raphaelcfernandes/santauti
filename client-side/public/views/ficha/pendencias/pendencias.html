@@ -1,3 +1,37 @@
+<!--<form title="pendencias">
+    <div ng-repeat="item in res">
+        <div ng-show="items.length>0">
+            <md-input-container>
+                <h4><label>Descrićao</label></h4>
+                <input type="text" placeholder="{{item.Descricao}}" ng-model="item.Descricao" class="form-control"
+                       ng-disabled="item.resolvido">
+            </md-input-container>
+            <md-input-container>
+                <h4><label>Data Diagnosticado</label></h4>
+                <div class="input-group" moment-picker="dados.DataNascimento"
+                     locale="pt-br"
+                     format="lll"
+                     min-view="decade"
+                     autoclose="true"
+                     today="true">
+                    <input name="DataNascimento" class="form-control"
+                           placeholder="Selecione uma data"
+                           ng-model="dados.DataNascimento"
+                           ng-model-options="{ updateOn: 'blur' }">
+                    <span class="input-group-addon">
+                        <i class="glyphicon glyphicon-calendar"></i>
+                    </span>
+                </div>
+            </md-input-container>
+            <md-input-container>
+                <div class="col-sm-2" ng-show="colunaResolvido">
+                    <h4><label>Data Resolvido</label></h4>
+                </div>
+            </md-input-container>
+        </div>
+    </div>
+</form>-->
+
 <div class="content">
     <div class="row" ng-show="items.length>0">
         <div class="col-sm-5">

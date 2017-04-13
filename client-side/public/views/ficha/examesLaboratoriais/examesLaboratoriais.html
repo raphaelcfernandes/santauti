@@ -1,413 +1,243 @@
-<div class="content">
-    <form>
-        <div class="form-group">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h4><label>Exame realizado em:</label></h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2">
-                    <div class="input-group" moment-picker="dados.exameLaboratorial.DataExameRealizado"
-                         locale="pt-br"
-                         format="L"
-                         min-view="decade"
-                         autoclose="true"
-                         today="true">
-                        <input name="DataNascimento" class="form-control"
-                               placeholder="Selecione uma data"
-                               ng-model="dados.exameLaboratorial.DataExameRealizado"
-                               ng-model-options="{ updateOn: 'blur' }">
-                        <span class="input-group-addon">
-                            <i class="glyphicon glyphicon-calendar"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
+<form aria-label="Formulário">
+    <md-input-container>
+        <h4><label>Exame realizado em:</label></h4>
+        <div class="input-group" moment-picker="dados.exameLaboratorial.DataExameRealizado"
+             locale="pt-br"
+             format="L"
+             min-view="decade"
+             autoclose="true"
+             today="true">
+            <input name="DataNascimento" class="form-control"
+                   placeholder="Selecione uma data"
+                   ng-model="dados.exameLaboratorial.DataExameRealizado"
+                   ng-model-options="{ updateOn: 'blur' }">
+            <span class="input-group-addon">
+                <i class="glyphicon glyphicon-calendar"></i>
+            </span>
         </div>
-        <div class="form-group">
-            <div class="row">
-                <div class="col-sm-4">
-                    <h4><label>Hemoglobina</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>Hematócrito</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>Leucócitos</label></h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Hemoglobina">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Hematocrito">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Leucocitos">
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="row">
-                <div class="col-sm-4">
-                    <h4><label>Promielocitos (%)</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>Mielocitos (%)</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>Metamielocitos (%)</label></h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Promielocitos">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Hielocitos">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Metamielocitos">
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="row">
-                <div class="col-sm-4">
-                    <h4><label>Bastonetes (%)</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>Segmentados (%)</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>Eosinófilos (%)</label></h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Bastonetes">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Segmentados">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Eosinofilos">
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="row">
-                <div class="col-sm-4">
-                    <h4><label>Basófilos (%)</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>Linfócitos (%)</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>Monócitos (%)</label></h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Basofilos">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Linfocitos">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Monocitos">
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="row">
-                <div class="col-sm-4">
-                    <h4><label>Plaquetas x10<sup>3</sup></label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>Sódio</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>Potássio</label></h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Plaquetas">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Sodio">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Potassio">
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="row">
-                <div class="col-sm-4">
-                    <h4><label>Uréia</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>Creatinina</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>Magnésio</label></h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Ureia">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Creatinina">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Magnesio">
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="row">
-                <div class="col-sm-4">
-                    <h4><label>Cálcio</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>Fósforo</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>Cloro</label></h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Calcio">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Fosforo">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Cloro">
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="row">
-                <div class="col-sm-4">
-                    <h4><label>PCR</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>Albumina</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>TAP</label></h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.PCR">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Albumina">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.TAP">
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="row">
-                <div class="col-sm-4">
-                    <h4><label>TTPA</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>Troponina</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>CPK TOTAL</label></h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.TTPA">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Troponina">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.CPKTOTAL">
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="row">
-                <div class="col-sm-4">
-                    <h4><label>CKMB</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>Dímero D</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>Glicose</label></h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.CKMB">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.DimeroD">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Glicose">
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="row">
-                <div class="col-sm-4">
-                    <h4><label>Fibrogênio</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>PH</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>PCO2</label></h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Fibrogenio">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.PH">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.PCO2">
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="row">
-                <div class="col-sm-4">
-                    <h4><label>PO2</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>HCO3</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>Saturaćao</label></h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.PO2">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.HCO3">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Saturacao">
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="row">
-                <div class="col-sm-4">
-                    <h4><label>Saturaćao V. Central</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>PaO2</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>FiO2</label></h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.SaturacaoCentral">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.PAO2">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.FIO2">
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="row">
-                <div class="col-sm-4">
-                    <h4><label>Lactato</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>Bbt</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>Bbd</label></h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Lactatos">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.BBT">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.BBD">
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="row">
-                <div class="col-sm-4">
-                    <h4><label>TGO</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>TGP</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>GGT</label></h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.TGO">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.TGP">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.GGT">
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="row">
-                <div class="col-sm-4">
-                    <h4><label>FA</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>Procalcitonina</label></h4>
-                </div>
-                <div class="col-sm-4">
-                    <h4><label>RNI</label></h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.FA">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Procalcitonina">
-                </div>
-                <div class="col-sm-2 col-sm-offset-2">
-                    <input type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.RNI">
-                </div>
-            </div>
-        </div>
-    </form>
-</div>
+    </md-input-container>
+    <div>
+        <md-input-container>
+            <h4><label>Hemoglobina</label></h4>
+            <input title="Hemoglobina" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Hemoglobina">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>Hematócrito</label></h4>
+            <input title="Hematócrito" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Hematocrito">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>Leucócitos</label></h4>
+            <input title="Leucócitos" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Leucocitos">
+        </md-input-container>
+    </div>
+    <div>
+        <md-input-container>
+            <h4><label>Promielocitos (%)</label></h4>
+            <input title="Promielocitos" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Promielocitos">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>Mielocitos (%)</label></h4>
+            <input title="Mielocitos" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Hielocitos">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>Metamielocitos (%)</label></h4>
+            <input title="Metamielocitos" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Metamielocitos">
+        </md-input-container>
+    </div>
+    <div>
+        <md-input-container>
+            <h4><label>Bastonetes (%)</label></h4>
+            <input title="Bastonetes" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Bastonetes">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>Segmentados (%)</label></h4>
+            <input title="Segmentados" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Segmentados">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>Eosinófilos (%)</label></h4>
+            <input title="Eosinófilos" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Eosinofilos">
+        </md-input-container>
+    </div>
+    <div>
+        <md-input-container>
+            <h4><label>Basófilos (%)</label></h4>
+            <input title="Basófilos" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Basofilos">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>Linfócitos (%)</label></h4>
+            <input title="Linfócitos" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Linfocitos">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>Monócitos (%)</label></h4>
+            <input title="Monócitos" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Monocitos">
+        </md-input-container>
+    </div>
+    <div>
+        <md-input-container>
+            <h4><label>Plaquetas x10</label></h4>
+            <input title="Plaquetas" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Plaquetas">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>Sódio</label></h4>
+            <input title="Sódio" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Sodio">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>Potássio</label></h4>
+            <input title="Potássio" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Potassio">
+        </md-input-container>
+    </div>
+    <div>
+        <md-input-container>
+            <h4><label>Uréia</label></h4>
+            <input title="Uréia" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Ureia">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>Creatinina</label></h4>
+            <input title="Creatinina" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Creatinina">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>Magnésio</label></h4>
+            <input title="Magnésio" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Magnesio">
+        </md-input-container>
+    </div>
+    <div>
+        <md-input-container>
+            <h4><label>Cálcio</label></h4>
+            <input title="Cálcio" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Calcio">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>Fósforo</label></h4>
+            <input title="Fósforo" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Fosforo">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>Cloro</label></h4>
+            <input title="Cloro" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Cloro">
+        </md-input-container>
+    </div>
+    <div>
+        <md-input-container>
+            <h4><label>PCR</label></h4>
+            <input title="PCR" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.PCR">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>Albumina</label></h4>
+            <input title="Albumina" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Albumina">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>TAP</label></h4>
+            <input title="TAP" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.TAP">
+        </md-input-container>
+    </div>
+    <div>
+        <md-input-container>
+            <h4><label>TTPA</label></h4>
+            <input title="TTPA" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.TTPA">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>Troponina</label></h4>
+            <input title="Troponina" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Troponina">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>CPK TOTAL</label></h4>
+            <input title="CPK" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.CPKTOTAL">
+        </md-input-container>
+    </div>
+    <div>
+        <md-input-container>
+            <h4><label>CKMB</label></h4>
+            <input title="CKMB" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.CKMB">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>Dímero D</label></h4>
+            <input title="DímeroD" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.DimeroD">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>Glicose</label></h4>
+            <input title="Glicose" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Glicose">
+        </md-input-container>
+    </div>
+    <div>
+        <md-input-container>
+            <h4><label>Fibrogênio</label></h4>
+            <input title="Fibrogênio" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Fibrogenio">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>PH</label></h4>
+            <input title="PH" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.PH">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>PCO2</label></h4>
+            <input title="PCO2" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.PCO2">
+        </md-input-container>
+    </div>
+    <div>
+        <md-input-container>
+            <h4><label>PO2</label></h4>
+            <input title="PO2" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.PO2">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>HCO3</label></h4>
+            <input title="HCO3" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.HCO3">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>Saturação</label></h4>
+            <input title="Saturação" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Saturacao">
+        </md-input-container>
+    </div>
+    <div>
+        <md-input-container>
+            <h4><label>Saturação V. Central</label></h4>
+            <input title="SaturacaoV" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.SaturacaoCentral">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>PaO2</label></h4>
+            <input title="PaO2" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.PAO2">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>FiO2</label></h4>
+            <input title="FiO2" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.FIO2">
+        </md-input-container>
+    </div>
+    <div>
+        <md-input-container>
+            <h4><label>Lactato</label></h4>
+            <input title="Lactato" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Lactatos">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>Bbt</label></h4>
+            <input title="Bbt" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.BBT">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>Bbd</label></h4>
+            <input title="Bbd" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.BBD">
+        </md-input-container>
+    </div>
+    <div>
+        <md-input-container>
+            <h4><label>TGO</label></h4>
+            <input title="TGO" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.TGO">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>TGP</label></h4>
+            <input title="TGP" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.TGP">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>GGT</label></h4>
+            <input title="GGT" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.GGT">
+        </md-input-container>
+    </div>
+    <div>
+        <md-input-container>
+            <h4><label>FA</label></h4>
+            <input title="FA" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.FA">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>Procalcitonina</label></h4>
+            <input title="Procalcitonina" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.Procalcitonina">
+        </md-input-container>
+        <md-input-container>
+            <h4><label>RNI</label></h4>
+            <input title="RNI" type="number" min="0" class="form-control" ng-model="dados.exameLaboratorial.RNI">
+        </md-input-container>
+    </div>
+</form>
