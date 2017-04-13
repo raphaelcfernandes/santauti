@@ -1,9 +1,9 @@
-<md-toolbar md-theme="temaToolbar">
+<!--<md-toolbar md-theme="temaToolbar">
     <md-content layout="row">
     <md-button class="btnhl" aria-label="Home" ui-sref="home">
         <b>Home</b>
     </md-button>
-    <h2 class="md-toolbar-tools">
+    <h2 class="md-toolbar-tools" >
         <span class="head"><b>SantaUTI Ficha Diurna</b></span>
     </h2>
     <md-button class="btnhl" aria-label="Logout" ui-sref="login" ng-click="destroySession()">
@@ -11,7 +11,26 @@
         <b>Logout</b>
     </md-button>
     </md-content>
-</md-toolbar>
+</md-toolbar>-->
+
+<md-content class="md-padding" md-theme="temaNavbar">
+    <md-nav-bar
+            md-selected-nav-item="currentNavItem"
+            nav-bar-aria-label="santauti">
+        <md-nav-item name="Home" md-nav-sref="home">
+            <label class="testefont">Home</label>
+        </md-nav-item>
+        <spam flex></spam>
+        <md-nav-item name="diaria" md-nav-sref="#">
+            <label class="testefont">SantaUTI Ficha Diurna</label>
+        </md-nav-item>
+        <spam flex></spam>
+        <md-nav-item  name="Logout" md-nav-click="destroySession()">
+            <label class = "testefont">Logout</label>
+        </md-nav-item>
+    </md-nav-bar>
+</md-content>
+
 <div ui-view="informacaoBox" class="informacaoClass"> </div>
 <md-tabs md-stretch-tabs
          md-selected="selectedIndex"

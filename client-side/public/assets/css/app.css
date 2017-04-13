@@ -69,7 +69,12 @@ input[type="radio"]:checked ~ .reveal-if-active, input[type="checkbox"]:checked 
 .head{
     font-size: 20px !important;
     font-family: "Roboto", sans-serif !important;
-    color:yellow !important;
+    color:blue !important;
+    margin-left: 41%;
+    margin-bottom: 10px;
+}
+.md-toolbar-tools{
+    background-color: #ffffff!important;
 }
 all-tabs {
     font-size: 12px !important;
@@ -79,13 +84,13 @@ all-tabs {
     color:#000 !important;
 }
 md-tabs.md-default-theme md-ink-bar, md-tabs md-ink-bar {
-    color: yellow !important;
-    background-color:yellow !important;
+    color: blue !important;
+    background-color:blue !important;
 }
 .btnhl{
     font-family: "Roboto", sans-serif !important;
     font-size: 14px !important;
-    color:yellow !important;
+    color:blue !important;
     margin-top: 15px !important;
     -webkit-font-smoothing: antialiased !important;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004) !important;
@@ -102,7 +107,7 @@ md-tabs > md-tabs-wrapper > md-tabs-canvas > md-pagination-wrapper > md-tab-item
 }
 .informacaoClass{
     border-bottom: groove;
-    border-top: groove;
+
 }
 
 /*------------------------------------------------------------------------------------------------------------------*/
