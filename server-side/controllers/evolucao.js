@@ -57,7 +57,7 @@ module.exports = function(app){
                         /**Parte relacioanda com Ficha**/
                         NroAtendimento: result.dataValues.NroAtendimento,
 
-                        TipoEvolucao: 'Diurno',/*req.body.tipoFicha,*/
+                        TipoEvolucao: req.body.tipoFicha,
 
                          /**Eventos Significantes**/
                         EventosSignificantes: req.body.eventosSignificantes !== null ? req.body.eventosSignificantes : null,
