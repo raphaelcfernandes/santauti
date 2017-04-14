@@ -188,7 +188,7 @@ CREATE TABLE IF NOT EXISTS `santauti`.`Evolucao` (
   `EletrocardiogramaData` DATETIME NULL,
   `EletrocardiogramaDescricao` TINYTEXT NULL,
   `CulturasDescricao` MEDIUMTEXT NULL,
-  `ExameLaboratorialRealizado` DATE NULL,
+  `ExameLaboratorialRealizado` DATETIME NULL,
   `Hemoglobina` INT NULL,
   `Hematocrito` INT NULL,
   `Leucocitos` INT NULL,

@@ -10,8 +10,6 @@ app.controller('neurologicoCtrl', function($scope,$rootScope) {
         if($rootScope.determinatedValue <= 100){
             $rootScope.quantidadeBarra +=1;
             $rootScope.determinatedValue = (5.3)*(Object.keys($rootScope.dados).length);
-            console.log($rootScope.determinatedValue);
-            console.log($rootScope.quantidadeBarra)
         }
     }
     /*****SCOPE DECLARATION****/

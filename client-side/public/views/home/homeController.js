@@ -28,8 +28,9 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
       $state.go("dispositivos");
     };
 
-    $scope.criarFichaDiurno = function (id) {
+    $scope.criarFichaDiurno = function (id,tipoFicha) {
         sessionStorage.setItem("ID",id);
+        sessionStorage.setItem("tipoFicha",tipoFicha);
         $state.go("tabs.eventosSig");
     };
 

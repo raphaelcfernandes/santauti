@@ -27,7 +27,7 @@ app.controller('navbarCtrl', function($scope,$state,$location,$rootScope) {
         sessionStorage.clear();
     };
     $scope.enviarFicha = function () {
-        console.log($rootScope.dados);
+
         $rootScope.reqWithToken('/salvarFichaEvolucao?idPaciente='+$rootScope.cache.paciente.ID+'&RegistroMedico='+$rootScope.cache.paciente.Responsavel,
             $rootScope.dados, 'POST', function (success) {
             console.log(success);

@@ -98,7 +98,7 @@
 
 <main flex>
     <md-progress-linear md-mode="determinate" value="{{determinatedValue}}" ></md-progress-linear>
-    <md-button ng-show="determinatedValue>0" class="btnhl" aria-label="Enviar" ng-click="enviarFicha()">
+    <md-button ng-show="determinatedValue>=0" class="btnhl" aria-label="Enviar" ng-click="enviarFicha()">
         <b>Enviar</b>
-    </md-button> <!--ui-sref="home"-->>
+    </md-button> <!--ui-sref="home"-->
 </main>

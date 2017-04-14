@@ -25,15 +25,17 @@ app.controller('eventoSignificanteCtrl', function($scope,$state,$rootScope) {
      * Deve-se criar esse objeto para armazenar os dados das Tabs
      */
     if($rootScope.dados===undefined) {
+        sessionStorage.setItem("tipoFicha",'Diurno'); //Remover essa linha. TipoFicha vem do homeController
         $rootScope.dados = {};
+        $rootScope.dados.tipoFicha = sessionStorage.getItem("tipoFicha");
+        sessionStorage.removeItem("tipoFicha");
+
     }
 
     if(Object.keys($rootScope.dados).length > 0 && $rootScope.quantidadeBarra < Object.keys($rootScope.dados).length){
         if($rootScope.determinatedValue < 100){
             $rootScope.quantidadeBarra +=1;
             $rootScope.determinatedValue = (5.3)*(Object.keys($rootScope.dados).length);
-            console.log($rootScope.determinatedValue);
-            console.log($rootScope.quantidadeBarra)
         }
     }
     //Para Visualizar dentro do objeto, é só checar o tamanho dentro deles, dai consigo dividir a progress bar em elementos
@@ -48,10 +50,8 @@ app.controller('eventoSignificanteCtrl', function($scope,$state,$rootScope) {
             for(var i=success.length-1;i>=0;i--)
                 success[i].DataCriado = moment(success[i].DataCriado, 'YYYY-MM-DD H:m').format("LLL")
             $rootScope.fichasAntigas=success;
-            console.log(success);
         }, function (err) {
             console.log(err);
         });
     }
-    console.log($rootScope.dados);
 });
