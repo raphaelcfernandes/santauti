@@ -42,7 +42,7 @@ app.controller('loginCtrl', function($scope,  $state, $window, $location, $timeo
             controller: 'qrLoginCtrl',
             parent: angular.element(document.body),
             targetEvent: ev,
-            clickOutsideToClose:true,
+            clickOutsideToClose:true
         })
 
     }
