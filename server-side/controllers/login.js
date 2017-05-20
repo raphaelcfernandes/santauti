@@ -38,6 +38,7 @@ module.exports = function(app){
                 });
             }
             else{
+                console.log(req);
                 Profissional.findOne({
                     where: {
                         Usuario: req.body.user
