@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS `santauti`.`Pessoa` (
 DROP TABLE IF EXISTS `santauti`.`Profissional` ;
 
 CREATE TABLE IF NOT EXISTS `santauti`.`Profissional` (
-  `Registro` INT NOT NULL,
+  `Registro` INT,
   `ID` INT NOT NULL,
   `Usuario` VARCHAR(60) NOT NULL,
   `Senha` VARCHAR(60) NOT NULL,
@@ -59,7 +59,7 @@ CREATE TABLE IF NOT EXISTS `santauti`.`Profissional` (
   REFERENCES `santauti`.`Pessoa` (`ID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  PRIMARY KEY (`Registro`))
+  PRIMARY KEY (`ID`))
   ENGINE = InnoDB;
 
 

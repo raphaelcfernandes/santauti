@@ -38,7 +38,6 @@ module.exports = function(app){
                 });
             }
             else{
-                console.log(req);
                 Profissional.findOne({
                     where: {
                         Usuario: req.body.user
@@ -52,6 +51,7 @@ module.exports = function(app){
                             };
                             var result = {
                                 tipoProfissional: result.TipoProfissional,
+                                registro: result.Registro,
                                 token: Jwt.sign(tokenData, privateKey)
                             };
                             res.json(result);

@@ -3,7 +3,7 @@
  */
 module.exports={
     server: {
-        host:'192.168.1.11',
+        host:'localhost',
         port: 3000
     },
     key: {

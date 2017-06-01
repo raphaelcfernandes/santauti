@@ -86,6 +86,7 @@ app.controller('homeCtrl',function($scope,$state,$rootScope,$timeout,$mdDialog,$
      */
     $scope.getPacientes = function () {
         $rootScope.reqWithToken('/getPacientes', sessionStorage.getItem("token"), 'GET', function (success) {
+            console.log(success);
             for (var i = 0; i < success.length; i++) {
                 $scope.pessoas.push({
                     nome: success[i].Nome,

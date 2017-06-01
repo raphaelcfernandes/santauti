@@ -31,6 +31,7 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.DATE,
             allowNull: false
         },
+        //Deve ser data ASSINADO!
         DataModificado: {
             type: DataTypes.DATE,
             allowNull: false
