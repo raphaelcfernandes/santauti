@@ -1,5 +1,6 @@
 
 /*************VARIABLES DECLARATION**********/
+var passport = require('passport');
 var express = require("express");
 var bodyParser = require("body-parser");
 var load = require('express-load');
@@ -18,7 +19,7 @@ var options = {
 };
 /*************END OF DECLARATION************/
 
-app.set('port', process.env.PORT || 443);
+app.set('port', process.env.PORT || 3000);
 
 
 app.use(express.static(path.join(__dirname, 'client-side/public')));
