@@ -19,7 +19,7 @@ var options = {
 };
 /*************END OF DECLARATION************/
 
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 443);
 
 
 app.use(express.static(path.join(__dirname, 'client-side/public')));
