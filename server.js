@@ -1,6 +1,5 @@
 
 /*************VARIABLES DECLARATION**********/
-var passport = require('passport');
 var express = require("express");
 var bodyParser = require("body-parser");
 var load = require('express-load');
