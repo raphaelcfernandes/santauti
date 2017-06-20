@@ -50,7 +50,7 @@ CREATE TABLE IF NOT EXISTS `santauti`.`Profissional` (
   `Senha` VARCHAR(60) NOT NULL,
   `TipoProfissional` INT NOT NULL,
   `Ativo` BOOLEAN NOT NULL,
-  `QRKey` VARCHAR(256) UNIQUE,
+  `QRKey` VARCHAR(255) UNIQUE,
   UNIQUE INDEX `Usuario_UNIQUE` (`Usuario` ASC),
   UNIQUE INDEX `Registro_UNIQUE` (`Registro` ASC),
   UNIQUE INDEX `ID_UNIQUE` (`ID` ASC),
