@@ -33,8 +33,8 @@ Professionals levels:
 /****************************************************/
 To create a new sql user:
 mysql -u root -p
-CREATE USER 'novousuario'@'localhost' IDENTIFIED BY 'password';
-GRANT ALL PRIVILEGES ON * . * TO 'novousuario'@'localhost';
+CREATE USER 'raphael'@'localhost' IDENTIFIED BY '123';
+GRANT ALL PRIVILEGES ON * . * TO 'raphael'@'localhost';
 /****************************************************/
 
 /****************************************************/
