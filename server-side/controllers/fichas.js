@@ -57,13 +57,13 @@ module.exports = function(app){
             }
         },
         sendFichaFromAppToServer:function (req,res) {
-            console.log("oi");
+            console.log(req.body);
             try{
                 Jwt.verify(req.headers.access_token, privateKey);
             }catch(err){
                 res.sendStatus(401);
             }
-            res.sendStatus(200);
+
         }
     };
     return fichasController;

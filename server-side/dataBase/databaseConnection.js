@@ -17,3 +17,14 @@ var sequelize = new Sequelize('santauti', 'raphael', '123', {
         idle: 10000
     }
 });
+
+var kex = require('knex')({
+   client: 'mysql',
+    connection: {
+        host: 'localhost',
+        user : 'raphael',
+        password : '123',
+        database : 'santauti',
+        port:3306
+    }
+});
