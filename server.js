@@ -43,10 +43,13 @@ app.get('*', function(req, res) {
 
 /*********************************************/
 
-models.sequelize.sync().then(function () {
-    var server = https.createServer(options, app).listen(app.get('port'), function () {
-        console.log('Express server listening on port ' + server.address().port);
-    });
+var server = https.createServer(options, app).listen(app.get('port'), function () {
+    console.log('Express server listening on port ' + server.address().port);
 });
+// models.sequelize.sync().then(function () {
+//     var server = https.createServer(options, app).listen(app.get('port'), function () {
+//         console.log('Express server listening on port ' + server.address().port);
+//     });
+// });
 
 module.exports = app;

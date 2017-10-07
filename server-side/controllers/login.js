@@ -5,14 +5,12 @@ const Common = require('../config/common');
 const Config = require('../config/generalConfig');
 const Jwt = require('jsonwebtoken');
 const privateKey = Config.key.privateKey;
-var models = require('../models/index');
+var knex = require('../dataBase/databaseConnection');
 
 module.exports = function(app){
-    Profissional = app.serverSide.models.index.Profissional;
-
     var loginController = {
         login: function(req,res,next){
-            if(req.body.USER == "no") {
+            if(req.body.USER === "no") {
                 //qrcode LOGIN
                 Profissional.findOne({
                     where: {
@@ -38,20 +36,16 @@ module.exports = function(app){
                 });
             }
             else{
-                Profissional.findOne({
-                    where: {
-                        Usuario: req.body.user
-                    }
-                }).then(function (result) {
+                knex('Profissional').where('Usuario',req.body.user).then(function (result) {
                     if (result) {
-                        if (req.body.passw === Common.decrypt(result.Senha)) {
+                        if (req.body.passw === Common.decrypt(result[0].Senha)) {
                             var tokenData = {
                                 username: result.Usuario,
                                 id: result.Registro
                             };
                             var result = {
-                                tipoProfissional: result.TipoProfissional,
-                                registro: result.Registro,
+                                tipoProfissional: result[0].TipoProfissional,
+                                registro: result[0].Registro,
                                 token: Jwt.sign(tokenData, privateKey)
                             };
                             res.json(result);
@@ -63,11 +57,10 @@ module.exports = function(app){
                     else {
                         res.sendStatus(400);
                     }
-
+                },function (error) {
+                    console.log(error);
                 });
             }
-
-
         }
     };
     return loginController;

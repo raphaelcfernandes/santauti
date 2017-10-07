@@ -59,7 +59,8 @@ module.exports = function(app){
         sendFichaFromAppToServer:function (req,res) {
             console.log(req.body);
             try{
-                Jwt.verify(req.headers.access_token, privateKey);
+                Jwt.verify(req.body.user.token, privateKey);
+                res.status(200).json({message: 'OK'});
             }catch(err){
                 res.sendStatus(401);
             }

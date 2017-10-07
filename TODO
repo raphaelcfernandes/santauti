@@ -1,71 +1,343 @@
-Implementar HTTPS TSL/SSL -> Done
-/*
-* É NECESSARIO ADQUIRIR UM CERTFICADO E SUBSTITUIR O DE TESTE
-* FREE TRUSTED CERTIFICATE: https://www.linode.com/docs/security/ssl/install-lets-encrypt-to-create-ssl-certificates
-* https://certbot.eff.org/docs/using.html#standalone
-*/
+<?xml version="1.0" encoding="utf-8"?>
 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/gastrointestinal_layout"
+    android:focusableInTouchMode="true"
+    android:descendantFocusability="beforeDescendants">
+    <include layout="@layout/toolbar"/>
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/bottom_buttons_navigate_fichas"/>
+    </LinearLayout>
 
-INFORMACAOBOX:
-    AINDA NÃO ESTÁ BUSCANDO A DATA DE INTERNACAO (ISSO DEVE SER RESOLVIDO!) -> A TABELA JA EXISTE NO BANCO
-    DEVE SE BUSCAR POR ID, DATAINTERNACAO + RECENTE E DataALTA NULL
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/buttons">
+        <!--Scrollable content here-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="10dp">
+            <TableRow android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VCM: "
+                    android:layout_gravity="center"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+                <android.support.v7.widget.SwitchCompat
+                    android:id="@+id/mySwitch"
+                    android:layout_width="match_parent"
+                    android:switchMinWidth="56dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:theme="@style/MySwitch" />
+                <!--<RadioGroup-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<android.support.v7.widget.AppCompatRadioButton-->
+                <!--android:id="@+id/vcm_presente"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:gravity="center"-->
+                <!--android:text="Presente"-->
+                <!--android:textSize="12sp" />-->
+                <!--<android.support.v7.widget.AppCompatRadioButton-->
+                <!--android:id="@+id/vcm_ausente"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Ausente"-->
+                <!--android:textSize="12sp"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_margin="5dp"/>-->
+                <!--</RadioGroup>-->
+            </TableRow>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorPrimary">
+            </LinearLayout>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Massas Paupaveis: "
+                    android:layout_gravity="center"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+                <RadioGroup
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/massas_presente"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Presente"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        />
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/massas_ausente"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ausente"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"/>
+                </RadioGroup>
+            </TableRow>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorPrimary">
+            </LinearLayout>
+            <TableRow>
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Visceras Paupaveis: "
+                    android:layout_gravity="center"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+                <RadioGroup
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/visceras_presente"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Presente"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"/>
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/visceras_ausente"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ausente"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"/>
+                </RadioGroup>
+            </TableRow>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorPrimary">
+            </LinearLayout>
+            <TableRow>
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Icterícia: "
+                    android:layout_gravity="center"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+                <RadioGroup
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:gravity="center"
+                        android:text="+1"
+                        android:textSize="12sp" />
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+2"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        />
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+3"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        />
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+4"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        />
+                </RadioGroup>
+            </TableRow>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorPrimary">
+            </LinearLayout>
+            <TableRow>
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ruídos: "
+                    android:layout_gravity="center"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+                <RadioGroup
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:gravity="center"
+                        android:text="Presente"
+                        android:textSize="12sp" />
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ausente"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        />
+                </RadioGroup>
+            </TableRow>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorPrimary">
+            </LinearLayout>
+            <TableRow>
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tensão: "
+                    android:layout_gravity="center"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+                <Spinner
+                    android:id="@+id/gastrointestinal_tensao"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" />
+            </TableRow>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorPrimary">
+            </LinearLayout>
+            <TableRow>
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ruído Hidroaero: "
+                    android:layout_gravity="center"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+                <RadioGroup
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="5dp"
+                        android:gravity="center"
+                        android:text="Presente"
+                        android:textSize="12sp" />
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ausente"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        />
+                </RadioGroup>
+            </TableRow>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorPrimary">
+            </LinearLayout>
+            <TableRow>
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Formato: "
+                    android:layout_gravity="center"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+                <Spinner
+                    android:id="@+id/formato_abdome"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:dropDownVerticalOffset="60dp"/>
+            </TableRow>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorPrimary">
+            </LinearLayout>
+            <TableRow>
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Intensidade: "
+                    android:layout_gravity="center"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+                <Spinner
+                    android:id="@+id/intensidade_ruido_spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:dropDownVerticalOffset="60dp"/>
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
 
-DISPOSITIVOS:
-    NAO PERMITIR INSERIR DATA DE REMOĆAO < DATA_INTERNACAO && DATA_INSERCAO DO DISPOSITIVO EM QUESTAO (DEVE INDICAR QUAL CAMPO ESTÁ ERRADO NO HTML)
-    FAZER EXCLUIR, EDITAR
-    PROCURAR DISPOSITIVO POR DATALTA=NULL E NAO POR DATA > DATA_INTERNACAO
-
-HOME:
-    ADEQUAR AS POSICOES E BGROUND DA HOME E TAMANHO DAS COISAS
-    CONVERTER ICONES DE GLYPHICON PARA ANGULAR MATERIAL
-
-Fichas:
-    HORARIO DE VERAO? COMO FZER? NA HORA DE INSERIR A FICHA PEGA O DATE.NOW(), E SE FOR HORARIO DE VERAO?
-    LEMBRANDO Q O SEQULIZE (CONFIG.JSON) TEM UM TIMEZONE-=03:00
-    
-    Validaćao de campos obrigatorios e nao-obrigatorios
-    Diaria:
-        Pegar dados de fichas anteriores caso o usuario queira ver o que ja foi escrito. Separar por data + tipo ficha
-    Noturna:
-        Verificar se existe ficha diaria previamente criada no mesmo dia, ou dia anterior.
-        Possibilitar botao de auto-preenchimento, para que os campos da TAB da ficha noturna fique semelhante ao da ficha diaria.
-    Eventos significantes:
-        Melhor 1 campo text area ou a pessoa poder adicionar uma quantidade de eventos como em dispositivo.
-    Neurologico:
-        Dose sedativo: Em ML? Por peso? algum nome em especifico?
-    Nutricao:
-        Fazer Dieta aparecer apenas se o kra clicar em SIM na pergunta se Existe Dieta
-    Psicosocial:
-        Igual nutricao (tem exemplo de como fazer no codigo comentado)
-
-CSS:
-    md-primary
-
-
-
-
-
-Tentar separar htmls que tem padroes repetidos em arquivos separados (Problemas e pendencias por exemplo)
-Ficha noturna = diaria porem com campos de auto preenchimento da ficha diaria do mesmo dia
-Navbar deve estar em 2 linhas
-
-
-
-/*Faćo a encrip/decrip no server side usando Crypto-JS, essa lib é mesmo safe? Inicio da string sempre igual*/
-
-**HOME:
-Refazer o modal para confirmação de geração de novo QR-CODE
-Corrigir aparição do QR-CODE.. Tirar ou encontrar uam forma de deixar isso bonito... um modal talvez?
-
----
-Implementar sistema de validação de formulários em pessoa (conferir se não vai bugar o editar)
-
-Implementar sistemas das fichas diurnas (recuperar os dados anteriores)
-
-**** Implementar JANELA de impressão QR-CODE
-***Implantar sistema de LOGIN com QR-CODE
-
-
-Remover Glifcon itens do site (parte do bootstrap)
-Corrigir alguns estilos de forms que estão puxando class do bootstrap
-Resolver layout do pendencias e lista de problemas
+</RelativeLayout>
