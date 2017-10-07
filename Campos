@@ -64,6 +64,7 @@ Renal: Done
         - volume: numerico
     - VER CAMPO TEXTO PARA COMPLEMENTAR
     - escorias renais: texto (obrigatorio) no pc
+    - hipoabuminemia: SIM OU NAO
 Hematologico: Done
     Sim hemograma:
         - indice hematimetrico: lista de opcoes, obrigatorio
